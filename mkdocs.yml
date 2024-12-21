@@ -29,7 +29,12 @@ theme:
     - search.suggest
     - search.highlight
     - toc.follow
+plugins:
+  - material-plausible
 extra:
+  analytics:
+    provider: plausible
+    domain: edu.cs-htiew.com
   alternate:
     - name: Polski
       link: https://edu.cs-htiew.pl
