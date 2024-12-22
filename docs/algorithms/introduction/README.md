@@ -1,23 +1,23 @@
-# Wprowadzenie do Algorytmów
+# Introduction to Algorithms
 
-Algorytmy to zestawy kroków lub instrukcji służących do wykonania określonych zadań lub rozwiązywania problemów. Można je porównać do przepisów kulinarnych: tak jak przepis krok po kroku prowadzi Cię przez proces przygotowywania dania, algorytm prowadzi Cię przez proces rozwiązywania problemu lub wykonania zadania.
+Algorithms are sets of steps or instructions for performing specific tasks or solving problems. They can be compared to recipes: just as a step-by-step recipe guides you through the process of preparing a dish, an algorithm guides you through the process of solving a problem or performing a task.
 
-Algorytmy są podstawowym narzędziem w informatyce. Używa się ich do wszystkiego, od prostych zadań, jak sortowanie listy nazwisk, po bardziej złożone, jak analizowanie danych czy nawet prowadzenie samochodów autonomicznych. Ich piękno polega na tym, że są one jasne, precyzyjne i, co najważniejsze, **powtarzalne**. Oznacza to, że każda osoba (lub maszyna) wykonująca algorytm w taki sam sposób, osiągnie taki sam wynik, dla takich samych danych wejściowych (wyjątek oczywiście stanowią algorytmy niedeterministyczne, zawierające w sobie losowość).
+Algorithms are an essential tool in computer science. They are used for everything from simple tasks, like sorting a list of names, to more complex ones, like analyzing data or even driving autonomous cars. Their beauty is that they are clear, precise and, most importantly, **repeatable**. This means that any person (or machine) executing the algorithm in the same way will achieve the same result, for the same input data (the exception, of course, is non-deterministic algorithms that incorporate randomness).
 
-W kolejnych częściach będziemy eksplorować różne rodzaje algorytmów, ich zastosowania, a także to, jak je projektować i analizować. Bez względu na to, czy jesteś początkującym w dziedzinie informatyki, czy już posiadasz pewne doświadczenie, zrozumienie algorytmów jest kluczowe do rozwoju umiejętności w tej fascynującej dziedzinie.
+In the following sections, we will explore different types of algorithms, their applications, and how to design and analyze them. Whether you are new to computer science or already have some experience, understanding algorithms is crucial to developing skills in this fascinating field.
 
-Poniższa prezentacja zawiera krótkie wprowadzenie do świata algorytmów.
+The following presentation provides a brief introduction to the world of algorithms.
 
 [:fontawesome-solid-file-pdf: Algorytmy - wprowadzenie](../../assets/Algorytmy - wprowadzenie.pdf)
 
-## Polecane książki
+## Recommended books
 
 * Maciej M. Sysło "**Algorytmy**"
 * Maciej M. Sysło "**Piramidy, szyszki i inne konstrukcje algorytmiczne**"
 
-## Gry
+## Games
 
-Do przećwiczenia myślenia algorytmicznego warto grać w różne gry logiczne, takie jak te:
+To practice algorithmic thinking, it is worth playing various puzzle games, such as these:
 
 [Cube composer](https://david-peter.de/cube-composer/)
 

@@ -1,72 +1,72 @@
-# Złożoność
+# Complexity
 
-**Złożoność** jest bardzo ważnym elementem dyskusji na temat algorytmów. Często jest to kluczowy czynnik według którego porównujemy **efektywność** dwóch rozwiązań/algorytmów. Wyróżniamy przede wszystkim:
+**Complexity** is a very important element in the discussion of algorithms. It is often the key factor by which we compare the **efficiency** of two solutions/algorithms. We distinguish primarily between:
 
-* **złożoność czasową/obliczeniową** - tzn. ile operacji w zależności od rozmiaru danych wejściowych program musi wykonać,
-* **złożoność pamięciową** - ile pamięci (w zależności od rozmiaru danych wejściowych) program potrzebuje.
+* **time/computation complexity** - i.e. how many operations, depending on the size of the input data, the program must perform,
+* **memory complexity** - how much memory (depending on the size of the input data) the program needs.
 
-W tym kursie nie będziemy rozmawiać, ani też obliczać dokładnej złożoności algorytmów. Skupimy się na ich **szacunkowej pesymistycznej złożoności**.
+In this course, we will not discuss or calculate the exact complexity of algorithms. We will focus on their **estimated pessimistic complexity**.
 
-Dlatego nie będziemy wchodzić głęboko w szczegóły matematyczne. Zainteresowanych odsyłam do zewnętrznych źródeł, np.:
+Therefore, we will not go deep into mathematical details. If you are interested, I refer you to external sources, such as:
 
 * [https://pl.wikipedia.org/wiki/Z%C5%82o%C5%BCono%C5%9B%C4%87\_obliczeniowa](https://pl.wikipedia.org/wiki/Z%C5%82o%C5%BCono%C5%9B%C4%87\_obliczeniowa)
 * [https://pl.wikipedia.org/wiki/Asymptotyczne_tempo_wzrostu](https://pl.wikipedia.org/wiki/Asymptotyczne_tempo_wzrostu)
 
-## Notacja dużego O (asymptotyczna)
+## Big O notation (asymptotic)
 
-Nie będziemy tutaj wchodzić w szczegóły notacji asymptotycznej dużego O. W dużym skrócie będziemy jej używać do określania **pesymistycznej** złożoności czasowej algorytmu. Dla przykładu, jeżeli algorytm będzie miał złożoność $O(n)$ to oznacza, że w najgorszym przypadku będzie działał liniowo w stosunku do rozmiaru danych. Oczywiście nie wyklucza do sytuacji, w których taki algorytm zadziała szybciej.
+Here we will not go into the details of the asymptotic notation of large O. In a nutshell, we will use it to determine the **pesimistic** time complexity of the algorithm. For example, if an algorithm has a complexity of $O(n)$ this means that in the worst case it will run linearly with respect to the size of the data. Of course, it toes not exclude to situations in which such an algorithm will work faster.
 
-## Podstawowe klasy złożoności
+## Basic complexity classes
 
 | Zapis            | Nazwa                                   | Przykład                               |
 | ---------------- | --------------------------------------- | -------------------------------------- |
-| $O(1)$         | stała                                   | Sprawdzenie warunku trójkąta           |
-| $O(\log{n})$   | logarytmiczna                           | Wyszukiwanie binarne                   |
-| $O(n)$         | liniowa                                 | Wyszukiwanie liniowe                   |
-| $O(n\log{n})$  | liniowo logarytmiczna                   | Sortowanie przez scalanie              |
-| $O(n^2)$       | kwadratowa                              | Sortowanie bąbelkowe                   |
-| $O(n^3)$       | sześcienna                              | Algorytm Floyda-Warshalla              |
-| $O(n^k)$       | wielomianowa ( $k$ - stała, $k>1$ ) | -                                      |
-| $O(n!)$        | n-silnia                                | Wypisanie wszystkich permutacji zbioru |
-| $O(2^n)$       | wykładnicza                             | Wypisanie wszystkich podzbiorów zbioru |
+| $O(1)$         | constant                                   | Checking the triangle condition           |
+| $O(\log{n})$   | logarithmic                           | Binary search                   |
+| $O(n)$         | linear                                 | Linear search                  |
+| $O(n\log{n})$  | linear logarithmic                   | Merge sort              |
+| $O(n^2)$       | square                              | Bubble sort                   |
+| $O(n^3)$       | cubic                              | Floyda-Warshall algorithm              |
+| $O(n^k)$       | polynomial ( $k$ - constant, $k>1$ ) | -                                      |
+| $O(n!)$        | n-factorial                                | Listing all permutations of the set |
+| $O(2^n)$       | exponential                             | Listing all subsets of the set |
 
-## Szacowanie złożoności
+## Complexity estimation
 
-### Przykład - złożoność liniowa
-
-```
-1. Od i := 1 do n, wykonuj:
-    2. Wypisz i
-```
-
-### Przykład - złożoność kwadratowa
+### Example - linear complexity
 
 ```
-1. Od i := 1 do n, wykonuj:
-    2. Od j := 1 do n, wykonuj:
-        3. Wypisz i * j
+1. From i := 1 to n, do:
+    2. Print i
 ```
 
-### Przykład - złożoność sześcienna
+### Example - quadratic complexity
 
 ```
-1. Od i := 1 do n, wykonuj:
-    2. Od j := 1 do n, wykonuj:
-        3. Od k := 1 do n, wykonuj:
-            4. Wypisz i * j * k
+1. From i := 1 to n, do:
+    2. From j := 1 to n, do:
+        3. Print i * j
 ```
 
-### Przykład - złożoność logarytmiczna
+### Example - cubic complexity
 
 ```
-1. Dopóki n > 0, wykonuj:
-    2. Wypisz n
+1. From i := 1 to n, do:
+    2. From j := 1 to n, do:
+        3. From k := 1 to n, do:
+            4. Print i * j * k
+```
+
+### Example - logarithmic complexity
+
+```
+1. While n > 0, do:
+    2. Print n
     3. n := n div 2
 ```
 
 !!! info
-    **div** oznacza dzielenie całkowite
+    **div** means integer division
 
-## Ściąga
+## Cheatsheet
 
 [https://github.com/ro31337/bigoposter/blob/master/bigoposter.pdf](https://github.com/ro31337/bigoposter/blob/master/bigoposter.pdf)
