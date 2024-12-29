@@ -1,35 +1,39 @@
-# Kolejka
+# Queue
 
-Kolejka (ang. *Queue*) to podstawowa struktura danych, która, podobnie jak stos, organizuje elementy w sposób liniowy. Kluczową cechą kolejki jest zasada FIFO (ang. *First In, First Out*), co oznacza, że pierwszy element dodany do kolejki jest pierwszym elementem, który zostanie z niej usunięty. Jest to zachowanie analogiczne do rzeczywistej kolejki, na przykład w sklepie - pierwsza osoba, która dołączyła do kolejki, jest pierwszą osobą, która opuszcza kolejkę.
+A queue is a basic data structure that, like a stack, organizes elements in a linear fashion. A key feature of a queue is the FIFO (*First In, First Out*) principle, which means that the first element added to the queue is the first element to be removed from it. This behavior is analogous to an actual queue, for example in a store - the first person to join the queue is the first person to leave the queue.
 
-Podstawowe operacje wykonywane na kolejce to:
+The basic operations performed on a queue are:
 
-- **Enqueue** (dodaj do kolejki): dodaje element na koniec kolejki.
-- **Dequeue** (usuń z kolejki): usuwa element z początku kolejki.
+- **Enqueue** (add to queue): adds an item to the end of the queue.
+- **Dequeue** (remove from queue): removes an element from the beginning of the queue.
 
-Dodatkowe operacje, które mogą być dostępne w niektórych implementacjach kolejki, to:
+Additional operations that may be available in some queue implementations are:
 
-- **Front/Peek**: zwraca pierwszy element kolejki bez usuwania go.
-- **IsEmpty**: sprawdza, czy kolejka jest pusta.
-- **Size**: zwraca liczbę elementów w kolejce.
+- **Front/Peek**: returns the first element of the queue without deleting it.
+- **IsEmpty**: checks if the queue is empty.
+- **Size**: returns the number of elements in the queue.
 
-## Zastosowania
+## Applications
 
-Kolejki znajdują szerokie zastosowanie w informatyce, w tym:
+Queues are widely used in computer science, including:
 
-- **Synchronizacja danych**: kolejki są często używane do synchronizacji danych między procesami. Mogą być np. używane do bezpiecznego przesyłania żądań z wątku producenta do wątku konsumenta.
-- **Buforowanie danych**: kolejki mogą służyć jako bufory dla danych przesyłanych między dwoma jednostkami procesora lub pomiędzy urządzeniem peryferyjnym a procesorem.
-- **Planowanie CPU**: systemy operacyjne często używają kolejek do zarządzania procesami, które oczekują na dostęp do zasobów, takich jak procesor, pamięć, dysk, etc.
-- **Algorytmy grafowe**: kolejki są używane w algorytmach przeszukiwania grafu, takich jak przeszukiwanie wszerz (BFS).
+- **Data synchronization**: queues are often used to synchronize data between processes. For example, they can be used to securely transfer requests from a producer thread to a consumer thread.
+- **Data buffering**: queues can serve as buffers for data transferred between two CPU units or between a peripheral and the CPU.
+- **CPU scheduling**: operating systems often use queues to manage processes that are waiting to access resources such as CPU, memory, disk, etc.
+- **Graph algorithms**: queues are used in graph search algorithms such as breadth-first search (BFS).
 
-Znając podstawy kolejek, możemy zrozumieć wiele kluczowych aspektów zarządzania danymi w informatyce, zarówno w systemach operacyjnych, jak i w bardziej złożonych algorytmach.
+By knowing the basics of queues, we can understand many key aspects of data management in computing, both in operating systems and in more complex algorithms.
 
-## Implementacja
+## Implementation
 
-Kolejki mogą być zaimplementowane za pomocą różnych struktur danych, w tym tablic i list połączonych. Wybór struktury danych do implementacji kolejki zależy od konkretnych wymagań, takich jak efektywność operacji, zużycie pamięci i łatwość implementacji.
+Queues can be implemented using various data structures, including arrays and linked lists. The choice of data structure to implement a queue depends on specific requirements, such as efficiency of operations, memory consumption and ease of implementation.
 
-Poniżej znajdziesz przykładowe implementacje kolejki w wybranych językach programowania.
+Below you will find examples of queue implementations in selected programming languages.
 
 ### [:simple-cplusplus: C++](../../programming/c++/algorithms/structures/queue.md){ .md-button }
 
 ### [:simple-python: Python](../../programming/python/algorithms/structures/queue.md){ .md-button }
+
+## Implementations - other
+
+### [:simple-c:](../../programming/c/algorithms/structures/stack.md){ .md-button }

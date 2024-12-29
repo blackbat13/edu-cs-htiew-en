@@ -725,6 +725,7 @@ nav:
           - 'Prefix sums': 'programming/c/algorithms/searching/prefix-sum.md'
         - 'Structures': 
           - 'Stack': 'programming/c/algorithms/structures/stack.md'
+          - 'Queue': 'programming/c/algorithms/structures/queue.md'
     - 'Dart': 
       - 'programming/dart/README.md'
       - 'Algorithms': 

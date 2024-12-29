@@ -1,8 +1,8 @@
-# Stos
+# Stack
 
-## [:link: Opis problemu](../../../../algorithms/structures/stack.md)
+## [:link: Problem description](../../../../algorithms/structures/stack.md)
 
-## Implementacja
+## Implementation
 
 ```c linenums="1"
 #include <stdio.h>
