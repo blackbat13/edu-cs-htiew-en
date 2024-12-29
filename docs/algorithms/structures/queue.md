@@ -36,4 +36,4 @@ Below you will find examples of queue implementations in selected programming la
 
 ## Implementations - other
 
-### [:simple-c:](../../programming/c/algorithms/structures/stack.md){ .md-button }
+### [:simple-c:](../../programming/c/algorithms/structures/queue.md){ .md-button }
