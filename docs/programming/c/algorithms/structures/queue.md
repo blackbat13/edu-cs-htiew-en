@@ -1,4 +1,4 @@
-# Stack
+# Queue
 
 ## [:link: Problem description](../../../../algorithms/structures/queue.md)
 
