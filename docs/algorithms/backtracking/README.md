@@ -13,7 +13,7 @@ In search algorithms with backtracking, we can distinguish the following feature
 Search algorithms with backtracking have wide applications, including in:
 
 - Solving puzzles, such as sudoku.
-- Optimization problems, such as the comovement problem.
+- Optimization problems, such as the travelling salesman problem.
 - Decision problems, such as the graph coloring problem.
 - Combinatorial problems, such as generating all possible permutations of elements.
 
