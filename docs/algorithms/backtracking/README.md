@@ -4,9 +4,9 @@ Searching with backtracking is a fundamental approach in computer science for so
 
 In search algorithms with backtracking, we can distinguish the following features:
 
-- **Recursion**: The most important aspect of backtracking algorithms is recursion. These algorithms usually rely on recursion to test all possible solutions.
-- **Choice and backtracking**: In this approach, the algorithm makes a decision (choice) and then continues searching until it encounters an obstacle. At this point, the algorithm *reverses* to the previous state and tries another solution.
-- **Pruning**: Not all paths in a search tree need to be explored. Knowing certain features of the problem, it is possible to *pruning* some paths that will definitely not lead to a solution.
+- **Recursion**: the most important aspect of backtracking algorithms is recursion. These algorithms usually rely on recursion to test all possible solutions.
+- **Choice and backtracking**: in this approach, the algorithm makes a decision (choice) and then continues searching until it encounters an obstacle. At this point, the algorithm *reverses* to the previous state and tries another solution.
+- **Pruning**: not all paths in a search tree need to be explored. Knowing certain features of the problem, it is possible to *pruning* some paths that will definitely not lead to a solution.
 
 ## Applications
 
