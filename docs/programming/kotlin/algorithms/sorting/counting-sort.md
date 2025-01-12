@@ -2,7 +2,7 @@
 
 ## [:link: Opis problemu](../../../../algorithms/sorting/counting-sort.md)
 
-## Implementacja
+## Implementation
 
 ```kotlin
 fun countOccurrences(array: MutableList<Int>, maxNumber: Int): Array<Int> {

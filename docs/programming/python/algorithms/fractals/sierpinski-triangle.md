@@ -2,7 +2,7 @@
 
 ## [:link: Opis problemu](../../../../algorithms/fractals/sierpinski-triangle.md)
 
-## Implementacja
+## Implementation
 
 ```python linenums="1"
 import turtle

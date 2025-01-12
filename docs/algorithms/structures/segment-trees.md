@@ -18,7 +18,7 @@ Najważniejsze operacje, które można wykonać na drzewie segmentowym, to:
 
 Drzewa segmentowe są wykorzystywane w wielu dziedzinach programowania, takich jak grafika komputerowa, statystyka, systemy baz danych i wiele innych. W programowaniu konkursowym często są używane do rozwiązywania zadań, które wymagają szybkiego wykonywania operacji na segmentach tablic.
 
-## Implementacja
+## Implementation
 
 ### [:simple-cplusplus: C++](../../programming/c++/algorithms/structures/segment-tree.md){ .md-button }
 

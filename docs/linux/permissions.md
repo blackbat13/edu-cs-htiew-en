@@ -51,7 +51,7 @@ Składnia polecenia wygląda następująco:
 
 **`chmod [uprawnienia] [plik]`**
 
-#### Przykład
+#### Example
 
 **`chmod 600 plik.txt`**
 
@@ -80,7 +80,7 @@ Za pomocą polecenia chmod możemy nie tylko nadawać uprawnienia, ale także mo
 |      -     |   Usunięcie uprawnienia  |
 |      =     | Ustanowienie uprawnienia |
 
-#### Przykład
+#### Example
 
 **`chmod u+rx plik.txt`**
 

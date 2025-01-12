@@ -2,7 +2,7 @@
 
 ## [:link: Opis problemu](../../../../algorithms/sorting/quick-sort.md)
 
-## Implementacja
+## Implementation
 
 ```julia linenums="1"
 function quicksort(array, left, right)

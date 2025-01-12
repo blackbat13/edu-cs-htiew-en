@@ -2,7 +2,7 @@
 
 ## [:link: Opis problemu](../../../../algorithms/searching/prefix-sum.md)
 
-## Implementacja
+## Implementation
 
 ```python linenums="1"
 def compute_prefix_sum(numbers_list: list) -> list:

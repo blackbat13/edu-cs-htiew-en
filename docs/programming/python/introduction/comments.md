@@ -6,7 +6,7 @@ Jak i w innych językach, także w języku Python możemy dodawać komentarze, z
 
 Komentarze jednolinijkowe w języku Python zaczynają się od znaku `#`
 
-### Przykład
+### Example
 
 ```python
 # To jest komentarz
@@ -20,7 +20,7 @@ Zamiast tego używamy wielu komentarzy jednolinijkowych.
 Alternatywnie można skorzystać ze składni pozwalającej na tworzenie wielolinijkowych tekstów.
 Jeżeli nie przypiszemy ich do żadnej zmiennej, ich wartość zostanie zignorowana, to znaczy potraktowana jak komentarz.
 
-### Przykład
+### Example
 
 ```python
 """
@@ -35,7 +35,7 @@ W języku Python komentarze dokumentacyjne mogą być zarówno jednolinijkowe ja
 
 Istnieje co najmniej kilka różnych formatów pisania dokumentacji. Jak to zwykle bywa, należy wybrać jeden i się go trzymać w całym projekcie.
 
-### Przykład (format Sphinx)
+### Example (format Sphinx)
 
 ```python
 def add(a: int, b: int) -> int :

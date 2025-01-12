@@ -7,6 +7,6 @@ Struktura danych znana jako Drzewo Fenwicka (ang. *Fenwick Tree*), lub Drzewo In
 
 Drzewo Fenwicka jest szczególnie przydatne w sytuacjach, gdzie często wykonuje się operacje aktualizacji i zapytań o sumy prefiksowe, np. w algorytmach przetwarzania strumieni danych, analizie danych i problemach związanych z dynamicznymi tablicami.
 
-## Implementacja
+## Implementation
 
 ### [:simple-cplusplus: C++](../../programming/c++/algorithms/structures/fenwick-tree.md){ .md-button }

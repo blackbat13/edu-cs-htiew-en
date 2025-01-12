@@ -7,7 +7,7 @@ Dzięki zastosowaniu przestrzeni nazw, możemy wydzielić fragment implementacji
 Pozwala to nam między innymi na używanie funkcji, klas o tych samych nazwach, ale różnym znaczeniu i umieszczenie ich w różnych przestrzeniach nazw.
 Jest to także dobry sposób na upewnienie się, że tworzona przez nas biblioteka nie spowoduje konfliktu nazw, gdy zostanie użyta w innym projekcie.
 
-### Przykład 1
+### Example 1
 
 Rozważmy bardzo prosty, a nawet naiwny przykład. 
 Mamy dwie funkcje, których zadaniem jest wyświetlenie komunikatu "pomocy".
@@ -40,7 +40,7 @@ int main() {
 }
 ```
 
-### Przykład 2
+### Example 2
 
 Przestrzenie nazw możemy bez problemu rozbijać na wiele definicji, dzięki czemu mogą być używane w wielu plikach bez obaw o nadpisanie.
 
@@ -79,7 +79,7 @@ Wtedy możemy skorzystać z samego polecenia **using**.
 
 Przyjrzyjmy się poniższym przykładom.
 
-### Przykład 1
+### Example 1
 
 ```cpp
 #include <iostream>
@@ -112,7 +112,7 @@ W powyższej implementacji niejako "załączamy" przestrzeń nazw **fractions** 
 Dzięki temu, aby wywołać funkcję *help* z przestrzeni *fractions* nie trzeba już podawać nazwy tej przestrzeni nazw.
 Zwróć uwagę na to, że przestrzeń nazw musi być wcześniej zdefiniowana.
 
-### Przykład 2
+### Example 2
 
 ```cpp
 #include <iostream>
@@ -150,7 +150,7 @@ Wystarczą nam jej dwa składniki, które załączamy za pomocą polecenia `usin
 Przestrzenie nazw możemy także bez problemu zagnieżdżać.
 Spójrzmy na poniższy przykład.
 
-### Przykład
+### Example
 
 ```cpp
 #include <iostream>

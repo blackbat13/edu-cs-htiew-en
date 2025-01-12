@@ -1,14 +1,14 @@
-# Ćwiczenie 2
+# Exercise 2
 
 Zapoznaj się z poniższą specyfikacją oraz pseudokodem, a następnie rozwiąż zadania.
 
-## Specyfikacja
+## Specification
 
-### Dane
+### Input
 
 * $x$ - liczba całkowita.
 
-## Pseudokod
+## Pseudocode
 
 ```
 1. k := 1

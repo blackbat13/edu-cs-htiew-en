@@ -1,6 +1,6 @@
 # Metoda Monte Carlo
 
-## Opis algorytmu
+## Description algorytmu
 
 [monte-carlo.md](../../../../../algorithms/numerical-methods/monte-carlo.md)
 

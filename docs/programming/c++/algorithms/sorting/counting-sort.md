@@ -2,7 +2,7 @@
 
 ## [:link: Opis problemu](../../../../algorithms/sorting/counting-sort.md)
 
-## Implementacja
+## Implementation
 
 ```cpp linenums="1"
 #include <iostream>

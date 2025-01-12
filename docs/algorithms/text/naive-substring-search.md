@@ -6,54 +6,54 @@ Jak niemalże każdy problem (informatyczny), także ten możne zostać rozwiąz
 
 Problem wygląda następująco: dostajemy dwa teksty, nazwijmy je _tekst_ oraz _wzorzec_, a naszym (algorytmu) zadaniem jest sprawdzenie, czy _wzorzec_ zawiera się w _tekście_.&#x20;
 
-## Specyfikacja
+## Specification
 
-### Dane:
+### Input:
 
 * $n$ - długość tekstu, $n\in\mathbb{N}, n\geq1$&#x20;
 * $tekst[1..n]$ - ciąg znaków o długości $n$, numerowanych od jedynki&#x20;
 * $m$ - długość wzorca,  $m\in\mathbb{N}, 1\leq m\leq n$
 * $wzorzec[1..m]$ - ciąg znaków o długości $m$, numerowanych od jedynki&#x20;
 
-### Wynik:
+### Output:
 
 * Indeks pierwszego wystąpienia wzorca w tekście, lub $-1$ jeżeli wzorzec nie występuje w tekście
 
-## Przykład 1
+## Example 1
 
-### Dane
+### Input
 
 ```
 tekst := "alamakota"
 wzorzec := "kot"
 ```
 
-**Wynik**: $6$.
+**Output**: $6$.
 
-## Przykład 2
+## Example 2
 
-### Dane
+### Input
 
 ```
 tekst := "alamakota"
 wzorzec := "koty"
 ```
 
-**Wynik**: $-1$.
+**Output**: $-1$.
 
-## Rozwiązanie
+## Solution
 
 Pomocnicza funkcja `TestujWzorzec`sprawdza, czy wzorzec znajduje się w tekście pod indeksem `i`.
 
-### Pseudokod
+### Pseudocode
 
 ```
 funkcja TestujWzorzec(i, n, tekst, m, wzorzec)
     1. Dla j := 1 do m, wykonuj:
         2. Jeżeli tekst[i + j - 1] != wzorzec[j], to:
-            3. Zwróć FAŁSZ
+            3. Zwróć FALSE
         
-    4. Zwróć PRAWDA
+    4. Zwróć TRUE
 ```
 
 ```
@@ -65,18 +65,18 @@ funkcja SzukajWzorca(n, tekst, m, wzorzec)
     4. Zwróć -1
 ```
 
-### Schemat blokowy
+### Block diagram
 
 ```mermaid
 %%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
 flowchart TD
     START(["TestujWzorzec(i, n, tekst, m, wzorzec)"]) --> K0[j := 1]
     K0 --> K1{j <= m}
-    K1 -- PRAWDA --> K2{"tekst[i + j - 1] != wzorzec[j]"}
-    K2 -- PRAWDA --> K3[/Zwróć FAŁSZ/]
-    K2 -- FAŁSZ --> K1i[j := j + 1]
+    K1 -- TRUE --> K2{"tekst[i + j - 1] != wzorzec[j]"}
+    K2 -- TRUE --> K3[/Zwróć FALSE/]
+    K2 -- FALSE --> K1i[j := j + 1]
     K1i --> K1
-    K1 -- FAŁSZ --> K4[/Zwróć PRAWDA/]
+    K1 -- FALSE --> K4[/Zwróć TRUE/]
     K4 --> STOP([STOP])
     K3 --> STOP
 ```
@@ -86,20 +86,20 @@ flowchart TD
 flowchart TD
     START(["SzukajWzorca(n, tekst, m, wzorzec)"]) --> K0[i := 1]
     K0 --> K1{i <= n - m}
-    K1 -- PRAWDA --> K2{"TestujWzorzec(i, n, tekst, m, wzorzec)"}
-    K2 -- PRAWDA --> K3[/Zwróć i/]
-    K2 -- FAŁSZ --> K1i[i := i + 1]
+    K1 -- TRUE --> K2{"TestujWzorzec(i, n, tekst, m, wzorzec)"}
+    K2 -- TRUE --> K3[/Zwróć i/]
+    K2 -- FALSE --> K1i[i := i + 1]
     K1i --> K1
-    K1 -- FAŁSZ --> K4[/Zwróć -1/]
+    K1 -- FALSE --> K4[/Zwróć -1/]
     K4 --> STOP([STOP])
     K3 --> STOP
 ```
 
-### Złożoność
+### Complexity
 
 $O(n*m)\to O(n^2)$ - kwadratowa
 
-## Implementacja
+## Implementation
 
 ### [:simple-cplusplus: C++](../../programming/c++/algorithms/text/naive-substring-search.md){ .md-button }
 

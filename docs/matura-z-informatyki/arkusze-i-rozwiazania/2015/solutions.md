@@ -4,7 +4,7 @@
 
 ### Zadanie 4
 
-#### Rozwiązanie C++
+#### Solution C++
 
 ```cpp
 #include <iostream>

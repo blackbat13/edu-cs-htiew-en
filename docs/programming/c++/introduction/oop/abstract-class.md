@@ -16,13 +16,13 @@ Cechy charakterystyczne klas abstrakcyjnych:
 
 Metoda w pełni wirualne definiujemy za pomocą modyfikatora **virtual** oraz przypisana do funkcji wartości 0;
 
-### Przykład
+### Example
 
 ```cpp
 virtual void translate(int k) = 0;
 ```
 
-## Przykład
+## Example
 
 ```cpp
 #include <iostream>

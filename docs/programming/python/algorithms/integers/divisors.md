@@ -2,7 +2,7 @@
 
 ## [:link: Opis problemu](../../../../algorithms/integers/divisors.md)
 
-## Rozwiązanie zupełnie naiwne
+## Solution zupełnie naiwne
 
 ```python linenums="1"
 def divisors(n: int):
@@ -15,7 +15,7 @@ n = 12
 divisors(n)
 ```
 
-## Rozwiązanie naiwne
+## Solution naiwne
 
 ```python linenums="1"
 def divisors(n: int):
@@ -31,7 +31,7 @@ n = 12
 divisors(n)
 ```
 
-## Rozwiązanie optymalne
+## Solution optymalne
 
 ```python linenums="1"
 def divisors(n: int):

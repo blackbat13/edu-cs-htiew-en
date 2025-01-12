@@ -2,7 +2,7 @@
 
 ## [:link: Opis problemu](../../../../algorithms/sorting/cocktail-shaker-sort.md)
 
-## Implementacja
+## Implementation
 
 ```python linenums="1"
 def cocktail_shaker_sort(array: list):
@@ -22,7 +22,7 @@ cocktail_shaker_sort(array)
 print(array)
 ```
 
-### Opis implementacji
+### Description implementacji
 
 Funkcja `cocktail_shaker_sort` przyjmuje jako argument listę `array`, która ma być posortowana.
 

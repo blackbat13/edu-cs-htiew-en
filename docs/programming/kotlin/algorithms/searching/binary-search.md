@@ -4,7 +4,7 @@
 
 ## Wersja iteracyjna
 
-### Implementacja
+### Implementation
 
 ```kotlin
 fun binarySearch(array: List<Int>, number: Int): Int {
@@ -48,7 +48,7 @@ fun main() {
 
 [Wyszukiwanie binarne - wersja iteracyjna](https://ideone.com/n8oV0L)
 
-### Opis implementacji
+### Description implementacji
 
 Funkcja `binarySearch` (**linia 1**) przyjmuje dwa argumenty: uporządkowaną rosnąco listę liczb całkowitych (`array`) oraz poszukiwaną liczbę całkowitą (`number`). Wynikiem zwracanym przez funkcję będzie liczba całkowita reprezentująca pozycję (indeks) szukanej wartości na liście `array`, lub $-1$, gdy elementu nie znaleziono.
 
@@ -66,7 +66,7 @@ Na koniec programu wypisujemy stosowny komunikat w zależności od wyniku (**lin
 
 ## Wersja rekurencyjna
 
-### Implementacja
+### Implementation
 
 ```kotlin
 fun binarySearch(array: List<Int>, number: Int, left: Int, right: Int): Int {
@@ -106,7 +106,7 @@ fun main() {
 
 [Wyszukiwanie binarne - wersja rekurencyjna](https://ideone.com/F0QMN2)
 
-### Opis implementacji
+### Description implementacji
 
 Funkcja `binarySearch` (**linia 1**) przyjmuje cztery argumenty: uporządkowaną rosnąco listę liczb całkowitych (`array`), poszukiwaną liczbę całkowitą (`number`) oraz początek (`left`) oraz koniec (`right`) aktualnie przeszukiwanego przedziału (podanego jako indeksy elementów przeszukiwanej listy). Wynikiem zwracanym przez funkcję będzie liczba całkowita reprezentująca pozycję (indeks) szukanej wartości na liście `array` w podanym przedziale, lub $-1$, gdy elementu nie znaleziono.
 

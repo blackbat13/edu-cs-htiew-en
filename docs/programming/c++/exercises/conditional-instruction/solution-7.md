@@ -1,20 +1,20 @@
-# Rozwiązanie 7
+# Solution 7
 
 ## Treść zadania
 
 Napisz program zgodny z poniższą specyfikacją.
 
-### Specyfikacja
+### Specification
 
-#### Dane
+#### Input
 
 * $rok$ - liczba naturalna
 
-#### Wynik
+#### Output
 
 * Komunikat określający, czy podany rok jest przestępny czy też nie
 
-## Rozwiązanie
+## Solution
 
 ```cpp
 #include <iostream>

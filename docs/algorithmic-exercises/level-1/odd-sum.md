@@ -4,25 +4,25 @@ Dla zadanego przedziału podaj sumę wszystkich nieparzystych liczb z tego przed
 
 Źródło: [https://onlinejudge.org/external/107/10783.pdf](https://onlinejudge.org/external/107/10783.pdf)
 
-## Specyfikacja
+## Specification
 
-### Dane
+### Input
 
 * $a, b$ - liczby całkowite z przedziału $[0,100]$
 
-### Wynik
+### Output
 
 * Suma wszystkich liczb nieparzystych z przedziału $[a,b]$ 
 
-## Przykład
+## Example
 
-### Dane
+### Input
 
 ```
 3 9
 ```
 
-### Wynik
+### Output
 
 ```
 24

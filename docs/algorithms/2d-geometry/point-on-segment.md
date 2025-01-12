@@ -1,6 +1,6 @@
 # Punkt na odcinku
 
-## Implementacja
+## Implementation
 
 ### [:simple-cplusplus: C++](../../programming/c++/algorithms/2d-geometry/point-on-segment.md){ .md-button }
 

@@ -18,9 +18,9 @@ Poniżej znajdziesz animację przedstawiającą ideę omawianego algorytmu.
 
 [Sortowanie odd-even](https://blackbat13.github.io/visul2/sorting/odd_even_sort/#array=%5B6%2C5%2C3%2C1%2C8%2C7%2C2%2C4%5D){ .md-button }
 
-## Rozwiązanie
+## Solution
 
-### Pseudokod
+### Pseudocode
 
 ```
 procedura OddEvenSort(n, A):
@@ -35,39 +35,39 @@ procedura OddEvenSort(n, A):
                     9. Zamień(A[j], A[j - 1])
 ```
 
-### Schemat blokowy
+### Block diagram
 
 ```mermaid
 %%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
 flowchart TD
     START(["OddEvenSort(n, A)"]) --> K0[i := 1]
     K0 --> K1{i <= n}
-    K1 -- PRAWDA --> K2{i mod 2 = 1}
-    K2 -- PRAWDA --> K3p[j := 2]
+    K1 -- TRUE --> K2{i mod 2 = 1}
+    K2 -- TRUE --> K3p[j := 2]
     K3p --> K3{j <= n}
-    K3 -- PRAWDA --> K4{"A[j] < A[j - 1]"}
-    K4 -- PRAWDA --> K5["Zamień(A[j], A[j - 1])"]
+    K3 -- TRUE --> K4{"A[j] < A[j - 1]"}
+    K4 -- TRUE --> K5["Zamień(A[j], A[j - 1])"]
     K5 --> K3i[j := j + 2]
-    K4 -- FAŁSZ --> K3i
+    K4 -- FALSE --> K3i
     K3i --> K3
-    K3 -- FAŁSZ --> K1i[i := i + 1]
-    K2 -- FAŁSZ --> K7p[j := 1]
+    K3 -- FALSE --> K1i[i := i + 1]
+    K2 -- FALSE --> K7p[j := 1]
     K7p --> K7{j <= n}
-    K7 -- PRAWDA --> K8{"A[j] < A[j - 1]"}
-    K8 -- PRAWDA --> K9["Zamień(A[j], A[j - 1])"]
+    K7 -- TRUE --> K8{"A[j] < A[j - 1]"}
+    K8 -- TRUE --> K9["Zamień(A[j], A[j - 1])"]
     K9 --> K7i[j := j + 2]
-    K8 -- FAŁSZ --> K7i
+    K8 -- FALSE --> K7i
     K7i --> K7
-    K7 -- FAŁSZ --> K1i
+    K7 -- FALSE --> K1i
     K1i --> K1
-    K1 -- FAŁSZ -------> STOP([STOP])
+    K1 -- FALSE -------> STOP([STOP])
 ```
 
-### Złożoność
+### Complexity
 
 Algorytm sortowania nieparzysto-parzystego ma złożoność obliczeniową $O(n^2)$, zarówno w przypadku średnim, jak i najgorszym. Jest to więc algorytm nieefektywny dla dużych zestawów danych.
 
-## Implementacja
+## Implementation
 
 ### [:simple-cplusplus: C++](../../programming/c++/algorithms/sorting/odd-even-sort.md){ .md-button }
 

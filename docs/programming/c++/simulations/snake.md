@@ -68,7 +68,7 @@ int main()
 
 [https://replit.com/@damiankurpiewski/Snake#main.cpp](https://replit.com/@damiankurpiewski/Snake#main.cpp)
 
-### Opis implementacji
+### Description implementacji
 
 TODO
 

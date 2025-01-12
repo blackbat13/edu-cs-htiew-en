@@ -2,7 +2,7 @@
 
 ## [:link: Opis problemu](../../../../algorithms/sorting/bubble-sort.md)
 
-## Implementacja
+## Implementation
 
 ```julia linenums="1"
 function bubbleSort(array)
@@ -28,7 +28,7 @@ bubbleSort(array)
 println(array)
 ```
 
-### Opis implementacji
+### Description implementacji
 
 Zaczynamy od utworzenia funkcji sortującej *bubbleSort* (**linia 1**), która przyjmuje jeden argument: listę elementów do posortowania.
 

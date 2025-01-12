@@ -1,21 +1,21 @@
-# Rozwiązanie 4
+# Solution 4
 
 ## Treść zadania
 
 Napisz program zgodny z poniższą specyfikacją.
 
-### Specyfikacja
+### Specification
 
-#### Dane
+#### Input
 
 * $n$ - liczba naturalna
 * $k$ - liczba naturalna z zakresu $[0,9]$
 
-#### Wynik
+#### Output
 
 * Liczba powstała poprzez zastąpienie każdej cyfry liczby $n$ przez wartość bezwzględną różnicy liczby $k$ i danej cyfry
 
-## Rozwiązanie
+## Solution
 
 ```cpp
 #include <iostream>

@@ -1,6 +1,6 @@
 # C++
 
-## Implementacja
+## Implementation
 
 ```cpp
 #include <iostream>
@@ -59,7 +59,7 @@ int main() {
 }
 ```
 
-## Opis
+## Description
 
 Funkcja `resetuj` wypełnia tablicę `kandydaci` wartościami `true`.
 

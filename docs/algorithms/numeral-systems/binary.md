@@ -6,7 +6,7 @@ System binarny, zwany także systemem dwójkowym, to podstawowy system liczbowy 
 
 Konwersja z systemu dziesiętnego na binarny polega na dzieleniu całkowitym liczby przez $2$ i zapisywaniu reszt z dzielenia tak długo, aż jako wynik dzielenia otrzymamy $0$. Następnie otrzymane reszty z dzielenia odczytujemy od końca i w ten sposób otrzymujemy zapis binarny liczby naturalnej. W celu lepszego zrozumienia opisanej procedury przeanalizujmy poniższy przykład.
 
-### Przykład
+### Example
 
 Chcemy przekonwertować liczbę $25$ na system binarny. Na początku dzielimy więc całkowicie $25$ przez $2$ otrzymując wynik $12$ i reszty $1$. Teraz dzielimy $12$ całkowicie przez $2$ otrzymując wynik $6$ i reszty $0$. Następnie dzielimy $3$ otrzymując wynik $1$ i reszty $1$. Na koniec pozostało nam podzielić $1$ co daje nam wynik $0$ i reszty $1$. Teraz możemy spisać reszty **od końca**: $11001$. W ten sposób otrzymaliśmy zapis binarny liczby $25$. 
 
@@ -29,17 +29,17 @@ $$
 
 Opiszemy teraz bardziej formalnie algorytm konwersji liczb naturalnych z systemu dziesiętnego na binarny. Zacznijmy od specyfikacji.
 
-### Specyfikacja
+### Specification
 
-#### Dane
+#### Input
 
 * $n$ - liczba naturalna.
 
-#### Wynik
+#### Output
 
 * Reprezentacja liczby $n$ w systemie binarnym.
 
-### Pseudokod
+### Pseudocode
 
 ```
 Funkcja DziesietnyNaBinarny(n):
@@ -55,7 +55,7 @@ Funkcja DziesietnyNaBinarny(n):
 
 W systemie binarnym, podobnie jak w innych systemach, do każdej cyfry przypisana jest potęga podstawy systemu: w tym wypadku potęga liczby dwa. Ostatniej cyfrze (tzw. najmniej znaczącemu bitowi) przypisujemy potęgę zerową ($2^0$). Przedostatniej: pierwszą potęgę ($2^1$). Kolejnej: $2^2$ itd. W celu obliczenia wartości liczby binarnej w systemie dziesiętnym, każdą cyfrę przemnażamy przez przypisaną do niej potęgę dwójki i wynik sumujemy, tak jak pokazano na poniższym przykładzie.
 
-### Przykład
+### Example
 
 $$
 11001_2=1*2^4+1*2^3+0*2^2+0*2^1+1*2^0=2^4+2^3+2^0=16+8+1=25_{10}

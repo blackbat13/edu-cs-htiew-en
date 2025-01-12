@@ -1,21 +1,21 @@
-# Rozwiązanie 4
+# Solution 4
 
 ## Treść zadania
 
 Napisz program zgodny z poniższą specyfikacją.
 
-### Specyfikacja
+### Specification
 
-#### Dane
+#### Input
 
 * $n$ - liczba naturalna
 * $t1[n],\ t2[n]$ - dwie listy liczb całkowitych
 
-#### Wynik
+#### Output
 
 * Tablica powstała poprzez dodanie do siebie wartości z list $t1$ i $t2$ 
 
-## Rozwiązanie
+## Solution
 
 ```python
 n = int(input("Podaj liczbę wartości: "))

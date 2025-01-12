@@ -2,7 +2,7 @@
 
 ## [:link: Opis problemu](../../../../algorithms/searching/prefix-sum.md)
 
-## Implementacja
+## Implementation
 
 ```cpp linenums="1"
 #include <iostream>
@@ -41,7 +41,7 @@ int main() {
 }
 ```
 
-### Opis implementacji
+### Description implementacji
 
 #### Funkcja `computePrefixSum`
 

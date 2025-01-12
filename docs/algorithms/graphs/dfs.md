@@ -4,15 +4,15 @@ DFS (*Depth First Search*) to jeden z podstawowych algorytmów przeszukiwania gr
 
 DFS jest często wykorzystywany do rozwiązywania różnego rodzaju problemów, takich jak sprawdzanie czy graf jest **spójny**, szukanie **cykli** czy rozwiązanie problemu **ścieżki Hamiltona**.
 
-## Opis działania algorytmu
+## Description działania algorytmu
 
 DFS zaczyna od wybranego wierzchołka (zwanego wierzchołkiem źródłowym/początkowym) i wykonuje przeszukiwanie możliwie najdalej wzdłuż każdej gałęzi grafu, zanim wróci do poprzedniego wierzchołka i spróbuje przeszukać kolejną ścieżkę. Głównym celem algorytmu jest odwiedzenie każdego wierzchołka grafu dokładnie raz.
 
-## Prezentacja
+## Presentation
 
 [:fontawesome-solid-file-pdf: Przebieg algorytmu DFS - prezentacja](../../assets/DFS – przebieg algorytmu.pdf){ .md-button }
 
-## Pseudokod
+## Pseudocode
 
 ```
 funkcja DFS(G, s):   (G - graf, v - wierzchołek startowy)
@@ -37,11 +37,11 @@ DFS ma wiele zastosowań w praktyce, między innymi:
 - Rozwiązywanie problemów takich jak problem labiryntu, problem ścieżki Hamiltona itp.
 - Tworzenie drzewa rozpinającego dla grafu nieskierowanego.
 
-## Złożoność obliczeniowa
+## Complexity obliczeniowa
 
 Złożoność czasowa algorytmu DFS wynosi $O(V + E)$, gdzie $V$ to liczba wierzchołków, a $E$ to liczba krawędzi, ponieważ każdy wierzchołek i każda krawędź są przeszukiwane dokładnie raz.
 
-## Implementacja
+## Implementation
 
 Algorytm DFS można zaimplementować za pomocą struktury danych **stosu**. Stos jest używany do śledzenia wierzchołków, które są jeszcze do odwiedzenia. Na początku algorytmu wrzucamy na stos wierzchołek startowy. Algorytm kontynuuje przeszukiwanie, zdejmując wierzchołek ze stosu i dodając wszystkie nieodwiedzone jeszcze sąsiadujące wierzchołki na stos. Operacje powtarzamy, aż stos będzie pusty. Zamiast stosu można także skorzystać z rekurencji.
 

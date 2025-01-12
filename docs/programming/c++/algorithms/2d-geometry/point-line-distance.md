@@ -2,7 +2,7 @@
 
 ## [:link: Opis problemu](../../../../algorithms/2d-geometry/point-line-distance.md)
 
-## Implementacja
+## Implementation
 
 ```cpp linenums="1"
 #include <iostream>

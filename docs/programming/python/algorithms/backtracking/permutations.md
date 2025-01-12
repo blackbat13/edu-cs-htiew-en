@@ -2,7 +2,7 @@
 
 ## [:link: Opis problemu](../../../../algorithms/backtracking/permutations.md)
 
-## Implementacja
+## Implementation
 
 ```python linenums="1"
 def permutation(elements, start, stop):

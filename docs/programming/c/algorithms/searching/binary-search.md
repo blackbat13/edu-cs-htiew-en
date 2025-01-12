@@ -4,7 +4,7 @@
 
 ## Wersja iteracyjna
 
-### Implementacja
+### Implementation
 
 ```c linenums="1"
 #include <stdio.h>
@@ -46,7 +46,7 @@ int main() {
 }
 ```
 
-### Opis implementacji
+### Description implementacji
 
 Funkcja `binarySearchIterative` przyjmuje jako argumenty tablicę liczb, jej długość i liczbę do znalezienia. Początkowo ustawia wskaźniki na skrajne elementy tablicy - `left` na początek, `right` na koniec.
 
@@ -60,7 +60,7 @@ Funkcja `main` tworzy tablicę $10$ elementów od $1$ do $10$, następnie wywoł
 
 ## Wersja rekurencyjna
 
-### Implementacja
+### Implementation
 
 ```c linenums="1"
 #include <stdio.h>

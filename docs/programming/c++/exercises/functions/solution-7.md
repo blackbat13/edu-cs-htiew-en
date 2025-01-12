@@ -1,21 +1,21 @@
-# Rozwiązanie 6
+# Solution 6
 
 ## Treść zadania
 
 Napisz program zgodny z poniższą specyfikacją. Wczytywanie tablicy, a także obliczanie każdej ze statystyk zrealizuj za pomocą osobnych funkcji.
 
-### Specyfikacja
+### Specification
 
-#### Dane
+#### Input
 
 * $n$ - liczba naturalna
 * $tab[n]$ - tablica liczb całkowitych
 
-#### Wynik
+#### Output
 
 * Statystyki tablicy $tab$: minimum, maksimum, suma, średnia
 
-## Rozwiązanie
+## Solution
 
 ```cpp
 #include <iostream>

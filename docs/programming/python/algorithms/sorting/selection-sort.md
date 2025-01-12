@@ -2,7 +2,7 @@
 
 ## [:link: Opis problemu](../../../../algorithms/sorting/selection-sort.md)
 
-## Implementacja
+## Implementation
 
 ```python linenums="1"
 def find_min(array: list, begin: int) -> int:
@@ -26,7 +26,7 @@ selection_sort(array)
 print(array)
 ```
 
-### Opis implementacji
+### Description implementacji
 
 Powyższa implementacja składa się z dwóch funkcji: 
 

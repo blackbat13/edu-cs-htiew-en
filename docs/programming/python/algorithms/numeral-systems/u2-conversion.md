@@ -1,6 +1,6 @@
 # Konwersja w systemie U2
 
-## Opis problemu
+## Description problemu
 
 [System U2](../../../../algorithms/numeral-systems/u2.md)
 

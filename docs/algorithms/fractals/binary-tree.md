@@ -2,28 +2,28 @@
 
 Drzewo binarne to rodzaj fraktala, który jest generowany przez rekurencyjne rysowanie dwóch mniejszych gałęzi pod kątem od każdej gałęzi początkowej. Każda z tych gałęzi jest mniejsza od poprzedniej i jest rysowana pod określonym kątem, tworząc strukturę przypominającą drzewo. Proces ten jest powtarzany dla każdej nowej gałęzi, aż do osiągnięcia zadanego stopnia rekurencji. Drzewa binarne są często używane do wizualizacji struktur danych oraz w grafice komputerowej do generowania realistycznych obrazów roślin.
 
-## Specyfikacja
+## Specification
 
-### Dane
+### Input
 
 * $stopień$ - stopień drzewa binarnego
 * $długość$ - początkowa długość gałęzi (pnia)
 
-### Wynik
+### Output
 
 * Drzewo binarne stopnia $stopień$ i początkowej długości $długość$.
 
-## Prezentacja
+## Presentation
 
 [:fontawesome-solid-file-pdf: Drzewo binarne - wprowadzenie](../../assets/Drzewo Binarne (1).pdf){ .md-button }
 
-## Rozwiązanie
+## Solution
 
-### Prezentacja
+### Presentation
 
 [:fontawesome-solid-file-pdf: Drzewo binarne - algorytm](../../assets/Drzewo Binarne - algorytm (1).pdf){ .md-button }
 
-### Pseudokod
+### Pseudocode
 
 ```
 funkcja DrzewoBinarne(stopień, długość):
@@ -37,24 +37,24 @@ funkcja DrzewoBinarne(stopień, długość):
     8. Tył(długość)
 ```
 
-### Schemat blokowy
+### Block diagram
 
 ```mermaid
 %%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
 flowchart TD
 	START(["DrzewoBinarne(stopień, długość)"]) --> K1["Przód(długość)"]
 	K1 --> K2{stopień > 0}
-	K2 -- PRAWDA --> K3["Lewo(45)
+	K2 -- TRUE --> K3["Lewo(45)
     DrzewoBinarne(stopień - 1, długość / 2)
     Prawo(90)
     DrzewoBinarne(stopień - 1, długość / 2)
     Lewo(45)"]
 	K3 --> K8["Tył(długość)"]
-	K2 -- FAŁSZ --> K8
+	K2 -- FALSE --> K8
 	K8 --> STOP([STOP])
 ```
 
-## Implementacja
+## Implementation
 
 ### [:simple-cplusplus: C++](../../programming/c++/algorithms/fractals/binary-tree.md){ .md-button }
 

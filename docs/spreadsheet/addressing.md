@@ -23,7 +23,7 @@ Zakotwiczanie jest używane, gdy potrzebujesz odwołać się do konkretnej komó
 
 Załóżmy, że masz wartość stałą w komórce A1, którą chcesz użyć w serii obliczeń w kolumnie B. Używając adresowania `$A$1` w formule, możesz swobodnie kopiować tę formułę w dół kolumny B, zachowując stałe odwołanie do komórki A1.
 
-## Przykład: tabliczka mnożenia
+## Example: tabliczka mnożenia
 
 W tym przykładzie pokazujemy, jak używać adresowania mieszanego, aby utworzyć tabliczkę mnożenia.
 

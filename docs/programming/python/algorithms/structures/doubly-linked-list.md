@@ -2,7 +2,7 @@
 
 ## [:link: Opis problemu](../../../../algorithms/structures/doubly-linked-list.md)
 
-## Implementacja
+## Implementation
 
 ```python linenums="1"
 class DoublyLinkedList:

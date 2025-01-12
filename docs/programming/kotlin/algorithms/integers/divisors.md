@@ -2,9 +2,9 @@
 
 ## [:link: Opis problemu](../../../../algorithms/integers/divisors.md)
 
-## Rozwiązanie zupełnie naiwne
+## Solution zupełnie naiwne
 
-### Implementacja
+### Implementation
 
 ```kotlin
 fun printDivisors(n: Int) {
@@ -27,13 +27,13 @@ fun main() {
 
 [Wszystkie dzielniki - podejście zupełnie naiwne](https://ideone.com/hfECmZ)
 
-### Opis implementacji
+### Description implementacji
 
 TODO
 
-## Rozwiązanie naiwne
+## Solution naiwne
 
-### Implementacja
+### Implementation
 
 ```kotlin
 fun printDivisors(n: Int) {
@@ -60,13 +60,13 @@ fun main() {
 
 [Wszystkie dzielniki - podejście naiwne](https://ideone.com/iD7tJJ)
 
-### Opis implementacji
+### Description implementacji
 
 TODO
 
-## Rozwiązanie optymalne
+## Solution optymalne
 
-### Implementacja
+### Implementation
 
 ```kotlin
 import kotlin.math.sqrt
@@ -95,6 +95,6 @@ fun main() {
 
 [Wszystkie dzielniki - podejście optymalne](https://ideone.com/m5v9Hi)
 
-### Opis implementacji
+### Description implementacji
 
 TODO

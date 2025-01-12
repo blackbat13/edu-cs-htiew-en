@@ -1,6 +1,6 @@
 # Instrukcja warunkowa
 
-### Przykład
+### Example
 
 ```perl
 #!/usr/bin/perl

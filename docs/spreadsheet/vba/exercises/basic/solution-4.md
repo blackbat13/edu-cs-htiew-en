@@ -1,10 +1,10 @@
-# Rozwiązanie 4
+# Solution 4
 
 ## Treść zadania
 
 Napisz funkcję `IleParzystych` zliczającą ile komórek z podanego zakresu zawiera liczby parzyste.
 
-## Rozwiązanie
+## Solution
 
 ```vb
 Function IleParzystych(zakres As Range) As Integer
@@ -22,7 +22,7 @@ Function IleParzystych(zakres As Range) As Integer
 End Function
 ```
 
-## Opis rozwiązania
+## Description rozwiązania
 
 ### 1. Definicja funkcji
 

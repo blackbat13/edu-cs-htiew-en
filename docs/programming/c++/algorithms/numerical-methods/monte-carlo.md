@@ -2,7 +2,7 @@
 
 ## [:link: Opis problemu](../../../../algorithms/numerical-methods/monte-carlo.md)
 
-## Implementacja
+## Implementation
 
 ```cpp linenums="1"
 #include <iostream>

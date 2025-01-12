@@ -1,10 +1,10 @@
-# Rozwiązanie 2
+# Solution 2
 
 ## Treść zadania
 
 Stwórz przycisk, który po kliknięciu pokoloruje wszystkie komórki w zakresie `A1:A10`, które zawierają wartość poniżej średniej z tego zakresu.
 
-## Rozwiązanie
+## Solution
 
 ```vb
 Sub PonizejSredniej_Click()
@@ -22,7 +22,7 @@ Sub PonizejSredniej_Click()
 End Sub
 ```
 
-## Opis rozwiązania
+## Description rozwiązania
 
 ### 1. Deklarowanie zmiennych
 

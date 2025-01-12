@@ -4,14 +4,14 @@ Czasami jest tak, że potrzebujemy wygenerować liczby pierwsze z zadanego zakre
 
 Idea sita segmentowego jest prosta. Najpierw generujemy odpowiedni zakres liczb pierwszych za pomocą standardowego sita, a następnie używamy ich do eliminacji liczb złożonych na naszym *segmencie*.
 
-## Specyfikacja
+## Specification
 
-### Dane
+### Input
 
 - $a$ - liczba naturalna, początek zakresu
 - $b$ - liczba naturalna, koniec zakresu
 
-### Wynik
+### Output
 
 - Liczby pierwsze z zakresu $<a, b>$
 
@@ -37,7 +37,7 @@ Funkcja SitoSegmentowe(a, b):
     16. Zwróc wynik
 ```
 
-## Implementacja
+## Implementation
 
 ### [:simple-cplusplus: C++](../../programming/c++/algorithms/integers/segment-sieve.md){ .md-button }
 

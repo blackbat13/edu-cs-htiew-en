@@ -1,4 +1,4 @@
-# Rozwiązanie 1
+# Solution 1
 
 ## Stos 1
 
@@ -83,6 +83,6 @@
     e1["-10"]
 ```
 
-## Wynik
+## Output
 
 $-10$

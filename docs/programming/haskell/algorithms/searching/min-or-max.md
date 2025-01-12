@@ -4,7 +4,7 @@
 
 ## Wyszukiwanie wartości minimum i maksimum
 
-### Implementacja
+### Implementation
 
 ```haskell linenums="1"
 findMin [element] = element
@@ -23,7 +23,7 @@ main = do
   putStrLn $ "Max: " ++ show maxValue
 ```
 
-### Opis implementacji
+### Description implementacji
 
 Obie funkcje działają na podobnym mechanizmie, ale z różnym celem: `findMin` szuka najmniejszej wartości, a `findMax` największej. W przypadku, gdy lista zawiera tylko jeden element, funkcja zwraca ten element, ponieważ nie ma z czym go porównywać. Jednak gdy lista ma więcej elementów, funkcje wykorzystują podejście rekurencyjne. Porównują pierwszy element listy z wynikiem, który otrzymują, wywołując się rekurencyjnie na pozostałej części listy. Dla `findMin`, wybierają mniejszą wartość, natomiast dla `findMax` - większą.
 

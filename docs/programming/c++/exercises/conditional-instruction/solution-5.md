@@ -1,20 +1,20 @@
-# Rozwiązanie 5
+# Solution 5
 
 ## Treść zadania
 
 Napisz program zgodny z poniższą specyfikacją. Nie korzystaj z funkcji **min, max**.
 
-### Specyfikacja
+### Specification
 
-#### Dane
+#### Input
 
 * $a, b, c, d$ - cztery liczby całkowite
 
-#### Wynik
+#### Output
 
 * Największa z liczb $a, b, c$ i $d$, lub dowolna gdy są sobie równe
 
-## Rozwiązanie
+## Solution
 
 ```cpp
 #include <iostream>

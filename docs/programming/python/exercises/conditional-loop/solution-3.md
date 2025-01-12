@@ -1,20 +1,20 @@
-# Rozwiązanie 3
+# Solution 3
 
 ## Treść zadania
 
 Napisz program zgodny z poniższą specyfikacją.
 
-### Specyfikacja
+### Specification
 
-#### Dane
+#### Input
 
 * $n$ - liczba naturalna
 
-#### Wynik
+#### Output
 
 * Liczba powstała poprzez odwrócenie cyfr liczby $n$
 
-## Rozwiązanie
+## Solution
 
 ```python
 n = int(input("Podaj liczbę naturalną: "))

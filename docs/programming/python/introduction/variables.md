@@ -42,7 +42,7 @@ widok_pamieci: memoryview = memoryview(bytes(10))
 
 W celu sprawdzenia, jaki typ ma dana zmienna, możemy skorzystać z funkcji *type*.
 
-### Przykład
+### Example
 
 ```python
 value = 10

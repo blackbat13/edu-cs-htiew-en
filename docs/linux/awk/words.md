@@ -1,6 +1,6 @@
 # Wyrazy
 
-### Przykład 1
+### Example 1
 
 ```awk
 #!/usr/bin/awk -f
@@ -12,7 +12,7 @@
 }
 ```
 
-### Przykład 2
+### Example 2
 
 ```awk
 #!/usr/bin/awk -f
@@ -24,7 +24,7 @@
 }
 ```
 
-### Przykład 3
+### Example 3
 
 ```awk
 #!/usr/bin/awk -f
@@ -36,7 +36,7 @@
 }
 ```
 
-### Przykład 4
+### Example 4
 
 ```awk
 #!/usr/bin/awk -f
@@ -54,7 +54,7 @@ OFS=":"
 }
 ```
 
-### Przykład 5
+### Example 5
 
 ```awk
 #!/usr/bin/awk -f

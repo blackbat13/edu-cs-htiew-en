@@ -2,7 +2,7 @@
 description: XVI OIJ, etap II, sesja próbna
 ---
 
-# Wynik meczu
+# Output meczu
 
 ## Treść zadania
 

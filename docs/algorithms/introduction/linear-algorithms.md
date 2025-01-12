@@ -1,60 +1,60 @@
-# Algorytmy liniowe
+# Linear algorithms
 
-Czym jest algorytm? Instrukcja, przepis, schemat postępowania... Algorytm opisuje rozwiązanie pewnego problemu. Istnieje wiele rodzajów algorytmów, a my zaczniemy od najprostszego z nich - algorytmów liniowych.
+What is an algorithm? An instruction, a recipe, a procedure scheme... An algorithm describes the solution to a certain problem. There are many types of algorithms, and we will start with the simplest of them - linear algorithms.
 
-## Algorytm liniowy
+## Linear algorithm
 
-Algorytm liniowy to sekwencyjna instrukcja, której kroki wykonujemy jeden po drugim, linijka po linijce, operacja po operacji.
+A linear algorithm is a sequential instruction whose steps are executed one by one, line by line, operation by operation.
 
-W trakcie konstruowania algorytmu pojawia się szereg pytań. Jak bardzo szczegółowy powinien być algorytm? Jakie operacje musimy w nim zawrzeć, a które możemy pominąć? Jakie operacje są dostępne? W jakiej formie powinniśmy przedstawić nasz algorytm? To tylko część z ważnych kwestii, które należy rozważyć.
+When constructing an algorithm, a number of questions arise. How detailed should the algorithm be? What operations must we include in it, and which ones can we omit? What operations are available? In what form should we present our algorithm? These are just some of the important issues to consider.
 
-Rozważmy poniższy przykład.
+Consider the following example.
 
-### Przykład 1
+### Example 1
 
-Wyobraźmy sobie, że mamy przygotować kanapkę z dżemem. To jest nasz problem. Dla tego problemu, zaproponujemy przykładowe rozwiązanie w postaci **algorytmu**.
-
-```
-1. Weź kromkę chleba
-2. Weź masło
-3. Weź dżem
-4. Weź nóż
-5. Posmaruj chleb masłem
-6. Posmaruj chleb dżemem
-```
-
-Jak widać, powyższy przykład jest algorytmem przygotowania kanapki z dżemem. Zastanówmy się jednak nad jego poprawnością i dokładnością. Czy wszystkie niezbędne operacje zostały uwzględnione? Czy może któreś z nich można pominąć? Czy powinniśmy dodać instrukcję odkręcenia słoika? A może otwarcie lodówki, żeby wyciągnąć dżem, a potem zamknięcie jej? Co jeśli nie ma dżemu i trzeba iść do sklepu? A jeśli jest niedziela i sklepy są zamknięte? A jeśli...
-
-Takie rozważania możemy kontynuować w nieskończoność, ale musimy ustalić pewne granice.
-
-## Specyfikacja problemu
-
-Przede wszystkim zaczynamy od **specyfikacji**. Specyfikacja określa, jakie dane wejściowe przyjmuje algorytm i co powinno być jego wynikiem. Innymi słowy, jest to formalne zdefiniowanie problemu. Wróćmy do naszego przykładu.
-
-### Przykład 2
-
-Zacznijmy od sformalizowania naszego problemu przygotowania kanapki z dżemem za pomocą specyfikacji.
-
-#### Specyfikacja
-
-**Dane**:
-
-* Kromka chleba
-* Masło
-* Dżem
-
-**Wynik**:
-
-* Kanapka z dżemem
-
-Teraz możemy przejść do algorytmu. Jak widać, mamy trzy dane wejściowe: kromkę chleba, masło oraz dżem. Nie musimy więc martwić się o przygotowanie tych składników. Zazwyczaj w zapisie algorytmu pomijamy etap wczytywania danych, co oznacza, że w tym przypadku opuszczamy instrukcje opisujące wzięcie chleba, masła i dżemu. Po prostu zakładamy, zgodnie ze specyfikacją, że te elementy są nam już dane i dostępne dla naszego algorytmu.
-
-#### Algorytm
+Imagine that we have to prepare a jam sandwich. This is our problem. For this problem, we will propose an example solution in the form of **algorithm**.
 
 ```
-1. Weź nóż
-2. Posmaruj chleb masłem
-3. Posmaruj chleb dżemem
+1. Take a slice of bread
+2. Take butter
+3. Take the jam
+4. Take a knife
+5. Spread butter on the bread
+6. Spread the bread with jam
 ```
 
-W tym przypadku ograniczyliśmy się do pewnego zbioru operacji i do pewnego poziomu szczegółowości. Gdy przejdziemy do bardziej technicznych algorytmów, stanie się jasne, które operacje możemy wykonywać, a które nie.
+As you can see, the above example is an algorithm for preparing a jam sandwich. However, let's consider its correctness and accuracy. Have all the necessary operations been included? Or can any of them be omitted? Should we add instructions for unscrewing the jar? How about opening the refrigerator to take out the jam and then closing it? What if there is no jam and you have to go to the store? What if it's Sunday and the stores are closed? What if...
+
+We can continue such considerations indefinitely, but we need to set some limits.
+
+## Problem specification
+
+First of all, we start with **specification**. Specification defines what input the algorithm takes and what the result should be. In other words, it is a formal definition of the problem. Let's go back to our example.
+
+### Example 2
+
+Let's start by formalizing our problem of preparing a jam sandwich with specifications.
+
+#### Specification
+
+**Input**:
+
+* A slice of bread.
+* Butter.
+* Jam.
+
+**Output**:
+
+* Jam sandwich
+
+Now we can move on to the algorithm. As you can see, we have three inputs: a slice of bread, butter and jam. So we don't have to worry about preparing these ingredients. Usually, in the writing of the algorithm, we skip the stage of loading the data, which means that in this case we leave out the instructions describing the taking of the bread, butter and jam. We simply assume, according to the specification, that these items are already given to us and available to our algorithm.
+
+#### Algorithm
+
+```
+1. Take a knife
+2. Spread butter on the bread
+3. Spread the bread with jam
+```
+
+In this case, we have limited ourselves to a certain set of operations and to a certain level of detail. When we move on to more technical algorithms, it will become clear which operations we can perform and which we cannot.

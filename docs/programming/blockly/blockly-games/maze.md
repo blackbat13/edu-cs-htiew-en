@@ -1,6 +1,6 @@
 # Labirynt
 
-## Prezentacja rozwiązań
+## Presentation rozwiązań
 
 [:fontawesome-solid-file-pdf: Blockly Labirynt - rozwiązania zadań](../../../assets/Blockly Labirynt - rozwiązania.pdf)
 

@@ -2,7 +2,7 @@
 
 ## [:link: Opis problemu](../../../../algorithms/sorting/bubble-sort.md)
 
-## Implementacja
+## Implementation
 
 ```kotlin linenums="1"
 fun bubbleSort(array: MutableList<Int>) {
@@ -32,7 +32,7 @@ fun main() {
 }
 ```
 
-### Opis implementacji
+### Description implementacji
 
 Zaczynamy od utworzenia funkcji sortującej *bubbleSort* (**linia 1**), która przyjmuje jeden argument: listę elementów do posortowania. Przekazywana lista jest typu *MutableList*, ponieważ będziemy modyfikować jej elementy.
 

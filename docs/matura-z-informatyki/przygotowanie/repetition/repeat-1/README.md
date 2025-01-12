@@ -93,7 +93,7 @@ Jasiu ma małe dłonie i zastanawia się, czy zdoła utrzymać wszystkie karty w
 - $n$ - liczba naturalna, liczba kart na stole, $n>0$
 - $karty[1..n]$ - tablica liczb naturalnych, kolejne liczby to kolory kart na stole, tablica jest indeksowana od jedynki
   
-**Wynik**:
+**Output**:
 
 - $maks\_kart$ - liczba naturalna, maksymalna liczba kart, które Jasiu będzie musiał trzymać w lewej ręce w dowolnym momencie wykonywania swojej gry.
 

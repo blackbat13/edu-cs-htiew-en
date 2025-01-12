@@ -99,7 +99,7 @@ Dla każdego artysty wypisz wszystkie gatunki, w których opublikował on albumy
 
 Wypisz wszystkie albumy zespołu *Black Sabbath*.
 
-### Wynik
+### Output
 
 | Title                           |
 |---------------------------------|

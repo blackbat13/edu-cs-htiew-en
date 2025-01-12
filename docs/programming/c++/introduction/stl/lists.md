@@ -1,6 +1,6 @@
 # Listy
 
-## Opis
+## Description
 
 Listy dwukierunkowe pozwalają na szybkie (efektywne) wykonywanie takich operacji jak: usunięcie elementu z zadanej pozycji, dodanie elementu na zadaną pozycję.
 

@@ -1,21 +1,21 @@
-# Rozwiązanie 4
+# Solution 4
 
 ## Treść zadania
 
 Napisz program zgodny z poniższą specyfikacją. Wczytywanie tablicy oraz wypisywanie tablicy na ekranie zrealizuj za pomocą osobnych funkcji.
 
-### Specyfikacja
+### Specification
 
-#### Dane
+#### Input
 
 * $n$ - liczba naturalna
 * $tab[n]$ - tablica liczb całkowitych
 
-#### Wynik
+#### Output
 
 * Wczytana tablica wypisana na ekranie w jednej linii, każdy element oddzielony spacją
 
-## Rozwiązanie
+## Solution
 
 ```cpp
 #include <iostream>

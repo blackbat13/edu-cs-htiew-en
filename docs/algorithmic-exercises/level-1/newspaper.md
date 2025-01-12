@@ -6,21 +6,21 @@ Twoje zadanie polega na obliczeniu, ile wyniesie opłata za określone ogłoszen
 
 Źródło: [https://onlinejudge.org/external/113/11340.pdf](https://onlinejudge.org/external/113/11340.pdf)
 
-## Specyfikacja
+## Specification
 
-### Dane
+### Input
 
 * $n$ - liczba znaków
 * $(z_1, c_1), (z_2, c_2), ..., (z_n, c_n)$ - cennik: pary znak oraz cena znaku, podana w groszach
 * $wyraz$ - ciąg znaków, małych i/lub wielkich liter alfabetu angielskiego, bez spacji i innych białych znaków
 
-### Wynik
+### Output
 
 * Opłata za $wyraz$, podana w złotówkach, wedle nowego cennika. Zakładamy, że każdy znak z wyrazu pojawi się w cenniku.
 
-## Przykład
+## Example
 
-### Dane
+### Input
 
 ```
 6
@@ -33,7 +33,7 @@ t 1
 alamakota
 ```
 
-### Wynik
+### Output
 
 ```
 1.36

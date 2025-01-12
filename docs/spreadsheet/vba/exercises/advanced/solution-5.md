@@ -1,10 +1,10 @@
-# Rozwiązanie 5
+# Solution 5
 
 ## Treść zadania
 
 Napisz funkcję `ZliczWyrazy`, która dla podanego tekstu zwróci liczbę wyrazów w nim zawartych. Za wyraz uznajemy ciąg znaków nie zawierający spacji, a wyrazy są oddzielone pojedynczą spacją.
 
-## Rozwiązanie
+## Solution
 
 ```vb
 Function ZliczWyrazy(tekst As String) As Integer
@@ -26,7 +26,7 @@ Function ZliczWyrazy(tekst As String) As Integer
 End Function
 ```
 
-## Opis rozwiązania
+## Description rozwiązania
 
 ### 1. Definicja funkcji
 

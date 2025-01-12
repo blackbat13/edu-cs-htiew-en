@@ -1,21 +1,21 @@
-# Rozwiązanie 3
+# Solution 3
 
 ## Treść zadania
 
 Napisz program zgodny z poniższą specyfikacją.
 
-### Specyfikacja
+### Specification
 
-#### Dane
+#### Input
 
 * $n$ - liczba naturalna
 * $n$ liczb całkowitych
 
-#### Wynik
+#### Output
 
 * Suma podanych $n$ liczb
 
-## Rozwiązanie
+## Solution
 
 ```python
 n = int(input("Podaj liczbę wartości: "))

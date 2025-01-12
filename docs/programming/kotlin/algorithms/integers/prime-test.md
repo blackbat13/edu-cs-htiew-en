@@ -2,7 +2,7 @@
 
 ## [:link: Opis problemu](../../../../algorithms/integers/prime-test.md)
 
-## Implementacja
+## Implementation
 
 ```kotlin
 import kotlin.math.sqrt
@@ -38,6 +38,6 @@ fun main() {
 
 [Test pierwszości](https://ideone.com/eVaqy4)
 
-### Opis implementacji
+### Description implementacji
 
 TODO

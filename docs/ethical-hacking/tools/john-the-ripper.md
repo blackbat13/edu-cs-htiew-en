@@ -4,7 +4,7 @@ John the Ripper, zwany również **JtR**, to jedno z najpopularniejszych narzęd
 
 [John the Ripper](https://www.openwall.com/john/)
 
-## Przykłady użycia
+## Exampley użycia
 
 ### Atak słownikowy
 

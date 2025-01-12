@@ -12,7 +12,7 @@ Poniżej znajdziesz animację przedstawiającą ideę omawianego algorytmu.
 
 [Animacja sortowania gnoma](https://www.youtube.com/watch?v=EdcWAw4Hcu0){ .md-button }
 
-## Rozwiązanie
+## Solution
 
 Zauważmy, że gnom ma do dyspozycji następujące operacje: 
 
@@ -23,7 +23,7 @@ Zauważmy, że gnom ma do dyspozycji następujące operacje:
 
 Gnom zaczyna swoją podróż od lewej strony, czyli od pierwszej doniczki, czy też od pierwszego elementu. Ponieważ może wyłącznie porównywać obecny element z poprzednim, to gdy znajduje się na samym początku nie ma wielkiego wyboru i musi pójść w prawo. Podobnie postępuje, gdy zauważy, że dwie sąsiednie doniczki są ułożone we właściwym porządku: przemieszcza się w prawo. Kiedy w takim razie gnom powinien pójść w lewo? Gdy napotka dwie sąsiednie doniczki, które są ułożone w złej kolejności. Wówczas zamienia je miejscami i idzie w lewo. I to wszystko powtarzamy tak długo, aż gnom wyjdzie poza rząd doniczek, czyli aż jego pozycja będzie większa od liczby elementów ($n$).
 
-### Pseudokod
+### Pseudocode
 
 ```
 procedura SortowanieGnoma(n, A):
@@ -36,31 +36,31 @@ procedura SortowanieGnoma(n, A):
             7. i := i - 1
 ```
 
-### Schemat blokowy
+### Block diagram
 
 ```mermaid
 %%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
 flowchart TD
     START(["SortowanieGnoma(n, A)"]) --> K1[i := 1]
     K1 --> K2{i <= n}
-    K2 -- PRAWDA --> K3{"i = 1
+    K2 -- TRUE --> K3{"i = 1
     lub
     A[i] >= A[i - 1]"}
-    K3 -- PRAWDA --> K4[i := i + 1]
+    K3 -- TRUE --> K4[i := i + 1]
     K4 --> K2
-    K3 -- FAŁSZ --> K6["Zamień(A[i], A[i - 1])
+    K3 -- FALSE --> K6["Zamień(A[i], A[i - 1])
     i := i - 1"]
     K6 --> K2
-    K2 -- FAŁSZ ---> STOP([STOP])
+    K2 -- FALSE ---> STOP([STOP])
 ```
 
-### Złożoność
+### Complexity
 
 $O(n^2)$ — kwadratowa
 
 Prześledzenie złożoności algorytmu sortowania gnoma może wydawać się nietrywialne, zauważmy jednak, że algorytm ten jest bardzo podobny do algorytmu sortowania przez wstawianie. Tak właściwie od wspomnianego algorytmu różni się jedynie dodatkowym "poruszaniem się w prawo", nie może mieć więc złożoności lepszej, niż tamten algorytm.
 
-## Implementacja
+## Implementation
 
 ### [:simple-cplusplus: C++](../../programming/c++/algorithms/sorting/gnome-sort.md){ .md-button }
 

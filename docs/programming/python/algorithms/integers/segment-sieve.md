@@ -2,7 +2,7 @@
 
 ## [:link: Opis problemu](../../../../algorithms/integers/segment-sieve.md)
 
-## Implementacja
+## Implementation
 
 ```python linenums="1"
 import math

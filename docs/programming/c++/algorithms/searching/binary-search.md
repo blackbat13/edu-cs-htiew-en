@@ -4,7 +4,7 @@
 
 ## Wersja iteracyjna
 
-### Implementacja
+### Implementation
 
 ```cpp linenums="1"
 #include <iostream>
@@ -48,7 +48,7 @@ int main() {
 }
 ```
 
-### Opis implementacji
+### Description implementacji
 
 Funkcja `binarySearchIterative` przyjmuje jako argumenty tablicę liczb, jej długość i liczbę do znalezienia. Początkowo ustawia wskaźniki na skrajne elementy tablicy - `left` na początek, `right` na koniec.
 
@@ -62,7 +62,7 @@ Funkcja `main` tworzy tablicę $10$ elementów od $1$ do $10$, następnie wywoł
 
 ## Wersja rekurencyjna
 
-### Implementacja
+### Implementation
 
 ```cpp linenums="1"
 #include <iostream>
@@ -102,7 +102,7 @@ int main() {
 }
 ```
 
-### Opis implementacji
+### Description implementacji
 
 Funkcja `binarySearchRecursive` przyjmuje cztery argumenty: tablicę `array[]`, liczbę `number`, którą chcemy znaleźć, oraz lewy `left` i prawy `right` indeks określający zakres wyszukiwania. Oto, jak działa ta funkcja:
 

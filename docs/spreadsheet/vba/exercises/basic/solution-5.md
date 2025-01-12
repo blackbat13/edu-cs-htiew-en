@@ -1,21 +1,21 @@
-# Rozwiązanie 5
+# Solution 5
 
 ## Treść zadania
 
 Napisz funkcję `NWW` zgodną z poniższą specyfikacją.
 
-### Specyfikacja
+### Specification
 
-#### Dane
+#### Input
 
 * $a$ - liczba naturalna
 * $b$ - liczba naturalna
 
-#### Wynik
+#### Output
 
 * Najmniejsza wspólna wielokrotność liczb $a$ i $b$.
 
-## Rozwiązanie
+## Solution
 
 ```vb
 Function NWW(a As Integer, b As Integer) As Integer
@@ -37,7 +37,7 @@ Function NWW(a As Integer, b As Integer) As Integer
 End Function
 ```
 
-## Opis rozwiązania
+## Description rozwiązania
 
 ### 1. Definicja funkcji
 

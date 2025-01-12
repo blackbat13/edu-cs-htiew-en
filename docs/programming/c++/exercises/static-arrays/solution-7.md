@@ -1,23 +1,23 @@
-# Rozwiązanie 7
+# Solution 7
 
 ## Treść zadania
 
 Napisz program zgodny z poniższą specyfikacją.
 
-### Specyfikacja
+### Specification
 
-#### Dane
+#### Input
 
 * $n$ - liczba naturalna
 * $tab[n]$ - tablica liczb całkowitych
 
-#### Wynik
+#### Output
 
 * Komunikat "niemalejaco" jeżeli elementy tablicy posortowane są niemalejąco
 * Komunikat "nierosnaco" jeżeli elementy tablicy posortowane są nierosnąco
 * Komunikat "nieposortowane" jeżeli elementy tablicy nie są posortowane
 
-## Rozwiązanie
+## Solution
 
 ```cpp
 #include <iostream>

@@ -14,6 +14,6 @@
 8. Wypisz 0
 ```
 
-## Wynik
+## Output
 
 $0$ 

@@ -2,7 +2,7 @@
 
 ## [:link: Opis problemu](../../../../algorithms/sorting/odd-even-sort.md)
 
-## Implementacja
+## Implementation
 
 ```kotlin
 fun oddEvenSort(array: MutableList<Int>) {

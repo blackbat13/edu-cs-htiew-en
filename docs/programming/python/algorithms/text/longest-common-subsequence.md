@@ -2,7 +2,7 @@
 
 ## [:link: Opis problemu](../../../../algorithms/text/longest-common-subsequence.md)
 
-## Implementacja
+## Implementation
 
 ```python linenums="1"
 def longest_common_subsequence(a: str, b: str) -> str:

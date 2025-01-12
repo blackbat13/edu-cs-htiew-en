@@ -4,7 +4,7 @@
 
 ## Metoda prostokątów
 
-### Implementacja
+### Implementation
 
 ```cpp linenums="1"
 #include <iostream>
@@ -43,7 +43,7 @@ int main() {
 }
 ```
 
-### Opis implementacji
+### Description implementacji
 
 Funkcja `f` (**linia 5**) przyjmuje jeden parametr rzeczywisty i jako wynik zwraca liczbę rzeczywistą. Funkcja ta symuluje funkcję matematyczną, której pole pod wykresem chcemy policzyć. 
 
@@ -53,7 +53,7 @@ W części głównej programu przygotowujemy dane do naszego algorytmu: począte
 
 ## Metoda trapezów
 
-### Implementacja
+### Implementation
 
 ```cpp linenums="1"
 #include <iostream>
@@ -93,7 +93,7 @@ int main() {
 }
 ```
 
-### Opis implementacji
+### Description implementacji
 
 Funkcja `f` (**linia 5**) przyjmuje jeden parametr rzeczywisty i jako wynik zwraca liczbę rzeczywistą. Funkcja ta symuluje funkcję matematyczną, której pole pod wykresem chcemy policzyć. 
 

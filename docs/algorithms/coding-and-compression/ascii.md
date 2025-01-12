@@ -271,7 +271,7 @@ ASCII, czyli American Standard Code for Information Interchange, to standard kod
 |   254  |   ■  |                               Black Square                              |
 |   255  |      |                         Non-Breaking Space, NBSP                        |
 
-## Implementacja
+## Implementation
 
 ### [:simple-cplusplus: C++](../../programming/c++/algorithms/coding-and-compression/ascii.md){ .md-button }
 

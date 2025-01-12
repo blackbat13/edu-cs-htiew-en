@@ -1,20 +1,20 @@
-# Rozwiązanie 8
+# Solution 8
 
 ## Treść zadania
 
 Napisz funkcję `ZWielkiej` zgodną z poniższą specyfikacją.
 
-### Specyfikacja
+### Specification
 
-#### Dane
+#### Input
 
 * $wyraz$ - ciąg znaków
 
-#### Wynik
+#### Output
 
 * Podany wyraz, w którym pierwsza litera jest wielka.
 
-## Rozwiązanie
+## Solution
 
 ```vb
 Function ZWielkiej(wyraz As String) As String
@@ -29,7 +29,7 @@ Function ZWielkiej(wyraz As String) As String
 End Function
 ```
 
-## Opis rozwiązania
+## Description rozwiązania
 
 ### 1. Definicja funkcji
 

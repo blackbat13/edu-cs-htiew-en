@@ -2,7 +2,7 @@
 
 ## [:link: Opis problemu](../../../../algorithms/graphs/topological-sort.md)
 
-## Implementacja
+## Implementation
 
 ```python linenums="1"
 def topological_sort(graph: list) -> list:

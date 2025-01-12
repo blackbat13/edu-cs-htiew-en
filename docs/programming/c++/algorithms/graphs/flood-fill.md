@@ -2,7 +2,7 @@
 
 ## [:link: Opis problemu](../../../../algorithms/graphs/flood-fill.md)
 
-## Implementacja
+## Implementation
 
 ```cpp linenums="1"
 #include <iostream>

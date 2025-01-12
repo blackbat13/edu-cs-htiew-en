@@ -10,7 +10,7 @@ Sortowanie wolne (ang. *Slowsort*) to jeden z humorystycznych i niepraktycznych 
 
 [Animacja sortowania wolnego](https://www.youtube.com/watch?v=QbRoyhGdjnA){ .md-button }
 
-## Pseudokod
+## Pseudocode
 
 ```
 procedura SortowanieWolne(A, pocz, kon):
@@ -27,7 +27,7 @@ procedura SortowanieWolne(A, pocz, kon):
     8. SortowanieWolne(A, pocz, kon - 1)
 ```
 
-## Implementacja
+## Implementation
 
 ### [:simple-cplusplus: C++](../../programming/c++/algorithms/sorting/slow-sort.md){ .md-button }
 

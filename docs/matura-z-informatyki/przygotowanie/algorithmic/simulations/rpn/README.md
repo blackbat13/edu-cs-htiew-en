@@ -1,6 +1,6 @@
 # Odwrotna notacja polska
 
-## Opis algorytmu
+## Description algorytmu
 
 [rpn.md](../../../../../algorithms/text/rpn.md)
 

@@ -6,7 +6,7 @@ description: Najkrótsze ścieżki z zadanego wierzchołka
 
 ## [:link: Opis problemu](../../../../algorithms/graphs/dijkstra.md)
 
-## Implementacja
+## Implementation
 
 ```python linenums="1"
 from math import inf

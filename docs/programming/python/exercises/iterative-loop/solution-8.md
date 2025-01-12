@@ -1,20 +1,20 @@
-# Rozwiązanie 8
+# Solution 8
 
 ## Treść zadania
 
 Napisz program zgodny z poniższą specyfikacją.
 
-### Specyfikacja
+### Specification
 
-#### Dane
+#### Input
 
 * $n$ - liczba naturalna
 
-#### Wynik
+#### Output
 
 * Wszystkie trójki liczb naturalnych, których suma wynosi $n$
 
-## Rozwiązanie
+## Solution
 
 ```python
 n = int(input("Podaj liczbę naturalną: "))

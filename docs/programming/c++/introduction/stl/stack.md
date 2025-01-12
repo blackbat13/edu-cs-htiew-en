@@ -1,6 +1,6 @@
 # Stos
 
-## Opis
+## Description
 
 Stos to jedna z klasycznych struktur danych. 
 Wykorzystywana jest w wielu algorytmach, nic dziwnego więc, że jej implementacja znajduje się także w STL.
@@ -17,7 +17,7 @@ Stos znajduje się w bibliotece `stack`.
 
 [Stack Reference](https://www.cplusplus.com/reference/stack/stack/)
 
-## Implementacja: przykłady
+## Implementation: przykłady
 
 Kilka przykładów pokazujących, jak korzystać z klasy `stack`.
 
@@ -69,7 +69,7 @@ if (st.empty()) {
 }
 ```
 
-## Przykładowa implementacja
+## Exampleowa implementacja
 
 ```cpp
 #include <iostream>

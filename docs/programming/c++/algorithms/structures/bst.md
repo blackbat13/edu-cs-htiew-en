@@ -6,7 +6,7 @@ description: BST
 
 ## [:link: Opis problemu](../../../../algorithms/structures/bst.md)
 
-## Implementacja
+## Implementation
 
 ```cpp linenums="1"
 #include <iostream>
@@ -128,7 +128,7 @@ int main() {
 }
 ```
 
-### Opis implementacji
+### Description implementacji
 
 #### Klasa `BST`
 
@@ -187,7 +187,7 @@ Wywołuje metodę `clear`, aby usunąć wszystkie węzły i zwolnić pamięć pr
 - Wypisuje wartości drzewa w trzech różnych porządkach: inorder, preorder i postorder.
 
 
-#### Przykładowe drzewo wykorzystane w implementacji
+#### Exampleowe drzewo wykorzystane w implementacji
 
 ![Przykładowe drzewo wykorzystane w implementacji](<../../../../assets/image (10).png>)
 

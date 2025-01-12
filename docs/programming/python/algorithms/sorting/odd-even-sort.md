@@ -2,7 +2,7 @@
 
 ## [:link: Opis problemu](../../../../algorithms/sorting/odd-even-sort.md)
 
-## Implementacja
+## Implementation
 
 ```python linenums="1"
 def odd_even_sort(array: list):

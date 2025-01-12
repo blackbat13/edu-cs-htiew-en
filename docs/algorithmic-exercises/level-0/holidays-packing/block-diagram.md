@@ -9,8 +9,8 @@ flowchart TD
     b <= 20
     oraz
     c <= 20"}
-    K2 -- PRAWDA --> K3[/Wypisz 'TAK'/]
-    K2 -- FAŁSZ --> K5[/Wypisz 'NIE'/]
+    K2 -- TRUE --> K3[/Wypisz 'TAK'/]
+    K2 -- FALSE --> K5[/Wypisz 'NIE'/]
     K3 --> STOP([STOP])
     K5 --> STOP
 ```

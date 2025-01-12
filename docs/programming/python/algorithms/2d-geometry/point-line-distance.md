@@ -2,7 +2,7 @@
 
 ## [:link: Opis problemu](../../../../algorithms/2d-geometry/point-line-distance.md)
 
-## Implementacja
+## Implementation
 
 ```python linenums="1"
 from math import abs, sqrt
@@ -22,7 +22,7 @@ distance = point_line_distance(line_point1, line_point2, point)
 print(distance)
 ```
 
-### Opis implementacji
+### Description implementacji
 
 Funkcja `point_line_distance` przyjmuje jako argumenty współrzędne dwóch punktów (`line_point1`, `line_point2`) określających prostą oraz współrzędne punktu (`point`), dla którego obliczana jest odległość. Na początku obliczane są różnice między współrzędnymi drugiego punktu a pierwszego punktu prostej. Wartość `a` to różnica współrzędnymi $y$, a `b` to różnica pomiędzy współrzędnymi $x$.
 

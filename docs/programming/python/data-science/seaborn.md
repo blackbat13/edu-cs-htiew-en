@@ -18,7 +18,7 @@ Zobaczmy, jak łatwo stworzyć atrakcyjny wykres za pomocą `seaborn`:
 import seaborn as sns
 import matplotlib.pyplot as plt
 
-# Przykładowe dane
+# Exampleowe dane
 tips = sns.load_dataset("tips")
 
 # Wykres skrzynkowy

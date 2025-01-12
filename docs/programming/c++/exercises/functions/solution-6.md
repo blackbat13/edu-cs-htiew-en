@@ -1,22 +1,22 @@
-# Rozwiązanie 6
+# Solution 6
 
 ## Treść zadania
 
 Napisz program zgodny z poniższą specyfikacją. Wczytywanie tablicy, przemnażanie tablicy oraz wypisywanie tablicy na ekranie zrealizuj za pomocą osobnych funkcji.
 
-### Specyfikacja
+### Specification
 
-#### Dane
+#### Input
 
 * $n$ - liczba naturalna
 * $k$ - liczba całkowita
 * $tab[n]$ - tablica liczb całkowitych
 
-#### Wynik
+#### Output
 
 * Tablica powstała poprzez przemnożenie każdego elementu tablicy $tab$ przez liczbę $k$ 
 
-## Rozwiązanie
+## Solution
 
 ```cpp
 #include <iostream>

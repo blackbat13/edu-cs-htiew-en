@@ -2,7 +2,7 @@
 
 ## [:link: Opis problemu](../../../../algorithms/text/hamming-distance.md)
 
-## Implementacja
+## Implementation
 
 ```cpp linenums="1"
 #include <iostream>

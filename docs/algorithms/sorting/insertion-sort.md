@@ -20,11 +20,11 @@ Poniżej znajdziesz animacje przedstawiające ideę omawianego algorytmu.
 
 [:material-video: Taneczne sortowanie](https://www.youtube.com/watch?v=ROalU379l3U){ .md-button }
 
-## Rozwiązanie
+## Solution
 
 Zaczynamy od drugiego elementu tablicy. Będziemy go przesuwać w lewo tak długo, aż nie trafi na swoje miejsce. Innymi słowy będziemy przesuwać go w lewo, dopóki nie trafi na początek tablicy i dopóki element po jego lewej stronie będzie większy. I tak postępujemy z każdym kolejnym elementem tablicy.
 
-### Pseudokod
+### Pseudocode
 
 ```
 procedura SortowaniePrzezWstawianie(n, A):
@@ -35,32 +35,32 @@ procedura SortowaniePrzezWstawianie(n, A):
             5. j := j - 1
 ```
 
-### Schemat blokowy
+### Block diagram
 
 ```mermaid
 %%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
 flowchart TD
     START(["SortowaniePrzezWstawianie(n, A)"]) --> K0[i := 2]
     K0 --> K1{i <= n}
-    K1 -- PRAWDA --> K2[j := i]
+    K1 -- TRUE --> K2[j := i]
     K2 --> K3{"j > 1
     oraz
     A[j] < A[j - 1]"}
-    K3 -- PRAWDA --> K4["Zamień(A[j], A[j - 1])
+    K3 -- TRUE --> K4["Zamień(A[j], A[j - 1])
     j := j - 1"]
     K4 --> K3
-    K3 -- FAŁSZ --> K1i[i := i + 1]
+    K3 -- FALSE --> K1i[i := i + 1]
     K1i --> K1
-    K1 -- FAŁSZ ----> STOP([STOP])
+    K1 -- FALSE ----> STOP([STOP])
 ```
 
-### Złożoność
+### Complexity
 
 $O(n^2)$ — kwadratowa
 
 Dwie zagnieżdżone pętle. Chociaż warunkowa pętla wewnętrzna wykonuje zawsze co najwyżej tyle obrotów, ile wynosi indeks obecnie przesuwanego elementu, to i tak otrzymujemy złożoność kwadratową, co można dość łatwo samodzielnie policzyć.
 
-## Implementacja
+## Implementation
 
 ### [:simple-cplusplus: C++](../../programming/c++/algorithms/sorting/insertion-sort.md){ .md-button }
 

@@ -2,7 +2,7 @@
 
 ## [:link: Opis problemu](../../../../algorithms/structures/disjoint-set-union.md)
 
-## Implementacja
+## Implementation
 
 ```cpp linenums="1"
 #include <iostream>

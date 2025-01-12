@@ -6,7 +6,7 @@ SQLmap automatyzuje proces wykrywania i wykorzystywania luk w zabezpieczeniach S
 
 [SQLmap](https://sqlmap.org)
 
-## Przykłady użycia
+## Exampley użycia
 
 ### Wykrywanie luk SQL Injection
 

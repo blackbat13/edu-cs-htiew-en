@@ -8,20 +8,20 @@ Obszar o **najwyższym** priorytecie to taki, który występuje **najczęściej*
 
 Źródło: [https://onlinejudge.org/external/115/11588.pdf](https://onlinejudge.org/external/115/11588.pdf)
 
-## Specyfikacja
+## Specification
 
-### Dane
+### Input
 
 * $h, w$ - wymiary tablicy, jej wysokość i szerokość
 * $pix[h][w]$ - opis grafiki, tablica dwuwymiarowa o wymiarach $h\times w$, której każdym elementem jest wielka litera alfabetu angielskiego
 
-### Wynik
+### Output
 
 * Liczba bajtów potrzebna do reprezentacji podanej grafiki
 
-## Przykład
+## Example
 
-### Dane
+### Input
 
 ```
 1
@@ -33,7 +33,7 @@ BCAG
 AZIP
 ```
 
-### Wynik
+### Output
 
 ```
 26

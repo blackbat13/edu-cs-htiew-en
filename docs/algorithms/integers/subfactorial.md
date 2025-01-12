@@ -18,10 +18,10 @@ $$
    \end{cases}
 $$
 
-## Przykład
+## Example
 
 $!3 = 2$, ponieważ są dwie permutacje zbioru $\{1, 2, 3\}$, w których żaden element nie znajduje się na swoim początkowym miejscu: $(2, 3, 1)$ i $(3, 1, 2)$.
 
-## Implementacja
+## Implementation
 
 ### [:simple-python: Python](../../programming/python/algorithms/integers/subfactorial.md){ .md-button }

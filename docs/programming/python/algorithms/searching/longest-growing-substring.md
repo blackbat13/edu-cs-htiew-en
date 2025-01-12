@@ -2,7 +2,7 @@
 
 ## [:link: Opis problemu](../../../../algorithms/searching/longest-growing-substring.md)
 
-## Implementacja
+## Implementation
 
 ```python linenums="1"
 def longest_growing_substring_length(tab: list) -> int:

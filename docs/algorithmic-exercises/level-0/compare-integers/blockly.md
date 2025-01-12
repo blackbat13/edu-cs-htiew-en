@@ -6,7 +6,7 @@
 
 [Porównywanie liczb - Blockly](https://blockly-demo.appspot.com/static/demos/code/index.html?lang=pl#qv4ea5)
 
-## Opis
+## Description
 
 Na początku wczytujemy dwie liczby od użytkownika, podając przy tym stosowane komunikaty i zapisując je w zmiennych `a` i `b`.
 

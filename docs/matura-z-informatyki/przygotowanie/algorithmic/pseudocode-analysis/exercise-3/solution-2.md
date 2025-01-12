@@ -27,6 +27,6 @@
 8. Wypisz 24
 ```
 
-## Wynik
+## Output
 
 $24$

@@ -1,20 +1,20 @@
-# Rozwiązanie 1
+# Solution 1
 
 ## Treść zadania
 
 Napisz program zgodny z poniższą specyfikacją. W implementacji wykorzystaj klasę `map`.
 
-### Specyfikacja
+### Specification
 
-#### Dane
+#### Input
 
 * $txt$ - Wielolinijkowy tekst składający się ze znaków ze standardowej tablicy ASCII, zakończony znakiem końca wyjścia.
 
-#### Wynik
+#### Output
 
 * Dla każdego znaku, jaki pojawił się na wejściu, liczba jego wystąpień. Znaki uporządkowane alfabetycznie, zgodnie z kolejnością w tablicy ASCII.
 
-## Rozwiązanie
+## Solution
 
 ```cpp
 #include <iostream>

@@ -2,7 +2,7 @@
 
 ## [:link: Opis problemu](../../../../algorithms/sorting/merge-sort.md)
 
-## Implementacja
+## Implementation
 
 ```python linenums="1"
 def merge(array: list, left: int, right: int, division: int):

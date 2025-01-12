@@ -4,7 +4,7 @@ Tcpdump to potężne narzędzie linii poleceń używane do przechwytywania i ana
 
 Tcpdump umożliwia przechwytywanie pakietów, które przemieszczają się przez określony interfejs sieciowy. Po przechwyceniu pakietów, Tcpdump może zapisywać je do pliku do późniejszej analizy lub wyświetlać je w czasie rzeczywistym. Tcpdump oferuje możliwość filtrowania ruchu sieciowego na podstawie różnych kryteriów, takich jak typ protokołu, adres IP, port i inne.
 
-## Przykłady użycia
+## Exampley użycia
 
 ### Przechwytywanie ruchu sieciowego
 

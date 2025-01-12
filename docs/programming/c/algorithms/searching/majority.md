@@ -2,7 +2,7 @@
 
 ## [:link: Opis problemu](../../../../algorithms/searching/majority.md)
 
-## Implementacja
+## Implementation
 
 ```c linenums="1"
 #include <stdio.h>

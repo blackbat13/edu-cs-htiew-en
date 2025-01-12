@@ -1,15 +1,15 @@
-# Ćwiczenie 4
+# Exercise 4
 
 Zapoznaj się z poniższą specyfikacją oraz pseudokodem, a następnie rozwiąż zadania.
 
-## Specyfikacja
+## Specification
 
-### Dane
+### Input
 
 * $n$ - liczba naturalna, liczba elementów w tablicy.
 * $tab[1..n]$ - tablica $n$ wartości całkowitych, numerowana od jedynki.
 
-## Pseudokod
+## Pseudocode
 
 ```
 1. el := tab[1]

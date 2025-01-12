@@ -1,6 +1,6 @@
 # Tablice dynamiczne
 
-## Opis
+## Description
 
 Co oznacza, że tablica jest **dynamiczna**? To znaczy, że w dowolnym momencie działania programu możemy zmieniać jej rozmiar, tzn. dodawać i usuwać elementy (w przeciwieństwie do tablic **statycznych**). Jest to przydatne np. w sytuacji gdy nie wiemy, ile wartości będziemy musieli w takiej tablicy przechować.
 
@@ -29,7 +29,7 @@ using namespace std;
 
 [Deque Reference](https://www.cplusplus.com/reference/deque/deque/)
 
-## Implementacja: przykłady
+## Implementation: przykłady
 
 ### Utworzenie pustej tablicy
 
@@ -145,7 +145,7 @@ for(auto el: array) {
 }
 ```
 
-## Przykładowa implementacja
+## Exampleowa implementacja
 
 ```cpp
 #include <iostream>

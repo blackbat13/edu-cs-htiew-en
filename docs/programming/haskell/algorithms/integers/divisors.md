@@ -2,7 +2,7 @@
 
 ## [:link: Opis problemu](../../../../algorithms/integers/divisors.md)
 
-## Implementacja
+## Implementation
 
 ```haskell linenums="1"
 divisors n = [x | x <- [1..sqrtN], n `mod` x == 0] ++ [n `div` x | x <- [sqrtN, sqrtN - 1 .. 1], (n `mod` x == 0) && (n `div` x /= x)]
@@ -15,7 +15,7 @@ main = do
     print $ divisors n
 ```
 
-## Opis
+## Description
 
 Funkcja `divisors` przyjmuje jeden argument: liczbę `n`, dla której chcemy znaleźć dzielniki.
 

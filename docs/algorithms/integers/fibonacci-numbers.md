@@ -4,27 +4,27 @@ Ciąg Fibonacciego to ciąg, w którym dwa pierwsze elementy mają wartość $1$
 
 Pierwszych dziesięć kolejnych liczb Fibonacciego to: $1, 1, 2, 3, 5, 8, 13, 21, 34, 55$.
 
-## Specyfikacja
+## Specification
 
-### Dane
+### Input
 
 * $n$ - liczba naturalna, $n>0$.
 
-### Wynik
+### Output
 
 * $n$-ta liczba Fibonacciego.
 
-## Przykład
+## Example
 
-### Dane
+### Input
 
 ```
 n := 10
 ```
 
-**Wynik**: $55$ 
+**Output**: $55$ 
 
-## Rozwiązanie rekurencyjne
+## Solution rekurencyjne
 
 $$
 Fib(n) =  \begin{cases} 
@@ -33,7 +33,7 @@ Fib(n) =  \begin{cases}
    \end{cases}
 $$
 
-### Pseudokod
+### Pseudocode
 
 ```
 funkcja Fib(n):
@@ -42,21 +42,21 @@ funkcja Fib(n):
     3. Zwróć Fib(n - 1) + Fib(n - 2)
 ```
 
-### Schemat blokowy
+### Block diagram
 
 ```mermaid
 %%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
 flowchart TD
 	START(["Fib(n)"]) --> K1{n <= 2}
-	K1 -- PRAWDA --> K2[/Zwróć 1/]
+	K1 -- TRUE --> K2[/Zwróć 1/]
 	K2 --> STOP([STOP])
-	K1 -- FAŁSZ --> K3[/"Zwróć Fib(n - 1) + Fib(n - 2)"/]
+	K1 -- FALSE --> K3[/"Zwróć Fib(n - 1) + Fib(n - 2)"/]
 	K3 --> STOP
 ```
 
-## Rozwiązanie iteracyjne
+## Solution iteracyjne
 
-### Pseudokod
+### Pseudocode
 
 ```
 funkcja Fib(n):
@@ -69,7 +69,7 @@ funkcja Fib(n):
     7. Zwróć f2
 ```
 
-### Schemat blokowy
+### Block diagram
 
 ```mermaid
 %%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
@@ -78,21 +78,21 @@ flowchart TD
     f2 := 1
     i := 3"]
 	K1 --> K3{i <= n + 1}
-	K3 -- PRAWDA --> K4["f3 := f1 + f2
+	K3 -- TRUE --> K4["f3 := f1 + f2
     f1 := f2
     f2 := f3
     i := i +1"]
 	K4 --> K3
-	K3 -- FAŁSZ --> K7[/Zwróć f2/]
+	K3 -- FALSE --> K7[/Zwróć f2/]
 	K7 --> STOP([STOP])
 ```
 
-## Implementacja
+## Implementation
 
 ### [:simple-cplusplus: C++](../../programming/c++/algorithms/integers/fibonacci-numbers.md){ .md-button }
 
 ### [:simple-python: Python](../../programming/python/algorithms/integers/fibonacci-numbers.md){ .md-button }
 
-## Implementacja - pozostałe
+## Implementation - pozostałe
 
 ### [:simple-haskell: Haskell](../../programming/haskell/algorithms/integers/fibonacci-numbers.md){ .md-button }

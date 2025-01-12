@@ -4,7 +4,7 @@ Odległość Levenshteina, znana również jako odległość edycyjna, jest miar
 
 Odległość Levenshteina jest używana w wielu dziedzinach, takich jak korekta pisowni, porównywanie sekwencji DNA w biologii, czy systemy rozpoznawania mowy. Jest to przydatne narzędzie w przetwarzaniu języka naturalnego i innych dziedzinach wymagających analizy podobieństwa tekstów.
 
-## Przykład 1
+## Example 1
 
 Aby przekształcić wyraz "kot" w "kotek", należy wykonać dwie operacje:
 
@@ -13,7 +13,7 @@ Aby przekształcić wyraz "kot" w "kotek", należy wykonać dwie operacje:
 
 Odległość Levenshteina dla tekstów "kot" i "kotek" wynosi 2.
 
-## Przykład 2
+## Example 2
 
 Aby przekształcić wyraz "kotek" w "kartek", należy wykonać dwie operacje:
 
@@ -22,24 +22,24 @@ Aby przekształcić wyraz "kotek" w "kartek", należy wykonać dwie operacje:
 
 Odległość Levenshteina dla tekstów "kotek" i "kartek" wynosi 2.
 
-## Specyfikacja
+## Specification
 
-### Dane
+### Input
 
 - **tekst1**, **tekst2** - dwa teksty, ciągi znaków liter angielskiego
 
-### Wynik
+### Output
 
 - Odległość Levenshteina pomiędzy **tekst1** a **tekst2**.
 
-## Rozwiązanie
+## Solution
 
 ### Funkcje pomocnicze
 
 - **Długość(tekst)** - zwraca długość tekstu
 - **Min(a, b, c)** - zwraca najmniejszą z trzech podanych wartości
 
-### Pseudokod
+### Pseudocode
 
 ```
 funkcja OdległośćLevenshteina(tekst1, tekst2):
@@ -55,7 +55,7 @@ funkcja OdległośćLevenshteina(tekst1, tekst2):
     9. Zwróć macierz[Długość(tekst1)][Długość(tekst2)]
 ```
 
-## Implementacja
+## Implementation
 
 ### [:simple-cplusplus: C++](../../programming/c++/algorithms/text/levenshtein-distance.md){ .md-button }
 

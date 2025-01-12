@@ -6,7 +6,7 @@ Stegosuite ukrywa informacje w plikach obrazów poprzez subtelne modyfikacje pik
 
 [Stegosuite](https://github.com/osde8info/stegosuite)
 
-## Przykłady użycia
+## Exampley użycia
 
 Ponieważ Stegosuite korzysta z graficznego interfejsu użytkownika, jego obsługa jest dość prosta i intuicyjna.
 

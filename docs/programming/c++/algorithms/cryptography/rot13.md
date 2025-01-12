@@ -4,7 +4,7 @@
 
 ## Szyfrowanie
 
-### Implementacja
+### Implementation
 
 ```cpp linenums="1"
 #include <iostream>
@@ -40,7 +40,7 @@ int main() {
 
 ## Deszyfrowanie
 
-### Implementacja
+### Implementation
 
 ```cpp linenums="1"
 #include <iostream>

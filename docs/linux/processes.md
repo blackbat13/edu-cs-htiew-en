@@ -10,7 +10,7 @@ Istnieje jednak możliwość uruchomienia procesu w tle, albo uśpienia działaj
 
 Aby uruchomić proces w tle, należy po poleceniu dodać znak ampersant: **&**.
 
-#### Przykład
+#### Example
 
 ```
 ./program &
@@ -35,7 +35,7 @@ Polecenie **ps** wyświetla dane w następujących kolumnach:
 * **TIME**: ile czasu procesora jest zużywane na działanie procesu
 * **CMD**: nazwa polecenia
 
-### Przykładowe opcje
+### Exampleowe opcje
 
 * **-ef**: wyświetla wszystkie procesy w pełnym formacie
 * **-u** _username_: wyświetla procesy konkretnego użytkownika

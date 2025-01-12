@@ -2,7 +2,7 @@
 
 ## [:link: Opis problemu](../../../../algorithms/fractals/peano-curve.md)
 
-## Implementacja
+## Implementation
 
 ### Krzywa Peano
 

@@ -60,7 +60,7 @@ print("Dynamic algorithm")
 change_dynamic(amount, coins)
 ```
 
-### Opis implementacji
+### Description implementacji
 
 Funkcja `change_dynamic` przyjmuje dwa parametry: kwotę do wydania (`amount`) i listę dostępnych nominałów (`coins`).
 

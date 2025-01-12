@@ -1,20 +1,20 @@
-# Rozwiązanie 7
+# Solution 7
 
 ## Treść zadania
 
 Napisz funkcję `Fibonacci` zgodną z poniższą specyfikacją.
 
-### Specyfikacja
+### Specification
 
-#### Dane
+#### Input
 
 * $n$ - liczba naturalna
 
-#### Wynik
+#### Output
 
 * Liczba Fibonacciego o indeksie $n$.
 
-## Rozwiązanie
+## Solution
 
 ```vb
 Function Fibonacci(n As Integer) As Long
@@ -35,7 +35,7 @@ Function Fibonacci(n As Integer) As Long
 End Function
 ```
 
-## Opis rozwiązania
+## Description rozwiązania
 
 ### 1. Definicja funkcji
 

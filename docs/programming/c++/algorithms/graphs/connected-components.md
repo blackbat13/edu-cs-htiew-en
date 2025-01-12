@@ -2,7 +2,7 @@
 
 ## [:link: Opis problemu](../../../../algorithms/graphs/connected-components.md)
 
-## Implementacja
+## Implementation
 
 ```cpp linenums="1"
 #include <iostream>
@@ -58,7 +58,7 @@ int main() {
 }
 ```
 
-### Opis implementacji
+### Description implementacji
 
 ![Przykładowy graf wykorzystany w implementacji](../../../../assets/example_graph_disconnected.png)
 

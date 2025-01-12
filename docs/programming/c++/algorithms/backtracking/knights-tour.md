@@ -2,7 +2,7 @@
 
 ## [:link: Opis problemu](../../../../algorithms/backtracking/knights-tour.md)
 
-## Implementacja
+## Implementation
 
 ```cpp linenums="1"
 #include <iostream>

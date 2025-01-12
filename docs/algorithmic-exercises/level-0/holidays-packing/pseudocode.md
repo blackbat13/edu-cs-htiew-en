@@ -1,6 +1,6 @@
-# Pseudokod
+# Pseudocode
 
-## Rozwiązanie
+## Solution
 
 ```
 1. Wczytaj a, b, c
@@ -10,7 +10,7 @@
     5. Wypisz "NIE"
 ```
 
-### Opis
+### Description
 
 Na początku wczytujemy dane wejściowe: trzy liczby całkowite (**krok 1**).
 Następnie sprawdzamy, czy któraś z liczb przekracza wartość $20$, czyli wymiar walizki (**krok 2**).

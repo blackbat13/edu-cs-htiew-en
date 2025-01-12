@@ -2,7 +2,7 @@
 
 ## [:link: Opis problemu](../../../../algorithms/graphs/flood-fill.md)
 
-## Implementacja
+## Implementation
 
 ```python linenums="1"
 from pprint import pprint

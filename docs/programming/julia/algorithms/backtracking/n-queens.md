@@ -2,7 +2,7 @@
 
 ## [:link: Opis problemu](../../../../algorithms/backtracking/n-queens.md)
 
-## Implementacja
+## Implementation
 
 ```julia linenums="1"
 function checkNewPosition(x, y, positions)

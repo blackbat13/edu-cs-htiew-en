@@ -8,7 +8,7 @@ description: Największy Wspólny Dzielnik
 
 ## Wersja z odejmowaniem
 
-### Implementacja
+### Implementation
 
 ```cpp linenums="1"
 #include <iostream>
@@ -41,7 +41,7 @@ int main() {
 
 ## Algorytm Euklidesa - wersja iteracyjna
 
-### Implementacja
+### Implementation
 
 ```cpp linenums="1"
 #include <iostream>
@@ -72,7 +72,7 @@ int main() {
 
 ## Algorytm Euklidesa - wersja rekurencyjna
 
-### Implementacja
+### Implementation
 
 ```cpp
 #include <iostream>
@@ -101,7 +101,7 @@ int main() {
 
 ## Operacje binarne - wersja iteracyjna
 
-### Implementacja
+### Implementation
 
 ```cpp
 #include <iostream>
@@ -157,7 +157,7 @@ int main() {
 
 ## Operacje binarne - wersja rekurencyjna
 
-### Implementacja
+### Implementation
 
 ```cpp linenums="1"
 #include <iostream>

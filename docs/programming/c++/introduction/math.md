@@ -12,7 +12,7 @@ Pokażemy kilka przykładowych i przydatnych funkcji, jakie można znaleźć w b
 
 [cmath - dokumentacja](https://www.cplusplus.com/reference/cmath/)
 
-## Przykładowe funkcje
+## Exampleowe funkcje
 
 ### Pierwiastek
 

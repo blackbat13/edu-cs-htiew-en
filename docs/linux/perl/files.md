@@ -2,7 +2,7 @@
 
 ## Czytanie plików
 
-### Przykład
+### Example
 
 ```perl
 #!/usr/bin/perl
@@ -31,7 +31,7 @@ print "Koniec operacji na pliku\n";
 
 ## Pisanie do plików
 
-### Przykład
+### Example
 
 ```perl
 #!/usr/bin/perl
@@ -57,7 +57,7 @@ print "Koniec operacji na pliku\n";
 
 ## Katalogi
 
-### Przykład
+### Example
 
 ```perl
 #!/usr/bin/perl

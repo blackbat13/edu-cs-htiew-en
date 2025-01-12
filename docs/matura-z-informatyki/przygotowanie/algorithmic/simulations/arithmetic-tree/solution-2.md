@@ -56,6 +56,6 @@ flowchart TD
     op1["107"]
 ```
 
-## Wynik
+## Output
 
 $10 * ((15 / 5) + 8) - 3 = 107$

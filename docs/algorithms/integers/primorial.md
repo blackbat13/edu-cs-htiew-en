@@ -12,6 +12,6 @@ W szczególności, dla $n = 0$, definujemy $0\# = 1$, zgodnie z konwencją, że 
 
 Primorial nie powinien być mylony z funkcją silni, $n!$, która jest iloczynem wszystkich liczb naturalnych do $n$. Obie funkcje rosną bardzo szybko, ale silnia rośnie znacznie szybciej.
 
-## Implementacja
+## Implementation
 
 ### [:simple-python: Python](../../programming/python/algorithms/integers/primorial.md){ .md-button }

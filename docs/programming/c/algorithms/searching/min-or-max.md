@@ -4,7 +4,7 @@
 
 ## Wyszukiwanie wartości minimum i maksimum
 
-### Implementacja
+### Implementation
 
 ```c linenums="1"
 #include <stdio.h>
@@ -49,7 +49,7 @@ int main() {
 
 ## Wyszukiwanie indeksów wartości minimum i maksimum
 
-### Implementacja
+### Implementation
 
 ```c linenums="1"
 #include <stdio.h>

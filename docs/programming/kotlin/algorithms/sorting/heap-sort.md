@@ -2,7 +2,7 @@
 
 ## [:link: Opis problemu](../../../../algorithms/sorting/heap-sort.md)
 
-## Implementacja
+## Implementation
 
 ```kotlin
 fun buildHeap(array: MutableList<Int>, n: Int) {

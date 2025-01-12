@@ -14,7 +14,7 @@ Quicksort opiera się na następujących krokach:
 
 Poniżej znajdziesz prezentację, na której poszczególne kroki algorytmu są wyjaśnione w jak najprostszy sposób.
 
-## Prezentacja
+## Presentation
 
 [:fontawesome-solid-file-pdf: Sortowanie szybkie - prezentacja](../../assets/Sortowanie Szybkie.pdf){ .md-button }
 
@@ -22,9 +22,9 @@ Poniżej znajdziesz prezentację, na której poszczególne kroki algorytmu są w
 
 [:material-video: Taneczne sortowanie](https://www.youtube.com/watch?v=ywWBy6J5gz8){ .md-button }
 
-## Rozwiązanie
+## Solution
 
-### Pseudokod
+### Pseudocode
 
 ```
 procedura SortowanieSzybkie(A, pocz, kon):
@@ -54,39 +54,39 @@ procedura SortowanieSzybkie(A, pocz, kon):
     17. SortowanieSzybkie(A, lewy, kon)
 ```
 
-### Schemat blokowy
+### Block diagram
 
 ```mermaid
 %%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
 flowchart TD
     START(["SortowanieSzybkie(A, pocz, kon)"]) --> K1{kon <= pocz}
-    K1 -- PRAWDA --> STOP([STOP])
-    K1 -- FAŁSZ --> K3["pivot := A[(pocz + kon) div 2]
+    K1 -- TRUE --> STOP([STOP])
+    K1 -- FALSE --> K3["pivot := A[(pocz + kon) div 2]
     lewy := pocz
     prawy := kon"]
     K3 --> K6{lewy <= prawy}
-    K6 -- PRAWDA --> K7{"A[lewy] < pivot"}
-    K7 -- PRAWDA --> K8[lewy := lewy + 1]
+    K6 -- TRUE --> K7{"A[lewy] < pivot"}
+    K7 -- TRUE --> K8[lewy := lewy + 1]
     K8 --> K7
-    K7 -- FAŁSZ --> K9{"A[prawy] > pivot"}
-    K9 -- PRAWDA --> K10[prawy := prawy - 1]
+    K7 -- FALSE --> K9{"A[prawy] > pivot"}
+    K9 -- TRUE --> K10[prawy := prawy - 1]
     K10 --> K9
-    K9 -- FAŁSZ --> K11{lewy > prawy}
-    K11 -- PRAWDA --> K16["SortowanieSzybkie(A, pocz, prawy)
+    K9 -- FALSE --> K11{lewy > prawy}
+    K11 -- TRUE --> K16["SortowanieSzybkie(A, pocz, prawy)
     SortowanieSzybkie(A, lewy, kon)"]
-    K11 -- FAŁSZ --> K13["Zamień(A[lewy], A[prawy])
+    K11 -- FALSE --> K13["Zamień(A[lewy], A[prawy])
     lewy := lewy + 1
     prawy := prawy - 1"]
     K13 --> K6
-    K6 -- FAŁSZ --> K16
+    K6 -- FALSE --> K16
     K16 --> STOP([STOP])
 ```
 
-### Złożoność
+### Complexity
 
 Algorytm Quicksort ma złożoność obliczeniową $O(n\log{n})$ w przypadku średnim, co czyni go jednym z najbardziej efektywnych algorytmów sortujących. Jednakże, w najgorszym przypadku, gdy podział listy jest zawsze najbardziej nierównomierny (na przykład, gdy lista jest już posortowana), złożoność obliczeniowa może wzrosnąć do $O(n^2)$.
 
-## Implementacja
+## Implementation
 
 ### [:simple-cplusplus: C++](../../programming/c++/algorithms/sorting/quick-sort.md){ .md-button }
 
@@ -94,6 +94,6 @@ Algorytm Quicksort ma złożoność obliczeniową $O(n\log{n})$ w przypadku śre
 
 ### [:simple-kotlin: Kotlin](../../programming/kotlin/algorithms/sorting/quick-sort.md){ .md-button }
 
-## Implementacja - pozostałe
+## Implementation - pozostałe
 
 ### [:simple-julia: Julia](../../programming/julia/algorithms/sorting/quick-sort.md){ .md-button }

@@ -1,20 +1,20 @@
-# Rozwiązanie 1
+# Solution 1
 
 ## Treść zadania
 
 Napisz program zgodny z poniższą specyfikacją.
 
-### Specyfikacja
+### Specification
 
-#### Dane
+#### Input
 
 * $n$ - liczba naturalna
 
-#### Wynik
+#### Output
 
 * Kolejne cyfry liczby $n$, wypisane od końca, tzn. zaczynając od cyfry jedności
 
-## Rozwiązanie
+## Solution
 
 ```cpp
 #include <iostream>

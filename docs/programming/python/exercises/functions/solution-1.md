@@ -1,20 +1,20 @@
-# Rozwiązanie 1
+# Solution 1
 
 ## Treść zadania
 
 Napisz program zgodny z poniższą specyfikacją. Wypisanie komunikatu powinno zostać zrealizowane za pomocą funkcji.
 
-### Specyfikacja
+### Specification
 
-#### Dane
+#### Input
 
 * $imie$ - ciąg znaków, małych i wielkich liter alfabetu angielskiego
 
-#### Wynik
+#### Output
 
 * Komunikat powitania w formie "_Witaj \[**imie**]!_", np. "_Witaj Damian!_"
 
-## Rozwiązanie
+## Solution
 
 ```python
 def powitanie(imie: str):

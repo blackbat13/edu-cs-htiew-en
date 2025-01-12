@@ -2,7 +2,7 @@
 
 Auto-wypełnianie w arkuszu kalkulacyjnym to funkcja, która automatycznie wypełnia komórki na podstawie istniejących wzorców danych lub formuł. Kiedy zaczynasz wpisywać dane, Excel próbuje zrozumieć wzorzec i, gdy przeciągasz uchwyt wypełnienia (mały kwadrat w prawym dolnym rogu komórki), rozszerza ten wzorzec na inne komórki.
 
-## Przykłady zastosowań
+## Exampley zastosowań
 
 ### Wypełnianie serii liczb
 

@@ -2,6 +2,6 @@
 
 ## [:link: Opis problemu](../../../../algorithms/cryptography/symmetric/beaufort.md)
 
-## Implementacja
+## Implementation
 
 TODO

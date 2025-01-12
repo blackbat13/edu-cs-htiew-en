@@ -1,4 +1,4 @@
-# Rozwiązanie
+# Solution
 
 ## Zadanie 1
 

@@ -36,7 +36,7 @@ BST są powszechnie używane w informatyce z powodu ich efektywności. Znajdują
 
 BST są podstawą dla wielu zaawansowanych struktur danych, które oferują lepszą wydajność w różnych sytuacjach, takich jak drzewa AVL, drzewa czerwono-czarne, drzewa B i drzewa splay.
 
-## Implementacja
+## Implementation
 
 ### [:simple-cplusplus: C++](../../programming/c++/algorithms/structures/bst.md){ .md-button }
 

@@ -13,7 +13,7 @@
 
 ## Zadanie 2
 
-### Rozwiązanie logarytmiczne
+### Solution logarytmiczne
 
 ```
 funkcja czy_trojkatna(k):
@@ -23,15 +23,15 @@ funkcja czy_trojkatna(k):
         4. srodek := (lewy + prawy) div 2
         5. suma := ((1 + srodek) * srodek) / 2
         6. Jeżeli suma = k, to:
-            7. Zwróć PRAWDA i zakończ
+            7. Zwróć TRUE i zakończ
         8. w przeciwnym przypadku, jeżeli suma < k, to:
             9. lewy := srodek + 1
         10. w przeciwnym przypadku:
             11. prawy := srodek - 1
-    12. Zwróć FAŁSZ i zakończ
+    12. Zwróć FALSE i zakończ
 ```
 
-### Rozwiązanie liniowe
+### Solution liniowe
 
 ```
 funkcja czy_trojkatna(k):
@@ -41,8 +41,8 @@ funkcja czy_trojkatna(k):
         4. suma := suma + i
         5. i := i + 1
     6. Jeżeli suma = k, to:
-        7. Zwróć PRAWDA i zakończ
-    8. Zwróć FAŁSZ i zakończ
+        7. Zwróć TRUE i zakończ
+    8. Zwróć FALSE i zakończ
 ```
 
 ## Zadanie 3
@@ -62,7 +62,7 @@ funkcja czy_trojkatna(k):
 1204104201
 ```
 
-### Rozwiązanie
+### Solution
 
 === "Python"
 

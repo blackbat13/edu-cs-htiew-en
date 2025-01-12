@@ -2,38 +2,38 @@
 
 Zdarza się i tak, że potrzebujemy znaleźć wartość minimalną i maksymalną jednocześnie, najlepiej za jednym razem. Możemy oczywiście osobno wyszukać minimum i maksimum korzystając ze standardowego algorytmu. Być może jednak da się to zrobić lepiej, wydajniej? Na to pytanie postaramy się odpowiedzieć. Zacznijmy od formalnej specyfikacji.
 
-## Specyfikacja
+## Specification
 
-### Dane
+### Input
 
 * $n$ — liczba naturalna, liczba elementów w tablicy
 * $A[1..n]$ — tablica $n$ wartości całkowitych
 
-### Wynik
+### Output
 
 * Największa oraz najmniejsza wartość z tablicy $A$
 
-## Przykład
+## Example
 
-### Dane
+### Input
 
 ```
 n := 5
 A := [6, 3, 1, 9, 2]
 ```
 
-### Wynik
+### Output
 
 ```
 minimum := 1
 maksimum := 9
 ```
 
-## Rozwiązanie naiwne
+## Solution naiwne
 
 Zacznijmy od rozwiązania naiwnego. Pomysł jest następujący: zastosujmy standardowy algorytm do znajdowania minimum i maksimum. Na początku jako tymczasowe minimum i maksimum przyjmiemy wartość pierwszego elementu z tablicy. Następnie przejdziemy pętlą przez kolejne elementy. Każdy element będziemy porównywać z dotychczasowymi wartościami minimum i maksimum, dokonując odpowiednich zamian w razie potrzeby.
 
-### Pseudokod
+### Pseudocode
 
 ```
 funckja SzukajMinMax(n, A):
@@ -47,7 +47,7 @@ funckja SzukajMinMax(n, A):
     8. Zwróć min, max
 ```
 
-### Schemat blokowy
+### Block diagram
 
 ```mermaid
 %%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
@@ -56,25 +56,25 @@ flowchart TD
 	max := A[1]
 	i := 1"]
 	K1 --> K3{i <= n}
-	K3 -- PRAWDA --> K4{"min > A[i]"}
-	K4 -- PRAWDA --> K5["min := A[i]"]
+	K3 -- TRUE --> K4{"min > A[i]"}
+	K4 -- TRUE --> K5["min := A[i]"]
 	K5 --> K6{"max < A[i]"}
-	K4 -- FAŁSZ --> K6
-	K6 -- PRAWDA --> K7["max := A[i]"]
+	K4 -- FALSE --> K6
+	K6 -- TRUE --> K7["max := A[i]"]
 	K7 --> K3i[i := i + 1]
-	K6 -- FAŁSZ --> K3i
+	K6 -- FALSE --> K3i
 	K3i --> K3
-	K3 -- FAŁSZ ---> K8[/Zwróć min, max/]
+	K3 -- FALSE ---> K8[/Zwróć min, max/]
 	K8 ----> STOP([STOP])
 ```
 
-### Złożoność
+### Complexity
 
 $O(2n)$
 
 Mamy jedną pętlę, ale dwa porównania wewnątrz niej. W takim razie dla każdego przebiegu pętli wykonujemy dwa porównania, łącznie wykonujemy ich więc w przybliżeniu $2n$, co w praktyce daje nam złożoność liniową.
 
-## Rozwiązanie optymalne
+## Solution optymalne
 
 Podejdźmy do problemu od innej strony. Zastanówmy się, jak możemy przygotować sobie dane, aby ułatwić sobie pracę? Mamy pewien zestaw liczb, wśród których chcemy znaleźć zarówno minimum jak i maksimum. W takim razie podzielmy wstępnie nasze liczby na kandydatów minimum oraz kandydatów maksimum. Zrobimy to przechodząc po kolei po parach sąsiednich liczb z tablicy i porównując je ze sobą. Mniejszą z wartości z pary wrzucimy do kandydatów na minimum, a większą umieścimy w kandydatach na maksimum. W ten sposób uzyskamy dwie tablice, z których każda będzie miała długość równą połowie długości pierwotnej tablicy. Teraz możemy przejść do wyszukiwania minimum i maksimum. Minimum będziemy szukać standardowym algorytmem w tablicy kandydatów na minimum. Podobnie zrobimy z maksimum, szukając go w kandydatach na maksimum.
 
@@ -83,7 +83,7 @@ Podejdźmy do problemu od innej strony. Zastanówmy się, jak możemy przygotowa
 	
 	Dla ułatwienia zakładamy, że długość tablicy (wartość $n$) jest liczbą **parzystą**. Jeżeli tak nie jest, możemy np. powielić ostatni element tablicy, albo rozważyć ten szczególny przypadek w algorytmie.
 
-### Pseudokod
+### Pseudocode
 
 ```
 funkcja SzukajMinMax(n, A):
@@ -110,7 +110,7 @@ funkcja SzukajMinMax(n, A):
     21. Zwróc min, max
 ```
 
-### Schemat blokowy
+### Block diagram
 
 ```mermaid
 %%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
@@ -120,38 +120,38 @@ flowchart TD
 	i := 1
 	k := 1"]
 	K1 --> K5{i + 1 <= n}
-	K5 -- PRAWDA --> K6{"A[i] < A[i + 1]"}
-	K6 -- PRAWDA --> K7["kandMin[k] := A[i]"]
+	K5 -- TRUE --> K6{"A[i] < A[i + 1]"}
+	K6 -- TRUE --> K7["kandMin[k] := A[i]"]
 	K7 --> K8["kandMax[k] := A[i + 1]"]
-	K6 -- FAŁSZ --> K10["kandMin[k] := A[i + 1]"]
+	K6 -- FALSE --> K10["kandMin[k] := A[i + 1]"]
 	K10 --> K11["kandMax[k] := A[i]"]
 	K8 --> K12["k := k + 1
 	i := i + 2"]
 	K11 --> K12
 	K12 --> K5
-	K5 -- FAŁSZ --> K14["min := kandMin[1]
+	K5 -- FALSE --> K14["min := kandMin[1]
 	max := kandMax[1]
 	i := 1"]
 	K14 --> K16{i <= n div 2}
-	K16 -- PRAWDA --> K17{"min > kandMin[i]"}
-	K17 -- PRAWDA --> K18["min := kandMin[i]"]
-	K17 -- FAŁSZ --> K19{"max < kandMax[i]"}
+	K16 -- TRUE --> K17{"min > kandMin[i]"}
+	K17 -- TRUE --> K18["min := kandMin[i]"]
+	K17 -- FALSE --> K19{"max < kandMax[i]"}
 	K18 --> K19
-	K19 -- PRAWDA --> K20["max := kandMax[i]"]
-	K19 -- FAŁSZ --> K16i[i := i + 1]
+	K19 -- TRUE --> K20["max := kandMax[i]"]
+	K19 -- FALSE --> K16i[i := i + 1]
 	K20 --> K16i
 	K16i --> K16
-	K16 -- FAŁSZ ---> K21[\"Zwróc min, max"\]
+	K16 -- FALSE ---> K21[\"Zwróc min, max"\]
 	K21 ----> STOP([STOP])
 ```
 
-### Złożoność
+### Complexity
 
 $O(3\frac{n}{2})$ 
 
 Najpierw dokonujemy podziału na dwie tablice pomocnicze wykonując $\frac{n}{2}$ operacji. Następnie wyszukujemy minimum i maksimum w odpowiednich tablicach. Każda z nich ma długość $\frac{n}{2}$, więc łącznie na znalezienie minimum i maksimum potrzebujemy wykonać $2\frac{n}{2}=n$ porównań. Wszystko razem daje nam $3\frac{n}{2}$ porównań. W praktyce wciąż mamy złożoność liniową, wykonujemy jednak mniej operacji niż przy algorytmie naiwnym.
 
-## Implementacja
+## Implementation
 
 ### [:simple-cplusplus: C++](../../programming/c++/algorithms/searching/min-max-search.md){ .md-button }
 

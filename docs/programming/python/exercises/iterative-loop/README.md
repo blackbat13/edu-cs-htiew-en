@@ -4,13 +4,13 @@
 
 Napisz program zgodny z poniższą specyfikacją.
 
-### Specyfikacja
+### Specification
 
-#### Dane
+#### Input
 
 * $n$ - liczba naturalna
 
-#### Wynik
+#### Output
 
 * $n!$ 
 
@@ -18,13 +18,13 @@ Napisz program zgodny z poniższą specyfikacją.
 
 Napisz program zgodny z poniższą specyfikacją. Nie korzystaj z operatora `**`.
 
-### Specyfikacja
+### Specification
 
-#### Dane
+#### Input
 
 * $a, n$ - dwie liczby naturalne
 
-#### Wynik
+#### Output
 
 * $a^n$ 
 
@@ -32,14 +32,14 @@ Napisz program zgodny z poniższą specyfikacją. Nie korzystaj z operatora `**`
 
 Napisz program zgodny z poniższą specyfikacją.
 
-### Specyfikacja
+### Specification
 
-#### Dane
+#### Input
 
 * $n$ - liczba naturalna
 * $n$liczb całkowitych
 
-#### Wynik
+#### Output
 
 * Suma podanych $n$ liczb
 
@@ -47,14 +47,14 @@ Napisz program zgodny z poniższą specyfikacją.
 
 Napisz program zgodny z poniższą specyfikacją.
 
-### Specyfikacja
+### Specification
 
-#### Dane
+#### Input
 
 * $n$ - liczba naturalna, większa od $0$ 
 * $n$liczb naturalnych
 
-#### Wynik
+#### Output
 
 * Największa z podanych $n$ liczb
 
@@ -62,14 +62,14 @@ Napisz program zgodny z poniższą specyfikacją.
 
 Napisz program zgodny z poniższą specyfikacją.
 
-### Specyfikacja
+### Specification
 
-#### Dane
+#### Input
 
 * $n, k$ - liczby naturalne, większe od zera
 * $n$ liczb naturalnych
 
-#### Wynik
+#### Output
 
 * Ilość liczb podzielnych przez $k$ z podanych $n$ liczb
 
@@ -77,13 +77,13 @@ Napisz program zgodny z poniższą specyfikacją.
 
 Napisz program zgodny z poniższą specyfikacją.
 
-### Specyfikacja
+### Specification
 
-#### Dane
+#### Input
 
 * $n$ - liczba naturalna
 
-#### Wynik
+#### Output
 
 * Tabliczka mnożenia z zakresu $[1,n]$
 
@@ -91,46 +91,46 @@ Napisz program zgodny z poniższą specyfikacją.
 
 Napisz program zgodny z poniższą specyfikacją.
 
-### Specyfikacja
+### Specification
 
-#### Dane
+#### Input
 
 * $n$ - liczba naturalna
 
-#### Wynik
+#### Output
 
 * Wszystkie pary liczb naturalnych, których suma wynosi $n$
 
-### Przykład
+### Example
 
-#### Dane
+#### Input
 
 ```
 n := 4
 ```
 
-**Wynik**: $(0, 4), (1, 3), (2, 2)$
+**Output**: $(0, 4), (1, 3), (2, 2)$
 
 ## Zadanie 8
 
 Napisz program zgodny z poniższą specyfikacją.
 
-### Specyfikacja
+### Specification
 
-#### Dane
+#### Input
 
 * $n$ - liczba naturalna
 
-#### Wynik
+#### Output
 
 * Wszystkie trójki liczb naturalnych, których suma wynosi $n$
 
-### Przykład
+### Example
 
-#### Dane
+#### Input
 
 ```
 n := 4
 ```
 
-**Wynik**: $(0, 0, 4), (0, 1, 3), (0, 2, 2), (1, 1, 2)$
+**Output**: $(0, 0, 4), (0, 1, 3), (0, 2, 2), (1, 1, 2)$

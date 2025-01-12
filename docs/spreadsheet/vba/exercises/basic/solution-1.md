@@ -1,4 +1,4 @@
-# Rozwiązanie 1
+# Solution 1
 
 ## Treść zadania
 
@@ -13,17 +13,17 @@ gdzie:
 * $C$ - temperatura podana w stopniach Celsjusza
 * $F$ - temperatura podana w stopniach Fahrenheita
 
-### Specyfikacja
+### Specification
 
-#### Dane
+#### Input
 
 * $temp$ - liczba rzeczywista, temperatura podana w stopniach Celsjusza
 
-#### Wynik
+#### Output
 
 * Podana temperatura przekonwertowana na stopnie Fahrenheita.
 
-## Rozwiązanie
+## Solution
 
 ```vb
 Function CtoF(temp As Double) As Double
@@ -31,7 +31,7 @@ Function CtoF(temp As Double) As Double
 End Function
 ```
 
-## Opis rozwiązania
+## Description rozwiązania
 
 ### 1. Definicja funkcji
 

@@ -1,20 +1,20 @@
-# Rozwiązanie 3
+# Solution 3
 
 ## Treść zadania
 
 Napisz program zgodny z poniższą specyfikacją. Obliczenie i wypisywanie dzielników powinno być zrealizowane za pomocą funkcji.
 
-### Specyfikacja
+### Specification
 
-#### Dane
+#### Input
 
 * $n$ - liczba naturalna
 
-#### Wynik
+#### Output
 
 * Wszystkie dzielniki liczby $n$ 
 
-## Rozwiązanie
+## Solution
 
 ```cpp
 #include <iostream>

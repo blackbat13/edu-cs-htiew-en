@@ -4,13 +4,13 @@
 
 Napisz program zgodny z poniższą specyfikacją.
 
-### Specyfikacja
+### Specification
 
-#### Dane
+#### Input
 
 * $n$ - liczba naturalna
 
-#### Wynik
+#### Output
 
 * Kolejne cyfry liczby $n$, wypisane od końca, tzn. zaczynając od cyfry jedności
 
@@ -18,25 +18,25 @@ Napisz program zgodny z poniższą specyfikacją.
 
 Napisz program zgodny z poniższą specyfikacją.
 
-### Specyfikacja
+### Specification
 
-#### Dane
+#### Input
 
 * $n$ - liczba naturalna
 
-#### Wynik
+#### Output
 
 * Suma cyfr liczby $n$
 
-### Przykład
+### Example
 
-#### Dane
+#### Input
 
 ```
 n := 1234
 ```
 
-**Wynik**: $10$
+**Output**: $10$
 
 !!! info
 	**Wyjaśnienie**
@@ -47,51 +47,51 @@ n := 1234
 
 Napisz program zgodny z poniższą specyfikacją.
 
-### Specyfikacja
+### Specification
 
-#### Dane
+#### Input
 
 * $n$ - liczba naturalna
 
-#### Wynik
+#### Output
 
 * Liczba powstała poprzez odwrócenie cyfr liczby $n$
 
-### Przykład
+### Example
 
-#### Dane
+#### Input
 
 ```
 n := 1234
 ```
 
-**Wynik**: $4321$
+**Output**: $4321$
 
 ## Zadanie 4
 
 Napisz program zgodny z poniższą specyfikacją.
 
-### Specyfikacja
+### Specification
 
-#### Dane
+#### Input
 
 * $n$ - liczba naturalna
 * $k$ - liczba naturalna z zakresu $[0,9]$
 
-#### Wynik
+#### Output
 
 * Liczba powstała poprzez zastąpienie każdej cyfry liczby $n$ przez wartość bezwzględną różnicy liczby $k$ i danej cyfry
 
-### Przykład
+### Example
 
-#### Dane
+#### Input
 
 ```
 n := 1234
 k := 3
 ```
 
-**Wynik**: $2101$
+**Output**: $2101$
 
 !!! info
 	Wyjaśnienie
@@ -108,25 +108,25 @@ k := 3
 
 Napisz program zgodny z poniższą specyfikacją.
 
-### Specyfikacja
+### Specification
 
-#### Dane
+#### Input
 
 * $n$ - liczba naturalna
 
-#### Wynik
+#### Output
 
 * Zapis binarny liczby $n$
 
-### Przykład
+### Example
 
-#### Dane
+#### Input
 
 ```
 n := 10
 ```
 
-**Wynik**: $1010$
+**Output**: $1010$
 
 !!! info
 	**Wyjaśnienie**
@@ -137,27 +137,27 @@ n := 10
 
 Napisz program zgodny z poniższą specyfikacją.
 
-### Specyfikacja
+### Specification
 
-#### Dane
+#### Input
 
 * $n$ - liczba naturalna
 * $p$ - liczba naturalna z zakresu $[2,9]$
 
-#### Wynik
+#### Output
 
 * Zapis liczby $n$ w systemie o podstawie $p$ 
 
-### Przykład
+### Example
 
-#### Dane
+#### Input
 
 ```
 n := 10
 p := 3
 ```
 
-**Wynik**: $101$
+**Output**: $101$
 
 !!! info
 	**Wyjaśnienie**

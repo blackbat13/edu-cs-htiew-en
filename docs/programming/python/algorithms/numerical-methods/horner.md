@@ -2,7 +2,7 @@
 
 ## [:link: Opis problemu](../../../../algorithms/numerical-methods/horner.md)
 
-## Implementacja
+## Implementation
 
 ```python linenums="1"
 def horner_polynomial(coef: [], x: float, n: float) -> float:
@@ -45,7 +45,7 @@ result = horner_polynomial(coef, x, n)
 print(f"f({x}) = {result}")
 ```
 
-### Opis implementacji
+### Description implementacji
 
 Zacznijmy od funkcji pomocniczej `print_polynomial` (**linia 20**), której celem jest wyświetlenie wielomianu w czytelnej formie na ekranie. Nie jest ona niezbędną częścią algorytmu, ale może być pomocna przy weryfikacji poprawności wyniku. Funkcja przyjmuje dwa parametry: listę współczynników wielomianu `coef`, oraz stopień wielomianu `n`. W tablicy znajduje się dokładnie $n+1$ liczb. Współczynniki są zapisane w kolejności od najmniejszej potęgi ($0$) do największej ($n$).
 

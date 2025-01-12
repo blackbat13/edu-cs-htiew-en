@@ -4,35 +4,35 @@ Liczby pierwsze odgrywają ważną rolę nie tylko w matematyce, ale także w in
 
 [:fontawesome-solid-file-pdf: Sito Eratostenesa — prezentacja](../../assets/Sito Eratostenesa.pdf){ .md-button }
 
-## Specyfikacja
+## Specification
 
-### Dane
+### Input
 
 * $n$ — liczba całkowita
 
-### Wynik
+### Output
 
 * Wszystkie liczby pierwsze od $1$ do $n$ włącznie.
 
-## Przykład
+## Example
 
-### Dane
+### Input
 
 ```
 n := 10
 ```
 
-### Wynik
+### Output
 
 $2, 3, 5, 7$ 
 
-## Rozwiązanie
+## Solution
 
 Na początku potrzebujemy stworzyć tablicę, w której będziemy zapamiętywać, czy dana liczba jest pierwsza, czy też nie. W takim razie tworzymy $n$-elementową tablicę wartości prawda/fałsz. Początkowo wypełniamy całą tablicę wartościami *prawda*. Wiemy, że liczba $1$ nie jest liczbą pierwszą, więc odznaczamy ją w tablicy wartością *fałsz*. Następnie przechodzimy pętlą od liczby $2$ do $n$. Dla każdej wartości będziemy sprawdzać, czy ma ona w tablicy przypisaną wartość *prawda*, tzn. czy jest liczbą pierwszą. Jeżeli tak jest, to przechodzimy przez wszystkie kolejne wielokrotności tej liczby (aż do $n$) i odznaczamy je w tablicy jako *fałsz*.
 
 Gdy już przejdziemy przez wszystkie wartości z zadanego zakresu, nasza tablica jest gotowa. Możemy ponownie przejść pętlą od $2$ do $n$ i zebrać wszystkie liczby, które w tablicy mają przypisaną wartość *prawda*, czyli wszystkie liczby pierwsze.
 
-### Pseudokod
+### Pseudocode
 
 ```
 funkcja SitoEratostenesa(n):
@@ -51,11 +51,11 @@ funkcja SitoEratostenesa(n):
     13. Zwróć pierwsze
 ```
 
-### Złożoność
+### Complexity
 
 $O(n\log{n})$ — liniowo logarytmiczna
 
-## Implementacja
+## Implementation
 
 ### [:simple-cplusplus: C++](../../programming/c++/algorithms/integers/eratosthenes-sieve.md){ .md-button }
 

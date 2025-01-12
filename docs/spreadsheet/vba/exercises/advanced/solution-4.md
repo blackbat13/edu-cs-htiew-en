@@ -1,10 +1,10 @@
-# Rozwiązanie 4
+# Solution 4
 
 ## Treść zadania
 
 Komórki `A1:A10` zawierają imiona i nazwiska oddzielone pojedynczą spacją. Stwórz przycisk, który po kliknięciu umieści w kolumnie B imiona, a w kolumnie C nazwiska z odpowiadających komórek z kolumny A.
 
-## Rozwiązanie
+## Solution
 
 ```vb
 Sub Podziel_Click()
@@ -25,7 +25,7 @@ Sub Podziel_Click()
 End Sub
 ```
 
-## Opis rozwiązania
+## Description rozwiązania
 
 ### 1. Deklarowanie zmiennych
 

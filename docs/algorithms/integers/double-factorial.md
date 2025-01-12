@@ -23,6 +23,6 @@ Podwójna silnia pojawia się w wielu wzorach w matematyce i fizyce, w szczegól
 
 Warto zauważyć, że podwójna silnia rośnie bardzo szybko, podobnie jak standardowa silnia.
 
-## Implementacja
+## Implementation
 
 ### [:simple-python: Python](../../programming/python/algorithms/integers/double-factorial.md){ .md-button }

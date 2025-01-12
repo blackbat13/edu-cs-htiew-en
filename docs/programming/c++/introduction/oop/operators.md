@@ -15,7 +15,7 @@ Używając jednak **przeciążenia operatorów** możemy zapisać ``p1 = p1 + p2
 
 [operatory - dokumentacja](https://en.cppreference.com/w/cpp/language/operators)
 
-## Przykład: dodawanie punktów
+## Example: dodawanie punktów
 
 Operator dodawania $+$ jest jednym ze standardowych operatorów **dwuargumentowych**.
 Oznacza to, że działa na dwóch argumentach, a jego wynikiem jest nowa wartość.
@@ -40,7 +40,7 @@ auto p3 = p1 + p2;
 p3.print();
 ```
 
-## Przykład: wypisanie punktu
+## Example: wypisanie punktu
 
 Możemy przeciążać nie tylko operatory arytmetyczne, ale także operatory strumieniowe.
 W ten sposób możemy sami zdefiniować, w jaki sposób nasz obiekt ma zostać wypisany, lub wczytany.
@@ -62,7 +62,7 @@ std::ostream& operator<<(std::ostream &out, const Point2D &point)
 std::cout << p3 << std::endl;
 ```
 
-## Przykład: wczytanie punktu
+## Example: wczytanie punktu
 
 Przeciążanie operatora strumieniowego wejścia wygląda podobnie, jak przy operatorze wejścia.
 
@@ -81,7 +81,7 @@ std::istream& operator>>(std::istream &in, Point2D &point)
 std::cin >> p3;
 ```
 
-## Przykład: operator indeksowania
+## Example: operator indeksowania
 
 Możemy także przeciążyć operator indeksowania, czy też operator nawiasów kwadratowych **[]**.
 Jest to szczególnie przydatne, gdy tworzymy własną implementację jakiegoś zbioru.

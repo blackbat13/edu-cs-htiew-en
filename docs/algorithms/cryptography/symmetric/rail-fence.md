@@ -2,7 +2,7 @@
 
 Szyfr płotkowy, często nazywany również szyfrem żaglowym, jest techniką transpozycji, gdzie litery tekstu jawnego są pisane na skos w dół i wzdłuż, a potem odczytywane linia po linii. Daje to efekt, jakby litery były zawieszone na pewnego rodzaju "płotku".
 
-## Opis działania
+## Description działania
 
 1. **Ustal głębokość płotka**: wybierz liczbę, która będzie głębokością płotka (np. 3).
 
@@ -14,18 +14,18 @@ Szyfr płotkowy, często nazywany również szyfrem żaglowym, jest techniką tr
 
 Szyfr płotkowy jest stosunkowo prosty do deszyfrowania, zwłaszcza jeśli przeciwnik zna lub może odgadnąć głębokość płotka. Podobnie jak inne metody transpozycji, nie zmienia on częstotliwości liter, co sprawia, że jest podatny na analizę statystyczną.
 
-## Specyfikacja
+## Specification
 
-### Dane
+### Input
 
 - **jawny/szyfrogram** - tekst do zaszyfrowania/odszyfrowania, składający się z małych liter alfabetu angielskiego
 - **klucz** - liczba naturalna, większa od zera
 
-### Wynik
+### Output
 
 - Zaszyfrowany/odszyfrowany tekst.
 
-## Przykład 1
+## Example 1
 
 Tekst jawny: **ALAMAKOTA**.
 
@@ -39,7 +39,7 @@ A   A   A
 
 Szyfrogram: **AOLMKTAAA**
 
-## Przykład 2
+## Example 2
 
 Tekst jawny: **ALAMAKOTA**.
 
@@ -60,7 +60,7 @@ Szyfrogram: **MAAALKTAO**
 
 - **Długość(tekst)** - zwraca długość tekstu
 
-### Pseudokod
+### Pseudocode
 
 ```
 funckja SzyfrujPłotkowy(jawny, klucz):
@@ -84,7 +84,7 @@ funckja SzyfrujPłotkowy(jawny, klucz):
 
 - **Długość(tekst)** - zwraca długość tekstu
 
-### Pseudokod
+### Pseudocode
 
 ```
 funkcja DeszyfrujPłotkowy(szyfrogram, klucz):
@@ -104,7 +104,7 @@ funkcja DeszyfrujPłotkowy(szyfrogram, klucz):
     12. Zwróć jawny
 ```
 
-## Implementacja
+## Implementation
 
 ### [:simple-cplusplus: C++](../../../programming/c++/algorithms/cryptography/rail-fence.md){ .md-button }
 

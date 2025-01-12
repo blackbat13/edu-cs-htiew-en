@@ -18,7 +18,7 @@ Najważniejsze operacje, które można wykonać na liście jednokierunkowej, to:
 
 Listy jednokierunkowe są wykorzystywane w wielu algorytmach i strukturach danych, takich jak stosy, kolejki, hashowanie łańcuchowe itp. Są one szczególnie przydatne w sytuacjach, gdzie elementy są dodawane i usuwane tylko z jednego końca sekwencji, jak na przykład w implementacji stosu.
 
-## Implementacja
+## Implementation
 
 ### [:simple-cplusplus: C++](../../programming/c++/algorithms/structures/singly-linked-list.md){ .md-button }
 

@@ -1,6 +1,6 @@
 # Sortowanie
 
-## Opis
+## Description
 
 Sortowanie danych jest operacją, z której korzystamy praktycznie na co dzień. 
 Jest to także operacja, która jest wymagana w wielu algorytmach. 
@@ -16,11 +16,11 @@ Funkcja sortująca (a także wiele innych) znajduje się w bibliotece `algorithm
 #include <algorithm>
 ```
 
-## Przykład
+## Example
 
 Poniższa implementacja pokazuje przykładowe wykorzystanie funkcji `sort` z biblioteki `algorithm`.
 
-### Implementacja
+### Implementation
 
 ```cpp
 #include <iostream>
@@ -86,7 +86,7 @@ int main() {
 
 [Sortowanie z STL - przykład](https://ideone.com/X1NpNn)
 
-### Opis implementacji
+### Description implementacji
 
 Na początku tworzymy nowy `vector` o nazwie `array` (**linia 37**), który służy nam za tablicę do posortowania. Następnie sortujemy tablicę rosnąco, wykorzystując do tego funkcję `sort` zawartą w bibliotece `algorithm`. Jako argumenty do funkcji podajemy wskaźniki na początek i koniec sortowanego zakresu (**linia 45**). Podany przedział jest prawostronnie otwarty. Po posortowaniu tablicy wypisujemy ją korzystając z pomocniczej funkcji `printVector`.
 

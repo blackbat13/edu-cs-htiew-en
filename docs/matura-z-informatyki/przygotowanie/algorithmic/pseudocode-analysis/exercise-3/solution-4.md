@@ -48,6 +48,6 @@
 8. Wypisz 21
 ```
 
-## Wynik
+## Output
 
 Instrukcja **4** zostanie wykonana $8$ razy.

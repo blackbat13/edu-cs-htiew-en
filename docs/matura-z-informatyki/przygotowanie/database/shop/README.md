@@ -2,7 +2,7 @@
 
 Dana jest baza danych dotycząca sklepu, jego klientów i prowadzonej sprzedaży, zgodnie z opisem podanym poniżej.
 
-## Opis plików
+## Description plików
 
 ### Artykuły
 

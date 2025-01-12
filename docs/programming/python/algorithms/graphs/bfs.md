@@ -6,7 +6,7 @@ description: Przeszukiwanie grafu wszerz
 
 ## [:link: Opis problemu](../../../../algorithms/graphs/bfs.md)
 
-## Implementacja
+## Implementation
 
 ```python linenums="1"
 from typing import List

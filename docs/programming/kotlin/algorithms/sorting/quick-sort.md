@@ -2,7 +2,7 @@
 
 ## [:link: Opis problemu](../../../../algorithms/sorting/quick-sort.md)
 
-## Implementacja
+## Implementation
 
 ```kotlin
 fun quickSort(array: MutableList<Int>, left: Int, right: Int) {

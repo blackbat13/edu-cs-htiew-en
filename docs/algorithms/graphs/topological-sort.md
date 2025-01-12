@@ -4,7 +4,7 @@ Sortowanie topologiczne to procedura, która dla danego skierowanego grafu acykl
 
 Mówiąc prościej, sortowanie topologiczne danego grafu acyklicznego to liniowe uporządkowanie wierzchołków takie, że jeżeli istnieje krawędź od wierzchołka $u$ do $v$, to $u$ pojawia się przed $v$ w porządkowaniu.
 
-## Opis działania algorytmu
+## Description działania algorytmu
 
 Jednym z podstawowych algorytmów sortowania topologicznego jest algorytm oparty na przeszukiwaniu w głąb (DFS). Lista kroków tego algorytmu może wyglądać następująco:
 
@@ -13,7 +13,7 @@ Jednym z podstawowych algorytmów sortowania topologicznego jest algorytm oparty
 3. Podczas operacji DFS, po odwiedzeniu wszystkich sąsiadów danego wierzchołka, umieszczamy ten wierzchołek na stosie.
 4. Po zakończeniu operacji DFS dla wszystkich wierzchołków, stos zawiera wierzchołki posortowane topologicznie. Wierzchołki są poprawnie posortowane, gdy usuwamy je ze stosu od góry.
 
-## Złożoność
+## Complexity
 
 Złożoność czasowa tego algorytmu to $O(V+E)$, gdzie $V$ to liczba wierzchołków, a $E$ to liczba krawędzi w grafie, co wynika bezpośrednio z złożoności przeszukiwania w głąb.
 
@@ -21,7 +21,7 @@ Złożoność czasowa tego algorytmu to $O(V+E)$, gdzie $V$ to liczba wierzchoł
 
 Sortowanie topologiczne ma wiele zastosowań, szczególnie w dziedzinach, które wymagają określonego porządku zadań. Jest używane do określania sekwencji zadań, planowania projektów, budowy planów zajęć, rozwiązywania problemów zależności między zadaniami i wiele innych.
 
-## Implementacja
+## Implementation
 
 ### [:simple-cplusplus: C++](../../programming/c++/algorithms/graphs/topological-sort.md){ .md-button }
 

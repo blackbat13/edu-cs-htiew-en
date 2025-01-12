@@ -4,26 +4,26 @@ Algorytm Euklidesa to jeden z najstarszych znanych algorytmów, który został o
 
 Algorytm Euklidesa znajduje zastosowanie w wielu dziedzinach matematyki i informatyki, m.in. w kryptografii (np. w algorytmie RSA), w teorii liczb, a także w problemach związanych z obliczeniami na wielkich liczbach. Jego prostota i efektywność sprawiają, że jest to jedno z podstawowych narzędzi w arsenale każdego matematyka i programisty.
 
-## Specyfikacja
+## Specification
 
-### Dane
+### Input
 
 * $a, b$ — liczby naturalne, większe od zera, tzn. $a,b\in\mathbb{N}$, $a>0,b>0$
 
-### Wynik
+### Output
 
 * $\mathrm{NWD}(a, b)$ — największy wspólny dzielnik liczb $a$ i $b$ 
 
-## Przykład
+## Example
 
-### Dane
+### Input
 
 ```
 a := 32
 b := 12
 ```
 
-### Wynik
+### Output
 
 $\mathrm{NWD}(32, 12) = 4$ 
 
@@ -48,7 +48,7 @@ Zasada jest prosta: od większej liczby odejmujemy mniejszą i tak w kółko, a�
 4. Powtarzamy kroki 1-3, aż obie liczby będą równe.
 5. Gdy obie liczby są równe, osiągnęliśmy największy wspólny dzielnik (NWD).
 
-### Przykład 1
+### Example 1
 
 | a        | b      |
 | -------- | ------ |
@@ -60,7 +60,7 @@ Zasada jest prosta: od większej liczby odejmujemy mniejszą i tak w kółko, a�
 
 $\mathrm{NWD}(28, 12)=4$
 
-### Przykład 2
+### Example 2
 
 | a    | b    |
 | ---- | ---- |
@@ -75,7 +75,7 @@ $\mathrm{NWD}(28, 12)=4$
 
 $\mathrm{NWD}(3, 16) = 1$
 
-### Przykład 3
+### Example 3
 
 | a    | b    |
 | ---- | ---- |
@@ -85,7 +85,7 @@ $\mathrm{NWD}(3, 16) = 1$
 
 $\mathrm{NWD}(6,18)=6$
 
-### Pseudokod
+### Pseudocode
 
 ```
 funkcja NWD(a, b):
@@ -97,18 +97,18 @@ funkcja NWD(a, b):
     6. Zwróć a
 ```
 
-### Schemat blokowy
+### Block diagram
 
 ```mermaid
 %%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
 flowchart TD
 	START(["NWD(a, b)"]) --> K1{a != b}
-	K1 -- PRAWDA --> K2{a > b}
-	K2 -- PRAWDA --> K3[a := a - b]
+	K1 -- TRUE --> K2{a > b}
+	K2 -- TRUE --> K3[a := a - b]
 	K3 --> K1
-	K2 -- FAŁSZ --> K5[b := b - a]
+	K2 -- FALSE --> K5[b := b - a]
 	K5 --> K1
-	K1 -- FAŁSZ --> K6[/Zwróć a/]
+	K1 -- FALSE --> K6[/Zwróć a/]
 	K6 --> STOP([STOP])
 ```
 
@@ -116,7 +116,7 @@ flowchart TD
 
 Odejmowanie możemy zastąpić operacją reszty z dzielenia, która jest dużo wydajniejsza w tym przypadku.
 
-### Przykład 1
+### Example 1
 
 | a                         | b                     |
 | ------------------------- | --------------------- |
@@ -126,7 +126,7 @@ Odejmowanie możemy zastąpić operacją reszty z dzielenia, która jest dużo w
 
 $\mathrm{NWD}(28, 12)=4$
 
-### Przykład 2
+### Example 2
 
 | a     | b            |
 | ----- | ------------ |
@@ -137,7 +137,7 @@ $\mathrm{NWD}(28, 12)=4$
 
 $\mathrm{NWD}(3, 16) = 1$
 
-### Przykład 3
+### Example 3
 
 | a     | b    |
 | ----- | ---- |
@@ -147,7 +147,7 @@ $\mathrm{NWD}(3, 16) = 1$
 
 $\mathrm{NWD}(6,18)=6$
 
-### Przykład 4
+### Example 4
 
 | a     | b    |
 | ----- | ---- |
@@ -156,7 +156,7 @@ $\mathrm{NWD}(6,18)=6$
 
 $\mathrm{NWD}(100, 2) = 2$
 
-### Pseudokod
+### Pseudocode
 
 ```
 funkcja NWD(a, b):
@@ -170,17 +170,17 @@ funkcja NWD(a, b):
 !!! info
 	 **mod** oznacza resztę z dzielenia
 
-### Schemat blokowy
+### Block diagram
 
 ```mermaid
 %%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
 flowchart TD
 	START(["NWD(a, b)"]) --> K1{b != 0}
-	K1 -- PRAWDA --> K2["b2 := b
+	K1 -- TRUE --> K2["b2 := b
 	b := a mod b
 	a := b2"]
 	K2 --> K1
-	K1 -- FAŁSZ --> K5[/Zwróć a/]
+	K1 -- FALSE --> K5[/Zwróć a/]
 	K5 --> STOP([STOP])
 ```
 
@@ -196,7 +196,7 @@ a & b=0 \\
 \end{cases}
 $$ 
 
-### Pseudokod
+### Pseudocode
 
 ```
 funkcja NWD(a, b):
@@ -205,19 +205,19 @@ funkcja NWD(a, b):
     3. Zwróć NWD(b, a mod b) i zakończ
 ```
 
-### Schemat blokowy
+### Block diagram
 
 ```mermaid
 %%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
 flowchart TD
 	START(["NWD(a, b)"]) --> K1{b = 0}
-	K1 -- PRAWDA --> K2[/Zwróć a/]
+	K1 -- TRUE --> K2[/Zwróć a/]
 	K2 --> STOP([STOP])
-	K1 -- FAŁSZ --> K3[/"Zwróć NWD(b, a mod b)"/]
+	K1 -- FALSE --> K3[/"Zwróć NWD(b, a mod b)"/]
 	K3 --> STOP
 ```
 
-## Implementacja
+## Implementation
 
 ### [:simple-cplusplus: C++](../../programming/c++/algorithms/integers/gcd.md){ .md-button }
 
@@ -225,6 +225,6 @@ flowchart TD
 
 ### [Blockly](../../programming/blockly/algorithms/integers/gcd.md){ .md-button }
 
-## Implementacja - pozostałe
+## Implementation - pozostałe
 
 ### [:simple-haskell: Haskell](../../programming/haskell/algorithms/integers/gcd.md){ .md-button }

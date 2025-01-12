@@ -4,7 +4,7 @@ Wyobraźmy sobie czarne magiczne pudełko. Takie pudełko, do którego coś wrzu
 
 ![](<../../assets/image (32).png>)
 
-Inaczej mówiąc, wkładamy do pudełka pewne **dane**, a wyciągamy z niego **wynik**:
+Inaczej mówiąc, wkładamy do pudełka pewne **dane**, a wyciągamy z niego **Output**:
 
 ![](<../../assets/image (33).png>)
 
@@ -27,23 +27,23 @@ funkcja NazwaFunkcji(parametr1, parametr2, ...):
     Zwróć wynik
 ```
 
-## Przykład - automat do kawy
+## Example - automat do kawy
 
 Wyobraźmy sobie automat do kawy, taki jaki stoi na korytarzach wielu biur, szkół i dworców kolejowych. Możemy powiedzieć, że reprezentuje ona pewną funkcję, zgodną z poniższą specyfikacją:
 
-### Specyfikacja
+### Specification
 
-#### Dane
+#### Input
 
 * **wybór** - wybrany napój
 * **pieniądze** - należna kwota
 
-#### Wynik
+#### Output
 
 * Wybrany napój.
 
 !!! info
-	 Oczywiście jest to bardzo uproszczona specyfikacja. W rzeczywistości taki automat nie wyda nam napoju, jeśli nie uiścimy odpowiedniej opłaty. Czasem oprócz napoju dostaniemy też resztę. Taka specyfikacja wystarczy nam jednak do przykładu.
+	 Oczywiście jest to bardzo uproszczona Specification. W rzeczywistości taki automat nie wyda nam napoju, jeśli nie uiścimy odpowiedniej opłaty. Czasem oprócz napoju dostaniemy też resztę. Taka Specification wystarczy nam jednak do przykładu.
 
 Spróbujmy zapisać fragment funkcji realizowanej przez taki automat w postaci pseudokodu:
 

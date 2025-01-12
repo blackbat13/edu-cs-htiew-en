@@ -16,12 +16,12 @@ W takiej sytuacji z pomocą przychodzą **struktury**.
 Struktury (w dużym skrócie) pozwalają nam definiować własne typy i przydają się przede wszystkim w sytuacjach, gdy potrzebujemy połączyć grupę wartości w jedną, logiczną całość.
 Przyjrzyjmy się poniższym przykładom.
 
-## Przykład 1: punkt 2D
+## Example 1: punkt 2D
 
 Zacznijmy od prostego przykładu punktu. 
 Zdefiniujemy strukturę `Point`, która będzie przechowywać dwie wartości całkowite: współrzędne punktu.
 
-### Implementacja
+### Implementation
 
 ```cpp
 #include <iostream>
@@ -56,7 +56,7 @@ int main() {
 
 [Struktura Point](https://ideone.com/YOfvJ9)
 
-### Opis implementacji
+### Description implementacji
 
 Zaczynamy od zdefiniowania własnej struktury `Point` (**linia 5**).
 Definicję struktury zaczynamy od słowa kluczowego `struct`, następnie podajemy jej nazwę i otwieramy blok kodu.
@@ -73,14 +73,14 @@ W celu przypisania wartości do naszej zmiennej możemy postąpić na dwa sposob
 Aby dostać się do elementów naszej zmiennej typu `Point` używamy zapisu z kropką, np. `point.x`.
 Gdyby nasza zmienna `point` była wskaźnikiem, zamiast kropki użylibyśmy strzałki: `point->x`.
 
-## Przykład 2: punkt 3D
+## Example 2: punkt 3D
 
 Rozbudujmy poprzedni przykład i stwórzmy strukturę do reprezentacji punktu w przestrzeni 3D.
 Tym razem, zamiast wartości całkowitych, użyjemy wartości rzeczywistych.
 Dodatkowo, aby ułatwić sobie życie, dopiszemy metodę do wypisywania informacji na temat punktu do konsoli.
 Tak, do struktur możemy także dopisywać **metody**: funkcje przypisane do struktury, które mogą korzystać z jej wartości.
 
-### Implementacja
+### Implementation
 
 ```cpp
 #include <iostream>
@@ -115,7 +115,7 @@ int main() {
 }
 ```
 
-## Przykład 3: prostokąt
+## Example 3: prostokąt
 
 ```cpp
 #include <iostream>

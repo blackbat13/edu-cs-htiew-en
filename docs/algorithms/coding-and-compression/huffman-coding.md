@@ -2,7 +2,7 @@
 
 Kody Huffmana to jeden z algorytmów kompresji, który polega na wygenerowaniu kodów dla poszczególnych znaków bazując na częstotliwości występowania tych znaków w kompresowanych danych. W ramach algorytmu tworzymy **drzewo binarne jednoznacznych kodów**. Co to znaczy, że powstałe kody są jednoznaczne? Oznacza to, że skompresowane dane możemy odkodować tylko na jeden sposób.
 
-## Przykład
+## Example
 
 Pokażemy proces tworzenia drzewa kodów dla wyrazu **papuga**.
 
@@ -77,7 +77,7 @@ $001000100111$
 
 Wyrazy został zakodowany na trzynastu bitach. Gdybyśmy użyli kodowania ASCII to wyraz zostałby zakodowany na czterdziestu ośmiu bitach (każdy znak na ośmiu bitach).
 
-## Implementacja
+## Implementation
 
 ### [:simple-cplusplus: C++](../../programming/c++/algorithms/coding-and-compression/huffman-coding.md){ .md-button }
 

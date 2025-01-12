@@ -2,7 +2,7 @@
 
 ## [:link: Opis problemu](../../../../algorithms/integers/perfect-test.md)
 
-## Implementacja
+## Implementation
 
 ```python linenums="1"
 def is_perfect(n: int) -> bool:

@@ -39,6 +39,6 @@
 8. Wypisz 25
 ```
 
-## Wynik
+## Output
 
 $25$

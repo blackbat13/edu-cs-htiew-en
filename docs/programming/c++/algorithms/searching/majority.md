@@ -2,7 +2,7 @@
 
 ## [:link: Opis problemu](../../../../algorithms/searching/majority.md)
 
-## Implementacja
+## Implementation
 
 ```cpp linenums="1"
 #include <iostream>
@@ -56,7 +56,7 @@ int main() {
 }
 ```
 
-### Opis implementacji
+### Description implementacji
 
 #### Funkcja `countOccurences`
 

@@ -1,21 +1,21 @@
-# Rozwiązanie 8
+# Solution 8
 
 ## Treść zadania
 
 Napisz program zgodny z poniższą specyfikacją.
 
-### Specyfikacja
+### Specification
 
-#### Dane
+#### Input
 
 * $n$ - liczba naturalna
 * $p, k$ - dwie liczby naturalna, $p <= k$
 
-#### Wynik
+#### Output
 
 * $n$-elementowa lista wypełniona losowymi wartościami z przedziału $[p, k]$
 
-## Rozwiązanie
+## Solution
 
 ```python
 import random

@@ -41,7 +41,7 @@ Dotyczy liczby bitów używanych do reprezentowania koloru każdego piksela. Na 
 
 Dla profesjonalistów z branży graficznej kluczowe jest, aby kolory na ekranie monitora były wiernie oddane w stosunku do oryginału lub druku. Dlatego kalibracja monitora i stosowanie odpowiednich profilów ICC jest tak ważne.
 
-## Prezentacja
+## Presentation
 
 Krótka prezentacja na temat przestrzeni kolorów.
 

@@ -2,7 +2,7 @@
 
 ## [:link: Opis problemu](../../../../algorithms/sorting/shell-sort.md)
 
-## Implementacja
+## Implementation
 
 ```python linenums="1"
 def shell_sort(array: list):

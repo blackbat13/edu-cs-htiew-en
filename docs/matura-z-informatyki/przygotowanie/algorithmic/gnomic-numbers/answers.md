@@ -15,8 +15,8 @@
 ```
 funkcja czy_gnomiczna(k):
     1. Jeżeli k mod 2 == 1:
-        2. Zwróć PRAWDA
-    3. Zwróć FAŁSZ
+        2. Zwróć TRUE
+    3. Zwróć FALSE
 ```
 
 ## Zadanie 3
@@ -25,7 +25,7 @@ funkcja czy_gnomiczna(k):
 
 $42$
 
-### Rozwiązanie
+### Solution
 
 === "Python"
 

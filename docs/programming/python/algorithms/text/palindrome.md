@@ -2,7 +2,7 @@
 
 ## [:link: Opis problemu](../../../../algorithms/text/palindrome.md)
 
-## Implementacja
+## Implementation
 
 ```python linenums="1"
 def is_palindrome(a: str) -> bool:

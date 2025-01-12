@@ -1,19 +1,19 @@
-# Ćwiczenie 5
+# Exercise 5
 
 Zapoznaj się z poniższą specyfikacją oraz pseudokodem, a następnie rozwiąż zadania.
 
-## Specyfikacja
+## Specification
 
-### Dane
+### Input
 
 * $a$ - liczba rzeczywista
 * $n$ - liczba naturalna, $n \neq 0$ 
 
-### Wynik
+### Output
 
 * Liczba rzeczywista $p=a^n$ 
 
-## Pseudokod
+## Pseudocode
 
 ```
 1. p := 1

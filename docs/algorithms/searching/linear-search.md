@@ -18,21 +18,21 @@ Naszym celem będzie więc sprawdzenie, czy w tablicy znajduje się poszukiwana 
 
 [:material-video: Taneczne wyszukiwanie liniowe](https://www.youtube.com/watch?v=-PuqKbu9K3U){ .md-button }
 
-### Specyfikacja
+### Specification
 
-#### Dane
+#### Input
 
 * $n$ — liczba naturalna, liczba elementów w tablicy
 * $A[1..n]$ — tablica n wartości całkowitych
 * $k$ — liczba całkowita, szukana wartość
 
-#### Wynik
+#### Output
 
-* Wartość **PRAWDA**, jeżeli wartość $k$ znajduje się w tablicy $A$, lub **FAŁSZ** w przeciwnym przypadku
+* Wartość **TRUE**, jeżeli wartość $k$ znajduje się w tablicy $A$, lub **FALSE** w przeciwnym przypadku
 
-### Przykład 1
+### Example 1
 
-#### Dane
+#### Input
 
 ```
 n := 5
@@ -40,16 +40,16 @@ A := [5, 2, 7, 9, 1]
 k := 7 
 ```
 
-**Wynik**: **PRAWDA**
+**Output**: **TRUE**
 
 !!! info
 	**Wyjaśnienie**
 	
-	Poszukiwana wartość w tablicy to $7$. Jak widać, ta wartość znajduje się w tablicy, stąd też wynik to **PRAWDA**.
+	Poszukiwana wartość w tablicy to $7$. Jak widać, ta wartość znajduje się w tablicy, stąd też wynik to **TRUE**.
 
-### Przykład 2
+### Example 2
 
-#### Dane
+#### Input
 
 ```
 n := 5
@@ -57,54 +57,54 @@ A := [5, 2, 7, 9, 1]
 k := 3
 ```
 
-**Wynik**: **FAŁSZ**
+**Output**: **FALSE**
 
 !!! info
 	**Wyjaśnienie**
 	
-	Poszukujemy wartości $3$, która nie występuje w tablicy. Dlatego wynik to **FAŁSZ**.
+	Poszukujemy wartości $3$, która nie występuje w tablicy. Dlatego wynik to **FALSE**.
 
-### Rozwiązanie
+### Solution
 
 Znamy już problem, teraz pytanie brzmi, jak go rozwiązać? Jaki algorytm skonstruujemy? Wiemy, że chodzi o algorytm **przeszukiwania liniowego**, czyli sprawdzania elementów **jeden po drugim**. I dokładnie to musimy zrobić. Będziemy przeglądać elementy **od pierwszego do ostatniego**. Każdy kolejny element z tablicy będziemy **porównywać z poszukiwaną wartością**. 
 
-Teraz pytanie brzmi: **co zrobimy, gdy natrafimy na poszukiwany element**? Odpowiedź jest stosunkowo prosta. Gdy stwierdzimy, że poszukiwany element znajduje się w tablicy (czyli gdy go znajdziemy), to należy **zwrócić** stosowny wynik, czyli wartość **PRAWDA**. I co robimy dalej? Cóż, w tym momencie możemy już **zakończyć obliczenia**, ponieważ stwierdziliśmy istnienie elementu w tablicy. Tak więc otrzepujemy ręce i kończymy, dobra robota!
+Teraz pytanie brzmi: **co zrobimy, gdy natrafimy na poszukiwany element**? Odpowiedź jest stosunkowo prosta. Gdy stwierdzimy, że poszukiwany element znajduje się w tablicy (czyli gdy go znajdziemy), to należy **zwrócić** stosowny wynik, czyli wartość **TRUE**. I co robimy dalej? Cóż, w tym momencie możemy już **zakończyć obliczenia**, ponieważ stwierdziliśmy istnienie elementu w tablicy. Tak więc otrzepujemy ręce i kończymy, dobra robota!
 
-Pozostaje nam jeszcze jednak do rozważenia sytuacja, w której poszukiwany element **nie występuje w tablicy**. Co zrobimy w takim przypadku? Oczywiście powinniśmy zwrócić wartość **FAŁSZ**, ale jak stwierdzić, że elementu nie ma w tablicy? Zastanówmy się nad tym chwilę. Gdy znajdziemy element w tablicy to zwracamy wartość **PRAWDA** i kończymy działanie. Gdy nie znajdziemy elementu w tablicy, to **nie zwrócimy** wartości **PRAWDA** i po prostu **sprawdzimy wszystkie elementy tablicy**. 
+Pozostaje nam jeszcze jednak do rozważenia sytuacja, w której poszukiwany element **nie występuje w tablicy**. Co zrobimy w takim przypadku? Oczywiście powinniśmy zwrócić wartość **FALSE**, ale jak stwierdzić, że elementu nie ma w tablicy? Zastanówmy się nad tym chwilę. Gdy znajdziemy element w tablicy to zwracamy wartość **TRUE** i kończymy działanie. Gdy nie znajdziemy elementu w tablicy, to **nie zwrócimy** wartości **TRUE** i po prostu **sprawdzimy wszystkie elementy tablicy**. 
 
-W takim razie, gdy sprawdzimy już wszystkie elementy tablicy i **nadal będziemy wykonywać kolejne operacje** (ponieważ nie zakończyliśmy wcześniej działania) będzie to oznaczało, że nie znaleźliśmy elementu w tablicy! W takim razie zwracamy **FAŁSZ** i kończymy działanie. 
+W takim razie, gdy sprawdzimy już wszystkie elementy tablicy i **nadal będziemy wykonywać kolejne operacje** (ponieważ nie zakończyliśmy wcześniej działania) będzie to oznaczało, że nie znaleźliśmy elementu w tablicy! W takim razie zwracamy **FALSE** i kończymy działanie. 
 
 !!! warning
-	 Zwróć uwagę na to, że wartość **FAŁSZ** należy zwrócić **po** sprawdzeniu **wszystkich** elementów tablicy, czyli **po wyjściu z pętli**.
+	 Zwróć uwagę na to, że wartość **FALSE** należy zwrócić **po** sprawdzeniu **wszystkich** elementów tablicy, czyli **po wyjściu z pętli**.
 
-### Pseudokod
+### Pseudocode
 
 ```
 funkcja SzukajLiniowo(n, A, k)
     1. Od i := 1 do n, wykonuj:
         2. Jeżeli k = A[i], to:
-            3. Zwróc PRAWDA
+            3. Zwróc TRUE
         
-    4. Zwróć FAŁSZ
+    4. Zwróć FALSE
 ```
 
-### Schemat blokowy
+### Block diagram
 
 ```mermaid
 %%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
 flowchart TD
 	START(["SzukajLiniowo(n, A, k)"]) --> B[i := 1]
 	B --> C{i <= n}
-	C -- FAŁSZ --> D[/Zwróc FAŁSZ/]
-	C -- PRAWDA --> E{"k = A[i]"}
-	E -- PRAWDA --> F[/Zwróc PRAWDA/]
-	E -- FAŁSZ --> G[i := i + 1]
+	C -- FALSE --> D[/Zwróc FALSE/]
+	C -- TRUE --> E{"k = A[i]"}
+	E -- TRUE --> F[/Zwróc TRUE/]
+	E -- FALSE --> G[i := i + 1]
 	G --> C
 	D --> STOP([STOP])
 	F --> STOP
 ```
 
-### Złożoność 
+### Complexity 
 
 Głównym elementem algorytmu jest pętla przechodząca po kolei przez wszystkie wartości w tablicy. Ta pętla wykonuje dokładnie $n$ powtórzeń. Stąd też otrzymujemy złożoność liniową.
 
@@ -117,21 +117,21 @@ Czasami nie wystarczy nam informacja, że element _gdzieś_ się znajduje. Czase
 !!! warning
 	 Szukana wartość może występować w tablicy wielokrotnie. Nas jednak na początek interesuje jej **dowolne** położenie. 
 
-### Specyfikacja
+### Specification
 
-#### Dane
+#### Input
 
 * $n$ — liczba naturalna, liczba elementów w tablicy
 * $A[1..n]$ — tablica n wartości całkowitych
 * $k$ — liczba całkowita, szukana wartość
 
-#### Wynik
+#### Output
 
 * Indeks dowolnego wystąpienia wartości $k$ w tablicy $A$, lub $-1$ jeżeli tej wartości nie ma w tablicy
 
-### Przykład 1
+### Example 1
 
-#### Dane
+#### Input
 
 ```
 n := 5
@@ -139,16 +139,16 @@ A := [5, 2, 7, 9, 1]
 k := 7 
 ```
 
-**Wynik**: $3$ 
+**Output**: $3$ 
 
 !!! info
 	**Wyjaśnienie**
 	
 	Poszukiwana wartość w tablicy to $7$. Jak widać, ta wartość znajduje się na trzecim miejscu w tablicy, stąd też wynik wynosi $3$.
 
-### Przykład 2
+### Example 2
 
-#### Dane
+#### Input
 
 ```
 n := 5
@@ -156,22 +156,22 @@ A := [5, 2, 7, 9, 1]
 k := 3
 ```
 
-**Wynik**: $-1$
+**Output**: $-1$
 
 !!! info
 	**Wyjaśnienie**
 	
 	Poszukujemy wartości $3$, która nie występuje w tablicy. Dlatego wynik to $-1$.
 
-### Rozwiązanie
+### Solution
 
 Do skonstruowania rozwiązania tego problemu skorzystamy z poprzedniego rozwiązania. Zastanówmy się, jakie są różnice pomiędzy tymi dwoma problemami i co musimy zmienić.
 
-Różnicę tak naprawdę stanowią jedynie wartości, jakie mamy zwrócić w wyniku. Poprzednio zwracaliśmy **PRAWDA**, gdy element istniał w tablicy. Teraz mamy zwrócić jego **indeks**. Oznacza to, że musimy zmienić instrukcję, w której zwracamy wynik **PRAWDA** (numer 3). Powinniśmy w tym miejscu zwrócić indeks elementu, jednak skąd wziąć tę wartość? Przyjrzyjmy się poprzedzającej instrukcji warunkowej. W niej sprawdzamy, czy szukana wartość występuje pod **aktualnie sprawdzanym indeksem** w tablicy. A jaki to jest indeks? Ten indeks określany jest przez zmienną, która stanowi **licznik naszej pętli**, czyli przez zmienną $i$. W takim razie zamiast **PRAWDA** zwracamy wartość zmiennej $i$. Gotowe!
+Różnicę tak naprawdę stanowią jedynie wartości, jakie mamy zwrócić w wyniku. Poprzednio zwracaliśmy **TRUE**, gdy element istniał w tablicy. Teraz mamy zwrócić jego **indeks**. Oznacza to, że musimy zmienić instrukcję, w której zwracamy wynik **TRUE** (numer 3). Powinniśmy w tym miejscu zwrócić indeks elementu, jednak skąd wziąć tę wartość? Przyjrzyjmy się poprzedzającej instrukcji warunkowej. W niej sprawdzamy, czy szukana wartość występuje pod **aktualnie sprawdzanym indeksem** w tablicy. A jaki to jest indeks? Ten indeks określany jest przez zmienną, która stanowi **licznik naszej pętli**, czyli przez zmienną $i$. W takim razie zamiast **TRUE** zwracamy wartość zmiennej $i$. Gotowe!
 
-Teraz skupmy się na drugim możliwym wyniku. Przedtem zwracaliśmy **FAŁSZ**. Co teraz powinniśmy zwrócić, gdy element nie występuje w tablicy? Wystarczy spojrzeć na specyfikację. Zastępujemy **FAŁSZ** wartością $-1$ i kończymy działanie.
+Teraz skupmy się na drugim możliwym wyniku. Przedtem zwracaliśmy **FALSE**. Co teraz powinniśmy zwrócić, gdy element nie występuje w tablicy? Wystarczy spojrzeć na specyfikację. Zastępujemy **FALSE** wartością $-1$ i kończymy działanie.
 
-### Pseudokod
+### Pseudocode
 
 ```
 funkcja SzukajLiniowo(n, A, k)
@@ -182,23 +182,23 @@ funkcja SzukajLiniowo(n, A, k)
     4. Zwróć -1
 ```
 
-### Schemat blokowy
+### Block diagram
 
 ```mermaid
 %%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
 flowchart TD
 	START(["SzukajLiniowo(n, A, k)"]) --> B[i := 1]
 	B --> C{i <= n}
-	C -- FAŁSZ --> D[/Zwróć -1/]
-	C -- PRAWDA --> E{"k = A[i]"}
-	E -- PRAWDA --> F[/Zwróć i/]
-	E -- FAŁSZ --> G[i := i + 1]
+	C -- FALSE --> D[/Zwróć -1/]
+	C -- TRUE --> E{"k = A[i]"}
+	E -- TRUE --> F[/Zwróć i/]
+	E -- FALSE --> G[i := i + 1]
 	G --> C
 	D --> STOP([STOP])
 	F --> STOP
 ```
 
-### Złożoność 
+### Complexity 
 
 $O(n)$ — liniowa
 
@@ -206,21 +206,21 @@ $O(n)$ — liniowa
 
 Wiemy już jak sprawdzić, czy wartość występuje w tablicy, a także jak ją w tej tablicy namierzyć. Co jednak w przypadku, gdy chcemy poznać **wszystkie** wystąpienia poszukiwanego elementu w tablicy? Teraz zajmiemy się takim właśnie problemem.
 
-### Specyfikacja
+### Specification
 
-#### Dane
+#### Input
 
 * $n$ — liczba naturalna, liczba elementów w tablicy
 * $A[1..n]$ — tablica n wartości całkowitych
 * $k$ — liczba całkowita, szukana wartość
 
-#### Wynik
+#### Output
 
 * Lista wszystkich indeksów, pod którymi znajduje się wartość $k$ w tablicy $A$
 
-### Przykład 1
+### Example 1
 
-#### Dane
+#### Input
 
 ```
 n := 5
@@ -228,16 +228,16 @@ A := [7, 2, 7, 9, 7]
 k := 7 
 ```
 
-**Wynik**: $[1, 3, 5]$ 
+**Output**: $[1, 3, 5]$ 
 
 !!! info
 	**Wyjaśnienie**
 	
 	Poszukiwana wartość w tablicy to $7$. Jak widać, ta wartość znajduje się na pierwszym, trzecim oraz ostatnim (piątym) miejscu w tablicy.
 
-### Przykład 2
+### Example 2
 
-#### Dane:
+#### Input:
 
 ```
 n := 5
@@ -245,14 +245,14 @@ A := [7, 2, 7, 9, 7]
 k := 3 
 ```
 
-**Wynik**: $[\ ]$ 
+**Output**: $[\ ]$ 
 
 !!! info
 	**Wyjaśnienie**
 	
 	Poszukiwana wartość w tablicy to $3$. Jak widać, ta wartość nie występuje w tablicy, stąd też wynik jest pusty, ponieważ lista indeksów jest pusta.
 
-### Rozwiązanie
+### Solution
 
 W ogólności zwrócenie listy, czy też tablicy jako wynik działania bywa problematyczne, w zależności od języka programowania. Dlatego skupimy się na czymś podobnym, tzn. wypiszemy wszystkie wyniki na ekranie.
 
@@ -262,7 +262,7 @@ Po pierwsze, teraz chcemy wypisać **wszystkie** indeksy, pod którymi pojawia s
 
 Potrzebujemy dokonać jeszcze jednej zmiany. Zauważmy, że teraz nie musimy się zastanawiać nad tym, co zrobić w przypadku, gdy poszukiwany element nie występuje w tablicy. W takim przypadku po prostu nic nie wypiszemy na ekran. Dlatego usuwamy ostatnią instrukcję (numer 4), w której zwracamy wynik -1.
 
-### Pseudokod
+### Pseudocode
 
 ```
 procedura SzukajLiniowo(n, A, k):
@@ -271,22 +271,22 @@ procedura SzukajLiniowo(n, A, k):
             3. Wypisz i
 ```
 
-### Schemat blokowy
+### Block diagram
 
 ```mermaid
 %%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
 flowchart TD
 	START(["SzukajLiniowo(n, A, k)"]) --> B[i := 1]
 	B --> C{i <= n}
-	C -- FAŁSZ ---> STOP([STOP])
-	C -- PRAWDA --> E{"k = A[i]"}
-	E -- PRAWDA --> F[/Wypisz i/]
-	E -- FAŁSZ --> G[i := i + 1]
+	C -- FALSE ---> STOP([STOP])
+	C -- TRUE --> E{"k = A[i]"}
+	E -- TRUE --> F[/Wypisz i/]
+	E -- FALSE --> G[i := i + 1]
 	F --> G
 	G --> C
 ```
 
-### Złożoność
+### Complexity
 
 $O(n)$ — liniowa
 

@@ -16,7 +16,7 @@ Przyjrzyjmy się, jak wygląda algorytm wykorzystujący metodę DFS do obliczani
 
 Podobny algorytm można również opracować z użyciem BFS zamiast DFS. Przy odpowiedniej implementacji wystarczy zamienić wykorzystywaną strukturę danych (ze stosu na kolejkę).
 
-## Złożoność obliczeniowa
+## Complexity obliczeniowa
 
 Złożoność obliczeniowa tego algorytmu to $O(V+E)$, gdzie $V$ to liczba wierzchołków, a $E$ to liczba krawędzi w grafie. Jest to złożoność typowego przeszukiwania grafu (DFS lub BFS).
 
@@ -24,7 +24,7 @@ Złożoność obliczeniowa tego algorytmu to $O(V+E)$, gdzie $V$ to liczba wierz
 
 Obliczanie liczby spójnych składowych w grafie jest podstawowym zagadnieniem w teorii grafów. Jest niezbędne w wielu aplikacjach, takich jak analiza sieci społecznościowych, identyfikacja klastrów w danych lub wykrywanie składowych niezależnych w sieci komputerowej.
 
-## Implementacja
+## Implementation
 
 ### [:simple-cplusplus: C++](../../programming/c++/algorithms/graphs/connected-components.md){ .md-button }
 

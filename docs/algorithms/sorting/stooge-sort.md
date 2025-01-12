@@ -10,7 +10,7 @@ Sortowanie stooge (ang. *Stoogesort*) to rekurencyjny algorytm sortowania znany 
 
 ![By Simpsons contributor - Own work, CC0, https://commons.wikimedia.org/w/index.php?curid=16021267](../../assets/Sorting_stoogesort_anim.gif)
 
-## Pseudokod
+## Pseudocode
 
 ```
 procedura SortowanieStooge(A, i, j):
@@ -24,11 +24,11 @@ procedura SortowanieStooge(A, i, j):
         7. SortowanieStooge(A, i, j - t)
 ```
 
-## Złożoność
+## Complexity
 
 Złożoność czasowa algorytmu jest rzędu $O(n^{\log{3}/\log{1.5}})=O(n^{2.7095...})$
 
-## Implementacja
+## Implementation
 
 ### [:simple-cplusplus: C++](../../programming/c++/algorithms/sorting/stooge-sort.md){ .md-button }
 

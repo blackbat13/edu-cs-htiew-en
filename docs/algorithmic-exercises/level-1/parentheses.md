@@ -8,7 +8,7 @@ Dany jest ciąg złożony z nawiasów okrągłych () oraz kwadratowych []. Twoim
 
 Źródło: [https://onlinejudge.org/external/6/673.pdf](https://onlinejudge.org/external/6/673.pdf)
 
-## Specyfikacja
+## Specification
 
 ### Wejście
 
@@ -18,7 +18,7 @@ Dany jest ciąg złożony z nawiasów okrągłych () oraz kwadratowych []. Twoim
 
 * Informacja, czy ciąg jest poprawny, czy też nie.
 
-## Przykład 1
+## Example 1
 
 ### Wejście
 
@@ -32,7 +32,7 @@ Dany jest ciąg złożony z nawiasów okrągłych () oraz kwadratowych []. Twoim
 Correct
 ```
 
-## Przykład 2
+## Example 2
 
 ### Wejście
 
@@ -46,7 +46,7 @@ Correct
 Incorrect
 ```
 
-## Przykład 3
+## Example 3
 
 ### Wejście
 

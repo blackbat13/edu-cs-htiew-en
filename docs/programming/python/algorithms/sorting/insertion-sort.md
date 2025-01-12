@@ -2,7 +2,7 @@
 
 ## [:link: Opis problemu](../../../../algorithms/sorting/insertion-sort.md)
 
-## Implementacja
+## Implementation
 
 ```python linenums="1"
 def insertion_sort(array: list):

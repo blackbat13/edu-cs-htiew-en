@@ -1,6 +1,6 @@
 # Mapa
 
-## Opis
+## Description
 
 Za pomocą mapy możemy tworzyć pary typu (klucz, wartość) i zapamiętywać je w zbiorze, w którym klucze są unikalne.
 W innych językach programowania ten typ struktury nazywany jest często **słownikiem** (ang. _dictionary_).

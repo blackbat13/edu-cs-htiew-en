@@ -2,7 +2,7 @@
 
 ## [:link: Opis problemu](../../../../algorithms/integers/perfect-test.md)
 
-## Implementacja
+## Implementation
 
 ```haskell linenums="1"
 isPerfect n = sum ([x | x <- [1..sqrtN], n `mod` x == 0] ++ [n `div` x | x <- [sqrtN, sqrtN - 1 .. 2], (n `mod` x == 0) && (n `div` x /= x)]) == n
@@ -15,7 +15,7 @@ main = do
     print $ isPerfect n
 ```
 
-## Opis
+## Description
 
 Funkcja `isPerfect` przyjmuje jeden argument: liczbę `n`, którą chcemy sprawdzić pod kątem bycia liczbą doskonałą.
 

@@ -6,21 +6,21 @@ Problem może wydawać się dość abstrakcyjny i słabo związany z rzeczywisto
 
 Zacznijmy od formalnej specyfikacji problemu.
 
-## Specyfikacja
+## Specification
 
-### Dane
+### Input
 
 * $n$ - liczba naturalna, liczebność zbioru
 * $A[1..n]$ - $n-elementowa$ tablica różnych liczb całkowitych, posortowana rosnąco, indeksowana od jedynki
 * $k$ - liczba naturalna, szukana suma
 
-### Wynik
+### Output
 
 * $a, b$ - dwie różne wartości ze zbioru $A$ takie, że ich suma wynosi $k$ ($a+b=k$), lub $-1$, jeżeli takich liczb nie ma w zbiorze (jeżeli takich par jest wiele, to dowolna z nich)
 
-## Przykład
+## Example
 
-### Dane
+### Input
 
 ```
 n := 10
@@ -28,9 +28,9 @@ A[1..10] := [1, 2, 4, 6, 8, 9, 10, 12, 13, 15]
 k := 18
 ```
 
-**Wynik**: $6,\ 12$(lub $8,\ 10$)
+**Output**: $6,\ 12$(lub $8,\ 10$)
 
-## Rozwiązanie naiwne
+## Solution naiwne
 
 Zacznijmy od pierwszego rozwiązania, jakie nam przychodzi do głowy. Naszym celem jest znalezienie **pary** liczb, które dają pożądaną sumę. W takim razie **sprawdźmy wszystkie pary** i zobaczmy, czy znajdziemy to czego szukamy.
 
@@ -38,7 +38,7 @@ Przechodzimy dwiema zagnieżdżonymi pętlami przez tablicę. Zewnętrzna pętla
 
 Spróbujmy przelać nasze rozumowania na pseudokod.
 
-### Pseudokod
+### Pseudocode
 
 ```
 funkcja SumaDwoch(n, A, k):
@@ -49,31 +49,31 @@ funkcja SumaDwoch(n, A, k):
     5. Zwróć -1
 ```
 
-### Schemat blokowy
+### Block diagram
 
 ```mermaid
 %%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
 flowchart TD
 	START(["SumaDwoch(n, A, k)"]) --> K0[i := 1]
 	K0 --> K1{i < n}
-	K1 -- PRAWDA --> K2p[j := i + 1]
+	K1 -- TRUE --> K2p[j := i + 1]
 	K2p --> K2{j <= n}
-	K2 -- PRAWDA --> K3{"A[i] + A[j] = k"}
-	K3 -- PRAWDA --> K4[/"Zwróć A[i], A[j]"/]
+	K2 -- TRUE --> K3{"A[i] + A[j] = k"}
+	K3 -- TRUE --> K4[/"Zwróć A[i], A[j]"/]
 	K4 --> STOP([STOP])
-	K3 -- FAŁSZ --> K2i[j := j + 1]
+	K3 -- FALSE --> K2i[j := j + 1]
 	K2i --> K2
-	K2 -- FAŁSZ --> K1i[i := i + 1]
+	K2 -- FALSE --> K1i[i := i + 1]
 	K1i --> K1
-	K1 -- FAŁSZ --> K6[/Zwróć -1/]
+	K1 -- FALSE --> K6[/Zwróć -1/]
 	K6 --> STOP
 ```
 
-### Złożoność
+### Complexity
 
 $O(n^2)$ - kwadratowa
 
-## Rozwiązanie optymalne
+## Solution optymalne
 
 W poprzednim rozwiązaniu całkowicie pominęliśmy fakt, że nasza tablica jest posortowana. Zastanówmy się więc, jak możemy skorzystać z tego, że liczby są ułożone od najmniejszej do największej.
 
@@ -87,7 +87,7 @@ I tak postępujemy w pętli, aż znajdziemy (albo i nie) poszukiwaną sumę.
 
 Spróbujmy to zapisać w pseudokodzie.
 
-### Pseudokod
+### Pseudocode
 
 ```
 funkcja SumaDwoch(n, A, k):
@@ -104,7 +104,7 @@ funkcja SumaDwoch(n, A, k):
         11. Zwróć -1
 ```
 
-### Schemat blokowy
+### Block diagram
 
 ```mermaid
 %%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
@@ -114,23 +114,23 @@ flowchart TD
 	K1 --> K3{"lewy < prawy
 	oraz
 	A[lewy] + A[prawy] != k"}
-	K3 -- PRAWDA --> K4{"A[lewy] + A[prawy] < k"}
-	K4 -- PRAWDA --> K5[lewy := lewy + 1]
+	K3 -- TRUE --> K4{"A[lewy] + A[prawy] < k"}
+	K4 -- TRUE --> K5[lewy := lewy + 1]
 	K5 --> K3
-	K4 -- FAŁSZ --> K7[prawy := prawy + 1]
+	K4 -- FALSE --> K7[prawy := prawy + 1]
 	K7 --> K3
-	K3 -- FAŁSZ --> K8{lewy < prawy}
-	K8 -- PRAWDA --> K9[/"Zwróć A[lewy], A[prawy]"/]
+	K3 -- FALSE --> K8{lewy < prawy}
+	K8 -- TRUE --> K9[/"Zwróć A[lewy], A[prawy]"/]
 	K9 --> STOP([STOP])
-	K8 -- FAŁSZ --> K11[/Zwróć -1/]
+	K8 -- FALSE --> K11[/Zwróć -1/]
 	K11 --> STOP
 ```
 
-### Złożoność
+### Complexity
 
 $O(n)$ - liniowa
 
-## Implementacja
+## Implementation
 
 ### [:simple-cplusplus: C++](../../programming/c++/algorithms/searching/sum-of-two.md){ .md-button }
 

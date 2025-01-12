@@ -2,16 +2,16 @@
 
 Minkowski Sausage, znana również jako Krzywa Minkowskiego lub Wyspa Minkowskiego, jest rodzajem krzywej fraktalnej. Jest konstruowana poprzez rekursywne modyfikowanie odcinka linii w bardziej złożony kształt. W każdej iteracji każdy odcinek linii jest zastępowany serią mniejszych segmentów, które tworzą wzór zygzakowaty. Ten proces zwiększa złożoność i szczegółowość fraktala z każdym krokiem, co skutkuje kształtem wykazującym samopodobieństwo i skomplikowane wzory na każdej skali.
 
-## Specyfikacja
+## Specification
 
-### Dane
+### Input
 
 - **stopień** - stopień fraktala
 - **długość** - początkowa długość linii
 
-## Rozwiązanie
+## Solution
 
-### Pseudokod
+### Pseudocode
 
 ```
 procedura MinkowskiSausage(stopień, długość):
@@ -27,15 +27,15 @@ procedura MinkowskiSausage(stopień, długość):
     10. Lewo(30)
 ```
 
-### Schemat blokowy
+### Block diagram
 
 ```mermaid
 %%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
 flowchart TD
     START(["MinkowskiSausage(stopień, długość"]) --> K1{stopień = 0}
-    K1 -- PRAWDA --> K2["Przód(długość)"]
+    K1 -- TRUE --> K2["Przód(długość)"]
     K2 --> STOP([STOP])
-    K1 -- FAŁSZ --> K4["Prawo(30)
+    K1 -- FALSE --> K4["Prawo(30)
     MinkowskiSausage(stopień - 1, długość / 2)
     Lewo(90)
     MinkowskiSausage(stopień - 1, długość / 2)
@@ -45,7 +45,7 @@ flowchart TD
     K4 --> STOP
 ```
 
-## Implementacja
+## Implementation
 
 ### [:simple-cplusplus: C++](../../programming/c++/algorithms/fractals/minkowski-sausage.md){ .md-button }
 

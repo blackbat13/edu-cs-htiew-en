@@ -2,7 +2,7 @@
 
 ## [:link: Opis problemu](../../../../algorithms/text/anagrams.md)
 
-## Implementacja
+## Implementation
 
 ```python linenums="1"
 def are_anagrams(a: str, b: str) -> bool:

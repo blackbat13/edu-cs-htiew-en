@@ -14,7 +14,7 @@ Taki podział pozwala między innymi na łatwą podmianę implementacji bez mody
 
 Przyjrzyjmy się dokładniej opisanemu konceptowi na poniższym przykładzie.
 
-## Przykład
+## Example
 
 Jako przykład rozważymy implementację prostej biblioteki pozwalającej na wykonywanie podstawowych operacji na dwuwymiarowych punktach.
 Doprecyzowując zaimplementujemy jedynie strukturę do reprezentacji punktu o współrzędnych rzeczywistych, a także funkcję obliczającą odległość między dwoma punktami.
@@ -91,7 +91,7 @@ gcc -o point point.c main.c
 - `$^` - prawa strona znaku dwukropka, tzn. zależności polecenia
 - `$<` - pierwszy element z listy zależności
 
-### Przykład
+### Example
 
 ```
 CC=gcc

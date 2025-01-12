@@ -11,7 +11,7 @@ Hashcat dokonuje tzw. ataku siłowego lub ataku słownikowego na hasła, próbuj
 
 [Hashcat](https://hashcat.net/hashcat/)
 
-## Przykłady użycia
+## Exampley użycia
 
 ### Atak słownikowy
 

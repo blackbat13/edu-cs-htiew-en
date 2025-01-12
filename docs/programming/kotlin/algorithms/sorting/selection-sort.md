@@ -2,7 +2,7 @@
 
 ## [:link: Opis problemu](../../../../algorithms/sorting/selection-sort.md)
 
-## Implementacja
+## Implementation
 
 ```kotlin
 fun findMin(array: MutableList<Int>, begin: Int): Int {
@@ -39,7 +39,7 @@ fun main() {
 
 [Sortowanie przez wybieranie](https://ideone.com/EM3UPA)
 
-### Opis implementacji
+### Description implementacji
 
 Powyższa implementacja składa się z dwóch funkcji: 
 

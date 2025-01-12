@@ -1,6 +1,6 @@
 # Zbiór
 
-## Opis
+## Description
 
 Do przechowywania unikalnych wartości posłuży nam **zbiór** (ang. _set_).
 

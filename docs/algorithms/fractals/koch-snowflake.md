@@ -2,20 +2,20 @@
 
 Płatek Kocha to fraktal stworzony poprzez złożenie ze sobą trzech krzywych Kocha, tak że razem tworzą strukturę przypominającą płatek śniegu.
 
-## Specyfikacja
+## Specification
 
-### Dane
+### Input
 
 * $stopień$ - stopień fraktala
 * $długość$ - długość linii
 
-### Wynik
+### Output
 
 * Płatek Kocha stopnia $stopień$ i długości $długość$.
 
-## Rozwiązanie
+## Solution
 
-### Pseudokod
+### Pseudocode
 
 ```
 procedura KrzywaKocha(stopień, długość):
@@ -38,15 +38,15 @@ procedura PłatekKocha(stopień, długość):
         3. Prawo(120)
 ```
 
-### Schemat blokowy
+### Block diagram
 
 ```mermaid
 %%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
 flowchart TD
     START(["KrzywaKocha(stopień, długość"]) --> K1{stopień = 0}
-    K1 -- PRAWDA --> K2["Przód(długość)"]
+    K1 -- TRUE --> K2["Przód(długość)"]
     K2 --> STOP([STOP])
-    K1 -- FAŁSZ --> K4["KrzywaKocha(stopień - 1, długość)
+    K1 -- FALSE --> K4["KrzywaKocha(stopień - 1, długość)
     Lewo(60)
     KrzywaKocha(stopień - 1, długość)
     Prawo(120)
@@ -61,14 +61,14 @@ flowchart TD
 flowchart TD
     START(["PłatekKocha(stopień, długość"]) --> K0[i := 1]
     K0 --> K1{i <= 3}
-    K1 -- PRAWDA --> K2["KrzywaKocha(stopień, długość)
+    K1 -- TRUE --> K2["KrzywaKocha(stopień, długość)
     Prawo(120)"]
     K2 --> K1i[i := i + 1]
     K1i --> K1
-    K1 -- FAŁSZ ---> STOP([STOP])
+    K1 -- FALSE ---> STOP([STOP])
 ```
 
-## Implementacja
+## Implementation
 
 ### [:simple-cplusplus: C++](../../programming/c++/algorithms/fractals/koch-snowflake.md){ .md-button }
 

@@ -2,7 +2,7 @@
 
 ## Czytanie plików
 
-### Przykład
+### Example
 
 ```bash
 #!/bin/bash
@@ -13,7 +13,7 @@ echo "$wynik"
 
 ## Pisanie do plików
 
-### Przykład
+### Example
 
 ```bash
 #!/bin/bash

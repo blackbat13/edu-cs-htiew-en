@@ -6,7 +6,7 @@ description: Obliczanie wartości wyrażenia ONP
 
 ## [:link: Opis problemu](../../../../algorithms/text/rpn.md)
 
-## Implementacja
+## Implementation
 
 ```cpp linenums="1"
 #include <iostream>
@@ -60,7 +60,7 @@ int main() {
 }
 ```
 
-### Opis implementacji
+### Description implementacji
 
 Funkcja `calculateRPN` (**linia 19**) oblicza wartość wyrażenia ONP podanego w formie ciągu znaków. Zakładamy, że podane wyrażenie jest poprawne, a każdy znak reprezentuje jednocyfrową liczbę lub operację. 
 

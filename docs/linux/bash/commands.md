@@ -5,7 +5,7 @@ W tym celu wystarczy wpisać do skryptu zadane polecenie.
 Możemy także przechwycić wynik polecenia i zapisać go w zmiennej.
 Wówczas polecenie należy zapisać w apostrofach (znak pod tyldą).
 
-### Przykład 1
+### Example 1
 
 ```bash
 #!/bin/bash
@@ -27,7 +27,7 @@ data2=`date '+%d %m %Y'`
 echo "Data2: $data2"
 ```
 
-### Przykład 2
+### Example 2
 
 ```bash
 #!/bin/bash

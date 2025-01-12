@@ -56,6 +56,6 @@ flowchart TD
     op1["-4"]
 ```
 
-## Wynik
+## Output
 
 $(5 / 1) - (2 + 3) * 4 =-15$

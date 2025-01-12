@@ -6,19 +6,19 @@ Twoim zadaniem jest obliczenie liczby rzędów, znając całkowitą liczbę wojo
 
 Źródło: [https://onlinejudge.org/external/116/11614.pdf](https://onlinejudge.org/external/116/11614.pdf)
 
-## Specyfikacja
+## Specification
 
-### Dane
+### Input
 
 * $n$ - liczba naturalna, rozmiar oddziału, $0\leq n\leq 10^{18}$.
 
-### Wynik
+### Output
 
 * Liczba wierszy potrzebna, by uformować oddział.
 
-## Przykład 1
+## Example 1
 
-### Dane
+### Input
 
 ```
 3
@@ -26,9 +26,9 @@ Twoim zadaniem jest obliczenie liczby rzędów, znając całkowitą liczbę wojo
 
 **Wynik:** $2$
 
-## Przykład 2
+## Example 2
 
-### Dane
+### Input
 
 ```
 8
@@ -36,9 +36,9 @@ Twoim zadaniem jest obliczenie liczby rzędów, znając całkowitą liczbę wojo
 
 **Wynik:** $3$
 
-## Przykład 3
+## Example 3
 
-### Dane
+### Input
 
 ```
 10

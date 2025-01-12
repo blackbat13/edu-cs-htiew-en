@@ -2,7 +2,7 @@
 
 ## [:link: Opis problemu](../../../../algorithms/matrix/det3.md)
 
-## Implementacja
+## Implementation
 
 ```python linenums="1"
 def det3(matrix) -> int:
@@ -20,7 +20,7 @@ result = det3(matrix)
 print(result)
 ```
 
-### Opis implementacji
+### Description implementacji
 
 Funkcja `det3` (**linia 1**) wylicza wyznacznik macierzy $3\times3$ przekazanej jako parametr funkcji. Wewnątrz funkcji mamy tylko jedną operację zwracającą wyznacznik macierzy obliczony zgodnie ze wzorem.
 

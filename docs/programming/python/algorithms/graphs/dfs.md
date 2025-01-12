@@ -6,7 +6,7 @@ description: Przeszukiwanie grafu w głąb
 
 ## [:link: Opis problemu](../../../../algorithms/graphs/dfs.md)
 
-## Implementacja
+## Implementation
 
 ```python linenums="1"
 from typing import List

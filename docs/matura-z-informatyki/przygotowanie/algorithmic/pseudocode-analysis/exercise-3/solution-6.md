@@ -1,11 +1,11 @@
 # Zadanie 6 - rozwiązanie
 
-## Specyfikacja
+## Specification
 
-### Dane
+### Input
 
 * $x, y$ - liczby naturalne.
 
-### Wynik
+### Output
 
 * `NWW(x, y)` - najmniejsza wspólna wielokrotność $x$ oraz $y$.

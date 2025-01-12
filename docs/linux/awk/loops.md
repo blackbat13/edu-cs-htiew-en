@@ -2,7 +2,7 @@
 
 ## Pętla iteracyjna
 
-### Przykład
+### Example
 
 ```awk
 #!/usr/bin/awk -f
@@ -16,7 +16,7 @@ BEGIN {
 
 ## Pętla warunkowa
 
-### Przykład
+### Example
 
 ```awk
 #!/usr/bin/awk -f

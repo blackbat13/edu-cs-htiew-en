@@ -2,9 +2,9 @@
 
 ## [:link: Opis problemu](../../../../algorithms/searching/sum-of-two.md)
 
-## Rozwiązanie naiwne
+## Solution naiwne
 
-### Implementacja
+### Implementation
 
 ```c linenums="1"
 #include <stdio.h>
@@ -33,9 +33,9 @@ int main() {
 }
 ```
 
-## Rozwiązanie optymalne
+## Solution optymalne
 
-### Implementacja
+### Implementation
 
 ```c linenums="1"
 #include <stdio.h>

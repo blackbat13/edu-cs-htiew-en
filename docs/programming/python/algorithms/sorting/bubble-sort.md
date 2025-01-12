@@ -2,7 +2,7 @@
 
 ## [:link: Opis problemu](../../../../algorithms/sorting/bubble-sort.md)
 
-## Implementacja
+## Implementation
 
 ```python linenums="1"
 def bubble_sort(array: list):
@@ -23,7 +23,7 @@ bubble_sort(array)
 print(array)
 ```
 
-### Opis implementacji
+### Description implementacji
 
 Funkcja `bubble_sort` przyjmuje jako argument listę `array`, która ma być posortowana.
 

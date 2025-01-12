@@ -4,19 +4,19 @@ Nadeszły wyczekiwane wakacje i planujesz wyjazd. Przed Tobą jednak wyzwanie sp
 
 Źródło: [https://onlinejudge.org/external/123/12372.pdf](https://onlinejudge.org/external/123/12372.pdf)
 
-## Specyfikacja
+## Specification
 
-### Dane
+### Input
 
 * $a, b, c$ - liczby naturalne, wymiary pakunku, wszystkie z zakresu $[1, 50]$
 
-### Wynik
+### Output
 
 * Komunikat "TAK", jeżeli pakunek zmieści się walizce, lub komunikat "NIE" w przeciwnym przypadku
 
-## Przykład 1
+## Example 1
 
-### Dane
+### Input
 
 ```
 a := 20
@@ -24,11 +24,11 @@ b := 20
 c := 20
 ```
 
-**Wynik**: "TAK"
+**Output**: "TAK"
 
-## Przykład 2
+## Example 2
 
-### Dane
+### Input
 
 ```
 a := 1
@@ -36,4 +36,4 @@ b := 2
 c := 21
 ```
 
-**Wynik**: "NIE"
+**Output**: "NIE"

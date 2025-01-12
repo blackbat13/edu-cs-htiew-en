@@ -1,6 +1,6 @@
-# Rozwiązanie dynamiczne
+# Solution dynamiczne
 
-## Implementacja
+## Implementation
 
 ### [:simple-cplusplus: C++](../../../programming/c++/algorithms/integers/change.md){ .md-button }
 

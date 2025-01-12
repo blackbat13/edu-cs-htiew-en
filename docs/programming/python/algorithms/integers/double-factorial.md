@@ -2,7 +2,7 @@
 
 ## [:link: Opis problemu](../../../../algorithms/integers/double-factorial.md)
 
-## Implementacja
+## Implementation
 
 ```python linenums="1"
 def double_factorial(n: int) -> int:

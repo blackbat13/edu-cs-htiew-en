@@ -4,7 +4,7 @@
 
 ## Podejście naiwne
 
-### Implementacja
+### Implementation
 
 ```kotlin
 fun findMinMax(array: List<Int>): Pair<Int,Int> {
@@ -35,7 +35,7 @@ fun main() {
 
 [Jednoczesne wyszukiwanie minimum i maksimum - podejście naiwne](https://ideone.com/freoSQ)
 
-### Opis implementacji
+### Description implementacji
 
 TODO
 
@@ -90,6 +90,6 @@ fun main() {
 
 [Jednoczesne wyszukiwanie minimum i maksimum - podejście optymalne](https://ideone.com/r8KFFR)
 
-### Opis implementacji
+### Description implementacji
 
 TODO

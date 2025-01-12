@@ -30,13 +30,13 @@ Ogólne kroki algorytmu przedstawiają się następująco:
 
 Dokładność oszacowania zależy od liczby wylosowanych punktów, ale ze względu na losowy charakter algorytmu ma pewną wariancję.
 
-### Specyfikacja
+### Specification
 
-#### Dane
+#### Input
 
 * $n$ — liczba prób (im większa, tym w ogólności większa dokładność oszacowania)
 
-#### Wynik
+#### Output
 
 * $pi$ — przybliżona wartość liczby $\pi$
 
@@ -44,7 +44,7 @@ Dokładność oszacowania zależy od liczby wylosowanych punktów, ale ze wzglę
 
 [Symulacja Monte Carlo](https://academo.org/demos/estimating-pi-monte-carlo/)
 
-### Pseudokod
+### Pseudocode
 
 ```
 funkcja MonteCarloPI(n)
@@ -59,7 +59,7 @@ funkcja MonteCarloPI(n)
     8. Zwróć (4 * wkole) / n
 ```
 
-### Schemat blokowy
+### Block diagram
 
 ```mermaid
 %%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
@@ -67,19 +67,19 @@ flowchart TD
 	START(["MonteCarloPi(n)"]) --> K1["wkole := 0
     i := 1"]
 	K1 --> K2{i <= n}
-	K2 -- PRAWDA --> K3["x := losowa(-1, 1)
+	K2 -- TRUE --> K3["x := losowa(-1, 1)
     y := losowa(-1, 1)
     odl := x * x + y * y"]
 	K3 --> K6{odl <= 1}
-	K6 -- PRAWDA --> K7[wkole := wkole + 1]
+	K6 -- TRUE --> K7[wkole := wkole + 1]
 	K7 --> K2i[i := i + 1]
-	K6 -- FAŁSZ --> K2i
+	K6 -- FALSE --> K2i
 	K2i --> K2
-	K2 -- FAŁSZ ---> K8[/"Zwróć ((4 * wkole) / n)"/]
+	K2 -- FALSE ---> K8[/"Zwróć ((4 * wkole) / n)"/]
 	K8 ---> STOP([STOP])
 ```
 
-### Implementacja
+### Implementation
 
 #### [:simple-cplusplus: C++](../../programming/c++/algorithms/numerical-methods/monte-carlo.md){ .md-button }
 

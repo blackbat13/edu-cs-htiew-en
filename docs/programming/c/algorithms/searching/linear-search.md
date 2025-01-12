@@ -4,7 +4,7 @@
 
 ## Istnienie elementu
 
-### Implementacja
+### Implementation
 
 ```c linenums="1"
 #include <stdio.h>
@@ -37,7 +37,7 @@ int main() {
 }
 ```
 
-### Opis implementacji
+### Description implementacji
 
 Funkcja `linearSearch` (**linia 4**) zwraca jako wynik wartość prawda/fałsz i przyjmuje trzy argumenty: tablicę do przeszukania, rozmiar tablicy oraz wartość poszukiwanego elementu. Na początku funkcji przechodzimy pętlą przez wszystkie kolejne indeksy w tablicy od $0$ do $n-1$ włącznie (**linia 5**). Dla każdego indeksu sprawdzamy, czy pod tym indeksem w tablicy znajduje się poszukiwana wartość (**linia 6**). Jeżeli tak, to zwracamy informację o znalezieniu wartości w tablicy (**linia 7**). Po przejściu przez wszystkie indeksy i wyjściu z pętli (tzn. gdy nie znaleźliśmy poszukiwanego elementu) zwracamy wartość `false` informującą, że poszukiwany element nie znajduje się w tablicy (**linia 11**).
 
@@ -45,7 +45,7 @@ W części głównej programu na początku przygotowujemy dane do problemu: tabl
 
 ## Pozycja elementu
 
-### Implementacja
+### Implementation
 
 ```c linenums="1"
 #include <stdio.h>
@@ -77,7 +77,7 @@ int main() {
 }
 ```
 
-### Opis implementacji
+### Description implementacji
 
 Funkcja `linearSearch` (**linia 3**) zwraca jako wynik liczbę całkowitą i przyjmuje trzy argumenty: tablicę do przeszukania, rozmiar tablicy oraz wartość poszukiwanego elementu. Na początku funkcji przechodzimy pętlą przez wszystkie kolejne indeksy w tablicy od $0$ do $n-1$ włącznie (**linia 4**). Dla każdego indeksu sprawdzamy, czy pod tym indeksem w tablicy znajduje się poszukiwana wartość (**linia 5**). Jeżeli tak, to zwracamy indeks tej wartości w tablicy (**linia 6**). Po przejściu przez wszystkie indeksy i wyjściu z pętli (tzn. gdy nie znaleźliśmy poszukiwanego elementu) zwracamy wartość $-1$ informującą, że poszukiwany element nie znajduje się w tablicy (**linia 10**).
 
@@ -85,7 +85,7 @@ W części głównej programu na początku przygotowujemy dane do problemu: tabl
 
 ## Wszystkie pozycje elementu
 
-### Implementacja
+### Implementation
 
 ```c linenums="1"
 #include <stdio.h>
@@ -110,7 +110,7 @@ int main() {
 }
 ```
 
-### Opis implementacji
+### Description implementacji
 
 Funkcja `linearSearch` (**linia 3**) nie zwraca wyniku i przyjmuje trzy argumenty: tablicę do przeszukania, rozmiar tablicy oraz wartość poszukiwanego elementu. Na początku funkcji przechodzimy pętlą przez wszystkie kolejne indeksy w tablicy od $0$ do $n-1$ włącznie (**linia 4**). Dla każdego indeksu sprawdzamy, czy pod tym indeksem w tablicy znajduje się poszukiwana wartość (**linia 5**). Jeżeli tak, to wypisujemy ten indeks (**linia 6**).
 

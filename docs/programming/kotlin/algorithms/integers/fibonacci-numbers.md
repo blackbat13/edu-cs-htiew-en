@@ -4,7 +4,7 @@
 
 ## Wersja iteracyjna
 
-### Implementacja
+### Implementation
 
 ```kotlin
 fun fib(n: Int): Int {
@@ -33,13 +33,13 @@ fun main() {
 
 [Liczby Fibonacciego - wersja iteracyjna](https://ideone.com/4JCa5w)
 
-### Opis implementacji
+### Description implementacji
 
 TODO
 
 ## Wersja rekurencyjna
 
-### Implementacja
+### Implementation
 
 ```kotlin
 fun fib(n: Int): Int {
@@ -63,6 +63,6 @@ fun main() {
 
 [Liczby Fibonacciego - wersja rekurencyjna](https://ideone.com/cBKjhg)
 
-### Opis implementacji
+### Description implementacji
 
 TODO

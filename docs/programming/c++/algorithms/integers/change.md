@@ -4,7 +4,7 @@
 
 ## Podejście zachłanne
 
-### Implementacja
+### Implementation
 
 ```cpp linenums="1"
 #include <iostream>
@@ -42,7 +42,7 @@ int main() {
 
 ## Podejście dynamiczne
 
-### Implementacja
+### Implementation
 
 ```cpp linenums="1"
 #include <iostream>

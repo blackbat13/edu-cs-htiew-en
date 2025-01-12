@@ -1,20 +1,20 @@
-# Rozwiązanie 8
+# Solution 8
 
 ## Treść zadania
 
 Napisz program zgodny z poniższą specyfikacją.
 
-### Specyfikacja
+### Specification
 
-#### Dane
+#### Input
 
 * $sekundy$ - liczba naturalna
 
-#### Wynik
+#### Output
 
 * Czas podany w czytelnej formie ** **$H:M:S$ ($H$ - godziny, $M$ - minuty, $S$ - sekundy)
 
-## Rozwiązanie
+## Solution
 
 ```cpp
 #include <iostream>

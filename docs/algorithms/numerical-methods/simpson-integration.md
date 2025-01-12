@@ -33,24 +33,24 @@ Mnożymy sumę przez $h/3$, aby uzyskać przybliżoną wartość całki oznaczon
 
 Błąd przybliżenia wartości całki metodą Simpsona jest rzędu $O(h^4)$. W praktyce oznacza to, że metoda Simpsona jest bardzo dokładna dla funkcji, które są dobrze przybliżane przez parabolę na małych przedziałach. Jednakże, dla funkcji o dużych zmianach krzywizny, błąd może być większy.
 
-## Specyfikacja
+## Specification
 
-### Dane
+### Input
 
 * $f(x)$ — funkcja, której wykres nas interesuje
 * $a$ — początek przedziału, $a\in\mathbb{R}$
 * $b$ — koniec przedziału, $b\in\mathbb{R}$
 * $n$ — **parzysta** liczba podziałów (im większa, tym większa dokładność), $n\in\mathbb{N}$
 
-### Wynik
+### Output
 
 * $pole$ — przybliżona wartość pola pod wykresem funkcji $f(x)$ w przedziale $[a,b]$ (tzn. przybliżona wartość $\int_{a}^{b} f(x) \, dx$)
 
-## Rozwiązanie
+## Solution
 
 Zaczynamy od obliczenia szerokości pojedynczego przedziału jako $\frac{b-a}{n}$. Jako początkową wartość przybliżonego pola przyjmujemy sumę wartości funkcji na krańcach przedziału, tzn. $f(a) + f(b)$. Następnie przechodzimy przez kolejne przedziały od $1$ do $n-1$. Obliczamy punkt $x$ jako początek zakresu plus numer przedziału przemnożony przez szerokość przedziału. Dodajemy do obliczanego pola wartość funkcji w punkcie $x$ z wagą $2$ lub $4$, w zależności od parzystości numeru przedziału ($2$ dla parzystego, $4$ dla nieparzystego). Po przejściu przez wszystkie przedziały zwracamy jako wynik wartość pola przemnożoną przez szerokość pojedynczego przedziału podzieloną przez trzy.
 
-### Pseudokod
+### Pseudocode
 
 ```
 funkcja MetodaSimpsona(f, a, b, n):
@@ -66,7 +66,7 @@ funkcja MetodaSimpsona(f, a, b, n):
     8. Zwróć pole
 ```
 
-### Schemat blokowy
+### Block diagram
 ```mermaid
 %%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
 flowchart TD
@@ -84,7 +84,7 @@ flowchart TD
     K10 --> STOP([STOP])
 ```
 
-## Implementacja
+## Implementation
 
 ### [:simple-cplusplus: C++](../../programming/c++/algorithms/numerical-methods/simpson-integration.md){ .md-button }
 

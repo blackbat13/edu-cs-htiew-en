@@ -2,7 +2,7 @@
 
 ## [:link: Opis problemu](../../../../algorithms/2d-geometry/triangle-condition.md)
 
-## Implementacja
+## Implementation
 
 ```python linenums="1"
 def can_create_triangle(a: int, b: int, c: int) -> bool:

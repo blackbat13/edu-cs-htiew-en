@@ -12,21 +12,21 @@ Zacznijmy od tanecznego wyszukiwania i formalnej specyfikacji, by lepiej zrozumi
 
 [:material-video: Taneczne wyszukiwanie binarne](https://www.youtube.com/watch?v=iP897Z5Nerk){ .md-button }
 
-## Specyfikacja
+## Specification
 
-### Dane:
+### Input:
 
 * $n$ - liczba naturalna, ilość elementów w tablicy
 * $A[1..n]$ - $n-elementowa$ tablica liczb całkowitych, posortowana niemalejąco, indeksowana od jedynki
 * $k$ - liczba całkowita, szukana wartość
 
-### Wynik:
+### Output:
 
 * Indeks wartości $k$ w tablicy $A$, lub $-1$ jeżeli tej wartości nie ma w tablicy
 
-## Przykład
+## Example
 
-### Dane
+### Input
 
 ```
 n := 5
@@ -34,9 +34,9 @@ A := [1, 2, 5, 7, 9]
 k := 7 
 ```
 
-**Wynik**: $4$ 
+**Output**: $4$ 
 
-## Rozwiązanie iteracyjne
+## Solution iteracyjne
 
 Zacznijmy od wersji iteracyjnej. Na początku definiujemy początek i koniec przeszukiwanego przedziału. Jako początek przyjmujemy numer pierwszego elementu (czyli $1$), a jako koniec numer ostatniego elementu (czyli $n$). W pętli będziemy powtarzać przeszukiwanie tak długo, jak długo nasz zdefiniowany przez początek i koniec przedział będzie zawierał co najmniej jeden element. Inaczej mówiąc, powtarzamy tak długo, jak długo początek jest mniejszy od końca.
 
@@ -44,7 +44,7 @@ Wewnątrz pętli najpierw obliczamy środek przeszukiwanego przedziału. Następ
 
 Gdy już wyjdziemy z pętli pozostaje nam sprawdzić, czy znaleźliśmy poszukiwany element. Sprawdzamy, czy pod indeksem wskazującym na zmieniony początek (lub koniec) przedziału znajduje się poszukiwana wartość. Jeżeli tak, to zwracamy jako wynik ten indeks. W przeciwnym przypadku zwracamy $-1$.
 
-### Pseudokod
+### Pseudocode
 
 ```
 funkcja SzukajBinarnie(n, A, k)
@@ -68,7 +68,7 @@ funkcja SzukajBinarnie(n, A, k)
 !!! info
 	 **div** oznacza dzielenie całkowite
 
-### Schemat blokowy
+### Block diagram
 
 ```mermaid
 %%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
@@ -76,28 +76,28 @@ flowchart TD
 	START(["SzukajBinarnie(n, A, k)"]) --> O1["pocz := 1
 	kon := n"]
 	O1 --> C1{pocz < kon}
-	C1 -- PRAWDA --> O2["srodek := (pocz + kon) div 2"]
+	C1 -- TRUE --> O2["srodek := (pocz + kon) div 2"]
 	O2 --> C2{"k > A[srodek]"}
-	C2 -- PRAWDA --> O3[pocz := srodek + 1]
+	C2 -- TRUE --> O3[pocz := srodek + 1]
 	O3 --> C1
-	C2 -- FAŁSZ --> O4[kon := srodek]
+	C2 -- FALSE --> O4[kon := srodek]
 	O4 --> C1
-	C1 -- FAŁSZ --> C3{"A[pocz] = k"}
-	C3 -- PRAWDA --> R1[/Zwróć pocz/]
+	C1 -- FALSE --> C3{"A[pocz] = k"}
+	C3 -- TRUE --> R1[/Zwróć pocz/]
 	R1 --> STOP([STOP])
-	C3 -- FAŁSZ --> R2[/Zwróć -1/]
+	C3 -- FALSE --> R2[/Zwróć -1/]
 	R2 --> STOP
 ```
 
-### Złożoność
+### Complexity
 
 $O(\log n)$ - logarytmiczna
 
-## Rozwiązanie rekurencyjne
+## Solution rekurencyjne
 
 W rozwiązaniu rekurencyjnym zamiast rozmiaru tablicy podajemy początek i koniec przeszukiwanego przedziału. Zaczynamy od sprawdzenia warunku stopu rekurencji: poprawności przedziału. Następnie postępujemy podobnie jak w wersji iteracyjnej. Obliczamy środek przedziału i porównujemy element znajdujący się na środku z poszukiwaną wartością. W zależności od wyniku porównania wykonujemy wywołanie rekurencyjne odpowiednio modyfikując przeszukiwany przedział.
 
-### Pseudokod
+### Pseudocode
 
 ```
 funkcja SzukajBinarnie(A, k, pocz, kon)
@@ -116,26 +116,26 @@ funkcja SzukajBinarnie(A, k, pocz, kon)
         10. Zwróć SzukajBinarnie(A, k, pocz, srodek)
 ```
 
-### Schemat blokowy
+### Block diagram
 
 ```mermaid
 %%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
 flowchart TD
 	START(["SzukajBinarnie(A, k, pocz, kon)"]) --> K1{pocz >= kon}
-	K1 -- PRAWDA --> K2{"A[pocz] = k"}
-	K2 -- PRAWDA --> K3[/Zwróć pocz/]
+	K1 -- TRUE --> K2{"A[pocz] = k"}
+	K2 -- TRUE --> K3[/Zwróć pocz/]
 	K3 --> STOP([STOP])
-	K2 -- FAŁSZ --> K5[/Zwróć -1/]
+	K2 -- FALSE --> K5[/Zwróć -1/]
 	K5 --> STOP
-	K1 -- FAŁSZ --> K6["srodek := (pocz + kon) div 2"]
+	K1 -- FALSE --> K6["srodek := (pocz + kon) div 2"]
 	K6 --> K7{"k > A[srodek]"}
-	K7 -- PRAWDA --> K8[/"Zwróć SzukajBinarnie(A, k, srodek + 1, kon)"/]
+	K7 -- TRUE --> K8[/"Zwróć SzukajBinarnie(A, k, srodek + 1, kon)"/]
 	K8 --> STOP
-	K7 -- FAŁSZ --> K9[/"Zwróć SzukajBinarnie(A, k, pocz, srodek)"/]
+	K7 -- FALSE --> K9[/"Zwróć SzukajBinarnie(A, k, pocz, srodek)"/]
 	K9 --> STOP
 ```
 
-### Złożoność 
+### Complexity 
 
 $O(\log n)$ - logarytmiczna
 

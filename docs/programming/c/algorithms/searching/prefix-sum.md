@@ -2,7 +2,7 @@
 
 ## [:link: Opis problemu](../../../../algorithms/searching/prefix-sum.md)
 
-## Implementacja
+## Implementation
 
 ```c linenums="1"
 #include <stdio.h>

@@ -1,20 +1,20 @@
-# Rozwiązanie 2
+# Solution 2
 
 ## Treść zadania
 
 Napisz program zgodny z poniższą specyfikacją.
 
-### Specyfikacja
+### Specification
 
-#### Dane
+#### Input
 
 * $a$ - liczba całkowita
 
-#### Wynik
+#### Output
 
 * Znak liczby $a$, tzn. $1$ gdy $a$ jest dodatnie, $-1$ gdy $a$ jest ujemne, $0$ gdy $a$ wynosi $0$ 
 
-## Rozwiązanie
+## Solution
 
 ```python
 a = int(input("Podaj liczbę całkowitą: "))

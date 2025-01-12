@@ -6,27 +6,27 @@ Spójny podciąg rosnący to taki spójny podciąg, w którym każdy kolejny ele
 
 Problem spójnego podciągu rosnącego rozważymy na przykładzie ciągu, czy też tablicy liczb całkowitych. Zacznijmy od formalnej specyfikacji problemu i prostego przykładu.
 
-## Specyfikacja
+## Specification
 
-### Dane
+### Input
 
 * $n$ - liczba naturalna, liczba elementów tablicy
 * $tab[1..n]$ - tablica zawierająca $n$ liczb całkowitych
 
-### Wynik
+### Output
 
 * Długość najdłuższego spójnego podciągu rosnącego w tablicy $tab$ 
 
-## Przykład
+## Example
 
-### Dane
+### Input
 
 ```
 n := 10
 tab := [4, 9, 7, 2, 4, 7, 9, 3, 8, 6]
 ```
 
-### Wynik
+### Output
 
 $4$ 
 
@@ -43,7 +43,7 @@ $4$
 	
 	Jak widać najdłuższy z nich ma długość równą $4$ i jest to podciąg: $2, 4, 7, 9$.
 
-## Rozwiązanie
+## Solution
 
 Zastanówmy się na początku, jak podeszlibyśmy do tego problemu na papierze. Mamy dany pewien ciąg liczb i chcemy odnaleźć najdłuższy spójny podciąg rosnący. To, co możemy zrobić, to wypisać wszystkie pełne spójne podciągi rosnące. Jak to zrobić? Pomysł jest prosty. Najpierw zapisujemy sobie pierwszą wartość z ciągu. Następnie idziemy od lewej do prawej, liczba po liczbie, zaczynając od drugiej w kolejności. Porównujemy ją z ostatnią zapisaną. Jeżeli jest większa, to dopisujemy ją obok (dopisując do podciągu). Jeżeli jest mniejsza lub równa, to zapisujemy ją poniżej (rozpoczynając nowy podciąg). Po wypisaniu wszystkich podciągów pozostanie nam znalezienie najdłuższego, policzenie jego długości i mamy wynik. Zadanie rozwiązane!
 
@@ -52,7 +52,7 @@ Zauważmy jednak, że nie musimy wcale wypisywać tych podciągów, ani nawet ic
 !!! info
 	 Dla lepszego zrozumienia spróbuj wykonać opisaną procedurę na kilku przykładach.
 
-### Pseudokod
+### Pseudocode
 
 ```
 funkcja NajdluzszySpojnyPodciagRosnacy(n, tab):
@@ -68,13 +68,13 @@ funkcja NajdluzszySpojnyPodciagRosnacy(n, tab):
     10. Zwróć maks
 ```
 
-#### Opis
+#### Description
 
 Funkcja przyjmuje dwa parametry, zgodnie ze specyfikacją. Na początku zaczynamy od utworzenia dwóch zmiennych pomocniczych: maksymalnej długości dotąd znalezionych podciągów (**krok 1**) oraz długości obecnie sprawdzanego podciągu (**krok 2**). Następnie przechodzimy pętlą przez kolejne indeksy tablicy poczynając od drugiego elementu (**krok 3**). W pętli porównujemy element pod obecnie sprawdzanym indeksem z poprzednim elementem z tablicy (**krok 4**). Jeżeli obecny element jest większy od poprzedniego, to zwiększamy długość obecnie sprawdzanego podciągu o jeden (**krok 5**) oraz porównujemy ją z maksymalną długością dotąd znalezionych podciągów (**krok 6**). Jeżeli obecna długość jest większa od tej maksymalnej, to zapamiętujemy obecną długość jako maksymalną (**krok 7**).
 
 Jeżeli obecny element nie jest większy od poprzedniego (**krok 8**), to resetujemy długość obecnie sprawdzanego podciągu ustawiając jej wartość $1$ (**krok 9**). Na końcu, po wyjściu z pętli, zwracamy jako wynik funkcji maksymalną długość spójnego podciągu rosnącego (**krok 9**).
 
-### Schemat blokowy
+### Block diagram
 
 ```mermaid
 %%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
@@ -83,26 +83,26 @@ flowchart TD
 	dlugosc := 1
 	i := 2"]
 	K1 --> K3{i <= n}
-	K3 -- PRAWDA --> K4{"A[i] > A[i - 1]"}
-	K4 -- PRAWDA --> K5[dlugosc := dlugosc + 1]
+	K3 -- TRUE --> K4{"A[i] > A[i - 1]"}
+	K4 -- TRUE --> K5[dlugosc := dlugosc + 1]
 	K5 --> K6{dlugosc > maks}
-	K6 -- PRAWDA --> K7[maks := dlugosc]
-	K4 -- FAŁSZ --> K9[dlugosc := 1]
+	K6 -- TRUE --> K7[maks := dlugosc]
+	K4 -- FALSE --> K9[dlugosc := 1]
 	K9 --> K3i[i := i + 1]
-	K6 -- FAŁSZ --> K3i
+	K6 -- FALSE --> K3i
 	K7 --> K3i
 	K3i --> K3
-	K3 -- FAŁSZ ---> K10[\Zwróć maks\]
+	K3 -- FALSE ---> K10[\Zwróć maks\]
 	K10 ----> STOP([STOP])
 ```
 
-### Złożoność
+### Complexity
 
 $O(n)$ - liniowa
 
 Mamy jedną pętlę, która przechodzi przez kolejne elementy tablicy, której długość wynosi $n$. W związku z tym mamy złożoność liniową.
 
-## Implementacja
+## Implementation
 
 ### [:simple-cplusplus: C++](../../programming/c++/algorithms/searching/longest-growing-substring.md){ .md-button }
 

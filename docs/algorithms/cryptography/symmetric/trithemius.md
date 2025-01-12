@@ -2,11 +2,11 @@
 
 Szyfr Trithemius'a został wymyślony przez niemieckiego mnicha i uczonego, Jana Trithemiusa, w XVI wieku. Jest to odmiana szyfru Cezara, w której przesunięcie liter zmienia się z każdą literą w tekście jawnym.
 
-## Opis działania
+## Description działania
 
 Zasada działania szyfru Trithemius'a polega na tym, że każda kolejna litera tekstu jawnego jest przesuwana o kolejne miejsce. Pierwsza litera tekstu jawnego jest przesuwana o jedno miejsce, druga litera o dwa miejsca, trzecia litera o trzy miejsca, i tak dalej.
 
-## Przykład
+## Example
 
 Dla tekstu jawnego "ABC":
 
@@ -22,13 +22,13 @@ Podobnie jak szyfr Cezara, szyfr Trithemius'a nie jest traktowany jako bezpieczn
 
 Szyfr Trithemius'a był głównie używany w celach edukacyjnych i literackich, choć także mógł być wykorzystywany do pewnych praktycznych zastosowań w tamtych czasach.
 
-## Specyfikacja
+## Specification
 
-### Dane
+### Input
 
 - **jawny/szyfrogram** - tekst do zaszyfrowania/odszyfrowania, składający się z małych liter alfabetu angielskiego
 
-### Wynik
+### Output
 
 - Zaszyfrowany/odszyfrowany tekst.
 
@@ -40,7 +40,7 @@ Szyfr Trithemius'a był głównie używany w celach edukacyjnych i literackich, 
 - **Alfabet(pozycja)** - zwraca literę na zadanej pozycji w alfabecie angielskim
 - **Długość(tekst)** - zwraca długość tekstu
 
-### Pseudokod
+### Pseudocode
 
 ```
 funkcja SzyfrujTrithemius(jawny):
@@ -65,7 +65,7 @@ funkcja SzyfrujTrithemius(jawny):
 - **Alfabet(pozycja)** - zwraca literę na zadanej pozycji w alfabecie angielskim
 - **Długość(tekst)** - zwraca długość tekstu
 
-### Pseudokod
+### Pseudocode
 
 ```
 funkcja DeszyfrujTrithemius(szyfrogram):
@@ -82,7 +82,7 @@ funkcja DeszyfrujTrithemius(szyfrogram):
     10. Zwróć jawny 
 ```
 
-## Implementacja
+## Implementation
 
 ### [:simple-cplusplus: C++](../../../programming/c++/algorithms/cryptography/trithemius.md){ .md-button }
 

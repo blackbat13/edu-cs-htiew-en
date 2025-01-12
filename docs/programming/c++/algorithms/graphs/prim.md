@@ -2,7 +2,7 @@
 
 ## [:link: Opis problemu](../../../../algorithms/graphs/prim.md)
 
-## Implementacja
+## Implementation
 
 ```cpp linenums="1"
 #include <iostream>
@@ -83,7 +83,7 @@ int main() {
 }
 ```
 
-### Opis implementacji
+### Description implementacji
 
 Na początku definiujemy strukturę `edge` do reprezentacji krawędzi grafu (**linia 8**). Ponieważ mamy do czynienia z grafem ważonym, w strukturze przechowujemy trzy wartości: 
 

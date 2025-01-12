@@ -5,7 +5,7 @@
 	
 	Chociaż rozwiązanie jest stosunkowo proste, to Python jest niestety zbyt wolny do tego zadania, dlatego w niektórych testach zostanie przekroczony limit czasu.
 
-## Implementacja
+## Implementation
 
 ```python linenums="1"
 plus = False
@@ -30,7 +30,7 @@ if plus:
 print(result)
 ```
 
-## Opis implementacji
+## Description implementacji
 
 Na początku tworzymy zmienną `plus` do zapamiętania, czy ostatni wczytany symbol był znakiem dodawania (**linia 1**). Definiujemy także zmienną `result` do przechowywania wyniku (**linia 2**). Następnie wczytujemy liczbę znaków do zmiennej `n` (**linia 3**). 
 

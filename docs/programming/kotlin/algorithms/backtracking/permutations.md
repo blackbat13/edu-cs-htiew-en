@@ -2,7 +2,7 @@
 
 ## [:link: Opis problemu](../../../../algorithms/backtracking/permutations.md)
 
-## Implementacja
+## Implementation
 
 ```kotlin linenums="1"
 fun permutation(elements: Array<Int>, start: Int, stop: Int) {

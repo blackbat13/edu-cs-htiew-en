@@ -1,11 +1,11 @@
 # Zadanie 6 - rozwiązanie
 
-## Specyfikacja
+## Specification
 
-### Dane
+### Input
 
 * $x$ - liczba całkowita.
 
-### Wynik
+### Output
 
 * $x^2$

@@ -1,21 +1,21 @@
-# Rozwiązanie 1
+# Solution 1
 
 ## Treść zadania
 
 Napisz program zgodny z poniższą specyfikacją.
 
-### Specyfikacja
+### Specification
 
-#### Dane
+#### Input
 
 * $n$ - liczba naturalna
 * $a_1,a_2,\dots,a_n$ - $n$ liczb całkowitych
 
-#### Wynik
+#### Output
 
 * $a_n,a_{n-1},\dots,a_2,a_1$ - podane liczby w odwrotnej kolejności
 
-## Rozwiązanie
+## Solution
 
 ```python
 n = int(input("Podaj liczbę wartości: "))
@@ -26,7 +26,7 @@ tab.reverse()
 print(tab)
 ```
 
-### Opis rozwiązania
+### Description rozwiązania
 
 Na początku wczytujemy od użytkownika liczbę elementów i zapisujemy ją w zmiennej $n$ (**linia 1**).
 

@@ -24,7 +24,7 @@ Zbiory rozłączne są używane w wielu algorytmach i strukturach danych związa
 - 
 Te algorytmy i wiele innych korzystają z efektywności operacji oferowanych przez strukturę zbiorów rozłącznych. Operacje takie jak *find* i *union* są bardzo szybkie dzięki zastosowaniu technik takich jak łączenie według rangi (*union by rank*) i kompresja ścieżki (*path compression*), które pomagają utrzymać wysokość drzewa na minimalnym poziomie.
 
-## Implementacja
+## Implementation
 
 ### [:simple-cplusplus: C++](../../programming/c++/algorithms/structures/disjoint-set-union.md){ .md-button }
 

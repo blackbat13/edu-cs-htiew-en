@@ -2,7 +2,7 @@
 
 Szyfr Cezara to jedna z najstarszych znanych technik szyfrowania. Został nazwany na cześć Juliusza Cezara, który rzekomo używał go do szyfrowania swojej prywatnej korespondencji.
 
-## Opis działania
+## Description działania
 
 1. **Przesunięcie**: wybierz liczbę, zwaną przesunięciem (np. 3). Ta liczba określa, o ile miejsc w alfabecie litery będą przesuwane.
 
@@ -15,7 +15,7 @@ Szyfr Cezara to jedna z najstarszych znanych technik szyfrowania. Został nazwan
 
 2. **Deszyfrowanie**: proces ten jest odwrotny do szyfrowania. Zamiast dodawać wartość przesunięcia, odejmuje się ją od każdej litery w tekście zaszyfrowanym.
 
-### Przykład
+### Example
 
 Załóżmy, że mamy wiadomość "ABC" i przesunięcie 3. Po zastosowaniu szyfru Cezara wiadomość staje się "DEF".
 
@@ -23,14 +23,14 @@ Załóżmy, że mamy wiadomość "ABC" i przesunięcie 3. Po zastosowaniu szyfru
 
 Szyfr Cezara jest bardzo prosty i łatwo jest go złamać, nawet bez znajomości klucza. Wystarczy przetestować wszystkie 25 możliwych przesunięć (dla standardowego alfabetu łacińskiego) lub użyć analizy częstotliwości liter. Dlatego szyfr Cezara jest uważany za niebezpieczny i nieodpowiedni dla większości zastosowań w dzisiejszych czasach.
 
-## Specyfikacja
+## Specification
 
-### Dane
+### Input
 
 - **jawny/szyfrogram** - tekst do zaszyfrowania/odszyfrowania, składający się z małych liter alfabetu angielskiego
 - **klucz** - liczba naturalna z zakresu $<0,25>$
 
-### Wynik
+### Output
 
 - Zaszyfrowany/odszyfrowany tekst.
 
@@ -42,7 +42,7 @@ Szyfr Cezara jest bardzo prosty i łatwo jest go złamać, nawet bez znajomości
 - **Alfabet(pozycja)** - zwraca literę na zadanej pozycji w alfabecie angielskim
 - **Długość(tekst)** - zwraca długość tekstu
 
-### Pseudokod
+### Pseudocode
 
 ```
 funkcja SzyfrujCezar(jawny, klucz):
@@ -65,7 +65,7 @@ funkcja SzyfrujCezar(jawny, klucz):
 - **Alfabet(pozycja)** - zwraca literę na zadanej pozycji w alfabecie angielskim
 - **Długość(tekst)** - zwraca długość tekstu
 
-### Pseudokod
+### Pseudocode
 
 ```
 funkcja DeszyfrujCezar(szyfrogram, klucz):
@@ -80,7 +80,7 @@ funkcja DeszyfrujCezar(szyfrogram, klucz):
     8. Zwróć jawny 
 ```
 
-## Implementacja
+## Implementation
 
 ### [:simple-cplusplus: C++](../../../programming/c++/algorithms/cryptography/caesar.md){ .md-button }
 

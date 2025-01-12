@@ -2,7 +2,7 @@
 
 ## [:link: Opis problemu](../../../../algorithms/searching/majority.md)
 
-## Implementacja
+## Implementation
 
 ```kotlin
 fun countOccurrences(element: Int, array: List<Int>): Int {
@@ -56,6 +56,6 @@ fun main() {
 
 [Znajdowanie lidera w zbiorze](https://ideone.com/btfNVv)
 
-### Opis implementacji
+### Description implementacji
 
 TODO

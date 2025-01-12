@@ -1,20 +1,20 @@
-# Rozwiązanie 6
+# Solution 6
 
 ## Treść zadania
 
 Napisz program zgodny z poniższą specyfikacją.
 
-### Specyfikacja
+### Specification
 
-#### Dane
+#### Input
 
 * $n$ - liczba naturalna
 
-#### Wynik
+#### Output
 
 * $mno[n][n]$ - dwuwymiarowa tablica reprezentująca tabliczkę mnożenia liczb z zakresu $[0,n-1]$, gdzie $mno[i][j]=i*j$
 
-## Rozwiązanie
+## Solution
 
 ```cpp
 #include <iostream>

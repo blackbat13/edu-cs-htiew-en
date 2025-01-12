@@ -1,20 +1,20 @@
-# Rozwiązanie 6
+# Solution 6
 
 ## Treść zadania
 
 Napisz program zgodny z poniższą specyfikacją.
 
-### Specyfikacja
+### Specification
 
-#### Dane
+#### Input
 
 * $n$ - liczba naturalna
 
-#### Wynik
+#### Output
 
 * Tabliczka mnożenia z zakresu $[1,n]$
 
-## Rozwiązanie
+## Solution
 
 ```cpp
 #include <iostream>

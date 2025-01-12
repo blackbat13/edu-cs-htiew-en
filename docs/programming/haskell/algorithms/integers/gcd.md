@@ -6,7 +6,7 @@ description: Największy Wspólny Dzielnik
 
 ## [:link: Opis problemu](../../../../algorithms/integers/gcd.md)
 
-## Implementacja
+## Implementation
 
 ```haskell linenums="1"
 gcdModulo a b
@@ -17,7 +17,7 @@ main = do
     print $ gcdModulo 32 12
 ```
 
-## Opis
+## Description
 
 Funkcja `gcdModulo` przyjmuje dwa argumenty: liczby `a` i `b`, dla których ma zostać obliczony NWD.
 

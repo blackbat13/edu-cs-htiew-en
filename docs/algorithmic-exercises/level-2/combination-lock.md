@@ -17,22 +17,22 @@ Twoim zadaniem jest wyliczenie, o ile stopni musisz łącznie obrócić tarczę,
 
 Źródło: [https://onlinejudge.org/external/105/10550.pdf](https://onlinejudge.org/external/105/10550.pdf)
 
-## Specyfikacja
+## Specification
 
-### Dane
+### Input
 
 * $p$ - liczba naturalna, początkowe ustawienie tarczy, $0\leq p\leq 39$.
 * $c1$ - liczba naturalna, pierwsza liczba kombinacji, $0\leq c1\leq 39$.
 * $c2$ - liczba naturalna, druga liczba kombinacji, $0\leq c2\leq 39$.
 * $c3$ - liczba naturalna, trzecia liczba kombinacji, $0\leq c3\leq 39$.
 
-### Wynik
+### Output
 
 * Liczba naturalna oznaczająca łączną liczbę stopni, o które należy obrócić tarczę, by otworzyć kłódkę.
 
-## Przykład 1
+## Example 1
 
-### Dane
+### Input
 
 ```
 0 30 0 30
@@ -40,9 +40,9 @@ Twoim zadaniem jest wyliczenie, o ile stopni musisz łącznie obrócić tarczę,
 
 **Wynik:** $1350$
 
-## Przykład 2
+## Example 2
 
-### Dane
+### Input
 
 ```
 5 35 5 35
@@ -50,9 +50,9 @@ Twoim zadaniem jest wyliczenie, o ile stopni musisz łącznie obrócić tarczę,
 
 **Wynik:** $1350$
 
-## Przykład 3
+## Example 3
 
-### Dane
+### Input
 
 ```
 0 20 0 20
@@ -60,9 +60,9 @@ Twoim zadaniem jest wyliczenie, o ile stopni musisz łącznie obrócić tarczę,
 
 **Wynik:** $1620$
 
-## Przykład 4
+## Example 4
 
-### Dane
+### Input
 
 ```
 7 27 7 27
@@ -70,9 +70,9 @@ Twoim zadaniem jest wyliczenie, o ile stopni musisz łącznie obrócić tarczę,
 
 **Wynik:** $1620$
 
-## Przykład 5
+## Example 5
 
-### Dane
+### Input
 
 ```
 0 10 0 10
@@ -80,9 +80,9 @@ Twoim zadaniem jest wyliczenie, o ile stopni musisz łącznie obrócić tarczę,
 
 **Wynik:** $1890$
 
-## Przykład 6
+## Example 6
 
-### Dane
+### Input
 
 ```
 9 19 9 19

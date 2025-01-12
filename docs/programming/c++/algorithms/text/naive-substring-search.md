@@ -2,7 +2,7 @@
 
 ## [:link: Opis problemu](../../../../algorithms/text/naive-substring-search.md)
 
-## Implementacja
+## Implementation
 
 ```cpp linenums="1"
 #include <iostream>

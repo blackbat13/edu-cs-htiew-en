@@ -1,21 +1,21 @@
-# Rozwiązanie 6
+# Solution 6
 
 ## Treść zadania
 
 Napisz program zgodny z poniższą specyfikacją.
 
-### Specyfikacja
+### Specification
 
-#### Dane
+#### Input
 
 * $n$ - liczba naturalna
 * $p$ - liczba naturalna z zakresu $[2,9]$
 
-#### Wynik
+#### Output
 
 * Zapis liczby $n$ w systemie o podstawie $p$ 
 
-## Rozwiązanie
+## Solution
 
 ```python
 n = int(input("Podaj liczbę naturalną: "))

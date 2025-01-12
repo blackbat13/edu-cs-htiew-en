@@ -1,18 +1,18 @@
-# Rozwiązanie 2
+# Solution 2
 
 Napisz program zgodny z poniższą specyfikacją. W implementacji wykorzystaj klasę `stack`.
 
-### Specyfikacja
+### Specification
 
-#### Dane
+#### Input
 
 * $nawiasy$ - ciąg składający się jedynie ze znaków reprezentujących nawiasy okrągłe i kwadratowe, tzn.: $(, ), [, ]$
 
-#### Wynik
+#### Output
 
 * **TRUE** jeżeli podany na wejściu ciąg jest reprezentacją poprawnego nawiasowania, **FALSE** w przeciwnym przypadku.
 
-## Rozwiązanie
+## Solution
 
 ```cpp
 #include <iostream>

@@ -6,7 +6,7 @@ Binwalk skanuje plik binarny i szuka znanych sygnatur (tj. sekwencji bajtów, kt
 
 [Binwalk](https://github.com/ReFirmLabs/binwalk)
 
-## Przykłady użycia
+## Exampley użycia
 
 ### Analiza pliku binarnego
 

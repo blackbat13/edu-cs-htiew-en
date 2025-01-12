@@ -1,21 +1,21 @@
-# Rozwiązanie 5
+# Solution 5
 
 ## Treść zadania
 
 Napisz program zgodny z poniższą specyfikacją. Losowanie tablicy oraz wypisywanie tablicy na ekranie zrealizuj za pomocą osobnych funkcji.
 
-### Specyfikacja
+### Specification
 
-#### Dane
+#### Input
 
 * $n$ - liczba naturalna
 * $p, k$ - liczby całkowite, $p < k$
 
-#### Wynik
+#### Output
 
 * $n$-elementowa tablica losowych liczb całkowitych z przedziału $[p,k)$
 
-## Rozwiązanie
+## Solution
 
 ```cpp
 #include <iostream>

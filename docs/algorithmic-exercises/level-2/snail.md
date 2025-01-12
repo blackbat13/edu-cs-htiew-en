@@ -16,9 +16,9 @@ W zależności od parametrów, ślimak może albo wydostać się ze studni, albo
 
 Źródło: [https://onlinejudge.org/external/5/573.pdf](https://onlinejudge.org/external/5/573.pdf)
 
-## Specyfikacja
+## Specification
 
-### Dane
+### Input
 
 * $H$ - liczba naturalna, wysokość studni, $1\leq H\leq 100$.
 * $U$ - liczba naturalna, wysokość, na którą początkowo wspina się ślimak w trakcie dnia, $1\leq U\leq 100$.
@@ -27,13 +27,13 @@ W zależności od parametrów, ślimak może albo wydostać się ze studni, albo
 
 **Uwaga:** ślimak nigdy nie wspina się o wartość ujemną w trakcie dnia. Może co najwyżej zmęczyć się tak bardzo, że nie będzie się już w ogóle wspinał, tylko zsuwał w nocy.
 
-### Wynik
+### Output
 
 * Komunikat "Ucieczka" jeżeli ślimak wyszedł ze studni, lub "Dno", jeżeli ślimak opadł na dno, oraz numer doby, w której nastąpiła dana sytuacja.
 
-## Przykład 1
+## Example 1
 
-### Dane
+### Input
 
 ```
 6 3 1 10
@@ -41,9 +41,9 @@ W zależności od parametrów, ślimak może albo wydostać się ze studni, albo
 
 **Wynik:** *Ucieczka 3*
 
-## Przykład 2
+## Example 2
 
-### Dane
+### Input
 
 ```
 10 2 1 50
@@ -51,9 +51,9 @@ W zależności od parametrów, ślimak może albo wydostać się ze studni, albo
 
 **Wynik:** *Dno 4*
 
-## Przykład 3
+## Example 3
 
-### Dane
+### Input
 
 ```
 50 5 3 14
@@ -61,9 +61,9 @@ W zależności od parametrów, ślimak może albo wydostać się ze studni, albo
 
 **Wynik:** *Dno 7*
 
-## Przykład 4
+## Example 4
 
-### Dane
+### Input
 
 ```
 50 6 4 1
@@ -71,9 +71,9 @@ W zależności od parametrów, ślimak może albo wydostać się ze studni, albo
 
 **Wynik:** *Dno 68*
 
-## Przykład 5
+## Example 5
 
-### Dane
+### Input
 
 ```
 50 6 3 1
@@ -81,9 +81,9 @@ W zależności od parametrów, ślimak może albo wydostać się ze studni, albo
 
 **Wynik:** *Ucieczka 20*
 
-## Przykład 6
+## Example 6
 
-### Dane
+### Input
 
 ```
 1 1 1 1

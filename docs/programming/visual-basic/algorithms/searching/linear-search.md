@@ -4,7 +4,7 @@
 
 ## Istnienie elementu
 
-### Implementacja
+### Implementation
 
 ```vb linenums="1"
 Module Search
@@ -35,7 +35,7 @@ End Module
 
 ## Pozycja elementu
 
-### Implementacja
+### Implementation
 
 ```vb linenums="1"
 Module Search
@@ -66,7 +66,7 @@ End Module
 
 ## Wszystkie pozycje elementu
 
-### Implementacja
+### Implementation
 
 ```vb linenums="1"
 Module Search

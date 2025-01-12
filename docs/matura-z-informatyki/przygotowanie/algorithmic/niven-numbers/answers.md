@@ -22,8 +22,8 @@ funkcja sumuj_cyfry(n):
 
 funkcja czy_liczba_nivena(n):
     1. Jeśli n mod sumuj_cyfry(n) = 0:
-        2. Zwróć PRAWDA
-    3. Zwróć FAŁSZ
+        2. Zwróć TRUE
+    3. Zwróć FALSE
 ```
 
 ## Zadanie 3
@@ -47,7 +47,7 @@ funkcja czy_liczba_nivena(n):
 496587
 ```
 
-### Rozwiązanie
+### Solution
 
 === "Python"
 

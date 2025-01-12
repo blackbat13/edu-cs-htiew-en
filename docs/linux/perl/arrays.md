@@ -4,7 +4,7 @@ W języku Perl zmienne tablicowe podczas ich definiowania poprzedzamy znakiem @,
 Zawartość tablicy definiujemy za pomocą nawiasów okrągłych.
 Elementy tablicy indeksowane są od zera, a do poszczególnych elementów odwołujemy się korzystając z klasycznej notacji nawiasów kwadratowych.
 
-### Przykład
+### Example
 
 ```perl
 #!/usr/bin/perl

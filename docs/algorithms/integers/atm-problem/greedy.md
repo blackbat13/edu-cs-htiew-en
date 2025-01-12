@@ -1,10 +1,10 @@
-# Rozwiązanie zachłanne
+# Solution zachłanne
 
 ## Funkcje pomocnicze
 
 - **Sortuj(tablica)** - sortuje tablicę **malejąco**
 
-## Pseudokod
+## Pseudocode
 
 ```
 funkcja Reszta(n, nominały, kwota):
@@ -37,11 +37,11 @@ funkcja Reszta(n, nominały, kwota):
 	
 	**mod** oznacza resztę z dzielenia
 
-## Złożoność
+## Complexity
 
 $O(n)$ - liniowa (przy zastosowaniu odpowiedniego algorytmu sortowania)
 
-## Implementacja
+## Implementation
 
 ### [:simple-cplusplus: C++](../../../programming/c++/algorithms/integers/change.md){ .md-button }
 

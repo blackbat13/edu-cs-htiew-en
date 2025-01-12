@@ -8,40 +8,40 @@ Zaczniemy od przytoczenia tanecznego przeszukiwania, które demonstruje działan
 
 [:material-video: Taneczne przeszukiwanie](https://www.youtube.com/watch?v=R8bM6pxlrLY){ .md-button }
 
-## Specyfikacja
+## Specification
 
-### Dane
+### Input
 
 - $n$ - liczba naturalna, liczba królowych do rozstawienia
 
-### Wynik
+### Output
 
-- **PRAWDA** jeżeli istnieje poprawne rozwiązanie
-- **FAŁSZ** w przeciwnym przypadku
+- **TRUE** jeżeli istnieje poprawne rozwiązanie
+- **FALSE** w przeciwnym przypadku
 
-## Przykład 1
+## Example 1
 
-### Dane
+### Input
 
 ```
 n := 3
 ```
 
-### Wynik
+### Output
 
-**FAŁSZ**
+**FALSE**
 
-## Przykład 2
+## Example 2
 
-### Dane
+### Input
 
 ```
 n := 4
 ```
 
-### Wynik
+### Output
 
-**PRAWDA**
+**TRUE**
 
 Przykładowe ustawienie (`H` oznacza królową, a `-` puste pole):
 
@@ -52,7 +52,7 @@ H - - -
 - H - -
 ```
 
-## Rozwiązanie
+## Solution
 
 Idea naszego rozwiązania jest prosta. Będziemy przechodzić wiersz po wierszu i próbować wszystkie możliwe ustawienia królowych w wierszu. Po ustawieniu królowej w danym wierszu przechodzimy do kolejnego wiersza, gdzie ponownie sprawdzamy wszystkie możliwe ustawienia.
 
@@ -60,42 +60,42 @@ Oczywiście w ten sposób sprawdzalibyśmy wiele błędnych ustawień. Dlatego p
 
 W celu sprawdzenia, czy dane pole nie jest atakowane przez inną królową, musimy przejść przez wszystkie poprzednie wiersze i sprawdzić, czy królowa ustawiona w danym wierszu nie atakuje obecnego pola w pionie lub na ukos.
 
-### Pseudokod
+### Pseudocode
 
 ```
 funkcja SprawdźPozycję(wiersz, kolumna, pozycje):
     1. Dla i := 1 do wiersz - 1, wykonuj:
         2. Jeżeli pozycje[i] = kolumna lub kolumna - pozycje[i] = wiersz - i, to:
-            3. Zwróć FAŁSZ
-    4. Zwróć PRAWDA
+            3. Zwróć FALSE
+    4. Zwróć TRUE
 ```
 
 ```
 funkcja ZnajdźRozwiązanie(n, wiersz, pozycje):
     1. Jeżeli wiersz > n, to:
-        2. Zwróć PRAWDA
+        2. Zwróć TRUE
     3. Dla kolumna := 1 do n, wykonuj:
         4. Jeżeli SprawdźPozycję(wiersz, kolumna, pozycje), to:
             5. pozycje[wiersz] := kolumna
             6. Jeżeli ZnajdźRozwiązanie(n, wiersz + 1, pozycje), to:
-                7. Zwróć PRAWDA
-    8. Zwróć FAŁSZ
+                7. Zwróć TRUE
+    8. Zwróć FALSE
 ```
 
-### Schemat blokowy
+### Block diagram
 
 ```mermaid
 %%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
 flowchart TD
     START(["SprawdźPozycję(wiersz, kolumna, pozycje)"]) --> K0[i := 1]
     K0 --> K1{i < wiersz}
-    K1 -- PRAWDA --> K2{"pozycje[i] = kolumna
+    K1 -- TRUE --> K2{"pozycje[i] = kolumna
     lub
     kolumna - pozycje[i] = wiersz - i"}
-    K2 -- PRAWDA --> K3[/Zwróć FAŁSZ/]
-    K2 -- FAŁSZ --> K1i[i := i + 1]
+    K2 -- TRUE --> K3[/Zwróć FALSE/]
+    K2 -- FALSE --> K1i[i := i + 1]
     K1i --> K1
-    K1 -- FAŁSZ --> K4[/Zwróć PRAWDA/]
+    K1 -- FALSE --> K4[/Zwróć TRUE/]
     K3 --> STOP([STOP])
     K4 --> STOP
 ```
@@ -104,23 +104,23 @@ flowchart TD
 %%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
 flowchart TD
     START(["ZnajdźRozwiązanie(n, wiersz, pozycje)"]) --> K1{wiersz > n}
-    K1 -- PRAWDA --> K2[/Zwróć PRAWDA/]
+    K1 -- TRUE --> K2[/Zwróć TRUE/]
     K2 --> STOP([STOP])
-    K1 -- FAŁSZ --> K3p[kolumna := 1]
+    K1 -- FALSE --> K3p[kolumna := 1]
     K3p --> K3{kolumna <= n}
-    K3 -- PRAWDA --> K4{"SprawdźPozycję(wiersz, kolumna, pozycje)"}
-    K4 -- PRAWDA --> K5["pozycje[wiersz] := kolumna"]
+    K3 -- TRUE --> K4{"SprawdźPozycję(wiersz, kolumna, pozycje)"}
+    K4 -- TRUE --> K5["pozycje[wiersz] := kolumna"]
     K5 --> K6{"ZnajdźRozwiązanie(n, wiersz + 1, pozycje)"}
-    K6 -- PRAWDA --> K7[/Zwróć PRAWDA/]
+    K6 -- TRUE --> K7[/Zwróć TRUE/]
     K7 --> STOP
-    K6 -- FAŁSZ --> K3i[kolumna := kolumna + 1]
-    K4 -- FAŁSZ --> K3i
+    K6 -- FALSE --> K3i[kolumna := kolumna + 1]
+    K4 -- FALSE --> K3i
     K3i --> K3
-    K3 -- FAŁSZ --> K8[/Zwróć FAŁSZ/]
+    K3 -- FALSE --> K8[/Zwróć FALSE/]
     K8 --> STOP
 ```
 
-## Implementacja
+## Implementation
 
 ### [:simple-cplusplus: C++](../../programming/c++/algorithms/backtracking/n-queens.md){ .md-button }
 
@@ -128,6 +128,6 @@ flowchart TD
 
 ### [:simple-kotlin: Kotlin](../../programming/kotlin/algorithms/backtracking/n-queens.md){ .md-button }
 
-## Implementacja - pozostałe
+## Implementation - pozostałe
 
 ### [:simple-julia: Julia](../../programming/julia/algorithms/backtracking/n-queens.md){ .md-button }

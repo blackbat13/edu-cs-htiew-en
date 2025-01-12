@@ -61,7 +61,7 @@ Dla każdej playlisty wypisz jej nazwę oraz liczbę utworów na niej zawartych.
 
 Wypisz nazwę oraz liczbę utworów playlisty/playlist z najmniejszą liczbą utworów.
 
-### Wynik
+### Output
 
 | Name         | TracksCount |
 |--------------|-------------|
@@ -72,7 +72,7 @@ Wypisz nazwę oraz liczbę utworów playlisty/playlist z najmniejszą liczbą ut
 
 Wypisz nazwę i czas trwania najkrótszej (pod względem czasu trwania) playlisty.
 
-### Wynik
+### Output
 
 | Name        | MillisecondsTotalLength |
 |-------------|-------------------------|

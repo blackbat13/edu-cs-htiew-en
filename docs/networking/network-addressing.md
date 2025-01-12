@@ -40,7 +40,7 @@ Adresowanie sieciowe odnosi się do schematu przypisania adresów do urządzeń 
 - **Router**: urządzenie, które łączy sieci i przekierowuje pakiety między nimi na podstawie adresów IP.
 - **Tabela routingu**: lista w routerze pokazująca, jak kierować pakiety w oparciu o ich adresy docelowe.
 
-## Prezentacja
+## Presentation
 
 Krótka prezentacja na temat adresowania w sieci.
 

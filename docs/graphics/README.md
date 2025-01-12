@@ -22,7 +22,7 @@ Grafika komputerowa odnosi się do tworzenia, reprezentowania, przetwarzania i m
 - **Ray tracing**: technika renderowania, która symuluje ścieżkę promienia światła przez scenę.
 - **Grafika rastrowa**: obrazy są reprezentowane jako zestaw punktów w siatce.
 
-## Przykładowe oprogramowanie
+## Exampleowe oprogramowanie
 
 1. **Edytory grafiki rastrowej**: Photoshop, GIMP.
 2. **Edytory grafiki wektorowej**: Adobe Illustrator, CorelDRAW.
@@ -40,7 +40,7 @@ Grafika komputerowa odnosi się do tworzenia, reprezentowania, przetwarzania i m
 
 Rozwój technologii grafiki komputerowej jest nierozerwalnie związany z postępem w dziedzinie sprzętu komputerowego. Coraz bardziej zaawansowane karty graficzne i technologie wyświetlania, takie jak VR (wirtualna rzeczywistość) czy AR (rozszerzona rzeczywistość), otwierają nowe możliwości dla projektantów, artystów i inżynierów.
 
-## Prezentacja
+## Presentation
 
 Krótkie wprowadzenie do grafiki komputerowej w formie prezentacji.
 

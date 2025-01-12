@@ -1,6 +1,6 @@
 # Konwersja pomiędzy systemami liczbowymi
 
-## Opis problemu
+## Description problemu
 
 [Systemy liczbowe](../../../../algorithms/numeral-systems/README.md)
 

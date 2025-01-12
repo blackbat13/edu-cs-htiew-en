@@ -1,10 +1,10 @@
-# Rozwiązanie 3
+# Solution 3
 
 ## Treść zadania
 
 Stwórz przycisk, który po kliknięciu wpisze w kolumnie C wszystkie wartości z zakresu `A1:A10`, które występują jednocześnie w zakresie `B1:B10`. Możesz założyć, że w obu zakresach wartości są unikalne w ramach danego zakresu.
 
-## Rozwiązanie
+## Solution
 
 ```vb
 Sub CzescWspolna_Click()
@@ -26,7 +26,7 @@ Sub CzescWspolna_Click()
 End Sub
 ```
 
-## Opis rozwiązania
+## Description rozwiązania
 
 ### 1. Deklarowanie zmiennych
 

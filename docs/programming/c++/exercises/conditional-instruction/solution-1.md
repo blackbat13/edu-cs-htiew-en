@@ -1,20 +1,20 @@
-# Rozwiązanie 1
+# Solution 1
 
 ## Treść zadania
 
 Napisz program zgodny z poniższą specyfikacją. Nie korzystaj z funkcji **abs, fabs**
 
-### Specyfikacja
+### Specification
 
-#### Dane
+#### Input
 
 * $a$ - liczba całkowita
 
-#### Wynik
+#### Output
 
 * Wartość bezwzględna z $a$
 
-## Rozwiązanie
+## Solution
 
 ```cpp
 #include <iostream>

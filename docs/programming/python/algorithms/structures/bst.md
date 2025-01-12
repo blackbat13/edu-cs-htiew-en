@@ -6,7 +6,7 @@ description: BST
 
 ## [:link: Opis problemu](../../../../algorithms/structures/bst.md)
 
-## Implementacja
+## Implementation
 
 ```python linenums="1"
 class BinarySearchTree:
@@ -80,7 +80,7 @@ if __name__ == "__main__":
     bst.clear()
 ```
 
-### Opis implementacji
+### Description implementacji
 
 ![Przykładowe drzewo wykorzystane w implementacji](<../../../../assets/image (10).png>)
 

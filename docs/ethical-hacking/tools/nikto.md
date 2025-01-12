@@ -9,7 +9,7 @@ Nikto jest zdolny do wykonania wielu różnych testów, w tym:
 - Sprawdzanie konfiguracji serwera pod kątem potencjalnych problemów.
 - Wykonywanie testów na podstawie bazy danych znanego oprogramowania niebezpiecznego.
 
-## Przykłady użycia
+## Exampley użycia
 
 ### Proste skanowanie
 

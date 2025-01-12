@@ -2,7 +2,7 @@
 
 ## [:link: Opis problemu](../../../../algorithms/numerical-methods/horner.md)
 
-## Implementacja
+## Implementation
 
 ```cpp linenums="1"
 #include <iostream>
@@ -44,7 +44,7 @@ int main() {
 }
 ```
 
-### Opis implementacji
+### Description implementacji
 
 Zacznijmy od funkcji pomocniczej `printPolynomial` (**linia 15**), której celem jest wyświetlenie wielomianu w czytelnej formie na ekranie. Nie jest ona niezbędną częścią algorytmu, ale może być pomocna przy weryfikacji poprawności wyniku. Funkcja przyjmuje dwa parametry: tablicę współczynników wielomianu `coef`, oraz stopień wielomianu `n`. W tablicy znajduje się dokładnie $n+1$ liczb. Współczynniki są zapisane w kolejności od najmniejszej potęgi ($0$) do największej ($n$).
 

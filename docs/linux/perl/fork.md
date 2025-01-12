@@ -1,6 +1,6 @@
 # Fork
 
-### Przykład
+### Example
 
 ```perl
 #!/usr/bin/perl

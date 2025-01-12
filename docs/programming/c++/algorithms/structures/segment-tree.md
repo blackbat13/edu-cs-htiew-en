@@ -2,7 +2,7 @@
 
 ## [:link: Opis problemu](../../../../algorithms/structures/segment-trees.md)
 
-## Implementacja
+## Implementation
 
 ```cpp linenums="1"
 #include <cstdio>
@@ -141,7 +141,7 @@ int main() {
 }
 ```
 
-### Opis implementacji
+### Description implementacji
 
 Klasa **SumSegmentTree** definiuje drzewo przedziałowe do liczenia sum na przedziałach. Struktura **node** opisuje strukturę wewnętrznego węzła drzewa segmentowego.
 Węzeł przechowuje informacje o wartości, przedziale, leniwej aktualizacji (lazy update) oraz wskaźniki na lewe i prawe poddrzewo.

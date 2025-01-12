@@ -11,13 +11,13 @@ Poniżej znajdziesz animację przedstawiającą ideę omawianego algorytmu.
 
 [https://www.cs.usfca.edu/~galles/visualization/CountingSort.html](https://www.cs.usfca.edu/~galles/visualization/CountingSort.html){ .md-button }
 
-## Rozwiązanie
+## Solution
 
 Sortowanie przez zliczanie składa się z dwóch faz: fazy zliczania i fazy sortowania. Na początku potrzebujemy stworzyć miejsce, w którym będziemy zliczać liczebności poszczególnych wartości z tablicy. Tworzymy więc nową tablicę, tablicę liczników, którą na początku wypełnimy samymi zerami. Potrzebujemy mieć po jednym liczniku na każdą z możliwych wartości od $1$ do $m$.
 
 Następnie przechodzimy przez kolejne elementy naszej tablicy i zwiększamy licznik dla każdej napotkanej wartości. Po zliczeniu wszystkich elementów pozostało nam je ponownie ułożyć w tablicy, teraz już we właściwej kolejności. Przechodzimy więc przez tablicę liczników i zapisujemy elementy do naszej tablicy $A$. Daną wartość zapisujemy tyle razy, ile wskazuje jej licznik.
 
-### Pseudokod
+### Pseudocode
 
 ```
 procedura SortowaniePrzezZliczanie(A, n, m):
@@ -34,13 +34,13 @@ procedura SortowaniePrzezZliczanie(A, n, m):
     9. Zwróc A
 ```
 
-### Złożoność
+### Complexity
 
 $O(n+m)$ — liniowa
 
 Mamy tutaj do czynienia z dwoma liniowymi przejściami. Najpierw przechodzimy raz przez całą tablicę, co daje nam $n$ operacji. Następnie przechodzimy przez cały zakres wartości z tablicy, co daje nam $m$ operacji. Sumujemy i dostajemy złożoność liniową.
 
-## Implementacja
+## Implementation
 
 ### [:simple-cplusplus: C++](../../programming/c++/algorithms/sorting/counting-sort.md){ .md-button }
 

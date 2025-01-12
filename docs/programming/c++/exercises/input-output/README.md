@@ -4,100 +4,100 @@
 
 Napisz program zgodny z poniższą specyfikacją.
 
-### Specyfikacja
+### Specification
 
-#### Dane
+#### Input
 
 * $imie$ - ciąg znaków, małych i wielkich liter alfabetu angielskiego
 
-#### Wynik
+#### Output
 
 * Komunikat powitania w formie "_Witaj \[**imie**]!_"
 
-### Przykład
+### Example
 
-#### Dane
+#### Input
 
 ```
 imie := "Damian"
 ```
 
-**Wynik**: "Witaj Damian!"
+**Output**: "Witaj Damian!"
 
 ## Zadanie 2
 
 Napisz program zgodny z poniższą specyfikacją.
 
-### Specyfikacja
+### Specification
 
-#### Dane
+#### Input
 
 * $a, b$ - dwie liczby całkowite
 
-#### Wynik
+#### Output
 
 * Suma liczb $a$ i $b$ 
 
-### Przykład
+### Example
 
-#### Dane
+#### Input
 
 ```
 a := 2
 b := 3
 ```
 
-**Wynik**: $5$ 
+**Output**: $5$ 
 
 ## Zadanie 3
 
 Napisz program zgodny z poniższą specyfikacją.
 
-### Specyfikacja
+### Specification
 
-#### Dane
+#### Input
 
 * $a, b$ - dwie liczby całkowite, różne od zera
 
-#### Wynik
+#### Output
 
 * Wynik dzielenia liczb $a$ i $b$ 
 
-### Przykład
+### Example
 
-#### Dane
+#### Input
 
 ```
 a := 1
 b := 2
 ```
 
-**Wynik**: $0.5$ 
+**Output**: $0.5$ 
 
 ## Zadanie 4
 
 Napisz program zgodny z poniższą specyfikacją.
 
-### Specyfikacja
+### Specification
 
-#### Dane
+#### Input
 
 * $a, b$ - dwie liczby naturalne, większe od zera
 
-#### Wynik
+#### Output
 
 * Wynik dzielenia całkowitego oraz reszta z dzielenia liczb $a$ i $b$ 
 
-### Przykład
+### Example
 
-#### Dane
+#### Input
 
 ```
 a := 7
 b := 3
 ```
 
-**Wynik**: $2$, reszty $1$ 
+**Output**: $2$, reszty $1$ 
 
 ## Zadanie 5
 
@@ -108,68 +108,68 @@ Napisz program zgodny z poniższą specyfikacją.
 	
 	Skorzystaj z funkcji **`sqrt`** z biblioteki **`cmath`**.
 
-### Specyfikacja
+### Specification
 
-#### Dane
+#### Input
 
 * $a$ - liczba naturalna
 
-#### Wynik
+#### Output
 
 * Pierwiastek z $a$
 
-### Przykład
+### Example
 
-#### Dane
+#### Input
 
 ```
 a := 4
 ```
 
-**Wynik**: $2$ 
+**Output**: $2$ 
 
 ## Zadanie 6
 
 Napisz program zgodny z poniższą specyfikacją. Wykorzystaj funkcję **min**.
 
-### Specyfikacja
+### Specification
 
-#### Dane
+#### Input
 
 * $a, b$ - dwie liczby całkowite
 
-#### Wynik
+#### Output
 
 * Mniejsza z liczb $a$ i $b$, lub dowolna gdy są sobie równe
 
-### Przykład
+### Example
 
-#### Dane
+#### Input
 
 ```
 a := 5
 b := 3
 ```
 
-**Wynik**: $3$ 
+**Output**: $3$ 
 
 ## Zadanie 7
 
 Napisz program zgodny z poniższą specyfikacją. Wykorzystaj funkcję **max**.
 
-### Specyfikacja
+### Specification
 
-#### Dane
+#### Input
 
 * $a, b, c$ - trzy liczby całkowite
 
-#### Wynik
+#### Output
 
 * Największa z liczb $a$, $b$ i $c$ , lub dowolna gdy są sobie równe
 
-### Przykład
+### Example
 
-#### Dane
+#### Input
 
 ```
 a := 3
@@ -177,31 +177,31 @@ b := 1
 c := 3
 ```
 
-**Wynik**: $3$ 
+**Output**: $3$ 
 
 ## Zadanie 8
 
 Napisz program zgodny z poniższą specyfikacją.
 
-### Specyfikacja
+### Specification
 
-#### Dane
+#### Input
 
 * $sekundy$ - liczba naturalna
 
-#### Wynik
+#### Output
 
 * Czas podany w czytelnej formie **$H:M:S$** ($H$ - godziny, $M$ - minuty, $S$ - sekundy)
 
-### Przykład
+### Example
 
-#### Dane
+#### Input
 
 ```
 sekundy := 9179
 ```
 
-**Wynik**: $2:32:59$ 
+**Output**: $2:32:59$ 
 
 !!! info
 	**Wyjaśnienie**

@@ -118,7 +118,7 @@ tab.append(45)
 
 Aby usunąć ostatni element listy możemy skorzystać z metody **pop** nie podając do niej żadnych argumentów.
 
-#### Przykład
+#### Example
 
 ```python
 tab = [1, 2, 3, 4]
@@ -126,7 +126,7 @@ tab.pop()
 print(tab)
 ```
 
-##### Wynik
+##### Output
 
 ```python
 [1, 2, 3]
@@ -136,7 +136,7 @@ print(tab)
 
 Do metody *pop* możemy także jako argument podać indeks elementu do usunięcia z listy.
 
-#### Przykład
+#### Example
 
 ```python
 tab = [1, 2, 3, 4]
@@ -144,7 +144,7 @@ tab.pop(2)
 print(tab)
 ```
 
-##### Wynik
+##### Output
 
 ```python
 [1, 2, 4]
@@ -156,7 +156,7 @@ print(tab)
 
 W celu przejścia po kolejnych elementach listy możemy skorzystać z pętli `for in`.
 
-#### Przykład
+#### Example
 
 ```python
 tab = [1, 2, 3, 4, 5]
@@ -164,7 +164,7 @@ for el in tab:
     print(el)
 ```
 
-##### Wynik
+##### Output
 
 ```python
 1
@@ -178,7 +178,7 @@ for el in tab:
 
 Jeżeli chcemy przejść pętlą wyłącznie po indeksach, możemy np. skorzystać z funkcji `range` jako argument podająć długość listy pobraną za pomocą funckji `len`.
 
-#### Przykład
+#### Example
 
 ```python
 tab = [1, 2, 3, 4, 5]
@@ -186,7 +186,7 @@ for ind in range(len(tab)):
     print(tab[ind])
 ```
 
-##### Wynik
+##### Output
 
 ```python
 1
@@ -200,7 +200,7 @@ for ind in range(len(tab)):
 
 Jeżeli chcemy jednocześnie przejść po indeksach elementów i ich wartościach, możemy skorzystać z funkcji `enumerate`, do której jako argument podajemy naszą listę.
 
-#### Przykład
+#### Example
 
 ```python
 tab = [1, 2, 3, 4, 5]
@@ -208,7 +208,7 @@ for ind, el in enumerate(tab):
     print(ind, el)
 ```
 
-##### Wynik
+##### Output
 
 ```python
 0 1
@@ -222,7 +222,7 @@ for ind, el in enumerate(tab):
 
 Podczas przypisywania listy do innej zmiennej trzeba zachować ostrożność, ponieważ domyślnie lista przekazywana jest przez **referencję**. Spójrzmy na poniższy przykład, aby zrozumieć, co to oznacza.
 
-### Przykład
+### Example
 
 ```python
 tab1 = [1, 2, 3, 4]
@@ -234,7 +234,7 @@ print(tab1)
 print(tab2)
 ```
 
-#### Wynik
+#### Output
 
 ```python
 [25, 2, 3, 4]
@@ -250,7 +250,7 @@ print(tab2)
 
 Jeżeli nasza lista zawiera tylko proste typy, np. liczby, to możemy spokojnie skorzystać z tzw. **płytkiej kopii**. W tym celu, podczas przypisywania wartości do nowej zmiennej, po nazwie naszej zmiennej zawierającej listę dopisujemy nawiasy kwadratowe z dwukropiek w środku.
 
-#### Przykład
+#### Example
 
 ```python
 tab1 = [1, 2, 3, 4]
@@ -262,7 +262,7 @@ print(tab1)
 print(tab2)
 ```
 
-##### Wynik
+##### Output
 
 ```python
 [1, 2, 3, 4]
@@ -278,7 +278,7 @@ Czasem płytka kopia nam nie wystarczy. Będzie tak w sytuacjach gdy w naszej li
 
 Nie należy jednak nadużywać głębokiej kopii ponieważ w wielu przypadkach jest ona bardzo kosztowna i może negatywnie wpływać na wydajność programu.
 
-#### Przykład
+#### Example
 
 ```python
 from copy import deepcopy
@@ -292,7 +292,7 @@ print(tab1)
 print(tab2)
 ```
 
-##### Wynik
+##### Output
 
 ```python
 [[1, 2], [3, 4]]

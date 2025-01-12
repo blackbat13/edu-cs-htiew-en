@@ -1,20 +1,20 @@
-# Rozwiązanie 7
+# Solution 7
 
 ## Treść zadania
 
 Napisz program zgodny z poniższą specyfikacją.
 
-### Specyfikacja
+### Specification
 
-#### Dane
+#### Input
 
 * $n$ - liczba naturalna
 
-#### Wynik
+#### Output
 
 * Wszystkie pary liczb naturalnych, których suma wynosi $n$
 
-## Rozwiązanie
+## Solution
 
 ```cpp
 #include <iostream>

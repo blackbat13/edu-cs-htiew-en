@@ -4,7 +4,7 @@
 
 ## Wyszukiwanie wartości minimum i maksimum
 
-### Implementacja
+### Implementation
 
 ```kotlin
 fun findMinVal(array: List<Int>): Int {
@@ -46,13 +46,13 @@ fun main() {
 
 [Wyszukiwanie wartości minimum i maksimum](https://ideone.com/ksC9K4)
 
-### Opis implementacji
+### Description implementacji
 
 TODO
 
 ## Wyszukiwanie indeksów wartości minimum i maksimum
 
-### Implementacja
+### Implementation
 
 ```kotlin
 fun findMinInd(array: List<Int>): Int {
@@ -94,6 +94,6 @@ fun main() {
 
 [Wyszukiwanie indeksów wartości min i maks](https://ideone.com/bA2kuB)
 
-### Opis implementacji
+### Description implementacji
 
 TODO

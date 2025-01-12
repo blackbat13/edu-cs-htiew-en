@@ -17,7 +17,7 @@ W momencie, gdy wewnątrz funkcji wykryjemy, że doszło do niedozwolonej sytuac
 Robimy to za pomocą słowa kluczowego `throw`.
 Po wyrzuceniu wyjątku funkcja kończy swoje działanie.
 
-### Przykład
+### Example
 
 ```cpp
 int divide(int a, int b) {
@@ -40,7 +40,7 @@ Tutaj określamy, jakie operacje powinien wykonać program, po napotkaniu wyjąt
 
 Przyjrzyjmy się poniższemu przykładowi.
 
-### Przykład
+### Example
 
 ```cpp
 int main() {

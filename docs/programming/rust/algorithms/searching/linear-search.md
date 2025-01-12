@@ -4,7 +4,7 @@
 
 ## Istnienie elementu
 
-### Implementacja
+### Implementation
 
 ```rust linenums="1"
 fn linear_search(array: &[i32], number: i32) -> bool {
@@ -31,7 +31,7 @@ fn main() {
 }
 ```
 
-### Opis implementacji
+### Description implementacji
 
 Funkcja `linear_search` (**linia 1**) zwraca jako wynik wartość prawda/fałsz i przyjmuje dwa argumenty: tablicę do przeszukania oraz wartość poszukiwanego elementu. Na początku funkcji przechodzimy pętlą przez wszystkie kolejne elementy tablicy (**linia 2**). Dla każdego elementu sprawdzamy, czy jest równy poszukiwanej wartości (**linia 3**). Jeżeli tak, to zwracamy informację o znalezieniu wartości w tablicy (**linia 4**). Po przejściu przez wszystkie indeksy i wyjściu z pętli (tzn. gdy nie znaleźliśmy poszukiwanego elementu) zwracamy wartość `false` informującą, że poszukiwany element nie znajduje się w tablicy (**linia 8**).
 
@@ -39,7 +39,7 @@ W części głównej programu na początku przygotowujemy dane do problemu: tabl
 
 ## Pozycja elementu
 
-### Implementacja
+### Implementation
 
 ```rust linenums="1"
 fn linear_search(array: &[i32], number: i32) -> i32 {
@@ -66,7 +66,7 @@ fn main() {
 }
 ```
 
-### Opis implementacji
+### Description implementacji
 
 Funkcja `linear_search` (**linia 1**) zwraca jako wynik liczbę całkowitą i przyjmuje dwa argumenty: tablicę do przeszukania oraz wartość poszukiwanego elementu. Na początku funkcji przechodzimy pętlą przez wszystkie kolejne indeksy w tablicy od $0$ do rozmiaru tablicy minus 1 włącznie (**linia 2**). Rozmiar tablicy pobieramy za pomocą metody `len()`. Dla każdego indeksu sprawdzamy, czy pod tym indeksem w tablicy znajduje się poszukiwana wartość (**linia 3**). Jeżeli tak, to zwracamy indeks tej wartości w tablicy (**linia 4**). Po przejściu przez wszystkie indeksy i wyjściu z pętli (tzn. gdy nie znaleźliśmy poszukiwanego elementu) zwracamy wartość $-1$ informującą, że poszukiwany element nie znajduje się w tablicy (**linia 8**).
 
@@ -74,7 +74,7 @@ W części głównej programu na początku przygotowujemy dane do problemu: tabl
 
 ## Wszystkie pozycje elementu
 
-### Implementacja
+### Implementation
 
 ```rust linenums="1"
 fn linear_search(array: &[i32], number: i32) {
@@ -94,7 +94,7 @@ fn main() {
 }
 ```
 
-### Opis implementacji
+### Description implementacji
 
 Funkcja `linear_search` (**linia 1**) nie zwraca wyniku i przyjmuje dwa argumenty: tablicę do przeszukania oraz wartość poszukiwanego elementu. Na początku funkcji przechodzimy pętlą przez wszystkie kolejne indeksy w tablicy od $0$ do rozmiaru tablicy minus 1 włącznie (**linia 2**). Rozmiar tablicy pobieramy za pomocą metody `len()`. Dla każdego indeksu sprawdzamy, czy pod tym indeksem w tablicy znajduje się poszukiwana wartość (**linia 3**). Jeżeli tak, to wypisujemy ten indeks (**linia 4**). 
 

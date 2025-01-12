@@ -6,14 +6,14 @@ Lider zbioru to element (w tym przypadku tytuł książki), który pojawia się 
 
 Dlaczego jest to ważne? Znalezienie lidera w zbiorze może pomóc nam zrozumieć dominujące tendencje lub preferencje w danym środowisku. W kontekście klubu książki, dowiedzenie się, która książka jest najbardziej popularna, może sugerować, jakie tematy lub style literackie są obecnie na czasie. W innych kontekstach, takich jak analiza danych czy badania rynku, identyfikacja lidera może dostarczyć cennych informacji o zachowaniach konsumentów, trendach czy dominujących opiniach.
 
-## Specyfikacja
+## Specification
 
-### Dane
+### Input
 
 * $n$ — liczba naturalna, liczebność zbioru
 * $A[1..n]$ — $n-elementowy$ zbiór liczb całkowitych, indeksowany od jedynki
 
-### Wynik
+### Output
 
 * Lider podanego zbioru, lub -1, jeżeli lider nie istnieje.
 
@@ -24,43 +24,43 @@ Dlaczego jest to ważne? Znalezienie lidera w zbiorze może pomóc nam zrozumie�
 	
 	Jeżeli taki element nie istnieje, to zbiór nie ma lidera.
 
-## Przykład 1
+## Example 1
 
-### Dane
+### Input
 
 ```
 n := 10
 A := [4, 1, 4, 4, 2, 3, 4, 3, 4, 4]
 ```
 
-**Wynik**: 4
+**Output**: 4
 
 !!! info
 	**Wyjaśnienie**
 	
 	Najczęściej występującym elementem w powyższym zbiorze jest wartość $4$, która występuje dokładnie $6$ razy, co **jest wartością większą** od $n/2=10/2=5$.
 
-## Przykład 2
+## Example 2
 
-### Dane
+### Input
 
 ```
 n := 10
 A := [4, 1, 4, 4, 2, 3, 4, 3, 4, 1]
 ```
 
-**Wynik**: $-1$ (brak lidera)
+**Output**: $-1$ (brak lidera)
 
 !!! info
 	**Wyjaśnienie**
 	
 	Najczęściej występującym elementem w powyższym zbiorze jest wartość $4$, która występuje dokładnie $5$ razy, co **nie jest** **wartością większą** od $n/2=10/2=5$.
 
-## Rozwiązanie naiwne
+## Solution naiwne
 
 W celu stwierdzenia, że dany element jest liderem zbioru, potrzebujemy wiedzieć, ile razy w zbiorze występuje. Gdybyśmy więc policzyli dla każdego elementu zbioru jego liczebność (liczbę wystąpień) w zbiorze, to bylibyśmy w stanie stwierdzić, czy zbiór posiada lidera, a jeśli tak, to jaki element jest tym liderem. Przechodzimy więc przez kolejne elementy zbioru i zliczamy ich wystąpienia. Oczywiście w ten sposób niektóre elementy policzymy wielokrotnie, ale właśnie dlatego jest to naiwne rozwiązanie.
 
-### Pseudokod
+### Pseudocode
 
 ```
 funkcja SzukajLidera(n, A):
@@ -86,41 +86,41 @@ funkcja SzukajLidera(n, A):
 
 W skrócie, ten pseudokod sprawdza każdy element listy, czy jest liderem, licząc ile razy pojawia się w całej liście. Jeśli którykolwiek element pojawia się więcej niż połowę razy, jest liderem. Jeśli żaden element nie spełnia tego kryterium, nie ma lidera.
 
-### Schemat blokowy
+### Block diagram
 
 ```mermaid
 %%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
 flowchart TD
 	START(["SzukajLidera(n, A)"]) --> K0[i := 1]
 	K0 --> K1{i <= n}
-	K1 -- PRAWDA --> K2["ile := 0
+	K1 -- TRUE --> K2["ile := 0
 	j := 1"]
 	K2 --> K3{j <= n}
-	K3 -- PRAWDA --> K4{"A[i] = A[j]"}
-	K4 -- PRAWDA --> K5[ile := ile + 1]
-	K4 -- FAŁSZ --> K3i[j := j + 1]
+	K3 -- TRUE --> K4{"A[i] = A[j]"}
+	K4 -- TRUE --> K5[ile := ile + 1]
+	K4 -- FALSE --> K3i[j := j + 1]
 	K5 --> K3i
 	K3i --> K3
-	K3 -- FAŁSZ --> K6{ile > n / 2}
-	K6 -- PRAWDA --> K7[/"Zwróc A[i]"/]
+	K3 -- FALSE --> K6{ile > n / 2}
+	K6 -- TRUE --> K7[/"Zwróc A[i]"/]
 	K7 --> STOP([STOP])
-	K6 -- FAŁSZ ---> K1i[i := i + 1]
+	K6 -- FALSE ---> K1i[i := i + 1]
 	K1i --> K1
-	K1 -- FAŁSZ --> K8[/Zwróc -1/]
+	K1 -- FALSE --> K8[/Zwróc -1/]
 	K8 --> STOP
 ```
 
-### Złożoność
+### Complexity
 
 $O(n^2)$ — kwadratowa
 
-## Rozwiązanie optymalne
+## Solution optymalne
 
 W rozwiązaniu optymalnym należy zacząć od pewnego spostrzeżenia. Jeżeli weźmiemy jakiś zbiór i usuniemy z niego dwa **różne** elementy, to powstały w ten sposób zbiór będzie miał takiego samego lidera. Dzięki tej obserwacji możemy "skreślać" parami różne elementy, aż nie zostanie nam nic do skreślenia. Oczywiście nie będziemy fizycznie wykreślać elementów z tablicy. To "skreślanie" zrealizujemy za pomocą odpowiedniego zliczania i zapamiętywania tzw. *kandydata na lidera*. Zaczniemy od przyjęcia pierwszego elementu z tablicy jako kandydata na lidera. Zliczymy także jego liczbę dotychczasowych "nieskreślonych" powtórzeń. Następnie przejdziemy przez kolejne wartości z tablicy. Jeżeli w którymś momencie nasz licznik się wyzeruje, to przyjmiemy obecny element jako nowego kandydata i licznik ustawimy na jeden. Jeżeli natomiast licznik będzie większy od zera, należy porównać kandydata z obecnym elementem z tablicy. Jeżeli napotkamy wartość równą kandydatowi, to zwiększamy licznik wystąpień kandydata. Jeżeli natomiast napotkamy wartość różną od kandydata, to będziemy symulować "skreślanie" poprzez zmniejszenie licznika wystąpień obecnego kandydata o jeden.
 
 Gdy już przejdziemy przez wszystkie elementy tablicy to na koniec zostaniemy z jakimś kandydatem na lidera. Jeżeli zbiór ma lidera, to będzie nim ten kandydat. Może być jednak tak, że zbiór nie ma lidera. Dlatego pozostaje nam zliczyć liczbę wystąpień naszego kandydata w zbiorze, co realizujemy przechodząc element po elemencie. Na koniec sprawdzamy, czy liczba wystąpień kandydata jest większa od połowy liczebności zbioru.
 
-### Pseudokod
+### Pseudocode
 
 ```text
 funkcja Zlicz(n, A, el):
@@ -170,7 +170,7 @@ funkcja SzukajLidera(n, A)
 * Jeśli tak, zwracamy go jako lidera.
 * W przeciwnym razie zwracamy $-1$, co oznacza, że nie ma lidera.
 
-### Schemat blokowy
+### Block diagram
 
 ```mermaid
 %%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
@@ -178,12 +178,12 @@ flowchart TD
 	START(["Zlicz(n, A, el)"]) --> K1["ile := 0
 	i := 1"]
 	K1 --> K2{i <= n}
-	K2 --PRAWDA --> K3{"el = A[i]"}
-	K3 --PRAWDA --> K4["ile := ile + 1"]
-	K3 --FAŁSZ --> K5["i := i + 1"]
+	K2 --TRUE --> K3{"el = A[i]"}
+	K3 --TRUE --> K4["ile := ile + 1"]
+	K3 --FALSE --> K5["i := i + 1"]
 	K4 --> K5
 	K5 --> K2
-	K2 --FAŁSZ --> K6[/"Zwróć ile"/]
+	K2 --FALSE --> K6[/"Zwróć ile"/]
 	K6 ---> STOP([STOP])
 ```
 
@@ -194,28 +194,28 @@ flowchart TD
 	ile := 1
 	i := 1"]
 	K1 --> K3{i <= n}
-	K3 -- PRAWDA --> K4{ile = 0}
-	K4 -- PRAWDA --> K5["lider := A[i]"]
+	K3 -- TRUE --> K4{ile = 0}
+	K4 -- TRUE --> K5["lider := A[i]"]
 	K5 --> K6[ile := 1]
-	K4 -- FAŁSZ --> K7{"lider = A[i]"}
-	K7 -- PRAWDA --> K8[ile := ile + 1]
-	K7 -- FAŁSZ --> K10[ile := ile - 1]
+	K4 -- FALSE --> K7{"lider = A[i]"}
+	K7 -- TRUE --> K8[ile := ile + 1]
+	K7 -- FALSE --> K10[ile := ile - 1]
 	K10 --> K3i[i := i + 1]
 	K8 --> K3i
 	K6 --> K3i
 	K3i --> K3
-	K3 -- FAŁSZ ---> K15{"Zlicz(n, A, lider) > n / 2"}
-	K15 -- PRAWDA --> K16[/Zwróć lider/]
+	K3 -- FALSE ---> K15{"Zlicz(n, A, lider) > n / 2"}
+	K15 -- TRUE --> K16[/Zwróć lider/]
 	K16 --> STOP([STOP])
-	K15 -- FAŁSZ --> K18[/Zwróć - 1/]
+	K15 -- FALSE --> K18[/Zwróć - 1/]
 	K18 --> STOP
 ```
 
-### Złożoność
+### Complexity
 
 $O(n)$ — liniowa
 
-## Implementacja
+## Implementation
 
 ### [:simple-cplusplus: C++](../../programming/c++/algorithms/searching/majority.md){ .md-button }
 

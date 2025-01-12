@@ -8,7 +8,7 @@ description: Największy Wspólny Dzielnik
 
 ## Algorytm NWD z odejmowaniem
 
-### Implementacja
+### Implementation
 
 ```kotlin
 fun gcd(num1: Int, num2: Int): Int {
@@ -40,13 +40,13 @@ fun main() {
 
 [NWD z odejmowaniem](https://ideone.com/4NLzXI)
 
-### Opis implementacji
+### Description implementacji
 
 TODO
 
 ## Algorytm Euklidesa - wersja iteracyjna
 
-### Implementacja
+### Implementation
 
 ```kotlin
 fun gcd(num1: Int, num2: Int): Int {
@@ -76,13 +76,13 @@ fun main() {
 
 [Algorytm Euklidesa - wersja iteracyjna](https://ideone.com/VUGRIi)
 
-### Opis implementacji
+### Description implementacji
 
 TODO
 
 ## Algorytm Euklidesa - wersja rekurencyjna
 
-### Implementacja
+### Implementation
 
 ```kotlin
 fun gcd(a: Int, b: Int): Int {
@@ -107,6 +107,6 @@ fun main() {
 
 [Algorytm Euklidesa - wersja rekurencyjna](https://ideone.com/F52FKB)
 
-### Opis implementacji
+### Description implementacji
 
 TODO

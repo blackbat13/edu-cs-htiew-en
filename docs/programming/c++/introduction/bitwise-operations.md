@@ -1,6 +1,6 @@
 # Operacje bitowe
 
-## Opis zagadnienia
+## Description zagadnienia
 
 [bitwise-operations.md](../../../algorithms/numeral-systems/bitwise-operations.md)
 
@@ -51,6 +51,6 @@ int c = a ^ b;
 cout << c << endl;
 ```
 
-## Przykładowa implementacja
+## Exampleowa implementacja
 
 [https://replit.com/@damiankurpiewski/BitOperations](https://replit.com/@damiankurpiewski/BitOperations)

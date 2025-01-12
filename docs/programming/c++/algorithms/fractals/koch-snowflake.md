@@ -2,7 +2,7 @@
 
 ## [:link: Opis problemu](../../../../algorithms/fractals/koch-snowflake.md)
 
-## Implementacja 
+## Implementation 
 
 ```cpp linenums="1"
 #include "turtle.hpp"

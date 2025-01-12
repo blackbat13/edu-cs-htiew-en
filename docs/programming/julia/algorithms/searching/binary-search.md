@@ -4,7 +4,7 @@
 
 ## Wersja iteracyjna
 
-### Implementacja
+### Implementation
 
 ```julia linenums="1"
 function binarySearch(array, number)

@@ -2,7 +2,7 @@
 
 ## [:link: Opis problemu](../../../../algorithms/fractals/binary-tree.md)
 
-## Implementacja
+## Implementation
 
 ```cpp linenums="1"
 #include "turtle.hpp"
@@ -43,7 +43,7 @@ int main() {
 
 [Drzewo binarne](https://replit.com/@damiankurpiewski/DrzewoBinarne#main.cpp)
 
-### Opis implementacji
+### Description implementacji
 
 Funkcja `binaryTree` (**linia 7**) przyjmuje dwa argumenty: stopień drzewa i początkową długość gałęzi (pnia). Na początku przemieszczamy żółwia do przodu o zadaną długość (**linia 8**), rysując w ten sposób gałąź. Następnie, jeżeli stopień jest większy od zera (**linia 10**), to znaczy, że musimy narysować kolejne gałęzie. W tym celu obracamy najpierw żółwia w lewo o $45\degree$ (**linia 11**) i wywołaniem rekurencyjnym (**linia 12**) rysujemy gałęzie. Podobnie postępujemy z drugim rozgałęzieniem. Najpierw musimy obrócić żółwia w prawo o $90\degree$ (**linia 13**), czyli $2*45\degree$. Następnie stosujemy wywołanie rekurencyjne (**linia 14**), a potem obracamy żółwia w lewo o $45\degree$ (**linia 15**), w ten sposób wracając do początkowego ustawienia.
 

@@ -2,7 +2,7 @@
 
 ## [:link: Opis problemu](../../../../algorithms/text/rpn.md)
 
-## Implementacja
+## Implementation
 
 ```python linenums="1"
 from queue import LifoQueue

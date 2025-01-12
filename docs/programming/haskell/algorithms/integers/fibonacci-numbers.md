@@ -4,7 +4,7 @@
 
 ## Podejście naiwne
 
-### Implementacja
+### Implementation
 
 ```haskell linenums="1"
 fib 1 = 1
@@ -15,7 +15,7 @@ main = do
     print $ fib 10
 ```
 
-### Opis
+### Description
 
 Funkcja `fib` przyjmuje jeden argument: numer `n` w ciągu Fibonacciego, dla którego ma zostać obliczona wartość.
 
@@ -26,7 +26,7 @@ W głównym programie (`main`) wywołujemy funkcję `fib` dla konkretnej wartoś
 
 ## Podejście dynamiczne
 
-### Implementacja
+### Implementation
 
 ```haskell linenums="1"
 fib n = fibs !! (n - 1)
@@ -36,7 +36,7 @@ main = do
     print $ fib 10
 ```
 
-### Opis
+### Description
 
 Funkcja `fib` przyjmuje jeden argument: numer `n` w ciągu Fibonacciego, dla którego ma zostać obliczona wartość.
 

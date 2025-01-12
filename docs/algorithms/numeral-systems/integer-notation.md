@@ -8,7 +8,7 @@ Zacznijmy od podstawowych zagadnień:
 - **Część całkowita**: część liczby znajdująca się po lewej stronie przecinka. Konwertowana jest na binarny w sposób podobny do konwersji liczb całkowitych.
 - **Część ułamkowa**: część liczby znajdująca się po prawej stronie przecinka. Konwertowana jest na binarny przez mnożenie przez $2$ i zapisywanie części całkowitej wyniku na każdym etapie, aż do uzyskania wyniku zero lub osiągnięcia wymaganej precyzji.
 
-## Przykład
+## Example
 
 ### Krok 1
 

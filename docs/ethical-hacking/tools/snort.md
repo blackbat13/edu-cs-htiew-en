@@ -6,7 +6,7 @@ Snort jest systemem wykrywania i zapobiegania włamaniom w czasie rzeczywistym. 
 
 Reguły Snort są bardzo konfigurowalne i umożliwiają definiowanie różnych typów alertów na podstawie różnych kryteriów, takich jak adresy IP, porty, typy pakietów i inne.
 
-## Przykłady użycia
+## Exampley użycia
 
 ### Przechwytywanie i analiza ruchu sieciowego
 

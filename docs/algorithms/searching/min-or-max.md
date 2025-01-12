@@ -13,33 +13,33 @@ Oczywiście w ogólności nie ma znaczenia, jakie to będą wartości, pod warun
 Interesuje nas znalezienie wartości maksymalnej w zadanej tablicy.
 Jak zwykle, zaczynamy od bardziej formalnej specyfikacji naszego problemu.
 
-### Specyfikacja
+### Specification
 
-#### Dane
+#### Input
 
 * $n$ - liczba naturalna, liczba elementów w tablicy
 * $A[1..n]$ - tablica $n$ wartości całkowitych
 
-#### Wynik
+#### Output
 
 * Największa wartość z tablicy $A$
 
-### Przykład
+### Example
 
-#### Dane
+#### Input
 
 ```
 n := 8
 A := [6, 5, 3, 1, 8, 7, 2, 4]
 ```
 
-**Wynik**: $8$
+**Output**: $8$
 
 ### Animacja
 
 [Wyszukiwanie maksimum](https://blackbat13.github.io/visul2/searching/find_max/#array=%5B6%2C5%2C3%2C1%2C8%2C7%2C2%2C4%5D)
 
-### Rozwiązanie
+### Solution
 
 Zanim przejdziemy do rozwiązywania problemu warto przyjrzeć się dokładnie powyższej animacji.
 Pokazuje ona, krok po kroku, metodę, którą zastosujemy.
@@ -56,7 +56,7 @@ Na końcu, gdy już sprawdzimy wszystkie elementy tablicy, nasze dotychczasowe m
 
 Zapiszmy teraz nasz algorytm w postaci pseudokodu.
 
-### Pseudokod
+### Pseudocode
 
 ```
 funkcja SzukajMaks(n, A):
@@ -68,7 +68,7 @@ funkcja SzukajMaks(n, A):
     5. Zwróć maks
 ```
 
-### Schemat blokowy
+### Block diagram
 
 ```mermaid
 %%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
@@ -76,16 +76,16 @@ flowchart TD
 	START(["FindMax(n, A)"]) --> K1["max := A[1]
 	i := 1"]
 	K1 --> K2{i <= n}
-	K2 -- PRAWDA --> K3{"max < A[i]"}
-	K3 -- PRAWDA --> K4["max := A[i]"]
+	K2 -- TRUE --> K3{"max < A[i]"}
+	K3 -- TRUE --> K4["max := A[i]"]
 	K4 --> K2i[i := i + 1]
 	K2i --> K2
-	K3 -- FAŁSZ --> K2i
-	K2 -- FAŁSZ --> K5[\Zwróć max\]
+	K3 -- FALSE --> K2i
+	K2 -- FALSE --> K5[\Zwróć max\]
 	K5 ---> STOP([STOP])
 ```
 
-### Złożoność
+### Complexity
 
 Podobnie jak w przypadku wyszukiwania liniowego przeglądamy elementy jeden po drugim w poszukiwaniu maksimum.
 Dlatego i w tym przypadku mamy złożoność liniową.
@@ -97,34 +97,34 @@ $O(n)$ - liniowa
 W niektórych sytuacjach nie wystarczy nam znać wartość maksymalnego elementu, musimy także poznać jego **pozycję** w tablicy.
 Zmodyfikujmy więc odpowiednio specyfikację naszego problemu.
 
-### Specyfikacja
+### Specification
 
-#### Dane
+#### Input
 
 * $n$ - liczba naturalna, ilość elementów w tablicy
 * $A[1..n]$ - tablica $n$ wartości całkowitych
 
-#### Wynik
+#### Output
 
 * Indeks największej wartości z tablicy $A$ 
 
-### Przykład
+### Example
 
-#### Dane
+#### Input
 
 ```
 n := 8
 A := [6, 5, 3, 1, 8, 7, 2, 4]
 ```
 
-**Wynik**: $5$ 
+**Output**: $5$ 
 
 !!! info
 	**Wyjaśnienie**
 	
 	Największa wartość w tablicy to $8$. Wartość ta znajduje się na pozycji piątej.
 
-### Rozwiązanie
+### Solution
 
 Nowy problem jest bardzo zbliżony do poprzedniego, więc aby go rozwiązać, rozszerzymy nasze poprzednie rozwiązanie.
 Teraz, poza wartością maksymalnego elementu, potrzebujemy zapamiętać dodatkową informację: indeks elementu maksymalnego.
@@ -138,7 +138,7 @@ Na końcu, po sprawdzeniu wszystkich elementów tablicy, wystarczy zwrócić jak
 
 Zapiszmy teraz nasz algorytm w postaci pseudokodu.
 
-### Pseudokod
+### Pseudocode
 
 ```
 funkcja SzukajIndeksMaks(n, A):
@@ -152,7 +152,7 @@ funkcja SzukajIndeksMaks(n, A):
     7. Zwróć ind
 ```
 
-### Schemat blokowy
+### Block diagram
 
 ```mermaid
 %%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
@@ -161,17 +161,17 @@ flowchart TD
 	ind := 1
 	i := 1"]
 	K1 --> K2{i <= n}
-	K2 -- PRAWDA --> K3{"max < A[i]"}
-	K3 -- PRAWDA --> K4["max := A[i]
+	K2 -- TRUE --> K3{"max < A[i]"}
+	K3 -- TRUE --> K4["max := A[i]
 	ind := i"]
 	K4 --> K2i[i := i + 1]
 	K2i --> K2
-	K3 -- FAŁSZ --> K2i
-	K2 -- FAŁSZ --> K5[\Zwróć ind\]
+	K3 -- FALSE --> K2i
+	K2 -- FALSE --> K5[\Zwróć ind\]
 	K5 ---> STOP([STOP])
 ```
 
-### Złożoność
+### Complexity
 
 Dodanie nowej zmiennej, w której pamiętamy indeks wyszukiwanego elementu, nie wpływa na złożoność naszego rozwiązania. Struktura algorytmu pozostaje niezmieniona, więc złożoność cały czas jest liniowa.
 
@@ -181,7 +181,7 @@ $O(n)$ - liniowa
 
 W przypadku poszukiwania elementu minimalnego, postępujemy praktycznie identycznie jak przy poszukiwaniu elementu maksymalnego. W zasadzie wystarczy zmienić **znak porównania**: z $<$ na $>$. Zaprojektowanie rozwiązania zostawiamy jako samodzielne ćwiczenie dla zainteresowanych.
 
-## Implementacja
+## Implementation
 
 ### [:simple-cplusplus: C++](../../programming/c++/algorithms/searching/min-or-max.md){ .md-button }
 

@@ -2,7 +2,7 @@
 
 ## [:link: Opis problemu](../../../../algorithms/coding-and-compression/huffman-coding.md)
 
-## Implementacja
+## Implementation
 
 ```python linenums="1"
 class Node:
@@ -73,7 +73,7 @@ decompressed = decompress(compressed, tree)
 print("Decompressed:", decompressed)
 ```
 
-### Opis implementacji
+### Description implementacji
 
 Klasa `Node` reprezentuje węzeł w drzewie **Huffmana**. Każdy węzeł przechowuje literę (`letter`), wartość (`value`), lewe poddrzewo (`left`) i prawe poddrzewo (`right`).
 

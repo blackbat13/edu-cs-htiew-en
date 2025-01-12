@@ -1,20 +1,20 @@
-# Rozwiązanie 6
+# Solution 6
 
 ## Treść zadania
 
 Napisz funkcję `IleCyfr` zgodną z poniższą specyfikacją.
 
-### Specyfikacja
+### Specification
 
-#### Dane
+#### Input
 
 * $n$ - liczba naturalna
 
-#### Wynik
+#### Output
 
 * Liczba cyfr liczby $n$.
 
-## Rozwiązanie
+## Solution
 
 ```vb
 Function IleCyfr(n As Long) As Integer
@@ -31,7 +31,7 @@ Function IleCyfr(n As Long) As Integer
 End Function
 ```
 
-## Opis rozwiązania
+## Description rozwiązania
 
 ### 1. Definicja funkcji
 

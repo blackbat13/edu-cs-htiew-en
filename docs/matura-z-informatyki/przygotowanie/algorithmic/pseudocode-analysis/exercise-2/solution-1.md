@@ -24,6 +24,6 @@
 8. Wypisz 4
 ```
 
-## Wynik
+## Output
 
 $4$ 

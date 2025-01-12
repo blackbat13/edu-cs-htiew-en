@@ -1,6 +1,6 @@
 # C++
 
-## Implementacja
+## Implementation
 
 ```cpp
 #include <iostream>

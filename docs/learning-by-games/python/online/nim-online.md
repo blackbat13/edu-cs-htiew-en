@@ -4,6 +4,6 @@
 
 TODO
 
-## Implementacja
+## Implementation
 
 TODO

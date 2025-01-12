@@ -2,7 +2,7 @@
 
 ## Obsługa wyjścia
 
-### Przykład 1
+### Example 1
 
 ```perl
 #!/usr/bin/perl
@@ -10,7 +10,7 @@
 print "Hello World!\n";
 ```
 
-### Przykład 2
+### Example 2
 
 ```perl
 #!/usr/bin/perl

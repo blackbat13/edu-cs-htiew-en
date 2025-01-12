@@ -4,11 +4,11 @@ description: Najmniejsza Wspólna Wielokrotność
 
 # NWW
 
-## Opis problemu
+## Description problemu
 
 TODO
 
-## Implementacja
+## Implementation
 
 ### NWW
 

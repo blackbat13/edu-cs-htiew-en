@@ -1,20 +1,20 @@
-# Rozwiązanie 5
+# Solution 5
 
 ## Treść zadania
 
 Napisz program zgodny z poniższą specyfikacją.
 
-### Specyfikacja
+### Specification
 
-#### Dane
+#### Input
 
 * $a$ - liczba naturalna
 
-#### Wynik
+#### Output
 
 * Pierwiastek z $a$
 
-## Rozwiązanie
+## Solution
 
 ```python
 import math

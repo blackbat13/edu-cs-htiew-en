@@ -2,7 +2,7 @@
 
 ## [:link: Opis problemu](../../../../algorithms/sorting/gnome-sort.md)
 
-## Implementacja
+## Implementation
 
 ```kotlin
 fun gnomeSort(array: MutableList<Int>) {

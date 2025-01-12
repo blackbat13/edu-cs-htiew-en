@@ -4,7 +4,7 @@
 
 ## Podejście naiwne
 
-### Implementacja
+### Implementation
 
 ```cpp linenums="1"
 #include <iostream>
@@ -38,7 +38,7 @@ int main() {
 }
 ```
 
-### Opis implementacji
+### Description implementacji
 
 Funkcja `findMinMaxNaive` (**linia 5**) przyjmuje tablicę o zadanej długości i wypisuje jej elementy minimalny i maksymalny, korzystając z naiwnego algorytmu jednoczesnego znajdowania minimum i maksimum.
 
@@ -48,7 +48,7 @@ W części głównej tworzymy przykładową tablicę (**linia 24**), a następni
 
 ## Podejście optymalne
 
-### Implementacja
+### Implementation
 
 ```cpp linenums="1"
 #include <iostream>
@@ -101,7 +101,7 @@ int main() {
 }
 ```
 
-### Opis implementacji
+### Description implementacji
 
 Funkcja `findMinMaxOptimal` (**linia 5**) przyjmuje tablicę o zadanej długości i wypisuje jej elementy minimalny i maksymalny, korzystając z optymalnego algorytmu jednoczesnego znajdowania minimum i maksimum.
 

@@ -16,7 +16,7 @@ W oryginalnej wersji algorytmu odstęp jest równy $N/2^k$, gdzie $N$ to rozmiar
 
 [:material-video: Taneczne sortowanie](https://www.youtube.com/watch?v=CmPA7zE8mx0&t=2s){ .md-button }
 
-## Pseudokod
+## Pseudocode
 
 ```
 procedura SortowanieShella(A, n):
@@ -28,11 +28,11 @@ procedura SortowanieShella(A, n):
         6. odstep := odstep div 2
 ```
 
-## Złożoność
+## Complexity
 
 Złożoność czasowa algorytmu zależna jest od stosowanego ciągu odstępów. Złożonośc oryginalnej wersji algorytmu jest rzędu $O(n^2)$.
 
-## Implementacja
+## Implementation
 
 ### [:simple-cplusplus: C++](../../programming/c++/algorithms/sorting/shell-sort.md){ .md-button }
 

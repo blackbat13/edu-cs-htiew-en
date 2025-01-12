@@ -1,20 +1,20 @@
-# Rozwiązanie 3
+# Solution 3
 
 ## Treść zadania
 
 Napisz program zgodny z poniższą specyfikacją.
 
-### Specyfikacja
+### Specification
 
-#### Dane
+#### Input
 
 * $a, b$ - dwie liczby całkowite
 
-#### Wynik
+#### Output
 
 * Wynik dzielenia liczb $a$ i $b$, lub komunikat, że nie można wykonać dzielenia.
 
-## Rozwiązanie
+## Solution
 
 ```cpp
 #include <iostream>

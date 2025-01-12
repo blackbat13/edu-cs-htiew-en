@@ -2,9 +2,9 @@
 
 ## [:link: Opis problemu](../../../../algorithms/searching/sum-of-two.md)
 
-## Rozwiązanie optymalne
+## Solution optymalne
 
-### Implementacja
+### Implementation
 
 ```haskell linenums="1"
 sumOfTwo :: Int -> [Int] -> Int -> IO ()

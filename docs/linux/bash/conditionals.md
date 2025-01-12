@@ -1,6 +1,6 @@
 # Instrukcje warunkowe
 
-### Przykład 1
+### Example 1
 
 ```bash
 #!/bin/bash
@@ -24,7 +24,7 @@ then
 fi
 ```
 
-### Przykład 2
+### Example 2
 
 ```bash
 #!/bin/bash
@@ -54,7 +54,7 @@ else
 fi
 ```
 
-### Przykład 3
+### Example 3
 
 ```bash
 #!/bin/bash

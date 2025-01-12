@@ -7,13 +7,13 @@ W klasach, w przeciwieństwie do struktur, domyślnym modyfikatorem dostępu jes
 Jak i w innych językach klasy mogą mieć swoje atrybuty i metody.
 Omówimy działanie klas na konkretnym przykładzie.
 
-## Przykład 1: Punkt2D
+## Example 1: Punkt2D
 
 Stwórzmy klasę reprezentującą dwuwymiarowy punkt.
 Nazwiemy ją **Point2D**.
 Nasza klasa będzie miała dwa atrybuty: współrzędne $x$ i $y$.
 
-### Implementacja
+### Implementation
 
 ```cpp
 #include <iostream>
@@ -94,7 +94,7 @@ int main() {
 }
 ```
 
-## Przykład 2: podział na pliki
+## Example 2: podział na pliki
 
 Gdy nasza klasa będzie obrastać w nowe funkcjonalności i metody, z czasem może stać się mało czytelna.
 Dlatego dobrym pomysłem jest oddzielić deklarację klasy od jej implementacji.

@@ -2,7 +2,7 @@
 
 ## [:link: Opis problemu](../../../../algorithms/text/levenshtein-distance.md)
 
-## Implementacja
+## Implementation
 
 ```python linenums="1"
 def levenshtein_distance(a: str, b: str) -> int:

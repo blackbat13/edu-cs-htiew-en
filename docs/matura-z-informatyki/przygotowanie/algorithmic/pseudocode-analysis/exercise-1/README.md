@@ -1,14 +1,14 @@
-# Ćwiczenie 1
+# Exercise 1
 
 Zapoznaj się z poniższą specyfikacją oraz pseudokodem, a następnie rozwiąż zadania.
 
-## Specyfikacja
+## Specification
 
-### Dane
+### Input
 
 * $x$, $y$ - liczby naturalne, $x > 0$, $y > 0$. 
 
-## Pseudokod
+## Pseudocode
 
 ```
 1. q := 0

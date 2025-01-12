@@ -2,7 +2,7 @@
 
 ## [:link: Opis problemu](../../../../algorithms/structures/disjoint-set-union.md)
 
-## Implementacja
+## Implementation
 
 ```python linenums="1"
 class DisjointUnion:

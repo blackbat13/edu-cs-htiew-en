@@ -242,6 +242,6 @@ while(scanf("%d", &a) != EOF) {
 }
 ```
 
-## Prezentacja
+## Presentation
 
 [:material-presentation: Prezentacja](../../../assets/Printf i Scanf (1).pdf)

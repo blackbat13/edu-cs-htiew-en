@@ -30,7 +30,7 @@ Kryptografia asymetryczna, nazywana także kryptografią z kluczem publicznym, j
 
 Kryptografia asymetryczna przyniosła rewolucję w dziedzinie bezpieczeństwa cyfrowego, umożliwiając bezpieczną wymianę informacji w otwartych sieciach, takich jak Internet. Jest podstawą wielu aspektów współczesnego bezpieczeństwa cyfrowego, w tym certyfikatów SSL/TLS, podpisów cyfrowych i wielu systemów uwierzytelniania. O ile, gdy prawidłowo zaimplementowana i stosowana, oferuje wysoki poziom bezpieczeństwa, to jak każda technologia wymaga świadomości jej ograniczeń i potencjalnych zagrożeń.
 
-## Prezentacja
+## Presentation
 
 Poniżej znajduje się krótka prezentacja pokazująca istotę kryptografii asymetrycznej.
 

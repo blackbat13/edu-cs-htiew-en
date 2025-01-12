@@ -1,14 +1,14 @@
-# Ćwiczenie 4
+# Exercise 4
 
 Zapoznaj się z poniższą specyfikacją oraz pseudokodem, a następnie rozwiąż zadania.
 
-## Specyfikacja
+## Specification
 
-### Dane
+### Input
 
 * $n$ - liczba naturalna, $n>0$.
 
-## Pseudokod
+## Pseudocode
 
 ```
 Funkcja sklej(n):
@@ -54,12 +54,12 @@ Chcemy wypełnić tablicę $s[1..n]$ w taki sposób, że $s[i]=sklej(i)$ dla ka�
 
 Rozwiązanie zapisz w postaci pseudokodu. W swoim zapisie możesz korzystać jedynie z podstawowych operacji arytmetycznych (dodawanie, odejmowanie, mnożenie, dzielenie, reszta z dzielenia, dzielenie całkowite), instrukcji kontroli przepływu (instrukcja warunkowa, pętla warunkowa, pętla licząca), instrukcji dotyczących podstawowych operacji na zmiennych (utworzenie zmiennej, przypisanie wartości, odczytanie wartości), instrukcji dotyczących podstawowych operacji na tablicach (utworzenie tablicy o zadanym rozmiarze wypełnionej jedną wartością, odwołanie do elementu tablicy pod zadanym indeksem) oraz samodzielnie zdefiniowanych funkcji.
 
-### Specyfikacja
+### Specification
 
-#### Dane
+#### Input
 
 - $n$ - liczba naturalna, $n>0$
 
-#### Wynik
+#### Output
 
 - $s[1..n]$ - tablica liczb całkowitych, taka, że $s[i]=sklej(i)$ dla każdego $1\leq i\leq n$

@@ -2,7 +2,7 @@
 
 ## [:link: Opis problemu](../../../../algorithms/integers/perfect-test.md)
 
-## Implementacja
+## Implementation
 
 ```kotlin
 fun isPerfect(n: Int): Boolean {
@@ -34,6 +34,6 @@ fun main() {
 
 [Test doskonałości](https://ideone.com/FVvc2L)
 
-### Opis implementacji
+### Description implementacji
 
 TODO

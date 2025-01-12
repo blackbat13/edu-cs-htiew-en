@@ -1,6 +1,6 @@
 # Bloki
 
-### Przykład 1
+### Example 1
 
 ```awk
 #!/usr/bin/awk -f
@@ -21,7 +21,7 @@ END {
 }
 ```
 
-### Przykład 2
+### Example 2
 
 ```awk
 #!/usr/bin/awk -f
@@ -43,7 +43,7 @@ END {
 }
 ```
 
-### Przykład 3
+### Example 3
 
 ```awk
 #!/usr/bin/awk -f
@@ -71,7 +71,7 @@ END {
 }
 ```
 
-### Przykład 4
+### Example 4
 
 ```awk
 #!/usr/bin/awk -f

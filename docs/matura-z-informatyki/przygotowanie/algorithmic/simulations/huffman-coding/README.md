@@ -1,6 +1,6 @@
 # Kody Huffmana
 
-## Opis algorytmu
+## Description algorytmu
 
 [huffman-coding.md](../../../../../algorithms/coding-and-compression/huffman-coding.md)
 

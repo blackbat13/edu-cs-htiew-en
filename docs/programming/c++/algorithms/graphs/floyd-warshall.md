@@ -6,7 +6,7 @@ description: Najkrótsze ścieżki pomiędzy wszystkimi wierzchołkami
 
 ## [:link: Opis problemu](../../../../algorithms/graphs/floyd-warshall.md)
 
-## Implementacja
+## Implementation
 
 ```cpp linenums="1"
 #include <iostream>
@@ -75,7 +75,7 @@ int main() {
 }
 ```
 
-### Opis implementacji
+### Description implementacji
 
 ![Przykładowy graf wykorzystany w implementacji](../../../../assets/example_graph_weighted.png)
 

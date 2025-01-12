@@ -74,6 +74,6 @@
 8. Wypisz 13
 ```
 
-## Wynik
+## Output
 
 $13$

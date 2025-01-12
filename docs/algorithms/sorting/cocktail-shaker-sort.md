@@ -16,9 +16,9 @@ Poniżej znajdziesz animację przedstawiającą ideę omawianego algorytmu.
 
 [Sortowanie koktajlowe](https://blackbat13.github.io/visul2/sorting/cocktail_shaker_sort/#array=%5B6%2C5%2C3%2C1%2C8%2C7%2C2%2C4%5D){ .md-button }
 
-## Rozwiązanie
+## Solution
 
-### Pseudokod
+### Pseudocode
 
 ```
 procedura SortowanieKoktajlowe(n, A):
@@ -34,37 +34,37 @@ procedura SortowanieKoktajlowe(n, A):
 !!! info
 	 **div** oznacza dzielenie całkowite
 
-### Schemat blokowy
+### Block diagram
 
 ```mermaid
 %%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
 flowchart TD
     START(["SortowanieKoktajlowe(n, A)"]) --> K0[i := 1]
     K0 --> K1{i <= n div 2}
-    K1 -- PRAWDA --> K2p[j := i]
+    K1 -- TRUE --> K2p[j := i]
     K2p --> K2{j <= n - i}
-    K2 -- PRAWDA --> K3{"A[j] > A[j + 1]"}
-    K3 -- PRAWDA --> K4["Zamień(A[j], A[j + 1])"]
-    K3 -- FAŁSZ --> K2i[j := j + 1]
+    K2 -- TRUE --> K3{"A[j] > A[j + 1]"}
+    K3 -- TRUE --> K4["Zamień(A[j], A[j + 1])"]
+    K3 -- FALSE --> K2i[j := j + 1]
     K4 --> K2i
     K2i --> K2
     K2 --> K5p[j := n - i]
     K5p --> K5{j >= i + 1}
-    K5 -- PRAWDA --> K6{"A[j] < A[j - 1]"}
-    K6 -- PRAWDA --> K7["Zamień(A[j], A[j - 1])"]
-    K6 -- FAŁSZ --> K5i[j := j - 1]
+    K5 -- TRUE --> K6{"A[j] < A[j - 1]"}
+    K6 -- TRUE --> K7["Zamień(A[j], A[j - 1])"]
+    K6 -- FALSE --> K5i[j := j - 1]
     K7 --> K5i
     K5i --> K5
-    K5 -- FAŁSZ --> K1i[i := i + 1]
+    K5 -- FALSE --> K1i[i := i + 1]
     K1i --> K1
-    K1 -- FAŁSZ --------> STOP([STOP])
+    K1 -- FALSE --------> STOP([STOP])
 ```
 
-### Złożoność
+### Complexity
 
 Podobnie jak sortowanie bąbelkowe, sortowanie koktajlowe ma złożoność obliczeniową $O(n^2)$ zarówno w przypadku średnim, jak i najgorszym. Wynika to z przeglądania całej listy dla każdego elementu.
 
-## Implementacja
+## Implementation
 
 ### [:simple-cplusplus: C++](../../programming/c++/algorithms/sorting/cocktail-shaker-sort.md){ .md-button }
 

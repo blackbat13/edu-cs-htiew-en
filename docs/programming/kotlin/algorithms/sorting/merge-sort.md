@@ -2,7 +2,7 @@
 
 ## [:link: Opis problemu](../../../../algorithms/sorting/merge-sort.md)
 
-## Implementacja
+## Implementation
 
 ```kotlin
 fun merge(array: MutableList<Int>, left: Int, right: Int, division: Int) {

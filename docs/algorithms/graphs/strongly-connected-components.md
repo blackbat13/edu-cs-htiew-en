@@ -10,7 +10,7 @@ Algorytm Kosaraju jest popularnym algorytmem do znajdowania silnie spójnych sk�
 2. Odwracamy kierunek wszystkich krawędzi w grafie.
 3. Wykonujemy przeszukiwanie w głąb na odwróconym grafie, ale zaczynamy od wierzchołka, który był odwiedzany jako ostatni w pierwszym przeszukiwaniu. Wszystkie wierzchołki odwiedzone podczas tego przeszukiwania tworzą jedną silnie spójną składową. Następnie wybieramy kolejny jeszcze nieodwiedzony wierzchołek, który był odwiedzany jako ostatni w pierwszym przeszukiwaniu, i powtarzamy przeszukiwanie, co daje nam kolejną silnie spójną składową. Proces kontynuujemy, aż odwiedzimy wszystkie wierzchołki.
 
-## Złożoność
+## Complexity
 
 Złożoność obliczeniowa algorytmu Kosaraju wynosi $O(V + E)$, gdzie $V$ to liczba wierzchołków, a $E$ to liczba krawędzi w grafie. Jest to wynik tego, że algorytm wykonuje dwa przeszukiwania w głąb.
 
@@ -18,7 +18,7 @@ Złożoność obliczeniowa algorytmu Kosaraju wynosi $O(V + E)$, gdzie $V$ to li
 
 Silnie spójne składowe są używane w wielu różnych dziedzinach informatyki, w tym w analizie sieci społecznościowych, planowaniu tras, analizie stron internetowych i wiele innych.
 
-## Implementacja
+## Implementation
 
 ### [:simple-cplusplus: C++](../../programming/c++/algorithms/graphs/connected-components.md){ .md-button }
 

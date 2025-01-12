@@ -2,7 +2,7 @@
 
 ## [:link: Opis problemu](../../../../algorithms/searching/longest-growing-substring.md)
 
-## Implementacja
+## Implementation
 
 ```cpp linenums="1"
 #include <iostream>
@@ -39,7 +39,7 @@ int main() {
 }
 ```
 
-### Opis implementacji
+### Description implementacji
 
 Funkcja `longestGrowingSubstringLength` przyjmuje dwa argumenty: liczbę `n` reprezentującą liczbę elementów w tablicy i tablicę `tab` zawierającą te elementy. Funkcja zwraca długość najdłuższego rosnącego podciągu.
 

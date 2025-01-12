@@ -19,7 +19,7 @@ Jak przedstawić liczbę rzeczywistą w systemie binarnym w zapisie zmiennoprzec
 3. **Normalizacja**: przesuwamy przecinek binarny tak, aby przed nim była tylko jedna cyfra $1$. Zapisujemy wykładnik przedstawiający liczbę miejsc, o które przesunięto przecinek.
 4. **Określenie cechy i mantysy**: wyodrębniamy wartość cechy i mantysę ze znormalizowanej formy.
 
-### Przykład konwersji
+### Example konwersji
 
 Załóżmy, że chcemy przedstawić liczbę $-110.75$ w formie zmiennoprzecinkowej (w standardzie IEEE 754 z pojedynczą precyzją):
 

@@ -1,14 +1,14 @@
-# Ćwiczenie 3
+# Exercise 3
 
 Zapoznaj się z poniższą specyfikacją oraz pseudokodem, a następnie rozwiąż zadania.
 
-## Specyfikacja
+## Specification
 
-### Dane
+### Input
 
 * $n$ - liczba naturalna
 
-## Pseudokod
+## Pseudocode
 
 ```
 funkcja fun(n):

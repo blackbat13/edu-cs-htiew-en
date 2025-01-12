@@ -1,4 +1,4 @@
-# Rozwiązanie - C++
+# Solution - C++
 
 ## Zadanie 1
 

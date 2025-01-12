@@ -6,6 +6,6 @@ $n\$ = 1! * 2! * 3! * ... * n!$
 
 Zauważmy, że superfactorial rośnie bardzo szybko. Na przykład, $4\$=288$, a $5\$=34560$.
 
-## Implementacja
+## Implementation
 
 ### [:simple-python: Python](../../programming/python/algorithms/integers/superfactorial.md){ .md-button }

@@ -78,7 +78,7 @@ Wypisz imię, nazwisko, miasto i kraj każdego klienta. Posortuj rosnąco po kra
 
 Wypisz tytuł i długość trwania $10$ najdłuższych utworów.
 
-### Wynik
+### Output
 
 | Name                        | Milliseconds |
 |-----------------------------|--------------|
@@ -97,7 +97,7 @@ Wypisz tytuł i długość trwania $10$ najdłuższych utworów.
 
 Wypisz tytuł i długość trwania najkrótszego utworu.
 
-### Wynik
+### Output
 
 | Name                        | Milliseconds |
 |-----------------------------|--------------|

@@ -4,7 +4,7 @@
 
 W języku Perl mamy do dyspozycji standardową pętlę `for`, której składnia podobna jest do tej z języka C. Zaczynamy więc od inicjalizacji **licznika pętli**, następnie definiujemy **warunek pętli**, a na końcu określamy **krok pętli**.
 
-### Przykład
+### Example
 
 ```perl
 #!/usr/bin/perl
@@ -21,7 +21,7 @@ for($i = 0; $i < $rozmiar; $i = $i + 1) {
 
 ## Pętla iteracyjna foreach
 
-### Przykład
+### Example
 
 ```perl
 #!/usr/bin/perl

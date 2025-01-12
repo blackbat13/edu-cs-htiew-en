@@ -1,4 +1,4 @@
-# Pseudokod
+# Pseudocode
 
 ```
 1. Wczytaj a, b
@@ -10,7 +10,7 @@
     7. Wypisz ">"
 ```
 
-## Opis
+## Description
 
 Na początku wczytujemy dwie wartości od użytkownika (**krok 1**).
 

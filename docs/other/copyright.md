@@ -2,7 +2,7 @@
 
 Prawa autorskie i właściwe posługiwanie się nimi oraz przestrzeganie ich jest bardzo ważne, szczególnie we współczesnym świecie, gdzie publiczne umieszczanie materiałów jest proste, powszechne i dostępne praktycznie dla każdego.
 
-## Prezentacja
+## Presentation
 
 [:material-presentation: Prezentacja](../assets/Prawa autorskie.pdf)
 

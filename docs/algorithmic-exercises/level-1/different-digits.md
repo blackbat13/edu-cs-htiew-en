@@ -4,25 +4,25 @@ Twoim zadaniem jest określenie ilości liczb w zadanym przedziale, które skła
 
 Źródło: [https://onlinejudge.org/external/125/12527.pdf](https://onlinejudge.org/external/125/12527.pdf)
 
-## Specyfikacja
+## Specification
 
-### Dane
+### Input
 
 * $a, b$ - liczby całkowite z przedziału $[1,5000]$
 
-### Wynik
+### Output
 
 * Ilość wszystkich liczb z przedziału $[a,b]$, które składają się wyłącznie z różnych cyfr.
 
-## Przykład
+## Example
 
-### Dane
+### Input
 
 ```
 87 104
 ```
 
-### Wynik
+### Output
 
 ```
 14

@@ -2,32 +2,32 @@
 
 Podciąg to sekwencja znaków wybrana z tekstu bez zmiany ich kolejności, niekoniecznie znajdujących się obok siebie. Najdłuższy wspólny podciąg to problem znalezienia najdłuższego podciągu, który jest wspólny dla dwóch tekstów.
 
-## Specyfikacja
+## Specification
 
-### Dane
+### Input
 
 * $a, b$ - dwa ciągi znaków
 
-### Wynik
+### Output
 
 * Najdłuższy wspólny podciąg ciągów $a$ i $b$
 
-## Przykład
+## Example
 
-### Dane
+### Input
 
 ```
 a := "kitten"
 b := "sitting"
 ```
 
-### Wynik
+### Output
 
 `"ittn"`
 
 ## Algorytm
 
-### Lista kroków
+### List of steps
 
 1. **Utworzenie tabeli**: stwórz tablicę o wymiarach `(m+1) x (n+1)`, gdzie `m` i `n` to długości dwóch porównywanych tekstów. Element `tab[i][j]` będzie przechowywał długość najdłuższego wspólnego podciągu dla kolejnych fragmentów zadanych tekstów: do `i-tego` znaku pierwszego tekstu i `j-tego` znaku drugiego tekstu.
 
@@ -42,11 +42,11 @@ b := "sitting"
    - Odczytaj prawy dolny element tablicy - będzie to długość najdłuższego wspólnego podciągu.
    - W oparciu o wartości w tablicy odtwórz najdłuższy wspólny podciąg.
 
-## Złożoność
+## Complexity
 
 Złożoność czasowa algorytmu to `O(mn)`, gdzie `m` i `n` to długości analizowanych tekstów. Złożoność pamięciowa to również `O(mn)` z uwagi na wymagania tablicy.
 
-## Implementacja
+## Implementation
 
 ### [:simple-cplusplus: C++](../../programming/c++/algorithms/text/longest-common-subsequence.md){ .md-button }
 

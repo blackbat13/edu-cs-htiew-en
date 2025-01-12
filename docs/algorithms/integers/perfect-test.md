@@ -16,26 +16,26 @@ Podobnie jak w przypadku testu pierwszości, problem doskonałości liczby jest 
 
 Zaczynamy od formalnej specyfikacji i przykładu.
 
-## Specyfikacja
+## Specification
 
-### Dane
+### Input
 
 * $n$ - liczba naturalna
 
-### Wynik
+### Output
 
-* **PRAWDA** - jeżeli $n$ jest liczbą doskonałą
-* **FAŁSZ** - jeżeli $n$ nie jest liczbą doskonałą
+* **TRUE** - jeżeli $n$ jest liczbą doskonałą
+* **FALSE** - jeżeli $n$ nie jest liczbą doskonałą
 
-## Przykład 1
+## Example 1
 
-### Dane
+### Input
 
 ```
 n := 6
 ```
 
-**Wynik**: PRAWDA
+**Output**: TRUE
 
 !!! info
 	**Wyjaśnienie**
@@ -46,15 +46,15 @@ n := 6
 	
 	$6=1+2+3$ 
 
-## Przykład 2
+## Example 2
 
-### Dane
+### Input
 
 ```
 n := 8
 ```
 
-**Wynik**: FAŁSZ
+**Output**: FALSE
 
 !!! info
 	**Wyjaśnienie**
@@ -65,15 +65,15 @@ n := 8
 	
 	$8\not=1+2+4$ 
 
-## Rozwiązanie naiwne
+## Solution naiwne
 
 Tym razem pominiemy rozwiązanie zupełnie naiwne i zaczniemy od naiwnego. Będziemy więc przechodzić przez kolejne wartości od $1$ do połowy naszej liczby. Tym razem nie chcemy ich wypisywać, tylko zsumować. Potrzebna więc nam będzie dodatkowa zmienna, do której będziemy dodawać kolejne dzielniki. Oczywiście taką zmienną musimy utworzyć **przed pętlą**. Jaką wartość początkową należy jej nadać? Jak to zwykle bywa, sumowanie zaczynamy od zera.
 
-W pętli, gdy znajdziemy kolejny dzielnik, to dodajemy go do sumy. Na końcu, gdy już zsumujemy wszystkie dzielniki, czyli po wyjściu z pętli, należy sprawdzić, jaki wynik powinniśmy zwrócić. W tym celu porównujemy obliczoną sumę ze sprawdzaną liczbą. Jeżeli są sobie równe, to znaczy, że mamy do czynienia z liczbą doskonałą, więc zwracamy wynik PRAWDA. Jeżeli są od siebie różne, to liczba nie jest doskonała, więc zwracamy FAŁSZ.
+W pętli, gdy znajdziemy kolejny dzielnik, to dodajemy go do sumy. Na końcu, gdy już zsumujemy wszystkie dzielniki, czyli po wyjściu z pętli, należy sprawdzić, jaki wynik powinniśmy zwrócić. W tym celu porównujemy obliczoną sumę ze sprawdzaną liczbą. Jeżeli są sobie równe, to znaczy, że mamy do czynienia z liczbą doskonałą, więc zwracamy wynik TRUE. Jeżeli są od siebie różne, to liczba nie jest doskonała, więc zwracamy FALSE.
 
 Teraz możemy zapisać nasz algorytm.
 
-### Pseudokod
+### Pseudocode
 
 ```
 funkcja CzyDoskonala(n):
@@ -83,13 +83,13 @@ funkcja CzyDoskonala(n):
             4. suma := suma + i
       
     5. Jeżeli suma = n, to:
-        6. Zwróć PRAWDA, zakończ
+        6. Zwróć TRUE, zakończ
    
     7. w przeciwnym przypadku:
-        8. Zwróć FAŁSZ, zakończ
+        8. Zwróć FALSE, zakończ
 ```
 
-### Schemat blokowy
+### Block diagram
 
 ```mermaid
 %%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
@@ -97,27 +97,27 @@ flowchart TD
 	START(["CzyDoskonala(n)"]) --> K1["suma := 0
 	i := 1"]
 	K1 --> K2{i <= n div 2}
-	K2 -- PRAWDA --> K3{"(n mod i) = 0"}
-	K3 -- PRAWDA --> K4[suma := suma + i]
-	K3 -- FAŁSZ --> K2i[i := i + 1]
+	K2 -- TRUE --> K3{"(n mod i) = 0"}
+	K3 -- TRUE --> K4[suma := suma + i]
+	K3 -- FALSE --> K2i[i := i + 1]
 	K4 --> K2i
 	K2i --> K2
-	K2 -- FAŁSZ --> K5{suma = n}
-	K5 -- PRAWDA --> K6[/Zwróć PRAWDA/]
+	K2 -- FALSE --> K5{suma = n}
+	K5 -- TRUE --> K6[/Zwróć TRUE/]
 	K6 --> STOP([STOP])
-	K5 -- FAŁSZ --> K8[/Zwróć FAŁSZ/]
+	K5 -- FALSE --> K8[/Zwróć FALSE/]
 	K8 --> STOP
 ```
 
-### Złożoność
+### Complexity
 
 $O(\frac{n}{2})$
 
-## Rozwiązanie optymalne
+## Solution optymalne
 
 Podobnie jak w przypadku testu pierwszości, również i tutaj możemy sprawdzić dzielniki przechodząc wyłącznie do pierwiastka z zadanej liczby włącznie. Nie wystarczy jednak, że zsumujemy dzielniki do pierwiastka, musimy także uwzględnić te *z pary*. Dla przykładu, jeżeli wiemy że 6 dzieli się przez 2, to oznacza także, że dzieli się przez 3, ponieważ $6/2=3$. Musimy jeszcze uważać, by dwukrotnie nie dodać tego samego dzielnika (np. $4/2=2$).
 
-### Pseudokod
+### Pseudocode
 
 ```
 funkcja CzyDoskonala(n)
@@ -129,16 +129,16 @@ funkcja CzyDoskonala(n)
                 6. suma := suma + (n / i)
             
     7. Jeżeli suma = n, to:
-        8. Zwróć PRAWDA
+        8. Zwróć TRUE
     
     9. w przeciwnym przypadku:
-        10. Zwróć FAŁSZ
+        10. Zwróć FALSE
 ```
 
 !!! info
 	 **sqrt** oznacza pierwiastek drugiego stopnia
 
-### Schemat blokowy
+### Block diagram
 
 ```mermaid
 %%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
@@ -146,32 +146,32 @@ flowchart TD
 	START(["CzyDoskonala(n)"]) --> K1["suma := 1
 	i := 2"]
 	K1 --> K2{"i <= sqrt(n)"}
-	K2 -- PRAWDA --> K3{"(n mod i) = 0"}
-	K3 -- PRAWDA --> K4[suma := suma + i]
+	K2 -- TRUE --> K3{"(n mod i) = 0"}
+	K3 -- TRUE --> K4[suma := suma + i]
 	K4 --> K5{"(n / i) != i"}
-	K5 -- PRAWDA --> K6["suma := suma + (n / i)"]
+	K5 -- TRUE --> K6["suma := suma + (n / i)"]
 	K6 --> K2i[i := i + 1]
-	K5 -- FAŁSZ --> K2i
-	K3 -- FAŁSZ --> K2i
+	K5 -- FALSE --> K2i
+	K3 -- FALSE --> K2i
 	K2i --> K2
-	K2 -- FAŁSZ --> K7{suma = n}
-	K7 -- PRAWDA ---> K8[/Zwróć PRAWDA/]
+	K2 -- FALSE --> K7{suma = n}
+	K7 -- TRUE ---> K8[/Zwróć TRUE/]
 	K8 ---> STOP([STOP])
-	K7 -- FAŁSZ ---> K10[/Zwróć FAŁSZ/]
+	K7 -- FALSE ---> K10[/Zwróć FALSE/]
 	K10 ---> STOP
 ```
 
-### Złożoność
+### Complexity
 
 $O(\sqrt{n})$ 
 
-## Implementacja
+## Implementation
 
 ### [:simple-cplusplus: C++](../../programming/c++/algorithms/integers/perfect-test.md){ .md-button }
 
 ### [:simple-python: Python](../../programming/python/algorithms/integers/perfect-test.md){ .md-button }
 
-## Implementacja - pozostałe
+## Implementation - pozostałe
 
 ### [:simple-haskell: Haskell](../../programming/haskell/algorithms/integers/perfect-test.md){ .md-button }
 

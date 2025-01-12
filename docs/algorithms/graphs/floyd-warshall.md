@@ -6,11 +6,11 @@ description: Najkrótsze ścieżki pomiędzy wszystkimi wierzchołkami
 
 Algorytm Floyda-Warshalla to algorytm wykorzystywany do znalezienia najkrótszych ścieżek między **wszystkimi** parami wierzchołków w grafie skierowanym ważonym. Algorytm ten jest zdolny do obsługi grafów z ujemnymi krawędziami, ale nie z ujemnymi cyklami.
 
-## Opis algorytmu
+## Description algorytmu
 
 Floyd-Warshall korzysta z zasady optymalności Bellmana, która mówi, że najkrótsza ścieżka między dwoma wierzchołkami jest albo bezpośrednią ścieżką między nimi, albo zawiera pewne inne wierzchołki. Dlatego algorytm Floyda-Warshalla działa poprzez porównywanie wszystkich możliwych ścieżek między wszystkimi parami wierzchołków i aktualizowanie najkrótszych ścieżek, gdy znajdzie krótszą alternatywę.
 
-## Pseudokod
+## Pseudocode
 
 ```
 funkcja FloydWarshall(G, V):   (G - graf, V - liczba wierzchołków w grafie, numerowanych od jedynki)
@@ -27,7 +27,7 @@ funkcja FloydWarshall(G, V):   (G - graf, V - liczba wierzchołków w grafie, nu
                     11. dist[i][j] := dist[i][k] + dist[k][j]
 ```
 
-## Złożoność obliczeniowa
+## Complexity obliczeniowa
 
 Algorytm Floyda-Warshalla ma złożoność czasową $O(V^3)$, gdzie $V$ to liczba wierzchołków w grafie. Jest to wynik trzykrotnego zagnieżdżania pętli, gdzie każda pętla przechodzi przez wszystkie wierzchołki.
 
@@ -35,7 +35,7 @@ Algorytm Floyda-Warshalla ma złożoność czasową $O(V^3)$, gdzie $V$ to liczb
 
 Algorytm Floyda-Warshalla jest używany w sieciach komputerowych do routingu, jak również w operacjach badawczych do problemu najkrótszej ścieżki. W praktyce jest często stosowany tam, gdzie mamy do czynienia z niewielką liczbą wierzchołków, lub gdy potrzebujemy najkrótszych ścieżek między wszystkimi parami wierzchołków, a nie tylko między pojedynczą parą wierzchołków.
 
-## Implementacja
+## Implementation
 
 ### [:simple-cplusplus: C++](../../programming/c++/algorithms/graphs/floyd-warshall.md){ .md-button }
 

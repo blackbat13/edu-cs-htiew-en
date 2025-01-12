@@ -1,6 +1,6 @@
 # Całkowanie numeryczne
 
-## Opisy algorytmów
+## Descriptiony algorytmów
 
 [numerical-integration.md](../../../../../algorithms/numerical-methods/numerical-integration.md)
 

@@ -2,7 +2,7 @@
 
 ## [:link: Opis problemu](../../../../algorithms/fractals/sierpinski-triangle.md)
 
-## Implementacja
+## Implementation
 
 ### Trójkąt Sierpińskiego
 

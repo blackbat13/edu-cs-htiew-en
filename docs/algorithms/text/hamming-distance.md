@@ -7,7 +7,7 @@ Odległość Hamminga jest miarą różnicy między dwoma ciągami o tej samej d
 !!! info
 	 Dla dwóch ciągów $s_1$ i $s_2$ o tej samej długości $n$, odległość Hamminga $H(s_1, s_2)$ jest określona jako liczba pozycji $i$ dla $1 \leq i \leq n$ takich, że $s_1[i] \neq s_2[i]$.
 
-## Przykład
+## Example
 
 Niech `s_1 = "karol"` i `s_2 = "koral"`. Odległość Hamminga dla tych ciągów wynosi $2$, ponieważ różnią się one na pozycjach $3$ i $5$.
 
@@ -17,26 +17,26 @@ Niech `s_1 = "karol"` i `s_2 = "koral"`. Odległość Hamminga dla tych ciągów
 - **Bioinformatyka**: odległość Hamminga może być używana do porównywania sekwencji DNA.
 - **Kryptografia**: w niektórych schematach kryptograficznych odległość Hamminga między dwoma ciągami może dostarczyć informacji o stopniu podobieństwa tych ciągów, co może być używane do analizy błędów lub ataków.
 
-## Specyfikacja
+## Specification
 
-### Dane
+### Input
 
 - $s_1$, $s_2$ - dwa teksty, ciągi znaków liter angielskiego, o tej samej długości
 
-### Wynik
+### Output
 
 - Odległość Hamminga pomiędzy $s_1$ a $s_2$.
 
 ## Algorytm
 
-### Lista kroków
+### List of steps
 
 1. Zainicjalizuj licznik na $0$.
 2. Dla każdej pozycji $i$ w ciągach:
    - Jeśli znaki na pozycji $i$ w obu ciągach są różne, zwiększ licznik o $1$.
 3. Zwróć wartość licznika jako odległość Hamminga.
 
-### Pseudokod
+### Pseudocode
 
 - **Długość(tekst)** - zwraca długość tekstu
 
@@ -49,11 +49,11 @@ funkcja OdległośćHamminga(s1, s2):
     3. Zwróć wynik
 ```
 
-## Złożoność
+## Complexity
 
 Złożoność czasowa algorytmu to $O(n)$, gdzie $n$ to długość ciągów.
 
-## Implementacja
+## Implementation
 
 ### [:simple-cplusplus: C++](../../programming/c++/algorithms/text/hamming-distance.md){ .md-button }
 

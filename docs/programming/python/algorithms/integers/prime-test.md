@@ -2,7 +2,7 @@
 
 ## [:link: Opis problemu](../../../../algorithms/integers/prime-test.md)
 
-## Implementacja
+## Implementation
 
 ```python linenums="1"
 def is_prime(n: int) -> bool:

@@ -789,7 +789,7 @@ Sprawdzenie, czy liczba jest potęgą dwójki, możemy także oprzeć na zapisie
     }
     ```
 
-### Rozwiązanie
+### Solution
 
 === "Python"
 

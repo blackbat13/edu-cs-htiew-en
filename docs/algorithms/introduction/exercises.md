@@ -1,79 +1,79 @@
-# Ćwiczenia
+# Exercises
 
-Poznaliśmy podstawy algorytmiki i reprezentacji algorytmów, to teraz przyszła pora na proste ćwiczenia. Naszym zadaniem będzie poprowadzenie robota ze startu do mety. W tym celu stworzymy zestaw instrukcji dla robota: **algorytm**, który doprowadzi go do celu, czyli **rozwiąże zadany problem**.
+We have learned the basics of algorithmics and algorithm representation, then it is now time for a simple exercise. Our task will be to guide a robot from the start to the finish line. To do this, we will create a set of instructions for the robot: **algorithm** that will lead it to the goal, i.e. **solve the given problem**.
 
-## Podstawowe zasady
+## Basic rules
 
-- Pole startowe oznaczone jest na niebiesko.
-- Meta oznaczona jest na zielono.
-- Robot zaczyna na polu startowym. Jego celem jest dotarcie do mety.
-- W każdym kroku robot może przemieścić się o jedno pole.
+- The starting field is marked in blue.
+- The finish line is marked in green.
+- The robot starts at the starting field. Its goal is to reach the finish line.
+- In each step the robot can move one field.
 
-Dostępne mamy następujące instrukcje:
+The following instructions are available:
 
-- Prawo.
-- Lewo.
-- Góra.
-- Dół.
+- Right.
+- Left.
+- Top.
+- Bottom.
 
-Każda z instrukcji sprawia, że robot przemieszcza się o jedno pole we wskazanym kierunku.
+Each instruction makes the robot move one field in the indicated direction.
 
-## Ćwiczenie 1
+## Exercise 1
 
 ![](../../assets/Mazes_alg1.png)
 
-### Przykładowe rozwiązanie - algorytm liniowy
+### Example solution - linear algorithm
 
 ```
-1. Prawo.
-2. Prawo.
-3. Prawo.
-4. Prawo.
+1. Right.
+2. Right.
+3. Right.
+4. Right.
 ```
 
-### Przykładowe rozwiązanie - algorytm z pętlą
+### Example solution - algorithm with a loop
 
 ```
-1. Powtórz 4 razy:
-    2. Prawo.
+1. Repeat 4 times:
+    2. Right.
 ```
 
-## Ćwiczenie 2
+## Exercise 2
 
 ![](../../assets/Mazes_alg2.png)
 
-## Ćwiczenie 3
+## Exercise 3
 
-**Nowa zasada**: **szare** bloki oznaczają ściany. Przez ściany nie można przechodzić, ani też stawać na nich, trzeba więc je omijać.
+**New rule**: **gray** blocks mark walls. You cannot walk through the walls or stand on them, so you must avoid them.
 
 ![](../../assets/Mazes_alg3.png)
 
-## Ćwiczenie 4
+## Exercise 4
 
 ![](../../assets/Mazes_alg4.png)
 
-## Ćwiczenie 5
+## Exercise 5
 
 ![](../../assets/Mazes_alg5.png)
 
-## Ćwiczenie 6
+## Exercise 6
 
-**Nowa zasada**: **żółte** pola oznaczają skarb. Przed dotarciem na metę należy zebrać **wszystkie skarby**, tzn. odwiedzić każde żółte pole.
+**New rule**: **yellow** boxes stand for treasure. Before reaching the finish line, you must collect **all treasures**, i.e. visit each yellow field.
 
 ![](../../assets/Mazes_alg6.png)
 
-## Ćwiczenie 7
+## Exercise 7
 
-Nowe zasady:
+New rules:
 
-- Poruszamy się z perspektywy robota.
-- Korzystamy z nowego zestawu instrukcji.
-- Robot początkowo skierowany jest w **dół** (na południe).
+- We move from the robot's perspective.
+- We use a new set of instructions.
+- The robot is initially facing **down** (south).
 
-Nowy zestaw instrukcji:
+New set of instructions:
 
-- Idź do przodu.
-- Obróć się w lewo.
-- Obróć się w prawo.
+- Go forward.
+- Turn to the left.
+- Turn right.
 
 ![](../../assets/Mazes_alg5.png)

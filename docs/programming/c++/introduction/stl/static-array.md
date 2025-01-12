@@ -1,6 +1,6 @@
 # Tablica statyczna
 
-## Opis
+## Description
 
 Tablice statyczne też mogą być obiektem, co niesie ze sobą kilka korzyści.
 

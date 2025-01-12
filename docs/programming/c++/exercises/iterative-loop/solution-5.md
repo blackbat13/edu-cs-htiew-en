@@ -1,21 +1,21 @@
-# Rozwiązanie 5
+# Solution 5
 
 ## Treść zadania
 
 Napisz program zgodny z poniższą specyfikacją.
 
-### Specyfikacja
+### Specification
 
-#### Dane
+#### Input
 
 * $n, k$ - liczby naturalne, większe od zera
 * $n$liczb naturalnych
 
-#### Wynik
+#### Output
 
 * Ilość liczb podzielnych przez $k$ z podanych $n$ liczb
 
-## Rozwiązanie
+## Solution
 
 ```cpp
 #include <iostream>

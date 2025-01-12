@@ -1,20 +1,20 @@
-# Rozwiązanie 4
+# Solution 4
 
 ## Treść zadania
 
 Napisz program zgodny z poniższą specyfikacją. Nie korzystaj z funkcji **min, max**.
 
-### Specyfikacja
+### Specification
 
-#### Dane
+#### Input
 
 * $a, b, c$ - trzy liczby całkowite
 
-#### Wynik
+#### Output
 
 * Największa z liczb $a$, $b$ i $c$, lub dowolna gdy są sobie równe
 
-## Rozwiązanie
+## Solution
 
 ```python
 a = int(input("Podaj pierwszą liczbę: "))

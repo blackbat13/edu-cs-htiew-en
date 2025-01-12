@@ -1,6 +1,6 @@
 # Programowanie obiektowe
 
-## Opis zagadnienia
+## Description zagadnienia
 
 [programowanie-obiektowe.md](../../../../algorithms/oop/README.md)
 

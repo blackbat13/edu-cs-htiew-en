@@ -2,7 +2,7 @@
 
 ## [:link: Opis problemu](../../../../algorithms/integers/subfactorial.md)
 
-## Implementacja
+## Implementation
 
 ```python linenums="1"
 def subfactorial(n: int) -> int:

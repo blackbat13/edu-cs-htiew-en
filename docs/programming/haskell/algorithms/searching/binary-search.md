@@ -4,7 +4,7 @@
 
 ## Istnienie elementu
 
-### Implementacja
+### Implementation
 
 ```haskell linenums="1"
 binarySearch lst num left right
@@ -25,7 +25,7 @@ main = do
     else putStrLn "Liczby nie ma w tablicy"
 ```
 
-### Opis implementacji
+### Description implementacji
 
 Funkcja `binarySearch` przyjmuje cztery argumenty: `lst` (lista, w której szukamy), `num` (liczba, której szukamy), `left` (indeks początkowy przeszukiwania) i `right` (indeks końcowy przeszukiwania). Podstawą funkcji jest podejście rekurencyjne, dzielące problem na mniejsze części.
 
@@ -38,7 +38,7 @@ W części `main`, definiujemy uporządkowaną listę `lst` i liczbę `num`, kt�
 
 ## Pozycja elementu
 
-### Implementacja
+### Implementation
 
 ```haskell linenums="1"
 binarySearch lst num left right
@@ -61,7 +61,7 @@ main = do
         print index
 ```
 
-### Opis implementacji
+### Description implementacji
 
 Funkcja `binarySearch` przyjmuje cztery argumenty: listę `lst`, szukaną liczbę `num`, oraz indeksy `left` i `right`, które określają zakres przeszukiwania w liście.
 

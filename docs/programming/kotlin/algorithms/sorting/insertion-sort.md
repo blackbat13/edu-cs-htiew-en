@@ -2,7 +2,7 @@
 
 ## [:link: Opis problemu](../../../../algorithms/sorting/insertion-sort.md)
 
-## Implementacja
+## Implementation
 
 ```kotlin
 fun insertionSort(array: MutableList<Int>) {

@@ -22,7 +22,7 @@ Operacja JOIN w języku zapytań SQL służy do łączenia dwóch lub więcej ta
 
 Znany również jako JOIN. Zwraca tylko te rekordy, dla których istnieje dopasowanie w obu tabelach.
 
-### Wynik
+### Output
 
 | ID | Imię | Zawód |
 | --- | --- | --- |
@@ -33,7 +33,7 @@ Znany również jako JOIN. Zwraca tylko te rekordy, dla których istnieje dopaso
 
 Zwraca wszystkie rekordy z lewej tabeli (Imiona), a dopasowane rekordy z prawej tabeli (Zawody). Jeśli nie ma dopasowania, wynikiem jest NULL.
 
-### Wynik
+### Output
 
 | ID | Imię | Zawód |
 | --- | --- | --- |
@@ -45,7 +45,7 @@ Zwraca wszystkie rekordy z lewej tabeli (Imiona), a dopasowane rekordy z prawej 
 
 Zwraca wszystkie rekordy z prawej tabeli (Zawody), a dopasowane rekordy z lewej tabeli (Imiona). Jeśli nie ma dopasowania, wynikiem jest NULL.
 
-### Wynik
+### Output
 
 | ID | Imię | Zawód |
 | --- | --- | --- |
@@ -57,7 +57,7 @@ Zwraca wszystkie rekordy z prawej tabeli (Zawody), a dopasowane rekordy z lewej 
 
 Zwraca wszystkie rekordy z obu tabel, niezalżnie od tego, czy istnieje dla nich dopasowanie w drugiej tabeli. Jeśli dla danego rekordu w jednej tabeli nie ma dopasowania w drugiej tabeli, wynikiem jest NULL dla wszystkich kolumn drugiej tabeli.
 
-### Wynik
+### Output
 
 | ID | Imię | Zawód |
 | --- | --- | --- |

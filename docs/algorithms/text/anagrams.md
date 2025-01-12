@@ -1,164 +1,164 @@
-# Anagramy
+# Anagrams
 
-Istnieje wiele metod na sprawdzanie i tworzenie relacji pomiędzy wyrazami.
-W tym temacie zajmiemy się pojęciem **anagramu**, które może być znane szczególnie osobom przejawiającym zamiłowanie do różnego rodzaju krzyżówek i zagadek słownych.
-Zacznijmy od krótkiej definicji.
+There are many methods for checking and creating relationships between words.
+In this topic we will deal with the concept of **anagram**, which may be familiar especially to those who have a penchant for various types of crossword puzzles and word puzzles.
+Let's start with a brief definition.
 
-## Definicja
-
-!!! info
-	 Dwa wyrazy nazywamy **anagramami**, jeżeli składają się dokładnie z takich samych znaków, ale ułożonych w innej kolejności.
-
-### Link do Wikipedii
-
-[Anagram — Wikipedia](https://pl.wikipedia.org/wiki/Anagram){ .md-button }
-
-## Przykład
-
-Wyrazy **rży** i **ryż** są anagramami.
-Podobnie wyrazy **algorytm** i **logarytm**.
-
-Nie tylko wyrazy mogą być anagramami, ale także wyrażenia czy całe zdania.
-
-## Specyfikacja
-
-### Dane
-
-* $n$ — liczba naturalna, długość tekstu.
-* $tekst1[1..n]$ — ciąg $n$ znaków, numerowanych od jedynki, składający się wyłącznie z małych liter alfabetu angielskiego.
-* $tekst2[1..n]$ — ciąg $n$ znaków, numerowanych od jedynki, składający się wyłącznie z małych liter alfabetu angielskiego.
+## Definition
 
 !!! info
-	W ogólnym problemie moglibyśmy sprawdzać własność anagramu dla dowolnych ciągów znaków, w szczególności zawierających także wielkie litery alfabetu.
-	Skupimy się jednak na uproszczonej wersji tego problemu, by przedstawić ideę rozwiązania, a technikalia zostawiamy osobom zainteresowanym.
+	 Two words are called **anagrams** if they consist of exactly the same characters, but arranged in a different order.
 
-### Wynik
+### Link to Wikipedia
 
-* $PRAWDA$ — jeżeli $tekst1$ i $tekst2$ są anagramami.
-* $FAŁSZ$ — w przeciwnym przypadku.
+[Anagram - Wikipedia](https://en.wikipedia.org/wiki/Anagram){ .md-button }
 
-## Przykład
+## Example
 
-### Dane
+Words **listen** and **silent** are anagrams.
+Similarly words **algorithm** and **logarithm**.
 
-```
-n := 8
-tekst1 := "markotny"
-tekst2 := "romantyk"
-```
+Not only words can be anagrams, but also phrases or whole sentences.
 
-**Wynik**: **PRAWDA**
+## Specification
 
-## Rozwiązanie 1
+### Input
 
-### Opis
+* $n$ — natural number, text length.
+* $text1[1..n]$ — a string of $n$ characters, numbered from one, consisting only of lowercase letters of the English alphabet.
+* $text2[1..n]$ — a string of $n$ characters, numbered from one, consisting only of lowercase letters of the English alphabet.
 
-Aby dwa wyrazy były anagramami, muszą składać się dokładnie z takich samych liter. 
-Oznacza to także, że każda litera z pierwszego wyrazu musi pojawić się w drugim wyrazie dokładnie tyle samo razy i tak samo w drugą stronę. 
-W związku z tym pierwsze rozwiązanie jest proste: policzmy, ile razy każda litera występuje w pierwszym wyrazie, następnie zróbmy to samo dla drugiego wyrazu i porównajmy wyniki. 
-Jeżeli będą takie same, to dwa wyrazy są anagramami.
+!!! info
+	In the general problem, we could check the anagram property for any strings of characters, in particular, those that also contain uppercase letters of the alphabet.
+	However, we will focus on a simplified version of this problem to present the idea of the solution, and leave the technicalities to those interested.
 
-Jak jednak policzyć, ile razy dana litera występuje w wyrazie? 
-Zauważmy, że nasze wyrazy składają się jedynie z małych liter alfabetu angielskiego. 
-Oznacza to, że mamy dokładnie 26 znaków. 
-Możemy więc przygotować tablicę przechowującą 26 liczników — po jednym dla każdej litery. 
-Litery natomiast ponumerujemy od 1, startując od $a$. 
-Liczbę wystąpień litery $a$ zapiszemy w pierwszym liczniku, liczbę wystąpień litery $b$ zapiszemy w drugim liczniku itd.
+### Output
 
-### Przykład
+* $TRUE$ — if $text1$ and $text2$ are anagrams.
+* $FALSE$ — otherwise.
 
-Przyjmijmy takie same dane jak we wcześniejszym przykładzie, tzn.:
+## Example
+
+### Input
 
 ```
-n := 8
-tekst1 := "markotny"
-tekst2 := "romantyk"
+n := 7
+text1 := "cheater"
+text2 := "teacher"
 ```
 
-Zaczynamy od policzenia tablic liczników dla pierwszego i drugiego wyrazu.
-Dla czytelności zapiszemy je w zmodyfikowanej formie, do każdego licznika dopisując odpowiadającą mu literę.
-Tak oto otrzymujemy tablice liczników odpowiednio dla pierwszego i drugiego wyrazu:
+**Output**: **TRUE**
+
+## Solution 1
+
+### Description
+
+For two words to be anagrams, they must consist of exactly the same letters.
+This also means that each letter from the first word must appear in the second word exactly the same number of times and the same in the other direction.
+Therefore, the first solution is simple: let's count how many times each letter occurs in the first word, then do the same for the second word and compare the results.
+If they are the same, the two words are anagrams.
+
+But how to count how many times a letter occurs in a word?
+Let's note that our words consist only of lowercase letters of the English alphabet.
+This means that we have exactly 26 characters.
+So we can prepare an array storing 26 counters - one for each letter.
+The letters, on the other hand, will be numbered starting from 1, starting from $a$.
+We will store the number of occurrences of the letter $a$ in the first counter, the number of occurrences of the letter $b$ in the second counter, and so on.
+
+### Example
+
+Assume the same data as in the earlier example, ie.:
 
 ```
-liczniki1 = [a:1, b:0, c:0, d:0, e:0, f:0, g:0, h:0, i:0, j:0, k:1, l:0, m:1, n:1, o:1, p:0, q:0, r:1, s:0, t:1, u:0, v:0, w:0, x:0, y:1, z:0]
-liczniki2 = [a:1, b:0, c:0, d:0, e:0, f:0, g:0, h:0, i:0, j:0, k:1, l:0, m:1, n:1, o:1, p:0, q:0, r:1, s:0, t:1, u:0, v:0, w:0, x:0, y:1, z:0]
+n := 7
+text1 := "cheater"
+text2 := "teacher"
 ```
 
-Gdy je porównamy zobaczymy, że są sobie równe.
-Oznacza to, że nasze wyrazy są anagramami.
-
-### Pseudokod
-
-Spróbujmy teraz zapisać nasze rozwiązanie w bardziej formalny sposób.
-Zaprojektujemy funkcję **TestujAnagramy**, która będzie przyjmować trzy parametry, zgodnie ze specyfikacją.
-
-Najpierw tworzymy dwie tablice liczników, po jednej dla każdego wyrazu.
-Początkowo wypełniamy je wartościami 0, gdyż jeszcze nie przystąpiliśmy do zliczania liter w wyrazach.
-
-Gdy tablice są gotowe, możemy przejść do zliczania.
-Przechodzimy przez oba wyrazy znak po znaku i zwiększamy właściwe liczniki w odpowiadających wyrazom tablicach.
-
-Ostatnim krokiem jest porównanie naszych liczników i zwrócenie odpowiedniego wyniku.
+We begin by counting the arrays of counters for the first and second words.
+For readability, we will write them in a modified form, adding the corresponding letter to each counter.
+This is how we get the arrays of counters for the first and second words, respectively:
 
 ```
-funkcja TestujAnagramy(n, tekst1, tekst2):
-    1. liczniki1 := tablica [1..26] wypełniona wartościami 0
-    2. liczniki2 := tablica [1..26] wypełniona wartościami 0
-    3. Od i := 1 do n, wykonuj:
-        4. indeks1 := numer znaku tekst1[i]
-        5. liczniki1[indeks] := liczniki1[indeks] + 1
-        6. indeks2 := numer znaku tekst2[i]
-        7. liczniki2[indeks] := liczniki2[indeks] + 1
-    8. Jeżeli liczniki1 = liczniki2, to:
-        9. Zwróć PRAWDA
-    10. w przeciwnym przypadku:
-        11. Zwróć FAŁSZ
+counters1 = [a:1, b:0, c:1, d:0, e:2, f:0, g:0, h:1, i:0, j:0, k:0, l:0, m:0, n:0, o:0, p:0, q:0, r:1, s:0, t:1, u:0, v:0, w:0, x:0, y:0, z:0]
+counters2 = [a:1, b:0, c:1, d:0, e:2, f:0, g:0, h:1, i:0, j:0, k:0, l:0, m:0, n:0, o:0, p:0, q:0, r:1, s:0, t:1, u:0, v:0, w:0, x:0, y:0, z:0]
 ```
 
-### Złożoność
+When we compare them we will see that they are equal to each other.
+This means that our words are anagrams.
 
-Najbardziej czasochłonną operacją w naszym algorytmie jest pętla przechodząca przez każdy znak obu wyrazów.
-Znaków mamy $n$, więc nasza pętla wykona dokładnie $n$ obrotów, co daje nam złożoność:
+### Pseudocode
 
-$O(n)$ — liniowa
+Now let's try to write our solution in a more formal way.
+We will design a function **TestAnagrams** that will take three parameters, according to the specification.
 
-## Rozwiązanie 2
+First, we create two arrays of counters, one for each word.
+Initially, we fill them with values of 0, since we have not yet proceeded to count the letters in the words.
 
-Innym rozwiązaniem jest posortowanie obu wyrazów i porównanie ich.
+When the arrays are ready, we can proceed with the counting.
+We go through both words character by character and increment the correct counters in the corresponding word arrays.
 
-### Pseudokod
+The last step is to compare our counters and return the corresponding result.
 
 ```
-funkcja TestujAnagramy(n, tekst1, tekst2):
-    1. Sortuj(tekst1)
-    2. Sortuj(tekst2)
-    3. Jeżeli tekst1 = tekst2, to:
-        4. Zwróć PRAWDA
-    5. w przeciwnym przypadku:
-        6. Zwróć FAŁSZ 
+function TestAnagrams(n, text1, text2):
+    1. counters1 := array [1..26] filled with values 0
+    2. counters2 := array [1..26] filled with values 0 
+    3. from i := 1 to n, do:
+        4. index1 := character number of text1[i]
+        5. counters1[index1] := counters1[index1] + 1
+        6. index2 := character number of text2[i]
+        7. counters2[index2] := counters2[index2] + 1
+    8. if counters1 = counters2, then:
+        9. return TRUE
+    10. otherwise:
+        11. return FALSE
 ```
 
-### Schemat blokowy
+### Complexity
+
+The most time-consuming operation in our algorithm is the loop going through each character of both words.
+We have $n$ characters, so our loop will perform exactly $n$ turns, which gives us complexity:
+
+$O(n)$ — linear
+
+## Solution 2
+
+Another solution is to sort the two words and compare them.
+
+### Pseudocode
+
+```
+function TestAnagrams(n, text1, text2):
+    1. sort(text1)
+    2. sort(text2)
+    3. if text1 = text2, then:
+        4. return TRUE
+    5. otherwise:
+        6. return FALSE
+```
+
+### Block diagram
 
 ```mermaid
 %%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
 flowchart TD
-    START(["TestujAnagramy(n, tekst1, tekst2)"]) --> K1["Sortuj(tekst1)
-    Sortuj(tekst2)"]
-    K1 --> K3{tekst1 = tekst2}
-    K3 -- PRAWDA --> K4[/Zwróć PRAWDA/]
-    K3 -- FAŁSZ --> K6[/Zwróć FAŁSZ/]
+    START(["TestAnagrams(n, text1, text2)"]) --> K1["sort(text1)
+    sort(text2)"]
+    K1 --> K3{text1 = text2}
+    K3 -- TRUE --> K4[/Zwróć TRUE/]
+    K3 -- FALSE --> K6[/Zwróć FALSE/]
     K4 --> STOP([STOP])
     K6 --> STOP
 ```
 
-### Złożoność
+### Complexity
 
-$O(n)$ — liniowa, jeżeli wykorzystamy optymalny algorytm sortowania (np. sortowanie przez zliczanie).
+$O(n)$ — linear, if we use an optimal sorting algorithm (such as sorting by counting).
 
-$O(n\log{n})$ — liniowo logarytmiczna, jeżeli użyjemy standardowej metody sortowania (np. sortowanie szybkie).
+$O(n\log{n})$ — Linear logarithmic, if we use a standard sorting method (e.g., quick sort).
 
-## Implementacja
+## Implementation
 
 ### [:simple-cplusplus: C++](../../programming/c++/algorithms/text/anagrams.md){ .md-button }
 

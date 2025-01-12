@@ -2,7 +2,7 @@
 
 ## [:link: Opis problemu](../../../../algorithms/structures/stack.md)
 
-## Implementacja
+## Implementation
 
 ```python linenums="1"
 class Stack:

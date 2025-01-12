@@ -2,7 +2,7 @@
 
 Szyfr Vigenère'a, nazwany na cześć Blaise'a de Vigenère, to metoda szyfrowania alfabetycznego tekstu za pomocą prostej formy szyfru polialfabetycznego. Został wynaleziony w XVI wieku i przez wiele lat uważano go za "niezłamalny", zanim nie został ostatecznie złamany w XIX wieku.
 
-## Opis działania
+## Description działania
 
 1. **Klucz**: aby zaszyfrować tekst, potrzebny jest klucz, który jest powtarzany lub rozszerzany, aż osiągnie długość tekstu jawnego.
    
@@ -12,7 +12,7 @@ Szyfr Vigenère'a, nazwany na cześć Blaise'a de Vigenère, to metoda szyfrowan
    - Każda litera tekstu jawnego jest przesuwana w alfabecie o liczbę miejsc równą pozycji odpowiadającej literze klucza.
    - Dla przykładu, jeśli litera klucza to "B" (druga litera alfabetu), litera tekstu jawnego jest przesuwana o 2 miejsca.
 
-## Przykład
+## Example
 
 Dla tekstu jawnego "TEKST" i klucza "KLUCZ":
 
@@ -30,14 +30,14 @@ Mimo że przez wieki uważano go za bezpieczny, metody analizy częstotliwości 
 
 Szyfr Vigenère'a był popularny wśród dyplomatów i wojskowych do komunikacji tajnej przez kilka wieków. Mimo że nie jest już używany do celów bezpieczeństwa, jest często przedstawiany w edukacji jako wprowadzenie do kryptografii polialfabetycznej.
 
-## Specyfikacja
+## Specification
 
-### Dane
+### Input
 
 - **jawny/szyfrogram** - tekst do zaszyfrowania/odszyfrowania, składający się z małych liter alfabetu angielskiego
 - **klucz** - ciąg znaków składający się z małych liter alfabetu angielskiego
 
-### Wynik
+### Output
 
 - Zaszyfrowany/odszyfrowany tekst.
 
@@ -49,7 +49,7 @@ Szyfr Vigenère'a był popularny wśród dyplomatów i wojskowych do komunikacji
 - **Alfabet(pozycja)** - zwraca literę na zadanej pozycji w alfabecie angielskim
 - **Długość(tekst)** - zwraca długość tekstu
 
-### Pseudokod
+### Pseudocode
 
 ```
 funkcja SzyfrujVigenere(jawny, klucz):
@@ -76,7 +76,7 @@ funkcja SzyfrujVigenere(jawny, klucz):
 - **Alfabet(pozycja)** - zwraca literę na zadanej pozycji w alfabecie angielskim
 - **Długość(tekst)** - zwraca długość tekstu
 
-### Pseudokod
+### Pseudocode
 
 ```
 funkcja DeszyfrujVigenere(szyfrogram, klucz):
@@ -95,7 +95,7 @@ funkcja DeszyfrujVigenere(szyfrogram, klucz):
     12. Zwróć jawny 
 ```
 
-## Implementacja
+## Implementation
 
 ### [:simple-cplusplus: C++](../../../programming/c++/algorithms/cryptography/vigenere.md){ .md-button }
 

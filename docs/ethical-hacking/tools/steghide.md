@@ -4,7 +4,7 @@ Steghide to narzędzie do steganografii, które umożliwia ukrywanie danych w r�
 
 [Steghide](https://steghide.sourceforge.net)
 
-## Przykłady użycia
+## Exampley użycia
 
 ### Ukrywanie pliku w obrazie
 

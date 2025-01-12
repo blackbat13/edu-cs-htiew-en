@@ -2,7 +2,7 @@
 
 Szyfr Beauforta, nazwany na cześć Sir Francisa Beauforta, jest odmianą szyfru Vigenère'a, w którym operacja szyfrowania i deszyfrowania jest zamieniona. Podobnie jak w przypadku Vigenère'a, jest to technika szyfrowania substytucyjnego wieloalfabetycznego.
 
-## Opis działania
+## Description działania
 
 1. **Klucz**: wybierz klucz (słowo lub fraza), który będzie używany do szyfrowania i deszyfrowania wiadomości.
 
@@ -16,7 +16,7 @@ Szyfr Beauforta, nazwany na cześć Sir Francisa Beauforta, jest odmianą szyfru
 
 2. **Deszyfrowanie**: proces deszyfrowania jest identyczny z procesem szyfrowania w szyfrze Beauforta, ponieważ jest to odwrotna operacja Vigenère'a.
 
-### Przykład
+### Example
 
 Załóżmy, że mamy wiadomość "HELLO" i klucz "KEY". Pierwszym krokiem jest rozszerzenie klucza do "KEYKE". Teraz każda litera wiadomości jest "odejmowana" od litery klucza, aby uzyskać zaszyfrowaną wiadomość.
 
@@ -24,14 +24,14 @@ Załóżmy, że mamy wiadomość "HELLO" i klucz "KEY". Pierwszym krokiem jest r
 
 Podobnie jak szyfr Vigenère'a, szyfr Beauforta może być łamany przy użyciu technik kryptoanalizy, takich jak analiza częstotliwości liter w tekście. Szyfr ten byłby trudniejszy do złamania w czasach przed komputerami, ale dzisiaj istnieją skuteczne metody ataku na tę metodę szyfrowania. 
 
-## Specyfikacja
+## Specification
 
-### Dane
+### Input
 
 - **tekst** - tekst do zaszyfrowania/odszyfrowania, składający się z małych liter alfabetu angielskiego
 - **klucz** - ciąg znaków składający się z małych liter alfabetu angielskiego
 
-### Wynik
+### Output
 
 - Zaszyfrowany/odszyfrowany tekst.
 
@@ -43,7 +43,7 @@ Podobnie jak szyfr Vigenère'a, szyfr Beauforta może być łamany przy użyciu 
 - **Alfabet(pozycja)** - zwraca literę na zadanej pozycji w alfabecie angielskim
 - **Długość(tekst)** - zwraca długość tekstu
 
-### Pseudokod
+### Pseudocode
 
 ```
 funkcja Beaufort(tekst, klucz):
@@ -62,7 +62,7 @@ funkcja Beaufort(tekst, klucz):
     12. Zwróć wynik 
 ```
 
-## Implementacja
+## Implementation
 
 ### [:simple-cplusplus: C++](../../../programming/c++/algorithms/cryptography/beaufort.md){ .md-button }
 

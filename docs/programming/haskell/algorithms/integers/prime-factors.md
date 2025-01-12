@@ -2,7 +2,7 @@
 
 ## [:link: Opis problemu](../../../../algorithms/integers/prime-factors.md)
 
-## Implementacja
+## Implementation
 
 ```haskell linenums="1"
 primeFactors n i
@@ -16,7 +16,7 @@ main = do
     print $ primeFactors n 2
 ```
 
-### Opis
+### Description
 
 Funkcja `primeFactors` przyjmuje dwa argumenty: liczbę `n`, której czynniki pierwsze chcemy znaleźć, oraz początkowy dzielnik `i`, zaczynając od 2.
 

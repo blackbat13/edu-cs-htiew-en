@@ -2,7 +2,7 @@
 
 ## [:link: Opis problemu](../../../../algorithms/sorting/stooge-sort.md)
 
-## Implementacja
+## Implementation
 
 ```python linenums="1"
 def stooge_sort(array: list, i: int, j: int):

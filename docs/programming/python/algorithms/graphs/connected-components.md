@@ -2,7 +2,7 @@
 
 ## [:link: Opis problemu](../../../../algorithms/graphs/connected-components.md)
 
-## Implementacja
+## Implementation
 
 ```python linenums="1"
 from typing import List

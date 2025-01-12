@@ -2,7 +2,7 @@
 
 ## Wstęp
 
-### Przykład - relacja klas
+### Example - relacja klas
 
 ```cpp
 class Point {
@@ -58,7 +58,7 @@ class Point3D: public Point {
 
 ## Rzutowanie statyczne
 
-### Przykład
+### Example
 
 ```cpp
     Point *point;
@@ -73,7 +73,7 @@ class Point3D: public Point {
 
 ## Rzutowanie dynamiczne
 
-### Przykład
+### Example
 
 ```cpp
     srand(time(NULL));

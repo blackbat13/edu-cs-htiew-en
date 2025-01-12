@@ -1,6 +1,6 @@
 # Drzewa wyrażeń arytmetycznych
 
-## Pseudokod
+## Pseudocode
 
 ```
 funkcja Oblicz(wierzchołek):

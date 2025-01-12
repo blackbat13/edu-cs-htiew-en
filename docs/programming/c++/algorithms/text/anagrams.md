@@ -2,7 +2,7 @@
 
 ## [:link: Opis problemu](../../../../algorithms/text/anagrams.md)
 
-## Implementacja
+## Implementation
 
 ```cpp linenums="1"
 #include <iostream>
@@ -32,7 +32,7 @@ int main() {
 }
 ```
 
-### Opis implementacji
+### Description implementacji
 
 Funkcja `areAnagrams` (**linia 6**) sprawdza, czy dwa podane ciągi znaków są anagramami. Procedura jest prosta: najpierw sortujemy oba ciągi, wykorzystując do tego funkcję `sort` z biblioteki `algorithm` (**linie 7 i 8**). Następnie porównujemy posortowane ciągi znaków, zwracając w ten sposób wynik (**linia 9**).
 

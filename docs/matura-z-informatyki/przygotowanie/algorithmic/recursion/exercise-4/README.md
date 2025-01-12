@@ -1,14 +1,14 @@
-# Ćwiczenie 6
+# Exercise 6
 
 Zapoznaj się z poniższą specyfikacją oraz pseudokodem, a następnie rozwiąż zadania.
 
-## Specyfikacja
+## Specification
 
-### Dane
+### Input
 
 * n - liczba naturalna, $n>0$. 
 
-## Pseudokod
+## Pseudocode
 
 ```
 funkcja fun(n):

@@ -24,7 +24,7 @@ Stosy są wykorzystywane w wielu różnych kontekstach w informatyce, w tym:
 
 Stosy są więc fundamentalnym narzędziem w informatyce, mającym szerokie zastosowanie zarówno w teorii jak i praktyce.
 
-## Implementacja
+## Implementation
 
 Stosy mogą być zaimplementowane za pomocą różnych struktur danych, takich jak tablice lub listy połączone. Wybór konkretnej struktury danych do implementacji stosu zależy od konkretnych wymagań, takich jak efektywność operacji, użycie pamięci, czy łatwość implementacji.
 

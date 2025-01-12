@@ -2,7 +2,7 @@
 
 ## [:link: Opis problemu](../../../../algorithms/2d-geometry/segments-crossing.md)
 
-## Implementacja
+## Implementation
 
 ```python linenums="1"
 class Point:

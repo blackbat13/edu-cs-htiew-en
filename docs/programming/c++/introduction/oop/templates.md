@@ -18,7 +18,7 @@ Wystarczy skorzystać ze słowa kluczowego `template`, a następnie zdefiniować
 Zarówno `typename` jak i `class` działają tak samo.
 Zobaczmy jak to wygląda na poniższym przykładzie.
 
-### Przykład
+### Example
 
 Napiszemy szablon funkcji dodającej do siebie dwie wartości.
 
@@ -57,7 +57,7 @@ cout << typeid(sum(i1, i2)).name() << endl;
 
 Szablony klas wyglądają podobnie do szablonów funkcji.
 
-### Przykład
+### Example
 
 ```cpp
 #include <iostream>

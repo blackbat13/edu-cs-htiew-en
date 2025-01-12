@@ -1,21 +1,21 @@
-# Rozwiązanie 1
+# Solution 1
 
 ## Treść zadania
 
 Napisz program zgodny z poniższą specyfikacją.&#x20;
 
-### Specyfikacja
+### Specification
 
-#### Dane
+#### Input
 
 * $n$ - liczba naturalna
 * $a_1,a_2,\dots,a_n$ - $n$ liczb całkowitych
 
-#### Wynik
+#### Output
 
 * $a_n,a_{n-1},\dots,a_2,a_1$ - podane liczby w odwrotnej kolejności
 
-## Rozwiązanie
+## Solution
 
 ```cpp
 #include <iostream>
@@ -42,7 +42,7 @@ int main() {
 }
 ```
 
-### Opis rozwiązania
+### Description rozwiązania
 
 Na początku tworzymy zmienną $n$ (**linia 5**), w której będziemy przechowywać liczbę elementów, którą następnie wczytujemy od użytkownika (**linia 8**).
 

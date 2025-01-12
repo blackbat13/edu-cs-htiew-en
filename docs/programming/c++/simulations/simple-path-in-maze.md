@@ -2,7 +2,7 @@
 
 Dany jest "prosty" labirynt, tzn. z jednym korytarzem bez rozgałęzień. Celem jest dotarcie z punktu startowego do końcowego i policzenie ilości wykonanych kroków.
 
-#### Specyfikacja
+#### Specification
 
 **Dane**:
 
@@ -11,11 +11,11 @@ Dany jest "prosty" labirynt, tzn. z jednym korytarzem bez rozgałęzień. Celem 
 * `(startW, startK)` - współrzędne punktu startowego
 * `(stopW, stopK)` - współrzędne punktu docelowego
 
-**Wynik**:
+**Output**:
 
 * Długość korytarza z punktu startowego do punktu docelowego, czyli ilość kroków, które trzeba wykonać.
 
-### Opis pomysłu
+### Description pomysłu
 
 Komputer zostawia za sobą "ślady", odznaczając miejsca w labiryncie, które już odwiedził. W każdym kroku algorytmu komputer porusza się w kierunku, w którym znajduje się pusty, nie oznaczony jeszcze korytarz.
 
@@ -125,7 +125,7 @@ int main() {
 
 [https://replit.com/@damiankurpiewski/SimplePath#main.cpp](https://replit.com/@damiankurpiewski/SimplePath#main.cpp)
 
-### Opis implementacji
+### Description implementacji
 
 TODO
 

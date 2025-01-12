@@ -4,7 +4,7 @@
 
 ## Podstawowa tablica ASCII
 
-### Implementacja
+### Implementation
 
 ```cpp linenums="1"
 #include <iostream>
@@ -25,7 +25,7 @@ int main() {
 
 ## Rozszerzona tablica ASCII
 
-### Implementacja
+### Implementation
 
 ```cpp linenums="1"
 #include <iostream>

@@ -2,7 +2,7 @@
 
 ## [:link: Opis problemu](../../../../algorithms/integers/prime-test.md)
 
-## Implementacja
+## Implementation
 
 ```haskell linenums="1"
 isPrime n
@@ -19,7 +19,7 @@ main = do
     print $ isPrime n
 ```
 
-### Opis
+### Description
 
 Funkcja `isPrime` przyjmuje jeden argument: liczbę `n`, którą chcemy sprawdzić pod kątem bycia liczbą pierwszą.
 

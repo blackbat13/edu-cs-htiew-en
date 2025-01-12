@@ -2,7 +2,7 @@
 
 ## [:link: Opis problemu](../../../../algorithms/sorting/merge-sort.md)
 
-## Implementacja
+## Implementation
 
 ```julia linenums="1"
 function merge(array, left, right, division)

@@ -113,7 +113,7 @@
 
 ## Zadanie 3
 
-### Wynik
+### Output
 
 ``` linenums="1"
 7 2

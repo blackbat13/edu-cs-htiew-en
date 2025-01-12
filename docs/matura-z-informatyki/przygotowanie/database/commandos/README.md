@@ -2,7 +2,7 @@
 
 Dana jest baza danych dotycząca komandosów i ich udziałów w różnych misjach, zgodnie z opisem podanym poniżej.
 
-## Opis plików
+## Description plików
 
 ### Komandosi
 

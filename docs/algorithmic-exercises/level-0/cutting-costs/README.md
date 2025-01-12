@@ -4,19 +4,19 @@ W ramach przeprowadzanej przez pewną firmę redukcji zatrudnienia, pracownicy d
 
 Źródło: [https://onlinejudge.org/external/117/11727.pdf](https://onlinejudge.org/external/117/11727.pdf)
 
-## Specyfikacja
+## Specification
 
-### Dane
+### Input
 
 * $a,b,c$ - trzy liczby naturalne określające zarobki pracowników, wszystkie w zakresie $[1000, 10000]$
 
-### Wynik
+### Output
 
 * Zarobki pracownika, który pozostanie zatrudniony
 
-## Przykład
+## Example
 
-### Dane
+### Input
 
 ```
 a := 1500

@@ -1,10 +1,10 @@
 # Sortowanie gnoma
 
-## Opis implementacji
+## Description implementacji
 
 [gnome-sort.md](../../../../algorithms/sorting/gnome-sort.md)
 
-## Implementacja
+## Implementation
 
 ```cpp linenums="1"
 #include <iostream>

@@ -1,22 +1,22 @@
-# Rozwiązanie 2
+# Solution 2
 
 ## Treść zadania
 
 Napisz program zgodny z poniższą specyfikacją.
 
-### Specyfikacja
+### Specification
 
-#### Dane
+#### Input
 
 * $n$ - liczba naturalna
 * $a_1,a_2,\dots,a_n$ - $n$ liczb całkowitych
 * $k$ - liczba naturalna, $1<=k<=n$
 
-#### Wynik
+#### Output
 
 * $a_k$ - $k$-ta podana liczba
 
-## Rozwiązanie
+## Solution
 
 ```python
 n = int(input("Podaj liczbę wartości: "))
@@ -26,7 +26,7 @@ k = int(input("Podaj numer elementu: "))
 print(f"Element numer {k}: {tab[k - 1]}")
 ```
 
-### Opis rozwiązania
+### Description rozwiązania
 
 Na początku wczytujemy od użytkownika liczbę elementów i zapisujemy ją w zmiennej $n$ (**linia 1**).
 

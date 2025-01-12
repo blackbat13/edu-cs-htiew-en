@@ -1,20 +1,20 @@
-# Rozwiązanie 2
+# Solution 2
 
 ## Treść zadania
 
 Napisz program zgodny z poniższą specyfikacją. Nie korzystaj z funkcji `pow`.
 
-### Specyfikacja
+### Specification
 
-#### Dane
+#### Input
 
 * $a, n$ - dwie liczby naturalne
 
-#### Wynik
+#### Output
 
 * $a^n$ 
 
-## Rozwiązanie
+## Solution
 
 ```cpp
 #include <iostream>

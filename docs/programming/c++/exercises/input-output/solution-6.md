@@ -1,20 +1,20 @@
-# Rozwiązanie 6
+# Solution 6
 
 ## Treść zadania
 
 Napisz program zgodny z poniższą specyfikacją. Wykorzystaj funkcję **min**.
 
-### Specyfikacja
+### Specification
 
-#### Dane
+#### Input
 
 * $a, b$ - dwie liczby całkowite
 
-#### Wynik
+#### Output
 
 * Mniejsza z liczb $a$ i $b$, lub dowolna gdy są sobie równe
 
-## Rozwiązanie
+## Solution
 
 ```cpp
 #include <iostream>

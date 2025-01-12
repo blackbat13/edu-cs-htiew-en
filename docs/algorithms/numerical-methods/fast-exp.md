@@ -38,20 +38,20 @@ $$
 x^5=(x^2)^2*x
 $$
 
-## Specyfikacja
+## Specification
 
-### Dane:
+### Input:
 
 * $x$ — liczba całkowita, podstawa potęgi
 * $n$ — liczba naturalna, wykładnik potęgi
 
-### Wynik:
+### Output:
 
 * $x^n$
 
-## Rozwiązanie iteracyjne
+## Solution iteracyjne
 
-### Pseudokod
+### Pseudocode
 
 ```
 funkcja Potega(x, n)
@@ -66,28 +66,28 @@ funkcja Potega(x, n)
     7. Zwróć wynik
 ```
 
-### Schemat blokowy
+### Block diagram
 
 ```mermaid
 %%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
 flowchart TD
 	START(["Potega(x, n)"]) --> K1[wynik := 1]
 	K1 --> K2{n > 0}
-	K2 -- PRAWDA --> K3{n mod 2 = 1}
-	K3 -- PRAWDA --> K4[wynik := wynik * x]
-	K3 -- FAŁSZ --> K5["x := x * x
+	K2 -- TRUE --> K3{n mod 2 = 1}
+	K3 -- TRUE --> K4[wynik := wynik * x]
+	K3 -- FALSE --> K5["x := x * x
 	x := n div 2"]
 	K4 --> K5
 	K5 --> K2
-	K2 -- FAŁSZ --> K7[/Zwróć wynik/]
+	K2 -- FALSE --> K7[/Zwróć wynik/]
 	K7 ---> STOP([STOP])
 ```
 
-### Złożoność
+### Complexity
 
 $O(\log{n})$ — logarytmiczna
 
-## Rozwiązanie rekurencyjne
+## Solution rekurencyjne
 
 ### Definicja rekurencyjna
 
@@ -100,7 +100,7 @@ $$
 \end{cases}
 $$
 
-### Pseudokod
+### Pseudocode
 
 ```
 funkcja Potega(x, n)
@@ -116,27 +116,27 @@ funkcja Potega(x, n)
         7. Zwróć wynik * wynik * x, zakończ
 ```
 
-### Schemat blokowy
+### Block diagram
 
 ```mermaid
 %%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
 flowchart TD
 	START(["Potega(x, n)"]) --> K1{n = 0}
-	K1 -- PRAWDA --> K2[/Zwróć 1/]
-	K1 -- FAŁSZ --> K3["wynik := Potega(x, n div 2)"]
+	K1 -- TRUE --> K2[/Zwróć 1/]
+	K1 -- FALSE --> K3["wynik := Potega(x, n div 2)"]
 	K2 --> STOP
 	K3 --> K4{n mod 2 = 0}
-	K4 -- PRAWDA --> K5[/Zwróć wynik * wynik/]
-	K4 -- FAŁSZ --> K7[/Zwróć wynik * wynik * x/]
+	K4 -- TRUE --> K5[/Zwróć wynik * wynik/]
+	K4 -- FALSE --> K7[/Zwróć wynik * wynik * x/]
 	K5 --> STOP([STOP])
 	K7 --> STOP
 ```
 
-### Złożoność
+### Complexity
 
 $O(\log{n})$ — logarytmiczna
 
-## Implementacja
+## Implementation
 
 ### [:simple-cplusplus: C++](../../programming/c++/algorithms/numerical-methods/fast-exp.md){ .md-button }
 

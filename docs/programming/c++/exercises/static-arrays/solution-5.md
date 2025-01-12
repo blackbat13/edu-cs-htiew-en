@@ -1,20 +1,20 @@
-# Rozwiązanie 5
+# Solution 5
 
 ## Treść zadania
 
 Napisz program zgodny z poniższą specyfikacją.
 
-### Specyfikacja
+### Specification
 
-#### Dane
+#### Input
 
 * $n$ - liczba naturalna
 
-#### Wynik
+#### Output
 
 * $fib[n]$ - tablica zawierająca $n$ kolejnych liczb Fibonacciego
 
-## Rozwiązanie
+## Solution
 
 ```cpp
 #include <iostream>

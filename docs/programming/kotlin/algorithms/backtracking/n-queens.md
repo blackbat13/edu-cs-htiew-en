@@ -2,7 +2,7 @@
 
 ## [:link: Opis problemu](../../../../algorithms/backtracking/n-queens.md)
 
-## Implementacja
+## Implementation
 
 ```kotlin linenums="1"
 fun findSolution(n: Int, queenId: Int, positions: Array<Int>): Boolean {

@@ -2,7 +2,7 @@
 
 W języku Python funkcje definiujemy zaczynając od słowa kluczowego `def`, po którym następuje nazwa funkcji, lista parametrów oddzielonych przecinkiem podanych w okrągłych nawiasach, a następnie dwukropek oznaczający początek bloku ciała funkcji.
 
-## Przykład
+## Example
 
 ```python
 def suma(a, b):
@@ -13,7 +13,7 @@ def suma(a, b):
 
 Tak jak i przy definicji zmiennych, tak samo przy tworzeniu funkcji możemy dodać sugestie typów, zarówno dla argumentów jak i zwracanej wartości.
 
-### Przykład
+### Example
 
 ```python
 def suma(a: int, b: int) -> int:
@@ -24,7 +24,7 @@ def suma(a: int, b: int) -> int:
 
 W Pythonie nie odróżniamy procedur od funkcji, ale oczywiście możemy tworzyć funkcje, które nie zwracają wartości.
 
-### Przykład
+### Example
 
 ```python
 def powitanie(imie: str):

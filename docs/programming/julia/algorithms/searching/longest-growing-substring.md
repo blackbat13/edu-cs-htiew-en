@@ -2,7 +2,7 @@
 
 ## [:link: Opis problemu](../../../../algorithms/searching/longest-growing-substring.md)
 
-## Implementacja
+## Implementation
 
 ```julia linenums="1"
 function longestGrowingSubstring(array)

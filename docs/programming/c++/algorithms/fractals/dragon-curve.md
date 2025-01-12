@@ -2,7 +2,7 @@
 
 ## [:link: Opis problemu](../../../../algorithms/fractals/dragon-curve.md)
 
-## Implementacja
+## Implementation
 
 ```cpp linenums="1"
 #include "turtle.hpp"

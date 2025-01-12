@@ -4,7 +4,7 @@
 
 Wypisz dane wszystkich klientów z Niemiec.
 
-### Wynik
+### Output
 
 | CustomerId | FirstName | LastName   | Company | Address                 | City      | State | Country | PostalCode | Phone            | Fax  | Email                     | SupportRepId |
 |------------|-----------|------------|---------|-------------------------|-----------|-------|---------|------------|------------------|------|---------------------------|--------------|
@@ -17,7 +17,7 @@ Wypisz dane wszystkich klientów z Niemiec.
 
 Wypisz wszystkich klientów pochodzących z Pragi lub Niemiec.
 
-### Wynik
+### Output
 
 | CustomerId | FirstName | LastName    | Company          | Address                 | City      | State | Country        | PostalCode | Phone            | Fax              | Email                     | SupportRepId |
 |------------|-----------|-------------|------------------|-------------------------|-----------|-------|----------------|------------|------------------|------------------|---------------------------|--------------|
@@ -32,7 +32,7 @@ Wypisz wszystkich klientów pochodzących z Pragi lub Niemiec.
 
 Wypisz wszystkich pracowników zatrudnionych po 1 stycznia 2003 roku.
 
-### Wynik
+### Output
 
 | EmployeeId | LastName | FirstName | Title               | ReportsTo | BirthDate           | HireDate            | Address                     | City       | State | Country | PostalCode | Phone             | Fax               | Email                    |
 |------------|----------|-----------|---------------------|-----------|---------------------|---------------------|-----------------------------|------------|-------|---------|------------|-------------------|-------------------|--------------------------|
@@ -65,7 +65,7 @@ Utwórz zestawienie zawierające nazwę i długość trwania utworów dłuższyc
 
 Wypisz imię i nazwisko wszystkich klientów, których imię lub nazwisko kończy się na literę *a*.
 
-### Wynik
+### Output
 
 | FirstName | LastName   |
 |-----------|------------|
@@ -84,7 +84,7 @@ Wypisz imię i nazwisko wszystkich klientów, których imię lub nazwisko kończ
 
 Wypisz imię i nazwisko wszystkich klientów, których imię lub nazwisko zaczyna się na literę *A*.
 
-### Wynik
+### Output
 
 | FirstName | LastName |
 |-----------|----------|
@@ -135,7 +135,7 @@ Wypisz imię i nazwisko tylko tych klientów, którzy nie mają wpisanej firmy.
 
 Wypisz imię i nazwisko tylko tych klientów, którzy mają podaną firmę.
 
-### Wynik
+### Output
 
 | FirstName | LastName    |
 |-----------|-------------|
@@ -154,7 +154,7 @@ Wypisz imię i nazwisko tylko tych klientów, którzy mają podaną firmę.
 
 Wypisz wszystkich pracowników, którzy mieli co najmniej 50 lat w 2018 roku.
 
-### Wynik
+### Output
 
 | EmployeeId | LastName | FirstName | Title               | ReportsTo | BirthDate           | HireDate            | Address             | City       | State | Country | PostalCode | Phone             | Fax               | Email                    |
 |------------|----------|-----------|---------------------|-----------|---------------------|---------------------|---------------------|------------|-------|---------|------------|-------------------|-------------------|--------------------------|

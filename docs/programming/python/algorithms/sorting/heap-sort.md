@@ -2,7 +2,7 @@
 
 ## [:link: Opis problemu](../../../../algorithms/sorting/heap-sort.md)
 
-## Implementacja
+## Implementation
 
 ```python linenums="1"
 def build_heap(array: [], n: int):

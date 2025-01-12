@@ -20,13 +20,13 @@ Poniżej znajdziesz animacje przedstawiające ideę omawianego algorytmu.
 
 [:material-video: Taneczne sortowanie](https://www.youtube.com/watch?v=Ns4TPTC8whw){ .md-button }
 
-## Rozwiązanie
+## Solution
 
 Sortowanie przez wybieranie składa się tak właściwie z dwóch części: znajdowania minimum i samego sortowania. Opis algorytmu znajdowania minimum można znaleźć tutaj: [Wyszukiwanie minimum i maksimum](../searching/min-or-max.md).
 
 Sam algorytm wyszukiwania minimum musimy zmodyfikować tak, by działał na określonym przedziale w tablicy, tzn. chcemy wyszukać minimum nie w całej tablicy, a w jej konkretnym przedziale $[p..k]$. Co więcej, potrzebujemy nie tyle znać wartość minimalną, co jej **pozycję** w tablicy. Gdy to już mamy, samo sortowanie jest bardzo proste. Przechodzimy przez kolejne indeksy w naszej tablicy i wyszukujemy pozycję minimum od obecnego indeksu do końca tablicy, a następnie zamieniamy z elementem na obecnie sprawdzanej pozycji.
 
-### Pseudokod
+### Pseudocode
 
 ```
 funkcja SzukajIndeksMinimum(pocz, kon, A):
@@ -44,7 +44,7 @@ procedura SortowaniePrzezWybieranie(A, n):
         3. Zamień(A[i], A[minInd])
 ```
 
-### Schemat blokowy
+### Block diagram
 
 ```mermaid
 %%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
@@ -53,13 +53,13 @@ flowchart TD
     minInd := pocz
     i := pocz + 1"]
     K1 --> K3{i <= kon}
-    K3 -- PRAWDA --> K4{"A[i] < min"}
-    K4 -- PRAWDA --> K5["min := A[i]
+    K3 -- TRUE --> K4{"A[i] < min"}
+    K4 -- TRUE --> K5["min := A[i]
     minInd := i"]
-    K4 -- FAŁSZ --> K3i[i := i + 1]
+    K4 -- FALSE --> K3i[i := i + 1]
     K5 --> K3i
     K3i --> K3
-    K3 -- FAŁSZ ---> K7[/Zwróć minInd/]
+    K3 -- FALSE ---> K7[/Zwróć minInd/]
     K7 --> STOP([STOP])
 ```
 
@@ -68,20 +68,20 @@ flowchart TD
 flowchart TD
     START(["SortowaniePrzezWybieranie(A, n)"]) --> K0[i := 1]
     K0 --> K1{i <= n - 1}
-    K1 -- PRAWDA --> K2["minInd := SzukajIndeksMinimum(i, n, A)
+    K1 -- TRUE --> K2["minInd := SzukajIndeksMinimum(i, n, A)
     Zamień(A[i], A[minInd])"]
     K2 --> K1i[i := i + 1]
     K1i --> K1
-    K1 -- FAŁSZ ---> STOP([STOP])
+    K1 -- FALSE ---> STOP([STOP])
 ```
 
-### Złożoność
+### Complexity
 
 $O(n^2)$ — kwadratowa
 
 Wyszukiwanie minimum ma złożoność liniową. Wywołujemy ten algorytm $n-1$ razy, więc w efekcie otrzymujemy złożoność kwadratową algorytmu sortowania przez wybieranie.
 
-## Implementacja
+## Implementation
 
 ### [:simple-cplusplus: C++](../../programming/c++/algorithms/sorting/selection-sort.md){ .md-button }
 

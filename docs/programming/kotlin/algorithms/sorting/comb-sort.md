@@ -2,7 +2,7 @@
 
 ## [:link: Opis problemu](../../../../algorithms/sorting/comb-sort.md)
 
-## Implementacja
+## Implementation
 
 ```kotlin
 fun combSort(array: MutableList<Int>) {

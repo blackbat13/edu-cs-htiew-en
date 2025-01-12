@@ -1,6 +1,6 @@
 # Saper
 
-## Opis
+## Description
 
 Jak wygląda klasyczna już gra **Saper** wie chyba każdy. Dla porządku przypomnijmy jednak jej najważniejsze aspekty:
 
@@ -10,19 +10,19 @@ Jak wygląda klasyczna już gra **Saper** wie chyba każdy. Dla porządku przypo
 
 Początkowo plansza jest zakryta, a celem gry jest odkrycie wszystkich pól poza bombami. My jednak zajmiemy się czymś prostszym: **dla zadanej odkrytej planszy wypełnionej bombami należy uzupełnić pozostałe pola właściwymi liczbami**.
 
-### Specyfikacja
+### Specification
 
-#### Dane:
+#### Input:
 
 * $n$ - liczba naturalna, wysokość planszy
 * $m$ - liczba naturalna, szerokość planszy
 * $plansza[n][m]$ - plansza wypełniona znakami $*$ oraz $.$ oznaczającymi odpowiednio bombę i pole puste
 
-#### Wynik
+#### Output
 
 * $plansza[n][m]$ - plansza wypełniona bombami i liczbami zgodnie z regułami gry saper
 
-## Implementacja
+## Implementation
 
 ```cpp
 #include <iostream>

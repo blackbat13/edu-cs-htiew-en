@@ -35,6 +35,6 @@
 8. Wypisz 10
 ```
 
-## Wynik
+## Output
 
 $10$

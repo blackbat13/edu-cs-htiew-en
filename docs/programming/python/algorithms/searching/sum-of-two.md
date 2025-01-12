@@ -2,7 +2,7 @@
 
 ## [:link: Opis problemu](../../../../algorithms/searching/sum-of-two.md)
 
-## Rozwiązanie naiwne
+## Solution naiwne
 
 ```python linenums="1"
 def sum_of_two(tab: list, k: int):
@@ -32,7 +32,7 @@ W przykładzie podane są konkretne wartości dla `tab` i `k`. Funkcja `sum_of_t
 
 W wyniku wykonania tego kodu, zostaną wypisane liczby $6$ i $12$, ponieważ ich suma wynosi $18$.
 
-## Rozwiązanie optymalne
+## Solution optymalne
 
 ```python linenums="1"
 def sum_of_two(tab: list, k: int):

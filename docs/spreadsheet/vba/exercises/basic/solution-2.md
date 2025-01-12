@@ -1,4 +1,4 @@
-# Rozwiązanie 2
+# Solution 2
 
 ## Treść zadania
 
@@ -19,19 +19,19 @@ gdzie:
 * $F$ - temperatura podana w stopniach Fahrenheita
 * $K$ - temperatura podana w stopniach Kelvina
 
-### Specyfikacja
+### Specification
 
-#### Dane
+#### Input
 
 * $temp$ - liczba rzeczywista, temperatura do konwersji
 * $jednZ$ - jeden znak, wielka litera oznaczająca jednostkę temperatury z której należy dokonać konwersji
 * $jednDo$ - jeden znak, wielka litera oznaczająca jednostkę temperatury do której należy dokonać konwersji
 
-#### Wynik
+#### Output
 
 * Podana temperatura przekonwertowana z jednostki $jednZ$ do jednostki $jednDo$.
 
-## Rozwiązanie
+## Solution
 
 ```vb
 Function KonwTemp(temp As Double, jednZ As String, jednDo As String) As Double
@@ -57,7 +57,7 @@ Function KonwTemp(temp As Double, jednZ As String, jednDo As String) As Double
 End Function
 ```
 
-## Opis rozwiązania
+## Description rozwiązania
 
 ### 1. Definicja funkcji
 

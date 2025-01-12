@@ -121,7 +121,7 @@ Przedstawimy teraz kilka przydatnych wzorców dopasowań.
 
 Jeżeli szukamy linii, które zaczynają się od zadanego wzorca, możemy skorzystać z symbolu **^**.
 
-#### Przykład
+#### Example
 
 ```
 ^start
@@ -131,7 +131,7 @@ Jeżeli szukamy linii, które zaczynają się od zadanego wzorca, możemy skorzy
 
 Jeżeli szukamy linii, które kończą się zadanym wzorcem, możemy skorzystać z symbolu **$**.
 
-#### Przykład
+#### Example
 
 ```
 start$

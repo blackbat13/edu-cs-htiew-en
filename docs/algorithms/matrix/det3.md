@@ -1,6 +1,6 @@
 # Wyznacznik macierzy 3x3
 
-## Implementacja
+## Implementation
 
 ### [:simple-cplusplus: C++](../../programming/c++/algorithms/matrix/det3.md){ .md-button }
 

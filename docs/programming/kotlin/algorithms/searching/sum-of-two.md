@@ -2,9 +2,9 @@
 
 ## [:link: Opis problemu](../../../../algorithms/searching/sum-of-two.md)
 
-## Rozwiązanie naiwne
+## Solution naiwne
 
-### Implementacja
+### Implementation
 
 ```kotlin
 fun sumOfTwo(array: List<Int>, sum: Int) {
@@ -29,13 +29,13 @@ fun main() {
 
 [Suma dwóch - rozwiązanie naiwne](https://ideone.com/AJ50ho)
 
-### Opis implementacji
+### Description implementacji
 
 TODO
 
-## Rozwiązanie optymalne
+## Solution optymalne
 
-### Implementacja
+### Implementation
 
 ```kotlin
 fun sumOfTwo(array: List<Int>, sum: Int) {
@@ -69,6 +69,6 @@ fun main() {
 
 [Suma dwóch - rozwiązanie optymalne](https://ideone.com/MXQjLX)
 
-### Opis implementacji
+### Description implementacji
 
 TODO

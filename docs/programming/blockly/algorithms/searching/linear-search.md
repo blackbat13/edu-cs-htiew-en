@@ -16,7 +16,7 @@
 
 [Wyszukiwanie liniowe - istnienie elementu](https://blockly-demo.appspot.com/static/demos/code/index.html?lang=pl#sofcb5)
 
-### Opis implementacji
+### Description implementacji
 
 Funkcja **SzukajLiniowo** zwraca jako wynik wartość prawda/fałsz i przyjmuje dwa argumenty: tablicę do przeszukania oraz wartość poszukiwanego elementu. Na początku funkcji przypisujemy do zmiennej **wynik** wartość _fałsz_ oznaczającą, że nie znaleźliśmy poszukiwanego elementu. W tym momencie jest to zrozumiałe, jako że jeszcze nie zaczęliśmy poszukiwań. Następnie przechodzimy pętlą przez wszystkie kolejne indeksy w tablicy od $1$ do długości tablicy włącznie. Długość tablicy pobieramy korzystając z polecenia/bloku **długość**. Dla każdego indeksu (zapisanego w zmiennej **i**) sprawdzamy, czy pod tym indeksem w tablicy znajduje się poszukiwana wartość. Jeżeli tak, to przypisujemy do zmiennej **wynik** wartość _prawda_ i przerywamy działanie pętli. Po wyjściu z pętli (tzn. gdy przeszliśmy przez wszystkie indeksy, lub zakończyliśmy działanie pętli wcześniej) zwracamy jako wynik funkcji wartość zmiennej **wynik**.
 
@@ -36,7 +36,7 @@ W części głównej programu na początku przygotowujemy dane do problemu: tabl
 
 [Wyszukiwanie liniowe - pozycja elementu](https://blockly-demo.appspot.com/static/demos/code/index.html?lang=pl#sdj7gu)
 
-### Opis implementacji
+### Description implementacji
 
 Funkcja **SzukajLiniowo** zwraca jako wynik liczbę całkowitą i przyjmuje dwa argumenty: tablicę do przeszukania oraz wartość poszukiwanego elementu. Na początku funkcji przypisujemy do zmiennej **wynik** wartość $-1$_ _oznaczającą, że nie znaleźliśmy poszukiwanego elementu. W tym momencie jest to zrozumiałe, jako że jeszcze nie zaczęliśmy poszukiwań. Następnie przechodzimy pętlą przez wszystkie kolejne indeksy w tablicy od $1$ do długości tablicy włącznie. Długość tablicy pobieramy korzystając z polecenia/bloku **długość**. Dla każdego indeksu sprawdzamy, czy pod tym indeksem w tablicy znajduje się poszukiwana wartość. Jeżeli tak, to przypisujemy do zmiennej **wynik** wartość indeksu zapisaną w zmiennej **i**, a następnie przerywamy działanie pętli. Po wyjściu z pętli (tzn. gdy przeszliśmy przez wszystkie indeksy, lub zakończyliśmy działanie pętli wcześniej) zwracamy jako wynik funkcji wartość zmiennej **wynik**.
 
@@ -56,7 +56,7 @@ W części głównej programu na początku przygotowujemy dane do problemu: tabl
 
 [Wyszukiwanie liniowe - wszystkie pozycje elementu](https://blockly-demo.appspot.com/static/demos/code/index.html?lang=pl#3aupgb)
 
-### Opis implementacji
+### Description implementacji
 
 Funkcja **SzukajLiniowo** nie zwraca wyniku i przyjmuje dwa argumenty: tablicę do przeszukania oraz wartość poszukiwanego elementu. Na początku funkcji przechodzimy pętlą przez wszystkie kolejne indeksy w tablicy od $1$ do długości tablicy włącznie. Długość tablicy pobieramy korzystając z polecenia/bloku **długość**. Dla każdego indeksu sprawdzamy, czy pod tym indeksem w tablicy znajduje się poszukiwana wartość. Jeżeli tak, to wypisujemy wartość indeksu zapisaną w zmiennej **i**.
 

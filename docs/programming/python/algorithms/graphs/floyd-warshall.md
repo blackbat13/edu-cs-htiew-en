@@ -6,7 +6,7 @@ description: Najkrótsze ścieżki pomiędzy wszystkimi wierzchołkami
 
 ## [:link: Opis problemu](../../../../algorithms/graphs/floyd-warshall.md)
 
-## Implementacja
+## Implementation
 
 ```python linenums="1"
 import math

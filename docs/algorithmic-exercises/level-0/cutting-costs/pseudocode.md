@@ -1,6 +1,6 @@
-# Pseudokod
+# Pseudocode
 
-## Rozwiązanie
+## Solution
 
 ```
 1. Wczytaj a, b, c
@@ -19,7 +19,7 @@
 14. Wypisz wynik
 ```
 
-### Opis
+### Description
 
 Na początku wczytujemy dane wejściowe: trzy liczby całkowite (**krok 1**).
 Następnie obliczamy sumę wczytanych liczb (**krok 2**).

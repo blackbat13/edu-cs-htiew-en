@@ -2,7 +2,7 @@
 
 Przeanalizuj poniższy algorytm i wykonaj zadania.
 
-## Pseudokod
+## Pseudocode
 
 ```
 Funkcja per(A, pocz, kon):

@@ -2,7 +2,7 @@
 
 ## [:link: Opis problemu](../../../../algorithms/integers/prime-factors.md)
 
-## Implementacja
+## Implementation
 
 ```kotlin
 fun distribute(num: Int): List<Int> {
@@ -35,6 +35,6 @@ fun main() {
 
 [Rozkład na czynniki pierwsze](https://ideone.com/VAB2Jl)
 
-### Opis implementacji
+### Description implementacji
 
 TODO

@@ -1,20 +1,20 @@
-# Rozwiązanie 3
+# Solution 3
 
 ## Treść zadania
 
 Napisz funkcję `CzyParzysta` zgodną z poniższą specyfikacją.
 
-### Specyfikacja
+### Specification
 
-#### Dane
+#### Input
 
 * $n$ - liczba naturalna
 
-#### Wynik
+#### Output
 
-* PRAWDA, jeżeli $n$ jest liczbą parzystą, FAŁSZ w przeciwnym przypadku.
+* TRUE, jeżeli $n$ jest liczbą parzystą, FALSE w przeciwnym przypadku.
 
-## Rozwiązanie
+## Solution
 
 ```vb
 Function CzyParzysta(n As Integer) As Boolean
@@ -26,7 +26,7 @@ Function CzyParzysta(n As Integer) As Boolean
 End Function
 ```
 
-## Opis rozwiązania
+## Description rozwiązania
 
 ### 1. Definicja funkcji
 

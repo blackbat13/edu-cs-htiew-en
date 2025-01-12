@@ -6,7 +6,7 @@ W języku C++ pętla iteracyjna składa się z trzech części:
 2. Warunku pętli (np. `i < 10`).
 3. Kroku pętli (np. `i++`).
 
-## Przykłady
+## Exampley
 
 ### Prosta pętla iteracyjna
 

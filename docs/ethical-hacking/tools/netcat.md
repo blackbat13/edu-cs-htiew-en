@@ -11,7 +11,7 @@ Netcat oferuje wiele niezwykle przydatnych funkcji:
 - Tworzenie backdoorów i reverse shelli.
 - Testowanie serwisów sieciowych.
 
-## Przykłady użycia
+## Exampley użycia
 
 ### Tworzenie prostego serwera echo
 

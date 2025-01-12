@@ -6,7 +6,7 @@ Volatility analizuje obrazy pamięci RAM, umożliwiając badaczom odtworzenie dz
 
 [Volatility](https://www.volatilityfoundation.org)
 
-## Przykłady użycia
+## Exampley użycia
 
 ### Wyświetlenie listy procesów
 

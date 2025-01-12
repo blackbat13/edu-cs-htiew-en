@@ -4,28 +4,28 @@ Trójkąt Sierpińskiego to jeden z popularniejszych fraktali, który jest stosu
 
 Przyjrzyj się poniższej prezentacji, by lepiej zrozumieć tę procedurę.
 
-## Specyfikacja
+## Specification
 
-### Dane
+### Input
 
 * $stopień$ - stopień trójkąta
 * $długość$ - początkowa długość
 
-### Wynik
+### Output
 
 * Trójkąt Sierpińskiego stopnia $stopień$ i początkowej długości $długość$.
 
-## Prezentacja
+## Presentation
 
 [:fontawesome-solid-file-pdf: Trójkąt Sierpińskiego - wprowadzenie](../../assets/Trójkąt Sierpińskiego.pdf){ .md-button }
 
-## Rozwiązanie
+## Solution
 
-### Prezentacja
+### Presentation
 
 [:fontawesome-solid-file-pdf: Trójkąt Sierpińskiego - algorytm](../../assets/Trójkąt Sierpińskiego - algorytm.pdf){ .md-button }
 
-### Pseudokod
+### Pseudocode
 
 ```
 procedura TrójkątSierpińskiego(stopień, długość):
@@ -40,30 +40,30 @@ procedura TrójkątSierpińskiego(stopień, długość):
         9. Lewo(120)
 ```
 
-### Schemat blokowy
+### Block diagram
 
 ```mermaid
 %%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
 flowchart TD
     START(["TrójkątSierpińskiego(stopień, długość)"]) --> K1{stopień = 0}
-    K1 -- PRAWDA --> K2p[i := 1]
+    K1 -- TRUE --> K2p[i := 1]
     K2p --> K2{i <= 3}
-    K2 -- PRAWDA --> K3["Przód(długość)
+    K2 -- TRUE --> K3["Przód(długość)
     Lewo(120)"]
     K3 --> K2i[i := i + 1]
     K2i --> K2
-    K2 -- FAŁSZ --> STOP([STOP])
-    K1 -- FAŁSZ --> K6p[i := 1]
+    K2 -- FALSE --> STOP([STOP])
+    K1 -- FALSE --> K6p[i := 1]
     K6p --> K6{i <= 3}
-    K6 -- PRAWDA --> K7["TrójkątSierpińskiego(stopień - 1, długość / 2)
+    K6 -- TRUE --> K7["TrójkątSierpińskiego(stopień - 1, długość / 2)
     Przód(długość / 2)
     Lewo(120)"]
     K7 --> K6i[i := i + 1]
     K6i --> K6
-    K6 -- FAŁSZ ---> STOP
+    K6 -- FALSE ---> STOP
 ```
 
-## Implementacja
+## Implementation
 
 ### [:simple-cplusplus: C++](../../programming/c++/algorithms/fractals/sierpinski-triangle.md){ .md-button }
 

@@ -2,7 +2,7 @@
 
 ## [:link: Opis problemu](../../../../algorithms/text/hamming-distance.md)
 
-## Implementacja
+## Implementation
 
 ```python linenums="1"
 def hamming_distance(a: str, b: str) -> int:

@@ -2,7 +2,7 @@
 
 ## [:link: Opis problemu](../../../../algorithms/sorting/comb-sort.md)
 
-## Implementacja
+## Implementation
 
 ```python linenums="1"
 def comb_sort(array: list):
@@ -30,7 +30,7 @@ comb_sort(array)
 print(array)
 ```
 
-### Opis implementacji
+### Description implementacji
 
 Funkcja `comb_sort` przyjmuje jako argument listę `array`, która ma być posortowana.
 

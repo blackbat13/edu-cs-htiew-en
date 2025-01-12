@@ -1,21 +1,21 @@
-# Rozwiązanie 4
+# Solution 4
 
 ## Treść zadania
 
 Napisz program zgodny z poniższą specyfikacją.
 
-### Specyfikacja
+### Specification
 
-#### Dane
+#### Input
 
 * $n$ - liczba naturalna, większa od $0$ 
 * $n$liczb naturalnych
 
-#### Wynik
+#### Output
 
 * Największa z podanych $n$ liczb
 
-## Rozwiązanie
+## Solution
 
 ```python
 n = int(input("Podaj liczbę wartości: "))
@@ -30,7 +30,7 @@ for i in range(n):
 print(f"Maksimum z podanych liczb wynosi {maks}")
 ```
 
-## Rozwiązanie alternatywne
+## Solution alternatywne
 
 ```python
 n = int(input("Podaj liczbę wartości: "))

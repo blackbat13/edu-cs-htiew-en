@@ -1,6 +1,6 @@
 # Python
 
-## Implementacja
+## Implementation
 
 ```python
 anagrams = dict()

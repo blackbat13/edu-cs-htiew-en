@@ -2,7 +2,7 @@
 
 ## [:link: Opis problemu](../../../../algorithms/integers/superfactorial.md)
 
-## Implementacja
+## Implementation
 
 ```python linenums="1"
 def superfactorial(n: int) -> int:

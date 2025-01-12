@@ -6,7 +6,7 @@ Hydra przeprowadza ataki przeszukując przestrzeń możliwych haseł w celu znal
 
 [Hydra](https://www.kali.org/tools/hydra/)
 
-## Przykłady użycia
+## Exampley użycia
 
 ### Atak na FTP
 

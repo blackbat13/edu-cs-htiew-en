@@ -6,25 +6,25 @@ PS. Włodzimir z chęcią pożyczy Ci puste butelki, pod warunkiem, że potem je
 
 Źródło: [https://onlinejudge.org/external/111/11150.pdf](https://onlinejudge.org/external/111/11150.pdf)
 
-## Specyfikacja
+## Specification
 
-### Dane
+### Input
 
 * $n$ - liczba zakupionych butelek mleka z przedziału$[1,200]$
 
-### Wynik
+### Output
 
 * Maksymalna liczba butelek mleka, które można wypić, korzystając z promocji.
 
-## Przykład
+## Example
 
-### Dane
+### Input
 
 ```
 8
 ```
 
-### Wynik
+### Output
 
 ```
 12

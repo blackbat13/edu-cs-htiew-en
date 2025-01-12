@@ -1,22 +1,22 @@
-# Rozwiązanie 3
+# Solution 3
 
 ## Treść zadania
 
 Napisz program zgodny z poniższą specyfikacją.
 
-### Specyfikacja
+### Specification
 
-#### Dane
+#### Input
 
 * $n$ - liczba naturalna
 * $a_1,a_2,\dots,a_n$ - $n$ liczb całkowitych
 * $p, k$ - dwie liczby naturalna, $1<=p,k<=n$, $p <= k$
 
-#### Wynik
+#### Output
 
 * $a_p+a_{p+1}+a_{p+2}+...+a_{k}$ - suma wartości na pozycjach od $p$ do $k$
 
-## Rozwiązanie
+## Solution
 
 ```cpp
 #include <iostream>

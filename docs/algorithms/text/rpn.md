@@ -13,7 +13,7 @@ Odwrotna notacja polska eliminuje konieczność używania nawiasów do wskazania
 3. Gdy napotkasz operator, zdejmij z góry stosu tyle liczb ile jest argumentów operatora, wykonaj operację, a wynik wrzuć na stos.
 4. Gdy przejrzysz całe wyrażenie, na stosie powinna zostać jedna liczba - wynik całego wyrażenia.
 
-## Przykład
+## Example
 
 Weźmy na przykład wyrażenie matematyczne `2 * (3 + 4)`. W odwrotnej notacji polskiej wyrażenie to staje się `2 3 4 + *`. Prześledźmy, jak możemy obliczyć jego wartość.
 
@@ -28,25 +28,25 @@ Weźmy na przykład wyrażenie matematyczne `2 * (3 + 4)`. W odwrotnej notacji p
 
 Z powyższego przykładu widać, że korzystanie z Odwrotnej Notacji Polskiej może znacznie uprościć obliczenia, szczególnie dla komputerów i kalkulatorów.
 
-## Specyfikacja
+## Specification
 
-### Dane
+### Input
 
 * **onp** - ciąg znaków reprezentujący poprawne wyrażenie w Odwrotnej Notacji Polskiej
 
-### Wynik
+### Output
 
 * Wartość wyrażenia **onp**
 
-## Przykład
+## Example
 
-### Dane
+### Input
 
 ```
 onp := "27+3/13-4*+2/"
 ```
 
-**Wynik**: $-2.5$
+**Output**: $-2.5$
 
 !!! info
 	**Wyjaśnienie**
@@ -55,7 +55,7 @@ onp := "27+3/13-4*+2/"
 	
 	$(((2 + 7) / 3) + (1 - 3) * 4) / 2$
 
-## Implementacja
+## Implementation
 
 ### [:simple-cplusplus: C++](../../programming/c++/algorithms/text/rpn.md){ .md-button }
 

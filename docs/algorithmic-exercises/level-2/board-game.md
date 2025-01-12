@@ -8,17 +8,17 @@ Na przykład, jeśli mamy planszę o długości $5$ z wartościami $[0, 6, -1, 2
 
 Bajtek jest doświadczonym graczem i potrafi rzucić kością tak, aby wypadła dowolna, wybrana przez niego liczba. Jednak nie wie, jaką liczbę powinien wylosować, aby osiągnąć maksymalny wynik dla danej planszy, dlatego zwraca się o pomoc do Ciebie!
 
-## Dane
+## Input
 
 Wejście zawiera liczbę $n$ ($1\lq n\lq 10^6$), która oznacz długość planszy. Następnie podanych jest $n$ liczb całkowitych z przedziału $<-1000, 1000>$, każda w oddzielnej linii.
 
-## Wynik
+## Output
 
 Na wyjściu powinny pojawić się dwie liczby całkowite: maksymalna możliwa do uzyskania liczba punktów oraz liczba oczek na kości (z zakresu od $1$ do $n$), która jest potrzebna do osiągnięcia tego wyniku. Jeżeli można uzyskać maksymalny wynik na kilka sposobów, wypisz dowolny z nich.
 
-## Przykład
+## Example
 
-### Dane
+### Input
 
 ```
 5
@@ -29,7 +29,7 @@ Na wyjściu powinny pojawić się dwie liczby całkowite: maksymalna możliwa do
 4
 ```
 
-### Wynik
+### Output
 
 ```
 12

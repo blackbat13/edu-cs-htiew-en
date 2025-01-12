@@ -9,7 +9,7 @@ Często, gdy tworzymy funkcję `main`, to po jej nazwie podajemy puste nawiasy. 
 - `int argc`: liczba argumentów przekazanych do programu, wliczając nazwę programu.
 - `char *argv[]`: tablica wskaźników do argumentów, gdzie każdy element tablicy jest wskaźnikiem do ciągu znaków reprezentującego jeden argument.
 
-## Przykład
+## Example
 
 Spójrzmy na poniższy przykład, by lepiej zrozumieć z czym mamy do czynienia. Poniższy kod wypisuje liczbę przekazanych mu argumentów podczas uruchamiania, a także wypisuje każdy z tych argumentów.
 

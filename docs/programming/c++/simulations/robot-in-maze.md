@@ -95,7 +95,7 @@ int main()
 
 [https://replit.com/@damiankurpiewski/Robot#main.cpp](https://replit.com/@damiankurpiewski/Robot#main.cpp)
 
-### Opis implementacji
+### Description implementacji
 
 TODO
 

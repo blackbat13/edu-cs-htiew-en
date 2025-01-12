@@ -1,5 +1,5 @@
 # Wprowadzenie do systemu Linux
 
-## Prezentacja
+## Presentation
 
 [:material-presentation: Prezentacja](../assets/Wprowadzenie do systemu Linux.pdf)

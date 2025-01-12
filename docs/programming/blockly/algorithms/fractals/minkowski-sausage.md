@@ -2,6 +2,6 @@
 
 ## [:link: Opis problemu](../../../../algorithms/fractals/minkowski-sausage.md)
 
-## Implementacja
+## Implementation
 
 TODO

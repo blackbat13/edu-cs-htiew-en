@@ -4,7 +4,7 @@
 
 ## Istnienie elementu
 
-### Implementacja
+### Implementation
 
 ```elixir linenums="1"
 defmodule Search do
@@ -33,7 +33,7 @@ else
 end
 ```
 
-### Opis implementacji
+### Description implementacji
 
 Funkcja `linear` w module `Search` (**linie 1 i 2**) zwraca jako wynik wartość prawda/fałsz i przyjmuje dwa argumenty: listę do przeszukania oraz wartość poszukiwanego elementu. Jeżeli lista jest pusta to funkcja zwraca wartość `false` informującą o tym, że poszukiwanego elementu nie znaleziono na liście (**linie 3 i 4**). Jest to tzw. warunek stopu rekurencji. Jeżeli w liście pozostały jeszcze jakieś elementy do sprawdzenia, to sprawdzamy, czy pierwszy element listy (pobrany za pomocą funkcji `hd`) jest poszukiwaną wartością (**linia 6**). Jeżeli tak, to funkcja zwraca wynik `true` (**linia 7**). W przeciwnym przypadku wywołujemy rekurencyjnie funkcję `linear`, jako argumenty przekazując listę bez pierwszego elementu (do tego używamy funkcji `tl`), oraz wartość poszukiwanego elementu.
 
@@ -41,7 +41,7 @@ W części głównej programu na początku przygotowujemy dane do problemu: list
 
 ## Pozycja elementu
 
-### Implementacja
+### Implementation
 
 ```elixir linenums="1"
 defmodule Search do
@@ -70,7 +70,7 @@ else
 end
 ```
 
-### Opis implementacji
+### Description implementacji
 
 Funkcja `linear` w module `Search` (**linie 1 i 2**) zwraca jako wynik liczbę całkowitą i przyjmuje trzy argumenty: listę do przeszukania, wartość poszukiwanego elementu oraz numer obecnie sprawdzanego indeksu. Jeżeli lista jest pusta to funkcja zwraca wartość `-1` informującą o tym, że poszukiwanego elementu nie znaleziono na liście (**linie 3 i 4**). Jest to tzw. warunek stopu rekurencji. Jeżeli w liście pozostały jeszcze jakieś elementy do sprawdzenia, to sprawdzamy, czy pierwszy element listy (pobrany za pomocą funkcji `hd`) jest poszukiwaną wartością (**linia 6**). Jeżeli tak, to funkcja zwraca jako wynik wartość `index` (**linia 7**). W przeciwnym przypadku wywołujemy rekurencyjnie funkcję `linear`, jako argumenty przekazując listę bez pierwszego elementu (do tego używamy funkcji `tl`), wartość poszukiwanego elementu oraz indeks zwiększony o jeden.
 

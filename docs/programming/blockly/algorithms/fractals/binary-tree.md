@@ -2,7 +2,7 @@
 
 ## [:link: Opis problemu](../../../../algorithms/fractals/binary-tree.md)
 
-## Implementacja
+## Implementation
 
 ### Drzewo binarne
 

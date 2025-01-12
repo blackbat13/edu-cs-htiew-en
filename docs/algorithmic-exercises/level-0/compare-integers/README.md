@@ -4,26 +4,26 @@ Mając dane dwie liczby całkowite, Twoim zadaniem jest określenie relacji pomi
 
 Źródło: [https://onlinejudge.org/external/111/11172.pdf](https://onlinejudge.org/external/111/11172.pdf)
 
-## Specyfikacja
+## Specification
 
-### Dane
+### Input
 
 * $a, b$ - liczby całkowite z przedziału $[-10^5,10^5]$
 
-### Wynik
+### Output
 
 * Znak relacji pomiędzy liczbami $a$ i $b$, tzn. jeden ze znaków: $<$, $>$, $=$
 
-## Przykład
+## Example
 
-### Dane
+### Input
 
 ```
 a := 10
 b := 15
 ```
 
-### Wynik
+### Output
 
 ```
 <

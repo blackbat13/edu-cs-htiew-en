@@ -23,7 +23,7 @@ Poniżej znajdziesz animację przedstawiającą ideę omawianego algorytmu, a ta
 
 [Animacja sortowania przez scalanie](https://www.youtube.com/watch?v=ZRPoEKHXTJg){ .md-button }
 
-## Prezentacja
+## Presentation
 
 [:fontawesome-solid-file-pdf: Sortowanie przez scalanie - prezentacja](../../assets/Sortowanie przez scalanie.pdf){ .md-button }
 
@@ -31,7 +31,7 @@ Poniżej znajdziesz animację przedstawiającą ideę omawianego algorytmu, a ta
 
 [:material-video: Taneczne sortowanie](https://www.youtube.com/watch?v=XaqR3G_NVoo){ .md-button }
 
-## Rozwiązanie
+## Solution
 
 Nasza implementacja algorytmu sortowania przez scalanie składa się z dwóch części:
 
@@ -44,7 +44,7 @@ Po wypełnieniu tablicy pomocniczej posortowanymi wartościami, przepisujemy ją
 
 Procedura SortowaniePrzezScalanie jest procedurą rekurencyjną, która poza tablicą do posortowania przyjmuje także początek i koniec sortowanego zakresu (w formie indeksów tablicy). Na początku zaczynamy od warunku stopu, tzn. sprawdzamy, czy podany przedział zawiera co najmniej jeden element. Jeżeli tak nie jest, to kończymy obecne wywołanie. Gdy w przedziale mamy co sortować, to wyznaczamy środek przedziału, który posłuży nam do podziału tablicy na dwie podtablice. Następnie wywołujemy rekurencyjnie naszą sortującą procedurę, odpowiednio zmieniając sortowane zakresy (od początku do środka, od środka do końca). Na koniec, gdy nasze dwie podtablice są już posortowane (co wynika m.in. z rekurencyjnej struktury funkcji), scalamy je ze sobą za pomocą procedury Scal.
 
-### Pseudokod
+### Pseudocode
 
 ```
 procedura Scal(A, pocz, kon, sr):
@@ -78,7 +78,7 @@ procedura SortowaniePrzezScalanie(A, pocz, kon):
     6. Scal(A, pocz, kon, sr)
 ```
 
-### Schemat blokowy
+### Block diagram
 
 ```mermaid
 %%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
@@ -89,47 +89,47 @@ flowchart TD
     i2 := sr
     i := 1"]
     K1 --> K5{i <= dl}
-    K5 -- PRAWDA --> K6{"i1 >= sr
+    K5 -- TRUE --> K6{"i1 >= sr
     lub
     (i2 < kon
     oraz
     A[i1] > A[i2])"}
-    K6 -- PRAWDA --> K7["scalona[i] := A[i2]
+    K6 -- TRUE --> K7["scalona[i] := A[i2]
     i2 := i2 + 1"]
-    K6 -- FAŁSZ --> K10{"i2 >= kon
+    K6 -- FALSE --> K10{"i2 >= kon
     lub
     A[i1] <= A[i2]"}
-    K10 -- PRAWDA --> K11["scalona[i] := A[i1]
+    K10 -- TRUE --> K11["scalona[i] := A[i1]
     i1 := i1 + 1"]
-    K10 -- FAŁSZ --> K5i[i := i + 1]
+    K10 -- FALSE --> K5i[i := i + 1]
     K7 --> K5i
     K11 --> K5i
     K5i --> K5
-    K5 -- FAŁSZ --> K13p[i := 1]
+    K5 -- FALSE --> K13p[i := 1]
     K13p --> K13{i <= dl}
-    K13 -- PRAWDA --> K14["A[pocz + i] := scalona[i]"]
+    K13 -- TRUE --> K14["A[pocz + i] := scalona[i]"]
     K14 --> K13i[i := i + 1]
     K13i --> K13
-    K13 -- FAŁSZ ---> STOP([STOP])
+    K13 -- FALSE ---> STOP([STOP])
 ```
 
 ```mermaid
 %%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
 flowchart TD
     START(["SortowaniePrzezScalanie(A, pocz, kon)"]) --> K1{kon - pocz <= 1}
-    K1 -- PRAWDA --> STOP([STOP])
-    K1 -- FAŁSZ --> K3["sr := (pocz + kon) / 2
+    K1 -- TRUE --> STOP([STOP])
+    K1 -- FALSE --> K3["sr := (pocz + kon) / 2
     SortowaniePrzezScalanie(A, pocz, sr)
     SortowaniePrzezScalanie(A, sr, kon)
     Scal(A, pocz, kon, sr)"]
     K3 --> STOP
 ```
 
-### Złożoność
+### Complexity
 
 Sortowanie przez scalanie ma złożoność obliczeniową $O(n\log{n})$ zarówno w przypadku najgorszym, jak i średnim, co czyni go efektywnym algorytmem sortowania dla dużych zestawów danych.
 
-## Implementacja
+## Implementation
 
 ### [:simple-cplusplus: C++](../../programming/c++/algorithms/sorting/merge-sort.md){ .md-button }
 
@@ -137,6 +137,6 @@ Sortowanie przez scalanie ma złożoność obliczeniową $O(n\log{n})$ zarówno 
 
 ### [:simple-kotlin: Kotlin](../../programming/kotlin/algorithms/sorting/merge-sort.md){ .md-button }
 
-## Implementacja - pozostałe
+## Implementation - pozostałe
 
 ### [:simple-julia: Julia](../../programming/julia/algorithms/sorting/merge-sort.md){ .md-button }

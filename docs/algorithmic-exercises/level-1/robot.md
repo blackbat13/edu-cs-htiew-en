@@ -10,20 +10,20 @@ Zastanawiasz się, czy robot działa poprawnie. Twoim zadaniem jest napisanie pr
 
 Źródło: [https://onlinejudge.org/external/125/12503.pdf](https://onlinejudge.org/external/125/12503.pdf)
 
-## Specyfikacja
+## Specification
 
-### Dane
+### Input
 
 * $n$ - liczba naturalna, liczba instrukcji do wykonania, $1\leq p\leq 100$.
 * $n$ linii zawierających jedną z instrukcji tak jak opisano wcześniej.
 
-### Wynik
+### Output
 
 * Liczba całkowita oznaczająca pozycję robota po wykonaniu wszystkich instrukcji.
 
-## Przykład 1
+## Example 1
 
-### Dane
+### Input
 
 ```
 3
@@ -34,9 +34,9 @@ JAK W 2
 
 **Wynik:** $1$
 
-## Przykład 2
+## Example 2
 
-### Dane
+### Input
 
 ```
 5

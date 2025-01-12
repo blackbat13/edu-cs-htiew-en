@@ -2,7 +2,7 @@
 
 ## [:link: Opis problemu](../../../../algorithms/integers/eratosthenes-sieve.md)
 
-## Implementacja
+## Implementation
 
 ```kotlin
 fun sieve(n: Int): List<Boolean> {
@@ -47,6 +47,6 @@ fun main() {
 
 [Sito Eratostenesa](https://ideone.com/GUPgH6)
 
-### Opis implementacji
+### Description implementacji
 
 TODO

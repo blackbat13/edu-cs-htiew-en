@@ -4,7 +4,7 @@
 
 ## Wyszukiwanie wartości minimum i maksimum
 
-### Implementacja
+### Implementation
 
 ```julia linenums="1"
 function findMinMax(array)
@@ -29,7 +29,7 @@ println("Values: ", findMinMax(array))
 
 ## Wyszukiwanie indeksów wartości minimum i maksimum
 
-### Implementacja
+### Implementation
 
 ```julia linenums="1"
 function findMinMaxIndex(array)

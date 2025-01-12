@@ -2,7 +2,7 @@
 
 ## [:link: Opis problemu](../../../../algorithms/graphs/kruskal.md)
 
-## Implementacja
+## Implementation
 
 ```cpp linenums="1"
 #include <iostream>
@@ -127,7 +127,7 @@ int main() {
 }
 ```
 
-### Opis implementacji
+### Description implementacji
 
 Definiujemy strukturę `edge` do reprezentacji krawędzi grafu (**linia 59**). Ponieważ mamy do czynienia z grafem ważonym, w strukturze przechowujemy trzy wartości: 
 

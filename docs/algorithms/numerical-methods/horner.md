@@ -81,24 +81,24 @@ Gdy jednak zastosujemy _**Schemat Hornera**_, to ilość potrzebnych operacji mn
 
 _**Schemat Hornera**_ ma także zastosowanie przy przeliczaniu liczby z zadanego systemu liczbowego na system dziesiętny.
 
-## Specyfikacja
+## Specification
 
-### Dane
+### Input
 
 * $n$ — stopień wielomianu, liczba naturalna
 * $x$ — wartość, dla której należy obliczyć wielomian
 * $a_{n}, a_{n-1}, ..., a_1, a_0$ — współczynniki wielomianu, podane w kolejności od największej potęgi do najmniejszej
 
-### Wynik
+### Output
 
 * Wartość podanego wielomianu w punkcie $x$
 
-## Rozwiązanie
+## Solution
 
 Zaprojektujmy funkcje Horner, zgodną z powyższą specyfikacją.
 Będziemy postępować zgodnie ze schematem: w pętli mnożymy przez $x$ i dodajemy kolejny współczynnik.
 
-### Pseudokod
+### Pseudocode
 
 ```
 funkcja Horner(n, x, a)
@@ -108,7 +108,7 @@ funkcja Horner(n, x, a)
     4. Zwróć wynik
 ```
 
-### Schemat blokowy
+### Block diagram
 
 ```mermaid
 %%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
@@ -116,18 +116,18 @@ flowchart TD
 	START(["Horner(n, x, a)"]) --> K1["wynik := a[n]
 	i := n - 1"]
 	K1 --> K2{i >= 0}
-	K2 -- PRAWDA --> K3["wynik := wynik * x + a[i]"]
+	K2 -- TRUE --> K3["wynik := wynik * x + a[i]"]
 	K3 --> K2i[i := i - 1]
 	K2i --> K2
-	K2 -- FAŁSZ --> K4[/Zwróć wynik/]
+	K2 -- FALSE --> K4[/Zwróć wynik/]
 	K4 --> STOP([STOP])
 ```
 
-### Złożoność
+### Complexity
 
 $O(n)$ — liniowa
 
-## Implementacja
+## Implementation
 
 ### [:simple-cplusplus: C++](../../programming/c++/algorithms/numerical-methods/horner.md){ .md-button }
 

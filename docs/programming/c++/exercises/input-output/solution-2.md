@@ -1,20 +1,20 @@
-# Rozwiązanie 2
+# Solution 2
 
 ## Treść zadania
 
 Napisz program zgodny z poniższą specyfikacją.
 
-### Specyfikacja
+### Specification
 
-#### Dane
+#### Input
 
 * $a, b$ - dwie liczby całkowite
 
-#### Wynik
+#### Output
 
 * Suma liczb $a$ i $b$ 
 
-## Rozwiązanie
+## Solution
 
 ```cpp
 #include <iostream>

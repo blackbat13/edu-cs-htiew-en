@@ -4,21 +4,21 @@
 
 Napisz program zgodny z poniższą specyfikacją. Do reprezentacji ułamków i wykonywania na nich operacji wykorzystaj własną implementację klasy.
 
-### Specyfikacja
+### Specification
 
-#### Dane
+#### Input
 
 * $l1, m1$ - licznik i mianownik pierwszego ułamka, liczby całkowite
 * $op$ - znak operacji: $+$, $-$, $*$ lub $/$
 * $l2, m2$ - licznik i mianownik drugiego ułamka, liczby całkowite
 
-#### Wynik
+#### Output
 
 * Wynik działania operacji $\frac{l1}{m2}\ op\ \frac{l2}{m2}$ przedstawiony w formie ułamka zwyczajnego (maksymalnie skróconego), wypisany w formacie `licznik / mianownik`, np. `3 / 4`
 
-### Przykład 1
+### Example 1
 
-#### Dane
+#### Input
 
 ```
 l1 := 5
@@ -28,15 +28,15 @@ l2 := 5
 m2 := 8
 ```
 
-#### Wynik
+#### Output
 
 ```
 5 / 4
 ```
 
-### Przykład 2
+### Example 2
 
-#### Dane
+#### Input
 
 ```
 l1 := -1
@@ -46,7 +46,7 @@ l2 := 2
 m2 := 4
 ```
 
-#### Wynik
+#### Output
 
 ```
 -1 / 4
@@ -57,21 +57,21 @@ m2 := 4
 Napisz program zgodny z poniższą specyfikacją. Do reprezentacji liczb i wykonywania na nich operacji wykorzystaj własną implementację klasy.
 Możesz założyć, że wartości wszystkich liczb w systemie dziesiętnym zmieszczą się w typie `int`. Wszystkie litery powinny być **drukowane**.
 
-### Specyfikacja
+### Specification
 
-#### Dane
+#### Input
 
 * $l1, p1$ - liczba $l1$ reprezentowana w podstawie $p1$, $2 \leq p1 \leq 16$
 * $l2, p2$ - liczba $l2$ reprezentowana w podstawie $p2$, $2 \leq p2 \leq 16$
 * $p3$ - docelowa podstawa, $2 \leq p3 \leq 16$
 
-#### Wynik
+#### Output
 
 * Suma podanych wartości przedstawiona w podstawie $p3$
 
-### Przykład 1
+### Example 1
 
-#### Dane
+#### Input
 
 ```
 l1 := 1010
@@ -81,7 +81,7 @@ p2 := 10
 p3 := 8
 ```
 
-#### Wynik
+#### Output
 
 ```
 17
@@ -92,9 +92,9 @@ p3 := 8
 	
 	$1010_2+5_{10}=17_8$
 
-### Przykład 2
+### Example 2
 
-#### Dane
+#### Input
 
 ```
 l1 := 1010
@@ -104,7 +104,7 @@ p2 := 10
 p3 := 16
 ```
 
-#### Wynik
+#### Output
 
 ```
 F
@@ -121,21 +121,21 @@ Napisz program zgodny z poniższą specyfikacją. Do reprezentacji liczb zespolo
 Operacje arytmetyczne, a także wczytywanie i wypisywanie liczb na ekran zrealizuj za pomocą **przeciążonych operatorów**.
 Informacje na temat liczb zespolonych można znaleźć na stronie Wikipedii: [https://pl.wikipedia.org/wiki/Liczby_zespolone](https://pl.wikipedia.org/wiki/Liczby_zespolone)
 
-### Specyfikacja
+### Specification
 
-#### Dane
+#### Input
 
 * $re1, im1$ - część rzeczywista i urojona pierwszej liczby, liczby całkowite
 * $op$ - znak operacji: $+$, $-$, $*$ lub $/$
 * $re2, im2$ - część rzeczywista i urojona drugiej liczby, liczby całkowite
 
-#### Wynik
+#### Output
 
 * Wynik działania operacji $\Re{re1}+\Im{im1} op\ \Re{re2}+\Im{im2}$ przedstawiony w formacie `re + imi`, np. `3 + 4i`
 
-### Przykład
+### Example
 
-#### Dane
+#### Input
 
 ```
 3 5
@@ -143,7 +143,7 @@ Informacje na temat liczb zespolonych można znaleźć na stronie Wikipedii: [ht
 7 11
 ```
 
-#### Wynik
+#### Output
 
 ```
 10 + 16i
@@ -157,25 +157,25 @@ Zaimplementuj dostęp do danych za pomocą przeciążenia operatora **[]**.
 Wszystkie arytmetyczne obliczenia zaimplementuj jako metody w klasie.
 Zadbaj o czyszczenie pamięci przy użyciu destruktora klasy.
 
-### Specyfikacja
+### Specification
 
-#### Dane
+#### Input
 
 * $a1, a2, a3...$ - ciąg liczb całkowitych
 
-#### Wynik
+#### Output
 
 * Średnia, suma oraz mediana podanych liczb wypisane w odpowiednim komunikacie.
 
-### Przykład
+### Example
 
-#### Dane
+#### Input
 
 ```
 1 2 3 4 5 6 7 8 9
 ```
 
-#### Wynik
+#### Output
 
 ```
 average = 5

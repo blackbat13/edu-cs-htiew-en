@@ -4,20 +4,20 @@ Hasło "całkowanie numeryczne" może brzmieć strasznie, ale samo pojęcie jest
 
 Wyróżniamy dwie podstawowe metody: metodę prostokątów i metodę trapezów.
 
-## Specyfikacja
+## Specification
 
-### Dane
+### Input
 
 * $f(x)$ — funkcja, której wykres nas interesuje
 * $a$ — liczba rzeczywista, początek przedziału
 * $b$ — liczba rzeczywista, koniec przedziału
 * $n$ — liczba podziałów (im większa, tym większa dokładność)
 
-### Wynik
+### Output
 
 * $pole$ — przybliżona wartość pola pod wykresem funkcji $f(x)$ w przedziale $[a,b]$
 
-## Rozwiązanie — metoda prostokątów
+## Solution — metoda prostokątów
 
 Idea tej metody jest prosta: podzielmy pole pod wykresem funkcji na prostokąty i policzmy ich pole.
 
@@ -37,7 +37,7 @@ Zobaczmy, jak ta metoda działa na przykładzie. Spróbujmy oszacować pole pod 
 
 ![100 prostokątów](../../assets/numerical_integration_rectangles_sin_100.png)
 
-### Pseudokod
+### Pseudocode
 
 ```
 funkcja MetodaProstokatow(f, a, b, n):
@@ -53,7 +53,7 @@ funkcja MetodaProstokatow(f, a, b, n):
     8. Zwróć pole
 ```
 
-### Schemat blokowy
+### Block diagram
 
 ```mermaid
 %%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
@@ -62,19 +62,19 @@ flowchart TD
     szer := (b - a) / n
     x := a + szer"]
 	K1 --> K4{x <= b}
-	K4 -- PRAWDA --> K5["wys := f(x)
+	K4 -- TRUE --> K5["wys := f(x)
     pole := pole + szer * wys
     x := x + szer"]
 	K5 --> K4
-	K4 -- FAŁSZ --> K8[/Zwróć pole/]
+	K4 -- FALSE --> K8[/Zwróć pole/]
 	K8 --> STOP([STOP])
 ```
 
-## Rozwiązanie — metoda trapezów
+## Solution — metoda trapezów
 
 W celu uzyskania lepszej dokładności, możemy podzielić pole pod wykresem funkcji na trapezy.
 
-### Pseudokod
+### Pseudocode
 
 ```
 funkcja MetodaTrapezow(f, a, b, n):
@@ -89,7 +89,7 @@ funkcja MetodaTrapezow(f, a, b, n):
     7. Zwróć pole
 ```
 
-### Schemat blokowy
+### Block diagram
 
 ```mermaid
 %%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
@@ -98,14 +98,14 @@ flowchart TD
     szer := (b - a) / n
     x := a + szer"]
 	K1 --> K4{x <= b}
-	K4 -- PRAWDA --> K5["pole := pole + ((f(x - szer) + f(x)) * szer) / 2
+	K4 -- TRUE --> K5["pole := pole + ((f(x - szer) + f(x)) * szer) / 2
     x := x + szer"]
 	K5 --> K4
-	K4 -- FAŁSZ --> K8[/Zwróć pole/]
+	K4 -- FALSE --> K8[/Zwróć pole/]
 	K8 --> STOP([STOP])
 ```
 
-## Implementacja
+## Implementation
 
 ### [:simple-cplusplus: C++](../../programming/c++/algorithms/numerical-methods/numerical-integration.md){ .md-button }
 

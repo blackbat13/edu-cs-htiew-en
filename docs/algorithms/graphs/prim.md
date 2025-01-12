@@ -2,14 +2,14 @@
 
 Algorytm Prima jest jednym z algorytmów wyznaczających minimalne drzewo rozpinające dla danego grafu nieskierowanego i ważonego. Algorytm został nazwany na cześć Roberta C. Prima, który opisał go w 1957 roku.
 
-## Opis algorytmu
+## Description algorytmu
 
 1. Wybierz dowolny wierzchołek w grafie jako punkt startowy.
 2. Ze wszystkich krawędzi, które łączą wierzchołki już uwzględnione w drzewie rozpinającym z wierzchołkami spoza tego drzewa, wybierz tę o najmniejszej wadze.
 3. Dodaj wybraną krawędź oraz wierzchołek, do którego prowadzi, do drzewa rozpinającego.
 4. Powtarzaj kroki 2-3, aż wszystkie wierzchołki grafu zostaną uwzględnione w drzewie rozpinającym.
 
-## Złożoność
+## Complexity
 
 Złożoność czasowa algorytmu Prima zależy od implementacji. Przy użyciu kolejki priorytetowej zaimplementowanej jako kopiec binarny, algorytm działa w czasie $O(E log V)$, gdzie $E$ to liczba krawędzi, a $V$ to liczba wierzchołków w grafie. Możliwe są jednak efektywniejsze implementacje.
 
@@ -19,7 +19,7 @@ Algorytm Prima jest używany w wielu praktycznych zastosowaniach, na przykład d
 
 Ponadto, jest stosowany w algorytmach kompresji danych, takich jak algorytm kodowania Huffmana, który tworzy minimalne drzewo rozpinające w celu reprezentowania danych w najbardziej efektywny sposób.
 
-## Implementacja
+## Implementation
 
 ### [:simple-cplusplus: C++](../../programming/c++/algorithms/graphs/prim.md){ .md-button }
 

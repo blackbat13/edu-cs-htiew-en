@@ -2,7 +2,7 @@
 
 ## [:link: Opis problemu](../../../../algorithms/searching/majority.md)
 
-## Implementacja
+## Implementation
 
 ```python linenums="1"
 function majority(array)

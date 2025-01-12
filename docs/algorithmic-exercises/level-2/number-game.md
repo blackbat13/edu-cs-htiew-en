@@ -8,7 +8,7 @@ Jak możemy zauważyć, mamy tu do dyspozycji $6$ kombinacji. Największa liczba
 
 Źródło: [https://onlinejudge.org/external/109/10905.pdf](https://onlinejudge.org/external/109/10905.pdf)
 
-## Specyfikacja
+## Specification
 
 ### Wejście
 
@@ -19,7 +19,7 @@ Jak możemy zauważyć, mamy tu do dyspozycji $6$ kombinacji. Największa liczba
 
 * Największa liczba jaka może zostać utworzona poprzez połączenie ze sobą liczb $a_1, a_2, ..., a_n$ w wybranym porządku.
 
-## Przykład 1
+## Example 1
 
 ### Wejście
 
@@ -34,7 +34,7 @@ Jak możemy zauważyć, mamy tu do dyspozycji $6$ kombinacji. Największa liczba
 9056124123
 ```
 
-## Przykład 2
+## Example 2
 
 ### Wejście
 

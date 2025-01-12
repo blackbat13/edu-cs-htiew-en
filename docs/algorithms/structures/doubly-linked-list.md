@@ -19,7 +19,7 @@ Operacje, które można wykonać na liście dwukierunkowej, to między innymi:
 
 Listy dwukierunkowe są wykorzystywane w wielu zastosowaniach, gdzie potrzebne jest efektywne dodawanie lub usuwanie elementów z obu końców listy, jak na przykład w implementacji struktury danych *deque*. Są one również używane w niektórych algorytmach, takich jak algorytm **LRU** (*Least Recently Used*) do zarządzania pamięcią cache.
 
-## Implementacja
+## Implementation
 
 ### [:simple-cplusplus: C++](../../programming/c++/algorithms/structures/doubly-linked-list.md){ .md-button }
 

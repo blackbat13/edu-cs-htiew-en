@@ -2,7 +2,7 @@
 
 ## [:link: Opis problemu](../../../../algorithms/structures/singly-linked-list.md)
 
-## Implementacja
+## Implementation
 
 ```python linenums="1"
 class List:

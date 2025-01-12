@@ -2,7 +2,7 @@
 
 ## [:link: Opis problemu](../../../../algorithms/integers/eratosthenes-sieve.md)
 
-## Implementacja
+## Implementation
 
 ```python linenums="1"
 def sieve(n: int) -> list:

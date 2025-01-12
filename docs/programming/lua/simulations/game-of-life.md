@@ -12,6 +12,6 @@
 * **Lewy przycisk myszy** - dodanie żywej komórki
 * **Prawy przycisk myszy** - usunięcie żywej komórki
 
-## Implementacja
+## Implementation
 
 [https://replit.com/@damiankurpiewski/Game-of-Life](https://replit.com/@damiankurpiewski/Game-of-Life)

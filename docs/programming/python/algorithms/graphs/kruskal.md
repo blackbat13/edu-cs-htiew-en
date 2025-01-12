@@ -2,7 +2,7 @@
 
 ## [:link: Opis problemu](../../../../algorithms/graphs/kruskal.md)
 
-## Implementacja
+## Implementation
 
 ```python linenums="1"
 import heapq

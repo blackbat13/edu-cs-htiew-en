@@ -17,7 +17,7 @@ Na początku pisałem, że tworzenie aplikacji konsolowym jest nudne. Od czegoś
 
 Jak wskazuje tytuł, nasza gra będzie prosta, a nawet można powiedzieć, że naiwna! Będzie to gra dla dwóch graczy: człowiek kontra komputer. Przebieg gry jest prosty: najpierw pierwszy gracz podaje swoją liczbę, a następnie drugi podaje swoją. Celem jest podanie liczby większej od przeciwnika. Wygrywa ten, kto poda większą wartość!
 
-#### Przykład
+#### Example
 
 * **Gracz**: 14
 * **Komputer**: 15, wygrałem!

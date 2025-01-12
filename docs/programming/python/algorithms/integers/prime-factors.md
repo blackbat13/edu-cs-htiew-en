@@ -2,7 +2,7 @@
 
 ## [:link: Opis problemu](../../../../algorithms/integers/prime-factors.md)
 
-## Implementacja
+## Implementation
 
 ```python linenums="1"
 def distribute(n: int) -> list:

@@ -6,7 +6,7 @@ description: Przeszukiwanie grafu w głąb
 
 ## [:link: Opis problemu](../../../../algorithms/graphs/dfs.md)
 
-## Implementacja - wersja rekurencyjna
+## Implementation - wersja rekurencyjna
 
 ```cpp linenums="1"
 #include <iostream>
@@ -50,7 +50,7 @@ int main() {
 }
 ```
 
-### Opis implementacji
+### Description implementacji
 
 Na początku przygotowujemy przykładowy graf (**linie 24-32**) w formie listy sąsiedztwa zapisanej w dynamicznej tablicy typu `vector`. Przykładowy graf (przedstawiony także na poniższym rysunku) ma 7 wierzchołków (numerowanych od zera) i jest nieskierowany.
 
@@ -60,7 +60,7 @@ Funkcja `dfs` (**linia 6**) jest funkcją rekurencyjną, która przyjmuje trzy p
 
 Główną częścią funkcji `dfs` jest pętla przechodząca przez wszystkich sąsiadów aktualnie przetwarzanego wierzchołka (**linia 15**). W pomocniczej zmiennej `nextNode` zapamiętujemy numer przetwarzanego sąsiada, pobranego z listy sąsiedztwa (**linia 16**). Następnie sprawdzamy, czy wierzchołek ten był już odwiedzony (**linia 17**), a jeżeli nie, to odwiedzamy go rekurencyjnie wywołując funkcję `dfs` z tym właśnie wierzchołkiem (**linia 18**).
 
-## Implementacja - wersja iteracyjna
+## Implementation - wersja iteracyjna
 
 ```cpp linenums="1"
 #include <iostream>

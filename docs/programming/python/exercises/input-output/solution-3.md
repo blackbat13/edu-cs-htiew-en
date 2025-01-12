@@ -1,20 +1,20 @@
-# Rozwiązanie 3
+# Solution 3
 
 ## Treść zadania
 
 Napisz program zgodny z poniższą specyfikacją.
 
-### Specyfikacja
+### Specification
 
-#### Dane
+#### Input
 
 * $a, b$ - dwie liczby całkowite, różne od zera.
 
-#### Wynik
+#### Output
 
 * Iloraz (wynik dzielenia), iloczyn (wynik mnożenia), suma oraz różnica liczb $a$ i $b$.
 
-## Rozwiązanie
+## Solution
 
 ```python
 a = int(input("Podaj pierwszą liczbę: "))

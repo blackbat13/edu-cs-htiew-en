@@ -1,6 +1,6 @@
 # C++
 
-## Implementacja
+## Implementation
 
 ```cpp linenums="1"
 #include <cstdio>

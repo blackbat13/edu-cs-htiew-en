@@ -1,20 +1,20 @@
-# Rozwiązanie 5
+# Solution 5
 
 ## Treść zadania
 
 Napisz program zgodny z poniższą specyfikacją.
 
-### Specyfikacja
+### Specification
 
-#### Dane
+#### Input
 
 * $n$ - liczba naturalna, $n>2$
 
-#### Wynik
+#### Output
 
 * $fib[n]$ - lista zawierająca $n$ kolejnych liczb Fibonacciego
 
-## Rozwiązanie
+## Solution
 
 ```python
 n = int(input("Podaj liczbę wartości: "))

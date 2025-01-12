@@ -18,59 +18,59 @@ Poniżej znajdziesz animację przedstawiającą ideę omawianego algorytmu.
 
 [Animacja sortowania grzebieniowego](https://www.youtube.com/watch?v=ob49RukGnAw){ .md-button }
 
-## Rozwiązanie
+## Solution
 
-### Pseudokod
+### Pseudocode
 
 ```
 procedura SortowanieGrzebieniowe(n, A):
     1. przerwa := n
     2. zm := 1.3
-    3. posortowana := FAŁSZ
-    4. Dopóki posortowana = FAŁSZ, wykonuj:
+    3. posortowana := FALSE
+    4. Dopóki posortowana = FALSE, wykonuj:
         5. przerwa := przerwa div zm
         6. Jeżeli przerwa <= 1, to:
             7. przerwa := 1
-            8. posortowana := PRAWDA
+            8. posortowana := TRUE
         9. i := 1
         10. Dopóki i + przerwa < n, wykonuj:
             11. Jeżeli A[i] > A[i + przerwa], to:
                 12. Zamień(A[i], A[i + przerwa])
-                13. posortowana := FAŁSZ
+                13. posortowana := FALSE
             14. i := i + 1
 ```
 
-### Schemat blokowy
+### Block diagram
 
 ```mermaid
 %%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
 flowchart TD
     START(["SortowanieGrzebieniowe(n, A)"]) --> K1[przerwa := n
     zm := 1.3
-    posortowana := FAŁSZ]
-    K1 --> K4{posortowana = FAŁSZ}
-    K4 -- PRAWDA --> K5[przerwa := przerwa div zm]
+    posortowana := FALSE]
+    K1 --> K4{posortowana = FALSE}
+    K4 -- TRUE --> K5[przerwa := przerwa div zm]
     K5 --> K6{przerwa <= 1}
-    K6 -- PRAWDA --> K7[przerwa := 1
-    posortowana := PRAWDA]
-    K6 -- FAŁSZ --> K9[i := 1]
+    K6 -- TRUE --> K7[przerwa := 1
+    posortowana := TRUE]
+    K6 -- FALSE --> K9[i := 1]
     K7 --> K9
     K9 --> K10{i + przerwa < n}
-    K10 -- PRAWDA --> K11{"A[i] > A[i + przerwa]"}
-    K11 -- PRAWDA --> K12["Zamień(A[i], A[i + przerwa])
-    posortowana := FAŁSZ"]
-    K11 -- FAŁSZ --> K14[i := i + 1]
+    K10 -- TRUE --> K11{"A[i] > A[i + przerwa]"}
+    K11 -- TRUE --> K12["Zamień(A[i], A[i + przerwa])
+    posortowana := FALSE"]
+    K11 -- FALSE --> K14[i := i + 1]
     K12 --> K14
     K14 --> K10
-    K10 -- FAŁSZ --> K4
-    K4 -- FAŁSZ ------> STOP([STOP])
+    K10 -- FALSE --> K4
+    K4 -- FALSE ------> STOP([STOP])
 ```
 
-### Złożoność
+### Complexity
 
 Sortowanie grzebieniowe ma średnią i najgorszą złożoność obliczeniową $O(n^2)$, ale dla list prawie posortowanych złożoność ta może zbliżać się do $O(n\log{n})$.
 
-## Implementacja
+## Implementation
 
 ### [:simple-cplusplus: C++](../../programming/c++/algorithms/sorting/comb-sort.md){ .md-button }
 

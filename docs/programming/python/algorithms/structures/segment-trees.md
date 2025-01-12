@@ -2,7 +2,7 @@
 
 ## [:link: Opis problemu](../../../../algorithms/structures/segment-trees.md)
 
-## Implementacja
+## Implementation
 
 ```python linenums="1"
 class SumSegmentTree:
@@ -106,7 +106,7 @@ if __name__ == "__main__":
     print(f"\n\n[3, 5] = {sum_segment_tree.get_value(3, 5)}")
 ```
 
-### Opis implementacji
+### Description implementacji
 
 Klasa **SumSegmentTree** definiuje drzewo przedziałowe do liczenia sum na przedziałach. Klasa **Node** opisuje strukturę wewnętrznego węzła drzewa segmentowego.
 Węzeł przechowuje informacje o wartości, przedziale, leniwej aktualizacji (lazy update) oraz wskaźniki na lewe i prawe poddrzewo.

@@ -1,5 +1,5 @@
 # Zadanie 3 - rozwiązanie
 
-## Wynik
+## Output
 
 $400$ 

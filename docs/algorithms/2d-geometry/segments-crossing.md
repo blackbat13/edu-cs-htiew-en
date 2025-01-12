@@ -1,6 +1,6 @@
 # Przecinanie się odcinków
 
-## Implementacja
+## Implementation
 
 ### [:simple-cplusplus: C++](../../programming/c++/algorithms/2d-geometry/segments-crossing.md){ .md-button }
 

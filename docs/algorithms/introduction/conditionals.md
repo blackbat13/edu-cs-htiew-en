@@ -1,196 +1,196 @@
-# Instrukcja warunkowa
+# Conditional statement
 
-Korzystając jedynie z algorytmów liniowych nie bylibyśmy w stanie rozwiązać wielu problemów. Dlaczego? Konstrukcja algorytmów liniowych jest zbyt... liniowa. Czasem musimy podejmować różne decyzje w zależności od zastanej sytuacji. Wyobraźmy sobie problem przechodzenia przez ulicę. Czy potrafisz skonstruować algorytm liniowy bezpiecznego przechodzenia przez przejście dla pieszych? Nie możemy napisać po prostu "przejdź przez pasy", ponieważ może jechać jakiś samochód! Należy najpierw rozejrzeć się na boki i dopiero potem, **jeżeli** nic nie jedzie, przejść na drugą stronę ulicy.
+Using only linear algorithms, we would not be able to solve many problems. Why? The design of linear algorithms is too... linear. Sometimes we have to make different decisions depending on the situation at hand. Imagine the problem of crossing the street. Can you construct a linear algorithm for safely crossing a crosswalk? We can't just write "cross the lanes" because there might be a car coming! You should first look around to the side and only then, **if** nothing is driving, cross the street.
 
-Kluczowe jest tutaj słowo: **jeżeli**. W zależności od tego, czy samochody jadą, czy też nie, będziemy wykonywać różne akcje. Jeżeli samochody jadą, to będziemy czekać. A jak nic nie będzie jechało, to możemy przejść. Taką konstrukcję nazwiemy **instrukcją warunkową**.
+The key word here is: **if**. Depending on whether cars are driving or not, we will perform different actions. If cars are driving, we will wait. And if nothing is driving, we can pass. We will call such a construction a **conditional statement**.
 
-Zastosowanie instrukcji warunkowej sprawia, że wykonanie naszego programu może mieć różne przebiegi, tzn. różne instrukcje mogą zostać wykonane w zależności od określonych warunków.
+The use of conditional instructions makes it possible for the execution of our program to have different courses of action, that is, different instructions can be executed depending on certain conditions.
 
-## Prosta instrukcja warunkowa
+## A simple conditional statement
 
-Zacznijmy od prostego przykładu. Ponownie wyobraźmy sobie przejście dla pieszych, ale tym razem są na nim światła drogowe. Jak przechodzić przez przejście na światłach każdy powinien wiedzieć. Spróbujmy skonstruować algorytm dla tej operacji.
+Let's start with a simple example. Again, let's imagine a pedestrian crossing, but this time there are traffic lights. How to cross a crosswalk at traffic lights everyone should know. Let's try to construct an algorithm for this operation.
 
-### Przykład 1
+### Example 1
 
-Zastanówmy się najpierw nad tym, jak wygląda przechodzenie przez przejście na światłach. Najpierw patrzymy na światła i, w zależności od ich koloru, przechodzimy przez ulicę albo czekamy. W takim razie nasza decyzja, czy też operacja, jaką wykonujemy, zależna jest od koloru świateł. Kolory te mogą być dwa: zielony lub czerwony. Zastosujemy więc dwie instrukcje warunkowe.
+Let's first consider what it looks like to cross at a traffic light. First, we look at the lights and, depending on their color, we either cross the street or wait. Then our decision, or the operation we perform, depends on the color of the lights. These colors can be two: green or red. So we will use two conditional instructions.
 
-#### Lista kroków
+#### List of steps
 
 ```
-1. Jeśli światło zielone to:
-    2. Idź
+1. If the light is green, then:
+    2. Go.
     
-3. Jeśli światło czerwone to:
-    4. Stój
+3. If the light is red, then:
+    4. Stop
 ```
 
-Zwróć uwagę na wcięcia w powyższym zapisie. Zazwyczaj, aby zasygnalizować, że instrukcja znajduje się wewnątrz instrukcji warunkowej, używamy wcięcia.
+Note the indentation in the above notation. Usually, to signal that an instruction is inside a conditional statement, we use indentation.
 
-#### Schemat blokowy
+#### Block diagram
 
 ```mermaid
 %%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
 flowchart TD
-    START([START]) --> K1{światło zielone}
-    K1 -- PRAWDA --> K2[Idź]
-    K1 -- FAŁSZ --> K3{światło czerwone}
+    START([START]) --> K1{the light is green}
+    K1 -- TRUE --> K2[Go]
+    K1 -- FALSE --> K3{the light is red}
     K2 --> K3
-    K3 -- PRAWDA --> K4[Stój]
-    K3 -- FAŁSZ --> STOP([STOP])
+    K3 -- TRUE --> K4[Stop]
+    K3 -- FALSE --> STOP([STOP])
     K4 --> STOP
 ```
 
-### Przykład 2
+### Example 2
 
-Ten sam algorytm możemy także skonstruować w nieco odmienny sposób. Zauważmy, że rozważamy tylko dwa możliwe kolory świateł. Moglibyśmy więc także powiedzieć, że jeżeli światło jest zielone, to przechodzimy przez ulicę, a **w** **każdym innym przypadku** stoimy i czekamy. Spróbujmy to zapisać w formie algorytmu.
+We can also construct the same algorithm in a slightly different way. Note that we consider only two possible colors of lights. So we could also say that if the light is green, we cross the street, and **in** **every other case** we stand and wait. Let's try to write this down in the form of an algorithm.
 
-#### Lista kroków
+#### List of steps
 
 ```
-1. Jeśli światło zielone to:
-    2. Idź
-3. W przeciwnym przypadku:
-    4. Stój
+1. If the light is green, then:
+    2. Go
+3. otherwise:
+    4. Stop
 ```
 
-#### Schemat blokowy
+#### Block diagram
 
 ```mermaid
 %%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
 flowchart TD
-    START([START]) --> K1{światło zielone}
-    K1 -- PRAWDA --> K2[Idź]
-    K1 -- FAŁSZ --> K3[Stój]
+    START([START]) --> K1{the light is green}
+    K1 -- TRUE --> K2[Go]
+    K1 -- FALSE --> K3[Stop]
     K2 --> STOP([STOP])
     K3 --> STOP
 ```
 
-## Złożona instrukcja warunkowa
+## Complex conditional statement
 
-Rozważmy teraz kolejny przykład: światła drogowe dla kierowców. W przeciwieństwie do świateł dla pieszych mamy tutaj trzy różne kolory: zielony, żółty i czerwony. Spróbujmy więc skonstruować odpowiedni algorytm.
+Now let's consider another example: traffic lights for drivers. Unlike pedestrian lights, here we have three different colors: green, yellow and red. So let's try to construct a suitable algorithm.
 
-### Przykład 1
+### Example 1
 
-#### Lista kroków
+#### List of steps
 
 ```
-1. Jeśli światło zielone to:
-    2. Jedź
-3. W przeciwnym przypadku, jeśli światło żółte to:
-    4. Czekaj
-5. W przeciwnym przypadku, jeśli światło czerwone to:
-    6. Stój
+1. If the light is green, then:
+    2. Go
+3. otherwise, if the light is yellow, then:
+    4. Wait
+5. otherwise, if the light is red, then:
+    6. Stop
 ```
 
-#### Schemat blokowy
+#### Block diagram
 
 ```mermaid
 %%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
 flowchart TD
-    START([START]) --> K1{światło zielone}
-    K1 -- PRAWDA --> K2[Jedź]
-    K1 -- FAŁSZ --> K3{światło żółte}
-    K3 -- PRAWDA --> K4[Czekaj]
-    K3 -- FAŁSZ --> K5{światło czerwone}
-    K5 -- PRAWDA --> K6[Stój]
+    START([START]) --> K1{the light is green}
+    K1 -- TRUE --> K2[Go]
+    K1 -- FALSE --> K3{the light is yellow}
+    K3 -- TRUE --> K4[Wait]
+    K3 -- FALSE --> K5{the light is red}
+    K5 -- TRUE --> K6[Stop]
     K6 --> STOP([STOP])
     K2 --> STOP
     K4 --> STOP
 ```
 
-### Przykład 2
+### Example 2
 
-Podobnie jak poprzednio, nie musimy dokładnie określać wszystkich przypadków. Tym razem wystarczy określić pierwsze dwa, ponieważ wiemy, że jeżeli światło nie jest zielone ani żółte, to musimy stać i czekać.
+As before, we do not need to specify all the cases exactly. This time it is enough to specify the first two, because we know that if the light is not green or yellow, we have to stand and wait.
 
-#### Lista kroków
+#### List of steps
 
 ```
-1. Jeśli światło zielone to: 
-    2. Jedź
-3. W przeciwnym przypadku, jeśli światło żółte to: 
-    4. Czekaj
-5. W przeciwnym przypadku: 
-    6. Stój
+1. If the light is green, then:
+    2. Go
+3. otherwise, if the light is yellow, then:
+    4. Wait
+5. otherwise:
+    6. Stop
 ```
 
-#### Schemat blokowy
+#### Block diagram
 
 ```mermaid
 %%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
 flowchart TD
-    START([START]) --> K1{światło zielone}
-    K1 -- PRAWDA --> K2[Jedź]
-    K1 -- FAŁSZ --> K3{światło żółte}
-    K3 -- PRAWDA --> K4[Czekaj]
-    K3 -- FAŁSZ --> K6[Stój]
+    START([START]) --> K1{the light is green}
+    K1 -- TRUE --> K2[Go]
+    K1 -- FALSE --> K3{the light is yellow}
+    K3 -- TRUE --> K4[Wait]
+    K3 -- FALSE --> K6[Stop]
     K6 --> STOP([STOP])
     K2 --> STOP
     K4 --> STOP
 ```
 
-## Konstrukcja warunków musi być przemyślana
+## The design of the conditions must be well thought out
 
-W poprzednich przykładach nie miało znaczenia, w jakiej kolejności rozważamy kolejne warunki. Moglibyśmy zamienić kolejność instrukcji warunkowych (oczywiście wraz z operacjami) i wciąż mielibyśmy poprawnie działający algorytm. Nie zawsze jednak życie jest takie proste...
+In the previous examples, it did not matter in which order we consider the subsequent conditions. We could swap the order of the conditional instructions (along with the operations, of course) and we would still have a properly working algorithm. However, life is not always that simple....
 
-### Przykład 1
+### Example 1
 
-#### Lista kroków
+#### List of steps
 
 ```
-1. Jeśli cena > 100 to:
-    2. Wypisz "Drogie"
-3. W przeciwnym przypadku, jeśli cena > 200 to:
-    4. Wypisz "Bardzo drogie"
-5. W przeciwnym przypadku:
-    6. Wypisz "Tanie"
+1. If price > 100, then:
+    2. Print "Expensive"
+3. otherwise, if price > 200, then:
+    4. Print "Very expensive"
+5. Otherwise:
+    6. Print "Cheap"
 ```
 
-#### Schemat blokowy
+#### Block diagram
 
 ```mermaid
 %%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
 flowchart TD
-    START([START]) --> K1{cena > 100}
-    K1 -- PRAWDA --> K2[/Wypisz 'Drogie'/]
-    K1 -- FAŁSZ --> K3{cena > 200}
-    K3 -- PRAWDA --> K4[/Wypisz 'Bardzo drogie'/]
-    K3 -- FAŁSZ --> K6[/Wypisz 'Tanie'/]
+    START([START]) --> K1{price > 100}
+    K1 -- TRUE --> K2[/Print 'Expensive'/]
+    K1 -- FALSE --> K3{price > 200}
+    K3 -- TRUE --> K4[/Print 'Very expensive'/]
+    K3 -- FALSE --> K6[/Print 'Cheap'/]
     K2 --> STOP([STOP])
     K4 --> STOP
     K6 --> STOP
 ```
 
-Czy potrafisz stwierdzić, co jest nie tak z powyższą instrukcją warunkową? Sama jej konstrukcja jest poprawna, ale nie do końca przemyślana i może wprowadzać czytelnika w błąd. Spróbuj _zasymulować_ działanie algorytmu dla różnych wartości ceny. Zastanów się, jaka musi być cena, żeby każdy z komunikatów został wypisany, tzn. dla jakich wartości zostanie wypisany komunikat "drogie", dla jakich "bardzo drogie", a dla jakich komunikat "tanie". Poświęć chwilę na samodzielne wykonanie tego ćwiczenia, zanim przejdziesz dalej.
+Can you tell what is wrong with the above conditional instruction? Its design itself is correct, but not well thought out and may mislead the reader. Try to _simulate_ the operation of the algorithm for different price values. Think about what the price must be for each message to be output, i.e. for which values the message "expensive" will be output, for which "very expensive" and for which the message "cheap" will be output. Take a moment to do this exercise yourself before continuing.
 
-Zauważ, że komunikat "bardzo drogie" nie zostanie nigdy wypisany. Dlaczego tak się dzieje? Wystarczy przyjrzeć się dokładnie konstrukcji warunków. Pierwszy warunek określa, co ma się wydarzyć dla cen większych od 100. Drugi natomiast określa, co ma się wydarzyć dla cen większych od 200. Wydawałoby się zatem, że np. dla wartości 300 zostanie spełniony drugi warunek i wypisany komunikat "bardzo drogie". Tak się jednak nie stanie. Dlaczego?
+Notice that the "very expensive" message will never be output. Why does this happen? Just take a close look at the construction of the conditions. The first condition specifies what is to happen for prices greater than 100, while the second condition specifies what is to happen for prices greater than 200. It would seem, therefore, that for a value of 300, for example, the second condition will be met and the message "very expensive" will be output. However, this will not happen. Why?
 
-Dzieje się tak, ponieważ dla takiej ceny **pierwszy warunek jest już spełniony**. A skoro pierwszy warunek jest już spełniony, to kolejne nie będą już sprawdzane i wykonywane.
+This is because for such a price **the first condition is already satisfied**. And since the first condition is already satisfied, the subsequent conditions will no longer be checked and executed.
 
-Oczywiście powyższy algorytm można łatwo poprawić zamieniając kolejność warunków, tak jak pokazuje poniższy przykład.
+Of course, the above algorithm can be easily improved by swapping the order of the conditions, as the following example shows.
 
-### Przykład 2
+### Example 2
 
-#### Lista kroków
+#### List of steps
 
 ```
-1. Jeśli cena > 200 to:
-    2. Wypisz "Bardzo drogie"
-3. W przeciwnym przypadku, jeśli cena > 100 to: 
-    4. Wypisz "Drogie"
-5. W przeciwnym przypadku:
-    6. Wypisz "Tanie"
+1. If price > 200, then:
+    2. Print "Very expensive"
+3. otherwise, if price > 100, then: 
+    4. Print "Expensive"
+5. otherwise:
+    6. Print "Cheap"
 ```
 
-#### Schemat blokowy
+#### Block diagram
 
 ```mermaid
 %%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
 flowchart TD
-    START([START]) --> K1{cena > 200}
-    K1 -- PRAWDA --> K2[/Wypisz 'Bardzo drogie'/]
-    K1 -- FAŁSZ --> K3{cena > 100}
-    K3 -- PRAWDA --> K4[/Wypisz 'Drogie'/]
-    K3 -- FAŁSZ --> K6[/Wypisz 'Tanie'/]
+    START([START]) --> K1{price > 200}
+    K1 -- TRUE --> K2[/Print 'Very expensive'/]
+    K1 -- FALSE --> K3{price > 100}
+    K3 -- TRUE --> K4[/Print 'Expensive'/]
+    K3 -- FALSE --> K6[/Print 'Cheap'/]
     K2 --> STOP([STOP])
     K4 --> STOP
     K6 --> STOP

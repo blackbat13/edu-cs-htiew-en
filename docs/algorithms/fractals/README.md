@@ -1,6 +1,6 @@
 # Fraktale
 
-## Prezentacja
+## Presentation
 
 [:fontawesome-solid-file-pdf: Fraktale - wprowadzenie](../../assets/Fraktale.pdf){ .md-button }
 

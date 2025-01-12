@@ -37,6 +37,6 @@ W szyfrach przestawieniowych szyfrogram jest tworzony poprzez przestawienie kole
 
 Szyfry mieszane stanowią połączenie szyfru podstawieniowego z szyfrem przestawieniowym.
 
-## Prezentacja
+## Presentation
 
 [:material-presentation: Prezentacja](../../../assets/Metody szyfrowania symetrycznego.pdf){ .md-button }
