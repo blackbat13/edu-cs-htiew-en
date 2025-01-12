@@ -39,6 +39,19 @@ extra:
   analytics:
     provider: google
     property: G-L9VQLX9X2F
+    feedback:
+      title: Was this page helpful?
+      ratings:
+        - icon: material/emoticon-happy-outline
+          name: This page was helpful
+          data: 1
+          note: >-
+            Thanks for your feedback!
+        - icon: material/emoticon-sad-outline
+          name: This page could be improved
+          data: 0
+          note: >- 
+            Thanks for your feedback!
   alternate:
     - name: Polski
       link: https://edu.cs-htiew.pl
