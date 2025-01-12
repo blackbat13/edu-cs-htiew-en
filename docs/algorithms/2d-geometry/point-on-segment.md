@@ -1,4 +1,4 @@
-# Punkt na odcinku
+# A point on the segment
 
 ## Implementation
 

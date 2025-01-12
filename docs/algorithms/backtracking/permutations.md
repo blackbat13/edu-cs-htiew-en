@@ -1,36 +1,36 @@
-# Permutacje
+# Permutations
 
-Permutacja tablicy określa jeden ze sposobów ułożenia elementów tej tablicy. Czasami w algorytmice potrzebujemy wszystkich permutacji tablicy, a więc wszystkich możliwych sposobów na ułożenie jej elementów.
+The permutation of an array specifies one of the ways to arrange the elements of that array. Sometimes in algorithmics we need all the permutations of an array, that is, all the possible ways to arrange its elements.
 
 ## Specification
 
 ### Input
 
-* $n$ — liczba naturalna, liczba elementów tablicy, $n>0$
-* $A[1..n]$ - $n$-elementowa tablica 
-* $pocz$, $kon$ - liczby naturalne określające początek i koniec permutowanego zakresu elementów tablicy, $1<=pocz<=kon<=n$
+* $n$ — natural number, the number of elements of the array, $n>0$
+* $A[1..n]$ - $n$-element array,
+* $begin$, $end$ - natural numbers that define the beginning and end of the permuted range of elements of the array, $1<=begin<=end<=n$
 
 ### Output
 
-* Wszystkie permutacje tablicy $tab$
+* All permutations of the $tab$ array
 
 ## Solution
 
-Stworzymy algorytm rekurencyjny. Standardowo zaczynamy od warunku stopu rekurencji. Tworzenie obecnej permutacji zakończymy, gdy przedział zdefiniowany przez zmienne *pocz* oraz *kon* nie będzie prawidłowy, tzn. gdy początek będzie **większy** od końca. Będzie to oznaczało, że mamy skończoną jedną permutację, więc możemy ją wypisać na ekran i zakończyć obecne wywołanie funkcji.
+We will create a recursive algorithm. By default, we start with the stop condition of the recursion. We will end the creation of the current permutation when the interval defined by the variables *begin* and *end* is not valid, i.e. when the beginning is **greater** than the end. This will mean that we have finished one permutation, so we can output it to the screen and end the current function call.
 
-Gdy warunek stopu nie będzie spełniony, to przejdziemy pętlą od początku do końca zdefiniowanego zakresu. Licznik pętli będzie nas informował o tym, na jakiej pozycji mamy umieścić element tablicy z początku sprawdzanego zakresu. W pętli będziemy więc zamieniać miejscami element tablicy pod obecną pozycją z elementem z początku zakresu. Następnie skorzystamy z wywołania rekurencyjnego ze zwiększoną o jeden wartością początku zakresu. Po wywołaniu rekurencyjnym zamienimy ponownie miejscami element na obecnej pozycji z elementem z początku przedziału, tak by przywrócić poprzedni układ elementów w tablicy.
+When the stop condition is not met, we will loop from the beginning to the end of the defined range. The loop counter will tell us what position to put the array element from the beginning of the checked range. So in the loop we will swap the array element under the current position with the element from the beginning of the range. We will then use a recursive call with the value of the beginning of the range increased by one. After the recursive call, we will swap the element at the current position with the element at the beginning of the range again in places, so as to restore the previous arrangement of elements in the array.
 
 ### Pseudocode
 
 ```
-procedura Permutacje(A, pocz, kon):
-    1. Jeżeli pocz > kon, to:
-        2. Wypisz A
-        3. Zakończ
-    4. Dla i := pocz do kon, wykonuj:
-        5. Zamień(A[pocz], A[i])
-        6. Permutacje(A, pocz + 1, kon)
-        7. Zamień(A[pocz], A[i])
+procedure Permutations(A, begin, end):
+    1. If begin > end, then:
+        2. Print A
+        3. Stop
+    4. From i := begin to end, do:
+        5. Swap(A[begin], A[i])
+        6. Permutations(A, begin + 1, end)
+        7. Swap(A[begin], A[i])
 ```
 
 ### Block diagram
@@ -38,14 +38,14 @@ procedura Permutacje(A, pocz, kon):
 ```mermaid
 %%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
 flowchart TD
-    START(["Permutacje(A, pocz, kon)"]) --> K1{pocz > kon}
-    K1 -- TRUE --> K2[/Wypisz A/]
+    START(["Permutations(A, begin, end)"]) --> K1{begin > end}
+    K1 -- TRUE --> K2[/Print A/]
     K2 --> STOP([STOP])
-    K1 -- FALSE --> K4p[i := pocz]
-    K4p --> K4{i <= kon}
-    K4 -- TRUE --> K5["Zamień(A[pocz], A[i])
-    Permutacje(A, pocz + 1, kon)
-    Zamień(A[pocz], A[i])"]
+    K1 -- FALSE --> K4p[i := begin]
+    K4p --> K4{i <= end}
+    K4 -- TRUE --> K5["Swap(A[begin], A[i])
+    Permutations(A, begin + 1, end)
+    Swap(A[begin], A[i])"]
     K5 --> K4i[i := i + 1]
     K4i --> K4
     K4 -- FALSE --> STOP

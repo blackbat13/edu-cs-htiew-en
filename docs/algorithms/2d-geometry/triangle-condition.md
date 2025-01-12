@@ -1,32 +1,32 @@
-# Warunek trójkąta
+# Triangle condition
 
-Trójkąt jest jedną z podstawowych figur geometrycznych. Jak jednak go zbudować? Po pierwsze: potrzebujemy trzech odcinków. Nie mogą to jednak być dowolne odcinki! Muszą one spełniać tzw. **warunek trójkąta**.
+The triangle is one of the basic geometric figures. However, how to build it? First of all: we need three segments. However, they can not be any segments! They must meet the so-called **triangle condition**. The **triangle condition**.
 
 ## Specification
 
 ### Input
 
-- $a, b, c$ - liczby naturalne, długości odcinków, $a>0$, $b>0$, $c>0$.
+- $a, b, c$ - natural numbers, segment lengths, $a>0$, $b>0$, $c>0$.
 
 ### Output
 
-- **TRUE** jeżeli z podanych odcinków można zbudować trójkąt,
-- **FALSE** w przeciwnym przypadku.
+- **TRUE** if a triangle can be constructed from the given segments,
+- **FALSE** otherwise.
 
 ## Solution
 
-Aby z trzech odcinków można było zbudować trójkąt, musi być spełniony następujący warunek: długość każdego odcinka jest mniejsza od sumy dwóch pozostałych. Z tego wynika, że mamy do sprawdzenia trzy nierówności.
+In order to build a triangle from three segments, the following condition must be met: the length of each segment is less than the sum of the other two. From this it follows that we have three inequalities to check.
 
-Alternatywnie można także sprawdzić, czy suma dwóch mniejszych odcinków jest większa od długości trzeciego, najdłuższego odcinka.
+Alternatively, you can also check that the sum of the two smaller segments is greater than the length of the third, longest segment.
 
 ### Pseudocode
 
 ```
-funkcja WarunekTrójkąta(a, b, c):
-    1. Jeżeli a < b + c oraz b < a + c oraz c < a + b, to:
-        2. Zwróć TRUE
-    3. w przeciwnym przypadku:
-        4. Zwróć FALSE
+function TriangleCondition(a, b, c):
+    1. If a < b + c and b < a + c and c < a + b, then:
+        2. Return TRUE
+    3. otherwise:
+        4. Return FALSE
 ```
 
 ### Block diagram
@@ -34,14 +34,14 @@ funkcja WarunekTrójkąta(a, b, c):
 ```mermaid
 %%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
 flowchart TD
-    START(["WarunekTrójkąta(a, b, c)"]) --> K1{"a < b + c
-    oraz
+    START(["TriangleCondition(a, b, c)"]) --> K1{"a < b + c
+    and
     b < a + c
-    oraz
+    and
     c < a + b"}
-    K1 -- TRUE --> K2[/Zwróć TRUE/]
+    K1 -- TRUE --> K2[/Return TRUE/]
     K2 --> STOP([STOP])
-    K1 -- FALSE --> K4[/Zwróć FALSE/]
+    K1 -- FALSE --> K4[/Return FALSE/]
     K4 --> STOP
 ```
 

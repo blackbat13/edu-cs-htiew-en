@@ -1,4 +1,4 @@
-# Odległość punktu od prostej
+# Distance of a point from a straight line
 
 ## Implementation
 

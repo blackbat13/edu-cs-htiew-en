@@ -1,31 +1,31 @@
-# Geometria 2D
+# 2D Geometry
 
-Geometria obliczeniowa (czasem nazywana geometrią algorytmiczną) zajmuje się rozwiązaniem problemów matematycznych i obliczeniowych związanych z obiektami geometrycznymi. Chociaż geometria obliczeniowa obejmuje różne wymiary, algorytmy geometrii 2D dotyczą przede wszystkim płaskich obiektów, takich jak punkty, linie, wielokąty, okręgi i krzywe.
+Computational geometry (sometimes called algorithmic geometry) deals with solving mathematical and computational problems involving geometric objects. Although computational geometry covers a variety of dimensions, 2D geometry algorithms primarily deal with flat objects such as points, lines, polygons, circles and curves.
 
-## Podstawowe pojęcia
+## Basic concepts
 
-- **Punkt**: Najbardziej podstawowy obiekt w geometrii 2D. Charakteryzuje się dwoma współrzędnymi: $(x, y)$.
-- **Odcinek**: Połączenie dwóch punktów linią.
-- **Wielokąt**: Zamknięta figura utworzona przez trzy lub więcej odcinków.
-- **Okrąg**: Wszystkie punkty w równym oddaleniu od jednego centralnego punktu.
+- **Point**: The most basic object in 2D geometry. It is characterized by two coordinates: $(x, y)$.
+- **Perimeter**: The connection of two points by a line.
+- **Polygon**: A closed figure formed by three or more segments.
+- **Circle**: All points equidistant from one central point.
 
-## Kluczowe problemy
+## Key Issues
 
-- **Lokalizacja punktu**: Określenie, czy punkt znajduje się wewnątrz, na zewnątrz czy na obrzeżu danego wielokąta.
-- **Przecięcie odcinków**: Określenie, czy dwa odcinki przecinają się.
-- **Otoczka wypukła**: Znalezienie najmniejszego wielokąta wypukłego zawierającego dany zestaw punktów.
-- **Najbliższa para punktów**: Znalezienie dwóch najbliżej leżących do siebie punktów w zestawie.
+- **Point Location**: Determining whether a point is inside, outside or on the periphery of a given polygon.
+- **intersection of segments**: Determining whether two segments intersect.
+- **Convex perimeter**: Finding the smallest convex polygon containing a given set of points.
+- **Nearest pair of points**: Finding the two closest lying points in a set of points.
 
-## Algorytmy i techniki
+## Algorithms and techniques
 
-- **Skanowanie Grahama**: Algorytm do znajdowania otoczki wypukłej dla zestawu punktów.
-- **Sweep Line**: Technika używana w wielu problemach geometrii 2D, takich jak wyszukiwanie przecięć odcinków.
-- **Dziel i zwyciężaj**: Podstawowa metoda używana do rozwiązywania problemu najbliższej pary punktów.
+- **Graham scanning**: An algorithm for finding the convex envelope for a set of points.
+- **Sweep Line**: A technique used in many 2D geometry problems, such as finding intersections of segments.
+- **Divide and Conquer**: A basic method used to solve the nearest pair of points problem.
 
-## Zastosowania
+## Applications
 
-Algorytmy geometrii 2D mają szerokie zastosowanie w różnych dziedzinach, od grafiki komputerowej, poprzez robotykę, po analizę geospacyjną. Umożliwiają one tworzenie realistycznych symulacji, optymalizację tras robotów czy też analizę przestrzenną w GIS.
+2D geometry algorithms have a wide range of applications in various fields, from computer graphics to robotics to geospatial analysis. They enable the creation of realistic simulations, optimization of robot routes or spatial analysis in GIS.
 
-## Podsumowanie
+## Summary
 
-Znajomość podstawowych algorytmów geometrii 2D jest kluczowa dla każdego, kto zajmuje się grafiką komputerową, analizą geospacyjną czy robotyką. Pomimo że są to problemy *płaskie*, potrafią one być zaskakująco skomplikowane. Jednak odpowiednio dobrany algorytm potrafi uczynić trudny problem łatwo rozwiązywalnym.
+Knowledge of basic 2D geometry algorithms is essential for anyone working in computer graphics, geospatial analysis or robotics. Although these are *flat* problems, they can be surprisingly complex. However, a properly chosen algorithm can make a difficult problem easily solvable.

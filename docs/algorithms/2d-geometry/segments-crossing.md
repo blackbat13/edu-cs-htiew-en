@@ -1,4 +1,4 @@
-# Przecinanie się odcinków
+# Intersection of segments
 
 ## Implementation
 

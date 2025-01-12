@@ -1,23 +1,23 @@
-# Problem n królowych
+# The problem of n queens
 
-Problem $n$ królowych to jeden z klasycznych problemów algorytmicznych związanych z szachami. Problem brzmi następująco: mając szachownicę $n\times n$ oraz $n$ królowych, czy można ustawić **wszystkie** królowe na szchownicy, tak by **żadne** dwie się wzajemnie nie atakowały?
+The $n$ queens problem is one of the classic algorithmic problems related to chess. The problem reads as follows: given a $n$ chessboard and $n$ queens, can **all** the queens be placed on the chessboard so that **no** two of them attack each other?
 
-Zaczniemy od przytoczenia tanecznego przeszukiwania, które demonstruje działanie algorytmu dla szachownicy $4\times 4$ oraz $4$ królowych. Następnie przejdziemy do formalnej specyfikacji.
+We'll start by citing a dance search that demonstrates how the algorithm works for a $4$ checkerboard of $4\times 4$ and $4$ queens. We will then turn to the formal specification.
 
-## Taneczne przeszukiwanie
+## Dance search
 
-[:material-video: Taneczne przeszukiwanie](https://www.youtube.com/watch?v=R8bM6pxlrLY){ .md-button }
+[:material-video: Dance search](https://www.youtube.com/watch?v=R8bM6pxlrLY){ .md-button }
 
 ## Specification
 
 ### Input
 
-- $n$ - liczba naturalna, liczba królowych do rozstawienia
+- $n$ - natural number, the number of queens to pitch
 
 ### Output
 
-- **TRUE** jeżeli istnieje poprawne rozwiązanie
-- **FALSE** w przeciwnym przypadku
+- **TRUE** if there is a correct solution
+- **FALSE** otherwise
 
 ## Example 1
 
@@ -43,7 +43,7 @@ n := 4
 
 **TRUE**
 
-Przykładowe ustawienie (`H` oznacza królową, a `-` puste pole):
+Example setting (`H` means queen, and `-` means an empty field):
 
 ```
 - - H -
@@ -54,32 +54,32 @@ H - - -
 
 ## Solution
 
-Idea naszego rozwiązania jest prosta. Będziemy przechodzić wiersz po wierszu i próbować wszystkie możliwe ustawienia królowych w wierszu. Po ustawieniu królowej w danym wierszu przechodzimy do kolejnego wiersza, gdzie ponownie sprawdzamy wszystkie możliwe ustawienia.
+The idea behind our solution is simple. We will go row by row and try all possible queen settings in a row. After setting the queen in a particular row, we move to the next row, where we again check all possible settings.
 
-Oczywiście w ten sposób sprawdzalibyśmy wiele błędnych ustawień. Dlatego przed ustawieniem nowej królowej będziemy sprawdzać, czy jest to poprawne ustawienie, tzn. czy to pole nie jest już atakowane przez żadną inną królową.
+Of course, in this way we would be checking many wrong settings. Therefore, before setting a new queen, we will check that it is a correct setting, i.e. that this field is not already attacked by any other queen.
 
-W celu sprawdzenia, czy dane pole nie jest atakowane przez inną królową, musimy przejść przez wszystkie poprzednie wiersze i sprawdzić, czy królowa ustawiona w danym wierszu nie atakuje obecnego pola w pionie lub na ukos.
+In order to check if a field is not attacked by another queen, we need to go through all the previous rows and check if the queen set in a particular row is not attacking the current field vertically or diagonally.
 
 ### Pseudocode
 
 ```
-funkcja SprawdźPozycję(wiersz, kolumna, pozycje):
-    1. Dla i := 1 do wiersz - 1, wykonuj:
-        2. Jeżeli pozycje[i] = kolumna lub kolumna - pozycje[i] = wiersz - i, to:
-            3. Zwróć FALSE
-    4. Zwróć TRUE
+function CheckPosition(row, column, position):
+    1. From i := 1 to row - 1, do:
+        2. If position[i] = column or column - position[i] = row - i, then:
+            3. Return FALSE
+    4. Return TRUE
 ```
 
 ```
-funkcja ZnajdźRozwiązanie(n, wiersz, pozycje):
-    1. Jeżeli wiersz > n, to:
-        2. Zwróć TRUE
-    3. Dla kolumna := 1 do n, wykonuj:
-        4. Jeżeli SprawdźPozycję(wiersz, kolumna, pozycje), to:
-            5. pozycje[wiersz] := kolumna
-            6. Jeżeli ZnajdźRozwiązanie(n, wiersz + 1, pozycje), to:
-                7. Zwróć TRUE
-    8. Zwróć FALSE
+function FindSolution(n, row, position):
+    1. If row > n, then:
+        2. Return TRUE
+    3. From column := 1 to n, do:
+        4. If CheckPosition(row, column, position), then:
+            5. position[row] := column
+            6. If FindSolution(n, row + 1, position), then:
+                7. Return TRUE
+    8. Return FALSE
 ```
 
 ### Block diagram
@@ -87,15 +87,15 @@ funkcja ZnajdźRozwiązanie(n, wiersz, pozycje):
 ```mermaid
 %%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
 flowchart TD
-    START(["SprawdźPozycję(wiersz, kolumna, pozycje)"]) --> K0[i := 1]
-    K0 --> K1{i < wiersz}
-    K1 -- TRUE --> K2{"pozycje[i] = kolumna
-    lub
-    kolumna - pozycje[i] = wiersz - i"}
-    K2 -- TRUE --> K3[/Zwróć FALSE/]
+    START(["CheckPosition(row, column, position)"]) --> K0[i := 1]
+    K0 --> K1{i < row}
+    K1 -- TRUE --> K2{"position[i] = column
+    or
+    column - position[i] = row - i"}
+    K2 -- TRUE --> K3[/Return FALSE/]
     K2 -- FALSE --> K1i[i := i + 1]
     K1i --> K1
-    K1 -- FALSE --> K4[/Zwróć TRUE/]
+    K1 -- FALSE --> K4[/Return TRUE/]
     K3 --> STOP([STOP])
     K4 --> STOP
 ```
@@ -103,20 +103,20 @@ flowchart TD
 ```mermaid
 %%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
 flowchart TD
-    START(["ZnajdźRozwiązanie(n, wiersz, pozycje)"]) --> K1{wiersz > n}
-    K1 -- TRUE --> K2[/Zwróć TRUE/]
+    START(["FindSolution(n, row, position)"]) --> K1{row > n}
+    K1 -- TRUE --> K2[/Return TRUE/]
     K2 --> STOP([STOP])
-    K1 -- FALSE --> K3p[kolumna := 1]
-    K3p --> K3{kolumna <= n}
-    K3 -- TRUE --> K4{"SprawdźPozycję(wiersz, kolumna, pozycje)"}
-    K4 -- TRUE --> K5["pozycje[wiersz] := kolumna"]
-    K5 --> K6{"ZnajdźRozwiązanie(n, wiersz + 1, pozycje)"}
-    K6 -- TRUE --> K7[/Zwróć TRUE/]
+    K1 -- FALSE --> K3p[column := 1]
+    K3p --> K3{column <= n}
+    K3 -- TRUE --> K4{"CheckPosition(row, column, position)"}
+    K4 -- TRUE --> K5["position[row] := column"]
+    K5 --> K6{"FindSolution(n, row + 1, position)"}
+    K6 -- TRUE --> K7[/Return TRUE/]
     K7 --> STOP
-    K6 -- FALSE --> K3i[kolumna := kolumna + 1]
+    K6 -- FALSE --> K3i[column := column + 1]
     K4 -- FALSE --> K3i
     K3i --> K3
-    K3 -- FALSE --> K8[/Zwróć FALSE/]
+    K3 -- FALSE --> K8[/Return FALSE/]
     K8 --> STOP
 ```
 
@@ -128,6 +128,6 @@ flowchart TD
 
 ### [:simple-kotlin: Kotlin](../../programming/kotlin/algorithms/backtracking/n-queens.md){ .md-button }
 
-## Implementation - pozostałe
+## Implementation - rest
 
 ### [:simple-julia: Julia](../../programming/julia/algorithms/backtracking/n-queens.md){ .md-button }

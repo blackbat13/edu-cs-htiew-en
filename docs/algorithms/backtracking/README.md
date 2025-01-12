@@ -1,22 +1,22 @@
-# Przeszukiwanie z powrotami
+# Searching with backtracking
 
-Przeszukiwanie z powrotami (ang. *backtracking*) to fundamentalne podejście w dziedzinie informatyki służące do rozwiązywania problemów poprzez próbowanie i cofanie. Ideą jest wypróbowanie wszystkich możliwych rozwiązań problemu do momentu znalezienia odpowiedniego rozwiązania.
+Searching with backtracking is a fundamental approach in computer science for solving problems through trial-and-error. The idea is to try all possible solutions to a problem until the right solution is found.
 
-W algorytmach przeszukiwania z powrotami możemy wyróżnić następujące cechy:
+In search algorithms with backtracking, we can distinguish the following features:
 
-- **Rekursja**: Najważniejszym aspektem algorytmów backtracking jest rekursja. Algorytmy te zazwyczaj opierają się na rekursji do testowania wszystkich możliwych rozwiązań.
-- **Wybór i cofanie**: W podejściu tym algorytm podejmuje decyzję (wybór), a następnie kontynuuje przeszukiwanie do momentu, aż napotka przeszkodę. W tym momencie algorytm *cofa się* do poprzedniego stanu i próbuje innego rozwiązania.
-- **Przycinanie** (ang. *pruning*): Nie wszystkie ścieżki w drzewie przeszukiwań muszą być eksplorowane. Znając pewne cechy problemu, można *przycinać* niektóre ścieżki, które na pewno nie doprowadzą do rozwiązania.
+- **Recursion**: The most important aspect of backtracking algorithms is recursion. These algorithms usually rely on recursion to test all possible solutions.
+- **Choice and backtracking**: In this approach, the algorithm makes a decision (choice) and then continues searching until it encounters an obstacle. At this point, the algorithm *reverses* to the previous state and tries another solution.
+- **Pruning**: Not all paths in a search tree need to be explored. Knowing certain features of the problem, it is possible to *pruning* some paths that will definitely not lead to a solution.
 
-## Zastosowania
+## Applications
 
-Algorytmy przeszukiwania z powrotami mają szerokie zastosowanie, między innymi w:
+Search algorithms with backtracking have wide applications, including in:
 
-- Rozwiązywaniu łamigłówek, takich jak sudoku.
-- Problemach optymalizacyjnych, takich jak problem komiwojażera.
-- Problemach decyzyjnych, takich jak problem kolorowania grafu.
-- Problemach kombinatorycznych, takich jak generowanie wszystkich możliwych permutacji elementów.
+- Solving puzzles, such as sudoku.
+- Optimization problems, such as the comovement problem.
+- Decision problems, such as the graph coloring problem.
+- Combinatorial problems, such as generating all possible permutations of elements.
 
-## Podsumowanie
+## Summary
 
-Backtracking jest potężnym narzędziem do rozwiązywania problemów, które wydają się być zbyt skomplikowane do rozwiązania w sposób bezpośredni. Pomimo, że algorytmy te mogą być czasochłonne (zwłaszcza dla dużych zestawów danych), ich zdolność do eksplorowania wszystkich możliwych rozwiązań i dynamicznego dostosowywania się do problemów czyni je niezwykle użytecznymi w wielu sytuacjach. Jednak kluczem do skutecznego wykorzystania backtrackingu jest umiejętność rozpoznawania momentów, w których można przyciąć przeszukiwanie, aby zaoszczędzić czas i moc obliczeniową.
+Backtracking is a powerful tool for solving problems that seem too complicated to solve directly. Although these algorithms can be time-consuming (especially for large data sets), their ability to explore all possible solutions and dynamically adapt to problems makes them extremely useful in many situations. However, the key to using backtracking effectively is the ability to recognize moments when a search can be pruned to save time and computing power.

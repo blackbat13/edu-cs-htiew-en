@@ -1,25 +1,25 @@
-# Problem skoczka
+# Knight tour
 
-Skoczek, zwany inaczej koniem, to figura szachowa która wykonuje ruchy w kształcie litery L, tzn. może przemieścić się o dwa pola w pionie i jedno w poziomie, lub o dwa pola w poziomie i jedno w pionie. Problem związany z tą figurą jest następujący: czy zaczynając z lewego dolnego pola szachownicy skoczek jest w stanie odwiedzić wszystkie pola dokładnie raz?
+The knight, otherwise known as the horse, is a chess figure that makes L-shaped moves, i.e. it can move two fields vertically and one horizontally, or two fields horizontally and one vertically. The problem associated with this figure is the following: starting from the lower left field of the chessboard, is the knight able to visit all fields exactly once?
 
 ## Specification
 
 ### Input
 
-- $n$ - liczba naturalna, wymiary szachownicy, liczba wierszy i kolumn, $n>0$.
+- $n$ - natural number, checkerboard dimensions, number of rows and columns, $n>0$.
 
 ### Output
 
-- **TRUE** jeżeli skoczek może odwiedzić wszystkie pola szachownicy $n\times n$ dokładnie raz,
-- **FALSE** w przeciwnym przypadku.
+- **TRUE** if the knight can visit all fields of the chessboard $n\times n$ exactly once,
+- **FALSE** otherwise.
 
 ## Solution
 
-Idea rozwiązania jest stosunkowo prosta. Będziemy rekurencyjnie sprawdzać wszystkie możliwe ruchy skoczka. Gdy dojdziemy do miejsca, z którego nie będziemy mogli już wykonać kolejnego ruchu, to cofniemy się do poprzedniego pola.
+The idea of the solution is relatively simple. We will recursively check all possible moves of the jumper. When we reach a place from which we can no longer make another move, we will go back to the previous field.
 
 ### Example
 
-**Ruch 1**
+**Move 1**
 
 |   | a | b | c | d |
 |---|---|---|---|---|
@@ -28,7 +28,7 @@ Idea rozwiązania jest stosunkowo prosta. Będziemy rekurencyjnie sprawdzać wsz
 | 2 |   |   |   |   |
 | 1 | K |   |   |   |
 
-**Ruch 2**
+**Move 2**
 
 |   | a | b | c | d |
 |---|---|---|---|---|
@@ -37,7 +37,7 @@ Idea rozwiązania jest stosunkowo prosta. Będziemy rekurencyjnie sprawdzać wsz
 | 2 |   |   | K |   |
 | 1 | X |   |   |   |
 
-**Ruch 3**
+**Move 3**
 
 |   | a | b | c | d |
 |---|---|---|---|---|
@@ -46,7 +46,7 @@ Idea rozwiązania jest stosunkowo prosta. Będziemy rekurencyjnie sprawdzać wsz
 | 2 |   |   | X |   |
 | 1 | X |   |   |   |
 
-**Ruch 4**
+**Move 4**
 
 |   | a | b | c | d |
 |---|---|---|---|---|
@@ -55,7 +55,7 @@ Idea rozwiązania jest stosunkowo prosta. Będziemy rekurencyjnie sprawdzać wsz
 | 2 |   |   | X |   |
 | 1 | X |   |   |   |
 
-**Ruch 5**
+**Move 5**
 
 |   | a | b | c | d |
 |---|---|---|---|---|
@@ -64,7 +64,7 @@ Idea rozwiązania jest stosunkowo prosta. Będziemy rekurencyjnie sprawdzać wsz
 | 2 |   |   | X |   |
 | 1 | X |   | K |   |
 
-**Ruch 6**
+**Move 6**
 
 |   | a | b | c | d |
 |---|---|---|---|---|
@@ -73,7 +73,7 @@ Idea rozwiązania jest stosunkowo prosta. Będziemy rekurencyjnie sprawdzać wsz
 | 2 | K |   | X |   |
 | 1 | X |   | X |   |
 
-**Ruch 7**
+**Move 7**
 
 |   | a | b | c | d |
 |---|---|---|---|---|
@@ -82,7 +82,7 @@ Idea rozwiązania jest stosunkowo prosta. Będziemy rekurencyjnie sprawdzać wsz
 | 2 | X |   | X |   |
 | 1 | X |   | X |   |
 
-**Ruch 8**
+**Move 8**
 
 |   | a | b | c | d |
 |---|---|---|---|---|
@@ -91,7 +91,7 @@ Idea rozwiązania jest stosunkowo prosta. Będziemy rekurencyjnie sprawdzać wsz
 | 2 | X |   | X |   |
 | 1 | X |   | X |   |
 
-**Ruch 9**
+**Move 9**
 
 |   | a | b | c | d |
 |---|---|---|---|---|
@@ -100,7 +100,7 @@ Idea rozwiązania jest stosunkowo prosta. Będziemy rekurencyjnie sprawdzać wsz
 | 2 | X | K | X |   |
 | 1 | X |   | X |   |
 
-**Ruch 10**
+**Move 10**
 
 |   | a | b | c | d |
 |---|---|---|---|---|
@@ -109,7 +109,7 @@ Idea rozwiązania jest stosunkowo prosta. Będziemy rekurencyjnie sprawdzać wsz
 | 2 | X | K | X |   |
 | 1 | X |   | X | X |
 
-**Ruch 11**
+**Move 11**
 
 |   | a | b | c | d |
 |---|---|---|---|---|
@@ -118,7 +118,7 @@ Idea rozwiązania jest stosunkowo prosta. Będziemy rekurencyjnie sprawdzać wsz
 | 2 | X | X | X |   |
 | 1 | X |   | X | X |
 
-**Ruch 12**
+**Move 12**
 
 |   | a | b | c | d |
 |---|---|---|---|---|
@@ -127,7 +127,7 @@ Idea rozwiązania jest stosunkowo prosta. Będziemy rekurencyjnie sprawdzać wsz
 | 2 | X | X | X | K |
 | 1 | X |   | X | X |
 
-**Ruch 13**
+**Move 13**
 
 |   | a | b | c | d |
 |---|---|---|---|---|
@@ -136,7 +136,7 @@ Idea rozwiązania jest stosunkowo prosta. Będziemy rekurencyjnie sprawdzać wsz
 | 2 | X | X | X | X |
 | 1 | X | K | X | X |
 
-**Ruch 14**
+**Move 14**
 
 |   | a | b | c | d |
 |---|---|---|---|---|
@@ -145,7 +145,7 @@ Idea rozwiązania jest stosunkowo prosta. Będziemy rekurencyjnie sprawdzać wsz
 | 2 | X | X | X | X |
 | 1 | X | X | X | X |
 
-W tym momencie nie możemy już wykonać kolejnego ruchu. Cofamy się więc do poprzedniej sytuacji z **ruchu 13**. 
+At this point, we can no longer make another move. So we go back to the previous situation of **move 13**.
 
 |   | a | b | c | d |
 |---|---|---|---|---|
@@ -154,9 +154,9 @@ W tym momencie nie możemy już wykonać kolejnego ruchu. Cofamy się więc do p
 | 2 | X | X | X | X |
 | 1 | X | K | X | X |
 
-Tutaj mamy jeszcze jedną możliwość ruchu, której wcześniej nie sprawdziliśmy. Możemy poruszyć się na pole **c3**. Wykonujemy więc **nowy** ruch 14.
+Here we have another possibility of movement, which we have not checked before. We can move to the **c3** field. So we make **new** move 14.
 
-**Ruch 14**
+**Move 14**
 
 |   | a | b | c | d |
 |---|---|---|---|---|
@@ -165,7 +165,7 @@ Tutaj mamy jeszcze jedną możliwość ruchu, której wcześniej nie sprawdzili�
 | 2 | X | X | X | X |
 | 1 | X | X | X | X |
 
-**Ruch 15**
+**Move 15**
 
 |   | a | b | c | d |
 |---|---|---|---|---|
@@ -174,24 +174,24 @@ Tutaj mamy jeszcze jedną możliwość ruchu, której wcześniej nie sprawdzili�
 | 2 | X | X | X | X |
 | 1 | X | X | X | X |
 
-Teraz także jesteśmy w sytuacji bez wyjścia. W tym momencie algorytm ponownie wycofałby się do ostatniej pozycji, w którym mieliśmy jeszcze niezbadany ruch. Tego jednak nie będziemy już prezentować, pozostawiamy jako samodzielne ćwiczenie.
+Now we are also in a no-win situation. At this point, the algorithm would again retreat to the last position, where we still had an unexplored movement. However, this is what we will no longer present, we leave it as a stand-alone exercise.
 
 ### Pseudocode
 
 ```
-funkcja ProblemSkoczka(n, szachownica, odwiedzone, wiersz, kolumna):
-    1. Jeżeli odwiedzone = n * n, to:
-        2. Zwróć TRUE
-    3. szachownica[wiersz][kolumna] := TRUE
-    4. ruchyWiersz[1..8] := {-1, 1, 2, 2, -2, -2, -1, 1}
-    5. ruchyKolumna[1..8] := {-2, -2, -1, 1, -1, 1, 2, 2}
-    6. Dla i := 1 do 8, wykonuj:
-        7. nowyWiersz := wiersz + ruchyWiersz[i]
-        8. nowaKolumna := kolumna + ruchyKolumna[i]
-        9. Jeżeli nowyWiersz <= n oraz nowyWiersz >= 1 oraz nowaKolumna <= n oraz nowaKolumna >= 1 oraz szachownica[wiersz][kolumna] = FALSE, to:
-            10. Jeżeli ProblemSkoczka(n, szachownica, odwiedzone + 1, nowyWiersz, nowaKolumna), to:
-                11. Zwróć TRUE
-    12. Zwróć FALSE
+function KnightTour(n, chessboard, visited, row, column):
+    1. If visited = n * n, then:
+        2. Return TRUE
+    3. chessboard[row][column] := TRUE
+    4. movesRow[1..8] := {-1, 1, 2, 2, -2, -2, -1, 1}
+    5. movesColumn[1..8] := {-2, -2, -1, 1, -1, 1, 2, 2}
+    6. From i := 1 to 8, do:
+        7. newRow := row + movesRow[i]
+        8. newColumn := column + movesColumn[i]
+        9. If newRow <= n and newRow >= 1 and newColumn <= n and newColumn >= 1 and chessboard[row][column] = FALSE, then:
+            10. If KnightTour(n, chessboard, visited + 1, newRow, newColumn), then:
+                11. Return TRUE
+    12. Return FALSE
 ```
 
 ### Block diagram
@@ -199,36 +199,36 @@ funkcja ProblemSkoczka(n, szachownica, odwiedzone, wiersz, kolumna):
 ```mermaid
 %%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
 flowchart TD
-    START(["ProblemSkoczka(n, szachownica, odwiedzone, wiersz, kolumna)"]) --> K1{odwiedzone = n * n}
-    K1 -- TRUE --> K2[/Zwróć TRUE/]
+    START(["KnightTour(n, chessboard, visited, row, column)"]) --> K1{visited = n * n}
+    K1 -- TRUE --> K2[/Return TRUE/]
     K2 --> STOP([STOP])
-    K1 -- FALSE --> K3["szachownica[wiersz][kolumna] := TRUE
-    ruchyWiersz[1..8] := {-1, 1, 2, 2, -2, -2, -1, 1}
-    ruchyKolumna[1..8] := {-2, -2, -1, 1, -1, 1, 2, 2}
+    K1 -- FALSE --> K3["chessboard[row][column] := TRUE
+    movesRow[1..8] := {-1, 1, 2, 2, -2, -2, -1, 1}
+    movesColumn[1..8] := {-2, -2, -1, 1, -1, 1, 2, 2}
     i := 1"]
     K3 --> K6{i <= 8}
-    K6 -- TRUE --> K7["nowyWiersz := wiersz + ruchyWiersz[i]
-    nowaKolumna := kolumna + ruchyKolumna[i]"]
-    K7 --> K9{"nowyWiersz <= n
-    oraz
-    nowyWiersz >= 1
-    oraz
-    nowaKolumna <= n
-    oraz
-    nowaKolumna >= 1
-    oraz
-    szachownica[wiersz][kolumna] = FALSE"}
-    K9 -- TRUE --> K10{"ProblemSkoczka(n, 
-    szachownica, 
-    odwiedzone + 1, 
-    nowyWiersz, 
-    nowaKolumna)"}
-    K10 -- TRUE --> K11[/Zwróć TRUE/]
+    K6 -- TRUE --> K7["newRow := row + movesRow[i]
+    newColumn := column + movesColumn[i]"]
+    K7 --> K9{"newRow <= n
+    and
+    newRow >= 1
+    and
+    newColumn <= n
+    and
+    newColumn >= 1
+    and
+    chessboard[row][column] = FALSE"}
+    K9 -- TRUE --> K10{"KnightTour(n, 
+    chessboard, 
+    visited + 1, 
+    newRow, 
+    newColumn)"}
+    K10 -- TRUE --> K11[/Return TRUE/]
     K11 --> STOP
     K10 -- FALSE --> K6i[i := i + 1]
     K9 -- FALSE --> K6i
     K6i --> K6
-    K6 -- FALSE --> K12[/Zwróć FALSE/]
+    K6 -- FALSE --> K12[/Return FALSE/]
     K12 --> STOP
 ```
 
