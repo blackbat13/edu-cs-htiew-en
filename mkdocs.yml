@@ -1,9 +1,11 @@
 site_name: CS-HTIEW
 site_url: https://edu.cs-htiew.com
 plugins:
-  - material-plausible
   - search
   - privacy
+copyright: >
+  Copyright &copy; 2023 - 2025 Damian Kurpiewski –
+  <a href="#__consent">Change cookie settings</a>
 theme:
   name: material
   language: en
@@ -35,12 +37,19 @@ theme:
     - toc.follow
 extra:
   analytics:
-    provider: plausible
-    domain: edu.cs-htiew.com
+    provider: google
+    property: G-L9VQLX9X2F
   alternate:
     - name: Polski
       link: https://edu.cs-htiew.pl
       lang: pl
+  consent:
+    title: Cookie consent
+    description: >- 
+      We use cookies to recognize your repeated visits and preferences, as well
+      as to measure the effectiveness of our site and whether users
+      find what they're searching for. With your consent, you're helping us to
+      make our site better.
 markdown_extensions:
   - attr_list
   - admonition
