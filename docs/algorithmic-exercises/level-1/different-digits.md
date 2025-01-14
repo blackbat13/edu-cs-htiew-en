@@ -2,7 +2,7 @@
 
 Your task is to determine the number of numbers in a given range that consist only of unique digits, that is, in their notation the digits do not repeat. For example, the number $123$ consists of different digits, while the number $100$ no longer does, due to the repeating character $0$.
 
-Źródło: [https://onlinejudge.org/external/125/12527.pdf](https://onlinejudge.org/external/125/12527.pdf)
+Source: [https://onlinejudge.org/external/125/12527.pdf](https://onlinejudge.org/external/125/12527.pdf)
 
 ## Specification
 

@@ -4,7 +4,7 @@
 
 Cząsteczka ma początkową prędkość i przyspieszenie. Jeżeli jej prędkość po określonym czasie $t$ wynosi $v$, to o ile jednostek przemieści się cząsteczka w czasie $2t$?
 
-Źródło: [https://onlinejudge.org/external/100/10071.pdf](https://onlinejudge.org/external/100/10071.pdf)
+Source: [https://onlinejudge.org/external/100/10071.pdf](https://onlinejudge.org/external/100/10071.pdf)
 
 ### Specification
 
@@ -25,7 +25,7 @@ Cząsteczka ma początkową prędkość i przyspieszenie. Jeżeli jej prędkoś�
 0 0
 ```
 
-**Wynik:** $0$
+**Output:** $0$
 
 ### Example 2
 
@@ -35,4 +35,4 @@ Cząsteczka ma początkową prędkość i przyspieszenie. Jeżeli jej prędkoś�
 5 12
 ```
 
-**Wynik:** $120$
+**Output:** $120$

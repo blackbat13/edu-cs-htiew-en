@@ -14,7 +14,7 @@ Jak widać, w naszym przypadku ślimak wydostaje się na powierzchnię w trakcie
 
 W zależności od parametrów, ślimak może albo wydostać się ze studni, albo opaść na jej dno. Twoim zadaniem jest określenie, która z tych sytuacji ma miejsce, oraz podanie doby, podczas której to następuje.
 
-Źródło: [https://onlinejudge.org/external/5/573.pdf](https://onlinejudge.org/external/5/573.pdf)
+Source: [https://onlinejudge.org/external/5/573.pdf](https://onlinejudge.org/external/5/573.pdf)
 
 ## Specification
 
@@ -39,7 +39,7 @@ W zależności od parametrów, ślimak może albo wydostać się ze studni, albo
 6 3 1 10
 ```
 
-**Wynik:** *Ucieczka 3*
+**Output:** *Ucieczka 3*
 
 ## Example 2
 
@@ -49,7 +49,7 @@ W zależności od parametrów, ślimak może albo wydostać się ze studni, albo
 10 2 1 50
 ```
 
-**Wynik:** *Dno 4*
+**Output:** *Dno 4*
 
 ## Example 3
 
@@ -59,7 +59,7 @@ W zależności od parametrów, ślimak może albo wydostać się ze studni, albo
 50 5 3 14
 ```
 
-**Wynik:** *Dno 7*
+**Output:** *Dno 7*
 
 ## Example 4
 
@@ -69,7 +69,7 @@ W zależności od parametrów, ślimak może albo wydostać się ze studni, albo
 50 6 4 1
 ```
 
-**Wynik:** *Dno 68*
+**Output:** *Dno 68*
 
 ## Example 5
 
@@ -79,7 +79,7 @@ W zależności od parametrów, ślimak może albo wydostać się ze studni, albo
 50 6 3 1
 ```
 
-**Wynik:** *Ucieczka 20*
+**Output:** *Ucieczka 20*
 
 ## Example 6
 
@@ -89,4 +89,4 @@ W zależności od parametrów, ślimak może albo wydostać się ze studni, albo
 1 1 1 1
 ```
 
-**Wynik:** *Dno 2*
+**Output:** *Dno 2*

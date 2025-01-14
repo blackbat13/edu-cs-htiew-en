@@ -1,25 +1,25 @@
 # Robot
 
-Posiadasz robota, zdolnego do poruszania się wyłącznie wzdłuż osi *x*, z możliwością ruchu w lewo lub prawo. Robot rozpoczyna swoją trasę z pozycji oznaczonej jako $0$. Może wykonać następujące instrukcje::
+PYou settle a robot, capable of moving only along the *x* axis, with the ability to move left or right. The robot starts its route from the position marked $0$. It can execute the following instructions::
 
-* LEWO - porusz się o jedną jednostkę w lewo,
-* PRAWO - porusz się o jedną jednostkę w prawo,
-* JAK W $i$ - wykonaj taki sam ruch, jak w $i$-tej instrukcji. $i$ jest zawsze liczbą naturalną i nie przekracza numeru instrukcji, w której się pojawia. Liczymy instrukcje od jedynki.
+* LEFT - move one unit to the left,
+* RIGHT - move one unit to the right,
+* AS IN $i$ - make the same move as in the $i$-th instruction. The $i$ is always a natural number and does not exceed the number of the instruction in which it appears. We count the instructions from one.
 
-Zastanawiasz się, czy robot działa poprawnie. Twoim zadaniem jest napisanie programu, który dla podanego zestawu instrukcji określi pozycję, na której ostatecznie znajdzie się robot.
+You wonder if the robot is working properly. Your task is to write a program that, for a given set of instructions, determines the position at which the robot will eventually be placed.
 
-Źródło: [https://onlinejudge.org/external/125/12503.pdf](https://onlinejudge.org/external/125/12503.pdf)
+Source: [https://onlinejudge.org/external/125/12503.pdf](https://onlinejudge.org/external/125/12503.pdf)
 
 ## Specification
 
 ### Input
 
-* $n$ - liczba naturalna, liczba instrukcji do wykonania, $1\leq p\leq 100$.
-* $n$ linii zawierających jedną z instrukcji tak jak opisano wcześniej.
+* $n$ - natural number, number of instructions to be executed, $1\leq p\leq 100$.
+* $n$ lines containing one of the instructions as described earlier.
 
 ### Output
 
-* Liczba całkowita oznaczająca pozycję robota po wykonaniu wszystkich instrukcji.
+* An integer indicating the position of the robot after all instructions have been executed.
 
 ## Example 1
 
@@ -27,12 +27,12 @@ Zastanawiasz się, czy robot działa poprawnie. Twoim zadaniem jest napisanie pr
 
 ```
 3
-LEWO
-PRAWO
-JAK W 2
+LEFT
+RIGHT
+AS IN 2
 ```
 
-**Wynik:** $1$
+**Output:** $1$
 
 ## Example 2
 
@@ -40,11 +40,11 @@ JAK W 2
 
 ```
 5
-LEWO
-JAK W 1
-JAK W 2
-JAK W 1
-JAK W 4
+LEFT
+AS IN 1
+AS IN 2
+AS IN 1
+AS IN 4
 ```
 
-**Wynik:** $-5$
+**Output:** $-5$

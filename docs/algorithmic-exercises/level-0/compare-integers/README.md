@@ -2,7 +2,7 @@
 
 Mając dane dwie liczby całkowite, Twoim zadaniem jest określenie relacji pomiędzy nimi - czy pierwsza liczba jest mniejsza, większa, czy równa drugiej.
 
-Źródło: [https://onlinejudge.org/external/111/11172.pdf](https://onlinejudge.org/external/111/11172.pdf)
+Source: [https://onlinejudge.org/external/111/11172.pdf](https://onlinejudge.org/external/111/11172.pdf)
 
 ## Specification
 
@@ -30,6 +30,6 @@ b := 15
 ```
 
 !!! info
-    #### Wyjaśnienie:
+    #### Explanation:
 
     $10$ jest **mniejsze** od $15$, więc $a$ jest **mniejsze** od $b$, dlatego wypisujemy znak **mniejszości** ($<$).

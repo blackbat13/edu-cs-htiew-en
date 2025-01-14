@@ -15,7 +15,7 @@ Aby otworzyć kłódkę, należy postępować zgodnie z poniższym schematem:
 
 Twoim zadaniem jest wyliczenie, o ile stopni musisz łącznie obrócić tarczę, aby otworzyć kłódkę. Te informacje przydadzą się przy tworzeniu jednej z zagadek w Escape Roomie!
 
-Źródło: [https://onlinejudge.org/external/105/10550.pdf](https://onlinejudge.org/external/105/10550.pdf)
+Source: [https://onlinejudge.org/external/105/10550.pdf](https://onlinejudge.org/external/105/10550.pdf)
 
 ## Specification
 
@@ -38,7 +38,7 @@ Twoim zadaniem jest wyliczenie, o ile stopni musisz łącznie obrócić tarczę,
 0 30 0 30
 ```
 
-**Wynik:** $1350$
+**Output:** $1350$
 
 ## Example 2
 
@@ -48,7 +48,7 @@ Twoim zadaniem jest wyliczenie, o ile stopni musisz łącznie obrócić tarczę,
 5 35 5 35
 ```
 
-**Wynik:** $1350$
+**Output:** $1350$
 
 ## Example 3
 
@@ -58,7 +58,7 @@ Twoim zadaniem jest wyliczenie, o ile stopni musisz łącznie obrócić tarczę,
 0 20 0 20
 ```
 
-**Wynik:** $1620$
+**Output:** $1620$
 
 ## Example 4
 
@@ -68,7 +68,7 @@ Twoim zadaniem jest wyliczenie, o ile stopni musisz łącznie obrócić tarczę,
 7 27 7 27
 ```
 
-**Wynik:** $1620$
+**Output:** $1620$
 
 ## Example 5
 
@@ -78,7 +78,7 @@ Twoim zadaniem jest wyliczenie, o ile stopni musisz łącznie obrócić tarczę,
 0 10 0 10
 ```
 
-**Wynik:** $1890$
+**Output:** $1890$
 
 ## Example 6
 
@@ -88,4 +88,4 @@ Twoim zadaniem jest wyliczenie, o ile stopni musisz łącznie obrócić tarczę,
 9 19 9 19
 ```
 
-**Wynik:** $1890$
+**Output:** $1890$

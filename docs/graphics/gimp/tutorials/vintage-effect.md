@@ -14,7 +14,7 @@ Niezależnie od tego, czy efekt vintage jest stosowany do portretów, zdjęć kr
 
 W tutorialu skorzystamy z następującego zdjęcia:
 
-![Źródło: https://cc0.photo/2021/09/22/two-sailboats-on-the-duisburg-six-lake-plateau/](https://cc0.photo/download/4974/)
+![Source: https://cc0.photo/2021/09/22/two-sailboats-on-the-duisburg-six-lake-plateau/](https://cc0.photo/download/4974/)
 
 ## Dostosowanie kolorów
 

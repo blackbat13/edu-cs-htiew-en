@@ -1,20 +1,20 @@
-# Promocja
+# Sale
 
-W Topolandii mieszka farmer o imieniu Włodzimir, który zajmuje się sprzedażą mleka, pozyskiwanego od swoich zdrowych krów pasących się na bujnych łąkach tej krainy. Niedawno wprowadził specjalną promocję: za oddanie $3$ pustych butelek po mleku, otrzymujesz $1$ pełną butelkę mleka gratis! Ile butelek mleka jesteś w stanie skonsumować korzystając z tej promocji, jeżeli już zakupiłeś $n$ butelek mleka?
+Topoland is home to a farmer named Vladimir, who sells milk, sourced from his healthy cows grazing in the lush meadows of the land. He recently introduced a special promotion: for giving away $3$ of empty milk bottles, you get a $1$ full bottle of milk free! How many bottles of milk are you able to consume using this promotion if you have already purchased $n$ bottles of milk?
 
-PS. Włodzimir z chęcią pożyczy Ci puste butelki, pod warunkiem, że potem je zwrócisz.
+PS. Vladimir will be happy to lend you empty bottles, provided you return them later.
 
-Źródło: [https://onlinejudge.org/external/111/11150.pdf](https://onlinejudge.org/external/111/11150.pdf)
+Source: [https://onlinejudge.org/external/111/11150.pdf](https://onlinejudge.org/external/111/11150.pdf)
 
 ## Specification
 
 ### Input
 
-* $n$ - liczba zakupionych butelek mleka z przedziału$[1,200]$
+* $n$ - The number of purchased bottles of milk from the range $[1,200]$
 
 ### Output
 
-* Maksymalna liczba butelek mleka, które można wypić, korzystając z promocji.
+* The maximum number of bottles of milk that can be drunk using the promotion.
 
 ## Example
 
@@ -31,8 +31,8 @@ PS. Włodzimir z chęcią pożyczy Ci puste butelki, pod warunkiem, że potem je
 ```
 
 !!! info
-	#### Wyjaśnienie
+	#### Explanation
 	
-	Na początku mamy $8$ pełnych butelek mleka. Jeżeli pożyczymy jedną pustą butelkę, to możemy nasze $9$ pustych butelek wymienić na $3$ nowe. Wypijamy $3$ butelki mleka i wymieniamy je na jedną butelkę mleka. Wypijamy i ją, a na końcu oddajemy pustą butelkę. Wypiliśmy więc najpierw $8$, potem $3$ i na końcu $1$ butelkę mleka:
+	At the beginning we have $8$ full bottles of milk. If we borrow one empty bottle, we can exchange our $9$ of empty bottles for $3$ of new bottles. We drink $3$ bottles of milk and exchange them for one bottle of milk. We drink it too, and at the end we give back the empty bottle. So we drank first $8$, then $3$ and finally $1$ bottle of milk:
 	
 	$8+3+1=12$

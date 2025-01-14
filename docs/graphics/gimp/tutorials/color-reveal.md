@@ -14,7 +14,7 @@ To, co sprawia, że efekt ten jest tak efektywny, to jego zdolność do skupieni
 
 W tutorialu skorzystamy z następującego zdjęcia:
 
-![Źródło: https://cc0.photo/2021/10/06/apple-impaled-on-a-fence-crown/](https://cc0.photo/download/5049/)
+![Source: https://cc0.photo/2021/10/06/apple-impaled-on-a-fence-crown/](https://cc0.photo/download/5049/)
 
 ## Tworzymy wersję czarno-białą
 

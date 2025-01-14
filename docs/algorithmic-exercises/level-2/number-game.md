@@ -6,7 +6,7 @@ Weźmy na przykład trzy liczby: $90$, $101$ oraz $3$.
 Istnieje wiele sposobów na ich połączenie, co prowadzi do utworzenia nowych liczb: $901013$, $903101$, $101903$, $101390$, $310190$ oraz $390101$.
 Jak możemy zauważyć, mamy tu do dyspozycji $6$ kombinacji. Największa liczba, którą możemy w ten sposób uzyskać to $903101$. Twoim celem jest znalezienie takiej największej liczby i wygranie gry!
 
-Źródło: [https://onlinejudge.org/external/109/10905.pdf](https://onlinejudge.org/external/109/10905.pdf)
+Source: [https://onlinejudge.org/external/109/10905.pdf](https://onlinejudge.org/external/109/10905.pdf)
 
 ## Specification
 

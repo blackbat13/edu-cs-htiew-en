@@ -1,23 +1,23 @@
-# Kodowanie obrazka
+# Image coding
 
-Grafika komputerowa jest niezwykle istotnym obszarem informatyki. Ponieważ przechowujemy na komputerach mnóstwo zdjęć, istotne jest efektywne reprezentowanie ich w pamięci komputera. W tym zadaniu skupimy się na szczególnym przypadku kodowania grafiki. Grafikę przedstawiamy jako prostokątną tablicę liter alfabetu angielskiego, gdzie każda litera koduje jeden region. Identyczne regiony są reprezentowane przez takie same litery.
+Computer graphics is an extremely important area of computer science. Since we store a lot of images on computers, it is important to represent them efficiently in computer memory. In this assignment, we will focus on a special case of encoding graphics. We represent graphics as a rectangular array of letters of the English alphabet, where each letter encodes one region. Identical regions are represented by the same letters.
 
-Twoje zadanie polega na obliczeniu, ile bajtów pamięci jest potrzebnych do reprezentacji tak zaprezentowanej grafiki. Zasady są proste: obszar o najwyższym priorytecie reprezentowany jest za pomocą 2 bajtów, natomiast wszystkie pozostałe obszary za pomocą jednego bajta.
+Your task is to calculate how many bytes of memory are needed to represent the graphic presented in this way. The rules are simple: the highest priority region is represented with 2 bytes, while all other regions are represented with one byte.
 
-Obszar o **najwyższym** priorytecie to taki, który występuje **najczęściej**, czyli litera reprezentująca ten obszar pojawia się najwięcej razy w opisie grafiki. Jeżeli kilka obszarów ma taką samą, największą liczbę wystąpień, to wszystkie z nich uznajemy za obszary o najwyższym priorytecie.
+The area with the **highest** priority is the one that occurs **most often**, that is, the letter representing this area appears the most times in the description of the graphic. If several areas have the same highest number of occurrences, we consider all of them to be the highest priority areas.
 
-Źródło: [https://onlinejudge.org/external/115/11588.pdf](https://onlinejudge.org/external/115/11588.pdf)
+Source: [https://onlinejudge.org/external/115/11588.pdf](https://onlinejudge.org/external/115/11588.pdf)
 
 ## Specification
 
 ### Input
 
-* $h, w$ - wymiary tablicy, jej wysokość i szerokość
-* $pix[h][w]$ - opis grafiki, tablica dwuwymiarowa o wymiarach $h\times w$, której każdym elementem jest wielka litera alfabetu angielskiego
+* $h, w$ - dimensions of the board, its height and width
+* $pix[h][w]$ - oGraphic writing, a two-dimensional array of $h\times w$, each element of which is a capital letter of the English alphabet
 
 ### Output
 
-* Liczba bajtów potrzebna do reprezentacji podanej grafiki
+* The number of bytes needed to represent the specified graphic
 
 ## Example
 
@@ -40,6 +40,6 @@ AZIP
 ```
 
 !!! info
-	#### Wyjaśnienie
+	#### Explanation
 	
-	Najczęściej występującym regionem jest region **A**. Występuje on dokładnie $6$ razy. Oznacza to, że region **A** kodujemy za pomocą $2$ bajtów, a wszystkie pozostałe (których jest $14$), za pomocą $1$ bajta. Stąd otrzymujemy wynik: $6*2 + 14*1 = 12 + 14 = 26$
+	The most frequently occurring region is the **A** region. It occurs exactly $6$ times. This means that we encode the **A** region with $2$ bytes, and all the others (of which there are $14$), with $1$ bytes. Hence, we get the result: $6*2 + 14*1 = 12 + 14 = 26$

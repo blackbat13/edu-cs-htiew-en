@@ -24,7 +24,7 @@ Protokoły UPD i TCP są wykorzystywane do przesyłania danych - czyli pakietów
 |  Kontrola przepływu i błędów  |          Brak kontroli         |
 | Pakiet nazywany **segmentem** | Pakiet nazywany **datagramem** |
 
-![Źródło: https://i.redd.it/duv11av99nm11.png](../../assets/tcp_udp_meme.png)
+![Source: https://i.redd.it/duv11av99nm11.png](../../assets/tcp_udp_meme.png)
 
 ## Schematy przesyłania danych
 

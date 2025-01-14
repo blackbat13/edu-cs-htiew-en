@@ -1,3 +1,3 @@
-# Poziom 1
+# Level 1
 
-Przy niektórych zadaniach trzeba chwilę pomyśleć. Efektywność rozwiązania nie jest tutaj bardzo istotna, ale warto dążyć do jak najlepszej złożoności.
+With some tasks you need to think for a while. The efficiency of the solution is not very important here, but it is worth striving for the best possible complexity.
