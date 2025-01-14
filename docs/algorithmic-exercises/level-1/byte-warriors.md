@@ -1,20 +1,20 @@
-# Bajtowi wojownicy
+# Byte warriors
 
-Struktura oddziału Bajtowych Wojowników jest zorganizowana w taki sposób, że pierwszy rząd składa się z jednego wojownika, drugi z dwóch, trzeci z trzech i tak dalej. Oznacza to, że każdy $i$-ty rząd składa się z $i$ wojowników.
+The structure of the Byte Warriors troop is organized in such a way that the first row consists of one warrior, the second of two, the third of three and so on. This means that each $i$th row consists of $i$ warriors.
 
-Twoim zadaniem jest obliczenie liczby rzędów, znając całkowitą liczbę wojowników w oddziale. Zwróć uwagę, że nie zawsze wystarczy wojowników na wypełnienie ostatniego rzędu - na przykład, $6$ wojowników mogłoby być rozmieszczonych w trzech rzędach, ale podobnie mogłoby być rozmieszczonych $7$, $8$, a nawet $9$ wojowników.
+Your task is to calculate the number of rows, knowing the total number of warriors in the troop. Note that there are not always enough warriors to fill the last row - for example, $6$ of warriors could be distributed in three rows, but similarly there could be $7$, $8$ or even $9$ of warriors distributed.
 
-Źródło: [https://onlinejudge.org/external/116/11614.pdf](https://onlinejudge.org/external/116/11614.pdf)
+Source: [https://onlinejudge.org/external/116/11614.pdf](https://onlinejudge.org/external/116/11614.pdf)
 
 ## Specification
 
 ### Input
 
-* $n$ - liczba naturalna, rozmiar oddziału, $0\leq n\leq 10^{18}$.
+* $n$ - natural number, troop size, $0\leq n\leq 10^{18}$.
 
 ### Output
 
-* Liczba wierszy potrzebna, by uformować oddział.
+* The number of rows needed to form a troop.
 
 ## Example 1
 
@@ -24,7 +24,7 @@ Twoim zadaniem jest obliczenie liczby rzędów, znając całkowitą liczbę wojo
 3
 ```
 
-**Wynik:** $2$
+**Output:** $2$
 
 ## Example 2
 
@@ -34,7 +34,7 @@ Twoim zadaniem jest obliczenie liczby rzędów, znając całkowitą liczbę wojo
 8
 ```
 
-**Wynik:** $3$
+**Output:** $3$
 
 ## Example 3
 
@@ -44,4 +44,4 @@ Twoim zadaniem jest obliczenie liczby rzędów, znając całkowitą liczbę wojo
 10
 ```
 
-**Wynik:** $4$
+**Output:** $4$
