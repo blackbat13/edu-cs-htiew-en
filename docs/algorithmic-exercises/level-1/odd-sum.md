@@ -1,18 +1,18 @@
-# Suma nieparzystych
+# Odd sum
 
-Dla zadanego przedziału podaj sumę wszystkich nieparzystych liczb z tego przedziału.
+For a given interval, give the sum of all odd numbers in the interval.
 
-Źródło: [https://onlinejudge.org/external/107/10783.pdf](https://onlinejudge.org/external/107/10783.pdf)
+Source: [https://onlinejudge.org/external/107/10783.pdf](https://onlinejudge.org/external/107/10783.pdf)
 
 ## Specification
 
 ### Input
 
-* $a, b$ - liczby całkowite z przedziału $[0,100]$
+* $a, b$ - integers in the interval $[0,100]$
 
 ### Output
 
-* Suma wszystkich liczb nieparzystych z przedziału $[a,b]$ 
+* The sum of all odd numbers in the interval $[a,b]$ 
 
 ## Example
 
@@ -29,6 +29,6 @@ Dla zadanego przedziału podaj sumę wszystkich nieparzystych liczb z tego przed
 ```
 
 !!! info
-	#### Wyjaśnienie
+	#### Explanation
 	
 	$3+5+7+9=24$
