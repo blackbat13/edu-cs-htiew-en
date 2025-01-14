@@ -1,6 +1,6 @@
-# Różne cyfry
+# Different digits
 
-Twoim zadaniem jest określenie ilości liczb w zadanym przedziale, które składają się wyłącznie z unikalnych cyfr, to znaczy, w ich zapisie cyfry nie powtarzają się. Na przykład, liczba $123$ składa się z różnych cyfr, podczas gdy liczba $100$ już nie, ze względu na powtarzający się znak $0$.
+Your task is to determine the number of numbers in a given range that consist only of unique digits, that is, in their notation the digits do not repeat. For example, the number $123$ consists of different digits, while the number $100$ no longer does, due to the repeating character $0$.
 
 Źródło: [https://onlinejudge.org/external/125/12527.pdf](https://onlinejudge.org/external/125/12527.pdf)
 
@@ -8,11 +8,11 @@ Twoim zadaniem jest określenie ilości liczb w zadanym przedziale, które skła
 
 ### Input
 
-* $a, b$ - liczby całkowite z przedziału $[1,5000]$
+* $a, b$ - integers in the interval $[1,5000]$
 
 ### Output
 
-* Ilość wszystkich liczb z przedziału $[a,b]$, które składają się wyłącznie z różnych cyfr.
+* The number of all numbers in the interval $[a,b]$ that consist only of different digits.
 
 ## Example
 
@@ -29,8 +29,8 @@ Twoim zadaniem jest określenie ilości liczb w zadanym przedziale, które skła
 ```
 
 !!! info
-	#### Wyjaśnienie
+	#### Explanation
 	
-	Z przedziału $[87,104]$ następujące liczby składają się wyłącznie z różnych cyfr:
+	From the interval $[87,104]$ the following numbers consist only of different digits:
 	
 	$87,89,90,91,92,93,94,95,96,97,98,102,103,104$
