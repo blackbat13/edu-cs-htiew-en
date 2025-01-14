@@ -1,6 +1,6 @@
 # Obsługa wejścia-wyjścia
 
-## Wyjście
+## Output
 
 Najprostszym sposobem na wypisanie komunikatu jest skorzystanie z polecenia `echo`.
 
@@ -52,7 +52,7 @@ echo 'Komunikat: $powitanie'
 echo "Komunikat: \$powitanie"
 ```
 
-## Wejście
+## Input
 
 Jednym ze sposobów na wczytanie wejścia od użytkownika z poziomu konsoli jest użycie polecenia `read`.
 Możemy także korzystać z wartości przekazanych podczas uruchamiania skryptu.

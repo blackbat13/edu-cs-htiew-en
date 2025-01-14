@@ -1,4 +1,4 @@
-# Wejście jako parametry
+# Input jako parametry
 
 W języku C można wczytywać parametry z linii poleceń podczas uruchamiania programu za pomocą funkcji `main`, która może przyjmować dwa argumenty: `argc` i `argv`.
 

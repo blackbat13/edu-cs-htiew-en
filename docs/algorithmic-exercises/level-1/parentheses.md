@@ -1,32 +1,32 @@
-# Nawiasy
+# Parentheses
 
-Dany jest ciąg złożony z nawiasów okrągłych () oraz kwadratowych []. Twoim celem jest sprawdzenie, czy ciąg zawiera **poprawne nawiasowanie**, czy też nie. Ciąg uznajemy za **poprawny**, gdy:
+Given a string composed of round brackets () and square brackets []. Your goal is to check whether the string contains **correct parentheses** or not. We consider a string to be **correct** when:
 
-* jest pustym ciągiem,
-* jeżeli $A$ i $B$ są poprawne, to $AB$ także jest poprawne,
-* jeżeli $A$ jest poprawne, to $(A)$ oraz $[A]$ także są poprawne.
+* is an empty string,
+* if $A$ and $B$ are correct, then $AB$ is also correct,
+* if $A$ is correct, then $(A)$ and $[A]$ are also correct.
 
-Źródło: [https://onlinejudge.org/external/6/673.pdf](https://onlinejudge.org/external/6/673.pdf)
+Source: [https://onlinejudge.org/external/6/673.pdf](https://onlinejudge.org/external/6/673.pdf)
 
 ## Specification
 
-### Wejście
+### Input
 
-* $par$ - ciąg nawiasów
+* $par$ - string of parentheses
 
-### Wyjście
+### Output
 
-* Informacja, czy ciąg jest poprawny, czy też nie.
+* Information whether the string is correct or not.
 
 ## Example 1
 
-### Wejście
+### Input
 
 ```
 ([])
 ```
 
-### Wyjście
+### Output
 
 ```
 Correct
@@ -34,13 +34,13 @@ Correct
 
 ## Example 2
 
-### Wejście
+### Input
 
 ```
 (([()])))
 ```
 
-### Wyjście
+### Output
 
 ```
 Incorrect
@@ -48,13 +48,13 @@ Incorrect
 
 ## Example 3
 
-### Wejście
+### Input
 
 ```
 ([()[]()])()
 ```
 
-### Wyjście
+### Output
 
 ```
 Correct

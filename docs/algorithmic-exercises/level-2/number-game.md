@@ -10,25 +10,25 @@ Jak możemy zauważyć, mamy tu do dyspozycji $6$ kombinacji. Największa liczba
 
 ## Specification
 
-### Wejście
+### Input
 
 * $n$ - liczba naturalna
 * $a_1, a_2, ..., a_n$ - $n$ liczb naturalnych
 
-### Wyjście
+### Output
 
 * Największa liczba jaka może zostać utworzona poprzez połączenie ze sobą liczb $a_1, a_2, ..., a_n$ w wybranym porządku.
 
 ## Example 1
 
-### Wejście
+### Input
 
 ```
 4
 123 124 56 90
 ```
 
-### Wyjście
+### Output
 
 ```
 9056124123
@@ -36,14 +36,14 @@ Jak możemy zauważyć, mamy tu do dyspozycji $6$ kombinacji. Największa liczba
 
 ## Example 2
 
-### Wejście
+### Input
 
 ```
 5
 123 124 56 90 9 
 ```
 
-### Wyjście
+### Output
 
 ```
 99056124123

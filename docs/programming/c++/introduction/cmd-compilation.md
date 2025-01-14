@@ -98,7 +98,7 @@ Aby włączyć debugowanie użyjemy opcji `-g`.
 
 Uruchamianie skompilowanego programu z terminala ma swoje zalety. Jedną z nich jest łatwe przekierowanie wejścia i wyjścia naszego programu, np. z i do pliku.
 
-### Wejście z pliku
+### Input z pliku
 
 Aby przekierować wejście z pliku tekstowego należy skorzystać z operatora `<`.
 
@@ -111,7 +111,7 @@ Aby przekierować wejście z pliku tekstowego należy skorzystać z operatora `<
     .\main.exe < dane_wyj.txt
     ```
 
-### Wyjście do pliku
+### Output do pliku
 
 W celu utworzenia pliku i przekierowania do niego wyjścia z naszego programu użyjemy operatora `>`.
 

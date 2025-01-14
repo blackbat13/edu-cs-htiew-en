@@ -9,7 +9,7 @@ Do obsługi plików za pomocą strumieni potrzebujemy biblioteki `fstream` (*fil
 using namespace std;
 ```
 
-## Wyjście
+## Output
 
 ### Otwarcie pliku
 
@@ -54,7 +54,7 @@ Po wykonaniu potrzebnych operacji na pliku należy strumień do niego zamknąć 
 outfile.close();
 ```
 
-<!-- ## Wejście
+<!-- ## Input
 
 Do wczytywania wejścia z konsoli wykorzystujemy strumień `cin`. W celu wczytania wartości do zmiennej wystarczy podać tę zmienną:
 

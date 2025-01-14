@@ -9,7 +9,7 @@ Do obsługi wejścia/wyjścia za pomocą strumieni potrzebujemy biblioteki `iost
 using namespace std;
 ```
 
-## Wyjście
+## Output
 
 Do wypisania komunikatów w konsoli wykorzystujemy strumień cout. W celu wypisania komunikatu wystarczy podać, co chcemy wypisać:
 
@@ -44,7 +44,7 @@ W celu wypisania znaku nowej linii możemy skorzystać z polecenia `endl` (end l
 cout << "Hello Wordl!" << endl;
 ```
 
-## Wejście
+## Input
 
 Do wczytywania wejścia z konsoli wykorzystujemy strumień `cin`. W celu wczytania wartości do zmiennej wystarczy podać tę zmienną:
 

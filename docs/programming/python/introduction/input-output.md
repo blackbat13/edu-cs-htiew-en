@@ -1,6 +1,6 @@
 # Obsługa wejścia i wyjścia
 
-## Wyjście
+## Output
 
 Wypisanie prostego komunikatu:
 
@@ -33,7 +33,7 @@ temp = 9.79347832
 print(f"Dzisiaj jest {temp:.2f} stopni Celsjusza")
 ```
 
-## Wejście
+## Input
 
 ### Wczytanie tekstu
 
